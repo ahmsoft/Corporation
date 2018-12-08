@@ -1,0 +1,44 @@
+.RadLightBox_Outlook {
+  font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif;
+  color: black; }
+  .RadLightBox_Outlook .rltbWrapper {
+    background: white; }
+  .RadLightBox_Outlook .rltbDescriptionBox {
+    color: black; }
+  .RadLightBox_Outlook .rltbPager {
+    color: #3e69a3; }
+  .RadLightBox_Outlook .rltbDescOverlayTop,
+  .RadLightBox_Outlook .rltbDescOverlayBottom {
+    background-color: #6797d1;
+    background-color: rgba(103, 151, 209, 0.6);
+    color: white; }
+    .RadLightBox_Outlook .rltbDescOverlayTop .rltbPager,
+    .RadLightBox_Outlook .rltbDescOverlayBottom .rltbPager {
+      color: #b3b3b3; }
+  .RadLightBox_Outlook .rltbToolbar .rltbActionButton {
+    background: #d6e5f3; }
+    .RadLightBox_Outlook .rltbToolbar .rltbActionButton:hover {
+      background: #ffeec2; }
+  .RadLightBox_Outlook .rltbIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadLightBox_Outlook .rltbMaximizeIcon {
+    background-position: 0px -2100px; }
+  .RadLightBox_Outlook .rltbRestoreIcon {
+    background-position: 0px -2120px; }
+  .RadLightBox_Outlook .rltbActionButton:hover .rltbMaximizeIcon {
+    background-position: -20px -2100px; }
+  .RadLightBox_Outlook .rltbActionButton:hover .rltbRestoreIcon {
+    background-position: -20px -2120px; }
+  .RadLightBox_Outlook .rltbClose,
+  .RadLightBox_Outlook .rltbCloseIcon,
+  .RadLightBox_Outlook .rltbPrevButton,
+  .RadLightBox_Outlook .rltbNextButton {
+    background-image: url('LightBox/sprite.png'); }
+  .RadLightBox_Outlook .rltbClose {
+    background-position: 0 -89px; }
+  .RadLightBox_Outlook .rltbCloseButton:hover .rltbCloseIcon {
+    background-position: -40px 0; }
+  .RadLightBox_Outlook .rltbPrevButton {
+    background-position: -40px -40px; }
+  .RadLightBox_Outlook .rltbNextButton {
+    background-position: 0 -40px; }

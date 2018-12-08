@@ -1,0 +1,241 @@
+.RadMenu {
+  font-size: 14px;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+  .RadMenu .rmRootToggle {
+    width: 2.86em;
+    height: 2.86em;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(244, 244, 244, 0.36) inset;
+    cursor: pointer;
+    display: block;
+    position: relative; }
+    .RadMenu .rmRootToggle:before {
+      content: "\e0f1";
+      width: 100%;
+      height: 100%;
+      font-size: 2em;
+      font-family: "TelerikWebUI";
+      line-height: 1.43em;
+      text-align: center;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .RadMenu.rmDisabled .rmRootToggle {
+    cursor: default;
+    opacity: 0.6; }
+
+.RadMenuPopup {
+  min-width: 110px;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0.143em 0.214em 0.214em rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: normal;
+  display: none;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  z-index: 10; }
+  .RadMenuPopup ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .RadMenuPopup a {
+    color: inherit;
+    text-decoration: none; }
+  .RadMenuPopup .rmSlide {
+    min-width: 110px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 10; }
+  .RadMenuPopup:before, .RadMenuPopup:after {
+    content: "";
+    border-width: 0 8px 8px;
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: .841em; }
+  .RadMenuPopup:after {
+    top: -6px; }
+  .RadMenuPopup.rmLeft:before, .RadMenuPopup.rmLeft:after {
+    left: .841em;
+    right: auto; }
+  .RadMenuPopup.rmHiddenPointer:before, .RadMenuPopup.rmHiddenPointer:after {
+    display: none; }
+  .RadMenuPopup .rmGroup {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 100%; }
+    .RadMenuPopup .rmGroup .rmGroup {
+      top: 0; }
+      .RadMenuPopup .rmGroup .rmGroup.rmVisible {
+        visibility: visible; }
+  .RadMenuPopup .rmRootGroup {
+    position: relative;
+    left: 0; }
+  .RadMenuPopup .rmGroup .rmGroup {
+    display: none; }
+  .RadMenuPopup .rmItem {
+    padding-right: 2.43em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    position: relative; }
+    .RadMenuPopup .rmItem:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .RadMenuPopup .rmItem.rmDisabled .rmLink {
+      opacity: .4; }
+  .RadMenuPopup .rmItem.rmParentItem {
+    padding-left: 2.43em;
+    cursor: pointer;
+    line-height: 1.54; }
+    .RadMenuPopup .rmItem.rmParentItem:before {
+      content: "\e00f";
+      margin: auto;
+      width: 0.895em;
+      height: 0.895em;
+      font-size: 2em;
+      font-family: "TelerikWebUI";
+      line-height: 0.9em;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.1em; }
+  .RadMenuPopup .rmItem:first-child {
+    border-top: 0; }
+  .RadMenuPopup .rmSeparator {
+    display: none; }
+  .RadMenuPopup .rmLink,
+  .RadMenuPopup .rmParentItem {
+    width: 100%;
+    padding: .571em 0.05em 0.571em .9em;
+    box-sizing: border-box;
+    line-height: 1.54em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .RadMenuPopup .rmLink {
+    float: left; }
+  .RadMenuPopup span.rmLink {
+    cursor: default; }
+  .RadMenuPopup .rmLeftImage:before {
+    content: "";
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 2px; }
+  .RadMenuPopup .rmToggle {
+    height: 2.35em;
+    width: 2.45em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0.28em;
+    cursor: pointer;
+    text-align: center;
+    z-index: 20; }
+  .RadMenuPopup .rmToggle:before {
+    content: "\E00C";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: "TelerikWebUI";
+    font-size: 2em;
+    line-height: normal; }
+  .RadMenuPopup .rmLoading:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20; }
+  .RadMenuPopup .rmLoadingIcon:after {
+    background-position: center;
+    background-repeat: no-repeat; }
+  .RadMenuPopup .rmLoadingTemplate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 20; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .RadMenu {
+    font-size: 13px; }
+
+  .RadMenuPopup {
+    font-size: 13px; }
+
+  .RadMenuPopup .rmSlide {
+    width: 320px;
+    max-height: 360px; } }
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+  .RadMenu {
+    font-size: 18px; }
+
+  .RadMenuPopup {
+    font-size: 18px; }
+
+  .RadMenuPopup .rmSlide {
+    width: 300px;
+    max-height: 400px; } }
+@media only screen and (max-width: 360px) {
+  .RadMenu {
+    font-size: 18px; }
+
+  .RadMenuPopup {
+    font-size: 18px; }
+
+  .RadMenuPopup .rmSlide {
+    width: 260px;
+    max-height: 300px; } }
+.RadMenuPopup_rtl {
+  text-align: right; }
+.RadMenuPopup_rtl .rmGroup {
+  left: -100%; }
+.RadMenuPopup_rtl .rmRootGroup {
+  left: 0; }
+.RadMenuPopup_rtl .rmItem,
+.RadMenuPopup_rtl .rmParentItem {
+  padding: 0 0 0 2.43em; }
+.RadMenuPopup_rtl .rmItem.rmParentItem {
+  padding: 0.57em 2.43em 0.57em 0.9em; }
+  .RadMenuPopup_rtl .rmItem.rmParentItem:before {
+    content: "\e00c";
+    left: auto;
+    right: 0.1em; }
+.RadMenuPopup_rtl .rmParentItem,
+.RadMenuPopup_rtl .rmLink {
+  padding: 0.57em 0.9em 0.57em 0em; }
+.RadMenuPopup_rtl .rmLink {
+  float: right; }
+.RadMenuPopup_rtl .rmLeftImage::before {
+  margin: 0 0 0 10px; }
+.RadMenuPopup_rtl .rmToggle {
+  left: 0;
+  right: auto; }
+.RadMenuPopup_rtl .rmToggle:before {
+  content: "\E00f"; }

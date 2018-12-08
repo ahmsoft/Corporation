@@ -1,0 +1,425 @@
+.RadFileExplorer {
+  border-width: 1px;
+  border-style: solid;
+  position: relative; }
+  .RadFileExplorer,
+  .RadFileExplorer * {
+    box-sizing: content-box; }
+  .RadFileExplorer .RadGrid,
+  .RadFileExplorer .RadToolBar {
+    border: 0 none; }
+  .RadFileExplorer .rgCaption {
+    display: none; }
+  .RadFileExplorer .rfeCopyCursor .RadGrid .rgDataDiv,
+  .RadFileExplorer .rfeCopyCursor .RadGrid .rgDataDiv .rgRow,
+  .RadFileExplorer .rfeCopyCursor .RadTreeView,
+  .RadFileExplorer .rfeCopyCursor .RadTreeView .rtIn {
+    cursor: all-scroll !important; }
+  .RadFileExplorer .rfeCopyCursorCSS3 .RadGrid .rgDataDiv,
+  .RadFileExplorer .rfeCopyCursorCSS3 .RadGrid .rgDataDiv .rgRow,
+  .RadFileExplorer .rfeCopyCursorCSS3 .RadTreeView,
+  .RadFileExplorer .rfeCopyCursorCSS3 .RadTreeView .rtIn {
+    cursor: copy !important; }
+  .RadFileExplorer .rfeAddressBox {
+    display: block;
+    margin: 0;
+    padding: 0.08333em 0.41667em 0.16667em 0.41667em;
+    min-height: 1.41667em;
+    width: 100%;
+    border-width: 1px 0;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: inherit;
+    font-family: inherit; }
+  html.RadForm.rfdTextbox .RadFileExplorer input.rfeAddressBox[type="text"] {
+    width: 100%; }
+  .RadForm.rfdTextbox .RadFileExplorer .rfeUploadContainer input[type="text"] {
+    width: auto; }
+  .RadFileExplorer .ruActions {
+    padding: 0.41667em 0em; }
+  .RadFileExplorer .rfeUploadButtonContainer {
+    margin: 0.41667em 0em 0em; }
+  .RadFileExplorer .rfeUploadButtonContainer input {
+    width: 6.25em; }
+  .RadFileExplorer .rfeFileExtension:before {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    font-size: 1.33333em;
+    margin: 0.125em 0em 0em -0.16667em; }
+  .RadFileExplorer .RadGrid .rfeFileExtension:before {
+    margin: -0.04167em 0.41667em 0em -0.16667em; }
+  .RadFileExplorer .RadToolBar {
+    padding: 0.33333em 0em; }
+    .RadFileExplorer .RadToolBar .rtbUL {
+      padding: 0em 0.16667em 0.16667em; }
+    .RadFileExplorer .RadToolBar .rtbButton {
+      width: 1.83333em;
+      height: 1.83333em;
+      padding: 0.08333em; }
+    .RadFileExplorer .RadToolBar .rtbButton:before {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 1;
+      font-family: "TelerikWebUI";
+      font-size: 1.33333em;
+      margin: 0.20833em 0em 0em 0.125em;
+      margin: 0.20833em 0em 0em 0.16667em \9; }
+    .RadFileExplorer .RadToolBar _:-ms-fullscreen, :root .RadFileExplorer .RadToolBar .rtbButton:before {
+      margin: 0.20833em 0em 0em 0.16667em; }
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      .RadFileExplorer .RadToolBar .rtbButton:before {
+        margin: 0.16667em 0em 0em 0.16667em; } }
+    .RadFileExplorer .RadToolBar .icnBack:before {
+      content: "\E0ED"; }
+    .RadFileExplorer .RadToolBar .icnForward:before {
+      content: "\E0EE"; }
+    .RadFileExplorer .RadToolBar .icnOpen:before {
+      content: "\E0A2"; }
+    .RadFileExplorer .RadToolBar .icnNewFolder:before {
+      content: "\E0A0"; }
+    .RadFileExplorer .RadToolBar .icnDelete:before {
+      content: "\E0C3"; }
+    .RadFileExplorer .RadToolBar .icnRefresh:before {
+      content: "\E01E"; }
+    .RadFileExplorer .RadToolBar .icnGridView:before {
+      content: "\E0AB"; }
+    .RadFileExplorer .RadToolBar .icnThumbnailsView:before {
+      content: "\E0AC"; }
+    .RadFileExplorer .RadToolBar .icnUpload {
+      width: 100%; }
+    .RadFileExplorer .RadToolBar .icnUpload:before {
+      content: "\E039"; }
+    .RadFileExplorer .RadToolBar .rtbText {
+      padding: 0.16667em 0.41667em 0em 0.16667em; }
+    .RadFileExplorer .RadToolBar .rtbIconOnly .rtbText {
+      padding: 0em; }
+    .RadFileExplorer .RadToolBar .NoIcon .rtbText {
+      padding-left: 0 !important;
+      background: none !important;
+      zoom: 1; }
+    .RadFileExplorer .RadToolBar .NoIcon.rtbChecked {
+      color: #fff; }
+  .RadFileExplorer .RadGrid .rgRow td,
+  .RadFileExplorer .RadGrid .rgAltRow td,
+  .RadFileExplorer .RadGrid .rgEditRow td,
+  .RadFileExplorer .RadGrid .rgFooter td {
+    padding-bottom: 0.16667em;
+    padding-top: 0.16667em; }
+  .RadFileExplorer .rfeFilterWrapper {
+    float: right; }
+  .RadFileExplorer .rfeFilterLbl {
+    float: left;
+    margin: 0.25em 0.16667em 0em 0em;
+    text-align: right; }
+  .RadFileExplorer .rfeFilterTxt {
+    float: left;
+    height: 1.33333em !important;
+    line-height: 1.33333em !important;
+    margin: 0.16667em;
+    border-width: 1px;
+    border-style: solid; }
+  .RadFileExplorer .RadGrid .rfeFilterWrapper,
+  .RadFileExplorer .RadGrid div .rfeFilterTxt {
+    -moz-user-select: text; }
+  .RadFileExplorer .rfeThumbnailView {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    overflow-y: scroll; }
+  .RadFileExplorer .rfeThumbList {
+    width: 5.41667em;
+    min-height: 5.41667em;
+    margin: 0.25em 0.08333em;
+    vertical-align: top;
+    display: inline-block; }
+  .RadFileExplorer .rfeLink {
+    display: block;
+    padding: 0.41667em 0em 0.41667em;
+    border-radius: 0.25em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    text-decoration: none;
+    text-align: center; }
+  .RadFileExplorer .rfeLink:hover,
+  .RadFileExplorer .rfeSelectedLink,
+  .RadFileExplorer .rfeSelectedLink:hover {
+    border-width: 1px;
+    border-style: solid; }
+  .RadFileExplorer .rfeFile {
+    display: block;
+    margin: auto;
+    width: 2.66667em;
+    height: 2.66667em; }
+  .RadFileExplorer .rfeFileIcon {
+    display: block;
+    margin: auto;
+    width: 2.66667em;
+    height: 2.66667em; }
+  .RadFileExplorer .rfeFileIcon:before {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    font-size: 2.66667em;
+    margin: -0.04167em 0em 0em -0.08333em;
+    content: "\E09C"; }
+  .RadFileExplorer .rfeImageView {
+    background-image: none !important;
+    width: 5.33333em;
+    height: 5.33333em; }
+  .RadFileExplorer .rfeImageFile img {
+    border: 0; }
+  .RadFileExplorer .rfeThumbTitle {
+    display: block;
+    min-height: 1.25em;
+    line-height: 0.91667em;
+    padding: 0.25em 0.08333em 0.08333em;
+    font-size: 0.91667em;
+    text-align: center;
+    word-wrap: break-word; }
+  .RadFileExplorer .rfeThumbnailsContainer {
+    position: relative;
+    height: 100%;
+    min-height: 100%; }
+  .RadFileExplorer .rfePageControlContainer {
+    width: 100%;
+    position: absolute;
+    padding: 0.41667em 0em;
+    bottom: 0;
+    border-width: 1px 0 0;
+    border-style: solid; }
+  .RadFileExplorer .rfePageControl {
+    margin: 0 auto; }
+  .RadFileExplorer .rfePageInfo {
+    font-size: 0.91667em;
+    width: 100%;
+    text-align: center; }
+  .RadFileExplorer .rfeFilterContainer {
+    height: 2.08333em;
+    line-height: 2.08333em;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    text-align: right; }
+  .RadFileExplorer .rfeFilterContainer .rfeFilterLbl {
+    font-size: 1em;
+    line-height: 1.41667em;
+    float: none; }
+  .RadFileExplorer .rfeFilterContainer .rfeFilterTxt {
+    float: none; }
+  html.RadForm.rfdTextbox .RadFileExplorer .rfeFilterContainer input.rfeFilterTxt {
+    padding: 0.08333em;
+    width: auto; }
+  .RadFileExplorer.RadListView {
+    border: 0; }
+  .RadFileExplorer.RadListView .rfeThumbnailView {
+    overflow: auto !important; }
+  .RadFileExplorer .rfeThumbnailView .rlvI {
+    position: relative;
+    text-align: center; }
+  .RadFileExplorer .rfeThumbnailView .rlvI .rfeFileCount {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 1.41667em;
+    left: 0; }
+  .RadFileExplorer .rfeThumbnailView .rlvI .rfeFileCount span {
+    display: block;
+    margin: auto;
+    padding: 0.08333em 0.33333em;
+    border-radius: 3px;
+    font-size: 0.91667em;
+    max-width: 2.66667em;
+    text-align: center; }
+  .RadFileExplorer .rfeThumbnailView .rfeFileDrag .rlvDrag {
+    opacity: .3;
+    background-image: none;
+    display: inline-block;
+    padding: 0.41667em 0em;
+    min-height: 5.41667em;
+    width: 5.41667em;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden; }
+  .RadFileExplorer .rfeLargeThumbnails .rfeThumbList {
+    width: 8.33333em; }
+  .RadFileExplorer .rfeLargeThumbnails .rfeThumbList .rfeFile {
+    width: 5.33333em;
+    height: 3.66667em;
+    padding-top: 1.66667em; }
+  .RadFileExplorer .rfeLargeThumbnails .rfeThumbList .rfeImageFile.rfeFile {
+    height: 5.33333em;
+    padding-top: 0; }
+  .RadFileExplorer .rfeLargeThumbnails .rfeThumbList .rfeFile img {
+    width: 5.33333em;
+    height: 5.33333em; }
+  .RadFileExplorer .rfeDropZone {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2; }
+  .RadFileExplorer .rfeCancelUpload {
+    float: right;
+    margin-right: 1.66667em; }
+  .RadFileExplorer .rfeDropUploadProgress {
+    float: right;
+    margin-right: 0.83333em; }
+  .RadFileExplorer .rfeDropUploadInfoPanel {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 0.83333em 0em;
+    font-size: 1em;
+    line-height: 1.66667em; }
+  .RadFileExplorer .rfePaneGrid {
+    position: relative; }
+  .RadFileExplorer .folder:before {
+    content: "\E0A1"; }
+  .RadFileExplorer .folderup:before {
+    content: "\E0A6"; }
+  .RadFileExplorer .gif:before {
+    content: "\E07C"; }
+  .RadFileExplorer .html:before,
+  .RadFileExplorer .htm:before,
+  .RadFileExplorer .xhtml:before,
+  .RadFileExplorer .hta:before,
+  .RadFileExplorer .xslt:before,
+  .RadFileExplorer .xsl:before,
+  .RadFileExplorer .xml:before,
+  .RadFileExplorer .asp:before,
+  .RadFileExplorer .aspx:before {
+    content: "\E115"; }
+  .RadFileExplorer .exe:before,
+  .RadFileExplorer .bat:before {
+    content: "\E190"; }
+  .RadFileExplorer .rar:before,
+  .RadFileExplorer .zip:before,
+  .RadFileExplorer .ace:before {
+    content: "\E188"; }
+  .RadFileExplorer .psd:before,
+  .RadFileExplorer .pdd:before {
+    content: "\E183"; }
+  .RadFileExplorer .js:before {
+    content: "\E18C"; }
+  .RadFileExplorer .vbs:before {
+    content: "\E18C"; }
+  .RadFileExplorer .css:before,
+  .RadFileExplorer .scss:before {
+    content: "\E18B"; }
+  .RadFileExplorer .txt:before {
+    content: "\E186"; }
+  .RadFileExplorer .sln:before {
+    content: "\E18D"; }
+  .RadFileExplorer .suo:before {
+    content: "\E18D"; }
+  .RadFileExplorer .config:before,
+  .RadFileExplorer .dll:before {
+    content: "\E185"; }
+  .RadFileExplorer .cs:before {
+    content: "\E189"; }
+  .RadFileExplorer .vb:before {
+    content: "\E18A"; }
+  .RadFileExplorer .doc:before,
+  .RadFileExplorer .docx:before,
+  .RadFileExplorer .rtf:before,
+  .RadFileExplorer .dot:before {
+    content: "\E145"; }
+  .RadFileExplorer .ppt:before,
+  .RadFileExplorer .pptx:before {
+    content: "\E181"; }
+  .RadFileExplorer .xls:before,
+  .RadFileExplorer .xlsx:before {
+    content: "\E146"; }
+  .RadFileExplorer .ascx:before {
+    content: "\E187"; }
+  .RadFileExplorer .jpg:before,
+  .RadFileExplorer .jpeg:before,
+  .RadFileExplorer .jpe:before,
+  .RadFileExplorer .png:before,
+  .RadFileExplorer .bmp:before,
+  .RadFileExplorer .tif:before,
+  .RadFileExplorer .tiff:before {
+    content: "\E07C"; }
+  .RadFileExplorer .mdb:before {
+    content: "\E180"; }
+  .RadFileExplorer .csproj:before {
+    content: "\E18E"; }
+  .RadFileExplorer .webinfo:before {
+    content: "\E18D"; }
+  .RadFileExplorer .vbproj:before {
+    content: "\E18F"; }
+  .RadFileExplorer .pdf:before {
+    content: "\E148"; }
+  .RadFileExplorer .mpg:before,
+  .RadFileExplorer .mpeg:before,
+  .RadFileExplorer .avi:before,
+  .RadFileExplorer .gp3:before,
+  .RadFileExplorer .mov:before,
+  .RadFileExplorer .mpeg4:before,
+  .RadFileExplorer .aif:before,
+  .RadFileExplorer .aiff:before,
+  .RadFileExplorer .rm:before,
+  .RadFileExplorer .wmv:before,
+  .RadFileExplorer .webm:before {
+    content: "\E0B6"; }
+  .RadFileExplorer .mp3:before,
+  .RadFileExplorer .mp4:before,
+  .RadFileExplorer .mid:before,
+  .RadFileExplorer .midi:before,
+  .RadFileExplorer .wav:before,
+  .RadFileExplorer .gp3:before,
+  .RadFileExplorer .gp4:before,
+  .RadFileExplorer .gp5:before,
+  .RadFileExplorer .wma:before,
+  .RadFileExplorer .ogg:before {
+    content: "\E09E"; }
+  .RadFileExplorer .fla:before,
+  .RadFileExplorer .flv:before,
+  .RadFileExplorer .swf:before {
+    content: "\E182"; }
+  .RadFileExplorer .bac:before {
+    content: "\E184"; }
+  .RadFileExplorer .RadSlider .rslHorizontal a.rslHandle {
+    margin-top: -.8em; }
+  .RadFileExplorer div.rgWrap .rgSliderLabel {
+    display: none; }
+
+.rfeUploadContainer .RadUpload .ruInputs {
+  height: 13.16667em;
+  overflow: auto;
+  padding: 0em 0em 0.83333em 0em; }
+
+.rfeCheckBoxContainer input[type="checkbox"],
+.rfeCheckBoxContainer label {
+  vertical-align: middle; }
+
+.rfeUploadContainer {
+  font-size: 1em;
+  margin: 0.41667em 0em 0.41667em 0.41667em; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .rfeUploadContainer .RadUpload .ruInputs {
+    padding: 0.08333em 0em 0em; }
+  .rfeUploadContainer .RadUpload .ruInputs input.ruFileInput {
+    font: 12px monospace !important; } }
+
+.rfeUploadInfoPanel {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.16667em;
+  margin: 0.41667em 0.41667em 0.41667em 0em; }
+
+.rfeUploadInfoPanel dt {
+  font-weight: bold;
+  float: left;
+  padding-right: 0.33333em; }

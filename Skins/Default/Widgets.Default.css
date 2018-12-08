@@ -1,0 +1,130 @@
+/* this is the topmost cell of the dialogs that have RadTabStrip */
+.reTopcell {
+  background-color: #f0f0f0; }
+
+/* File Manager dialogs */
+.selectedFileName {
+  border-top: 1px solid #a0a0a0; }
+
+/* background for the bottom positioned RadTabStrip */
+.RadTabStripBottom_Default {
+  background: #f0f0f0;
+  width: 264px;
+  border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 6px !important; }
+
+.reTableWizardSelectAllBtn {
+  color: #333333; }
+
+.imagePreviewer {
+  overflow: hidden; }
+
+/*Sprite from RFE*/
+.RadToolBar_Default .rtbText {
+  background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+  background-repeat: no-repeat; }
+
+/* RAD EDITOR DIALOGS REDESIGN */
+.redWrapper {
+  /* FileBrowser */ }
+  .redWrapper .redSection {
+    border-bottom-color: #a0a0a0; }
+  .redWrapper .reTool {
+    border-color: #cdcdcd;
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: linear-gradient(white, #e6e6e6);
+    border-color: #cdcdcd; }
+  .redWrapper .reTool:hover {
+    border-color: #aaaaaa;
+    color: black;
+    background-color: #c3c3c3;
+    background-image: linear-gradient(#dddddd, #c3c3c3);
+    box-shadow: inset 0 0 1px white; }
+  .redWrapper .reTool:active,
+  .redWrapper .reTool:focus {
+    border-color: #676767;
+    color: white;
+    background-color: gray;
+    background-image: linear-gradient(#9a9a9a, gray);
+    box-shadow: inset 0 0 1px white; }
+  .redWrapper a.reDropdown:hover {
+    background-image: url('Editor/ToolbarSprites.gif');
+    background-color: #c3c3c3; }
+  .redWrapper .redDialogSeparator {
+    border-left: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+    background-image: -webkit-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+    background-image: -moz-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+    background-image: -ms-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+    background-image: -o-linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+    background-image: linear-gradient(top, #fdfdfd 0%, #eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#eaeaea',GradientType=0 );
+    filter: none;
+    background-color: #eaeaea;
+    background-position: 0 0; }
+  .redWrapper .redMsgContainerFBDialogs #propertyValueDescription,
+  .redWrapper .redMsgContainerFBDialogs #propertyValuePane {
+    background-color: #eeeeee;
+    color: #333333; }
+  .redWrapper .redImageMapProperties {
+    border-left-color: #a0a0a0; }
+
+/* Right to Left Support */
+.RadForm_Default .redRtl .redWrapper .reTool .split_arrow:hover {
+  border-right-color: #aaaaaa; }
+.RadForm_Default .redRtl .reDropdown:hover {
+  background-image: url('Editor/ToolbarSprites.gif');
+  background-color: #c3c3c3; }
+.RadForm_Default .redRtl .redImageMapPreview {
+  border-left-color: #a0a0a0; }
+
+.reLightweightDialog .selectedFileName {
+  border-color: #d1d1d1; }
+
+/* Mobile Editor */
+.reMobileDialog.RadForm_Default {
+  font-size: 14px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .reMobileDialog.RadForm_Default.rfdZone {
+    background-color: #f8f8f8; }
+  .reMobileDialog.RadForm_Default .reMobileDialogTitleBar {
+    background-image: linear-gradient(#fefefe, #eaeaea);
+    border-color: #a0a0a0; }
+  .reMobileDialog.RadForm_Default .reToolList > li {
+    background-color: white;
+    color: #333333;
+    border-color: #d1d1d1; }
+  .reMobileDialog.RadForm_Default .reIcon {
+    color: #333333; }
+  .reMobileDialog.RadForm_Default .reIconSelected {
+    color: #1976d2; }
+  .reMobileDialog.RadForm_Default .reDialog {
+    background-color: #eaeaea;
+    color: #333333; }
+  .reMobileDialog.RadForm_Default .reToolList.reImageManagerHeader > li,
+  .reMobileDialog.RadForm_Default .reToolList > .reColorBoxWrapper,
+  .reMobileDialog.RadForm_Default .reColorPicker {
+    background-color: #f8f8f8; }
+  .reMobileDialog.RadForm_Default .reCurrentColor {
+    border-color: #cdcdcd; }
+  .reMobileDialog.RadForm_Default .reSpinBoxButtons span,
+  .reMobileDialog.RadForm_Default .reDialog .reButton,
+  .reMobileDialog.RadForm_Default .reColorPicker .reButton {
+    border-color: #cdcdcd;
+    color: #333333;
+    background-color: #e6e6e6;
+    background-image: linear-gradient(white, #e6e6e6); }
+  .reMobileDialog.RadForm_Default .reSpinBoxButtons span.reSpinBoxButtonHover,
+  .reMobileDialog.RadForm_Default .reDialog .reButton:hover,
+  .reMobileDialog.RadForm_Default .reColorPicker .reButton:hover {
+    border-color: #676767;
+    color: white;
+    background-color: gray;
+    background-image: linear-gradient(#9a9a9a, gray); }
+  .reMobileDialog.RadForm_Default span.ruFakeInput,
+  .reMobileDialog.RadForm_Default .reSpinBox input,
+  .reMobileDialog.RadForm_Default .reSelect {
+    background-color: white;
+    border-color: #cdcdcd;
+    color: #333333; }

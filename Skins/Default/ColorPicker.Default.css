@@ -1,0 +1,46 @@
+.RadColorPicker_Default {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Rounded corners and shadows */ }
+  .RadColorPicker_Default .rcpViews,
+  .RadColorPicker_Default .rcpHeader,
+  .RadColorPicker_Default .rcpPageView {
+    background-color: #f6f6f6; }
+  .RadColorPicker_Default .rcpColorPreview,
+  .RadColorPicker_Default .rcpInput,
+  .RadColorPicker_Default .rcpHexInput,
+  .RadColorPicker_Default .rcpMillionColorsPalette,
+  .RadColorPicker_Default .rcpMillionColorsSlider div.rslTrack {
+    border-color: #8e8e8e; }
+  .RadColorPicker_Default .rcpPalette,
+  .RadColorPicker_Default input,
+  .RadColorPicker_Default a {
+    color: #333333; }
+  .RadColorPicker_Default .rcpHeader,
+  .RadColorPicker_Default .rcpHeader .rcpImageButton,
+  .RadColorPicker_Default .rcpRecentColors,
+  .RadColorPicker_Default .rcpIcon a,
+  .RadColorPicker_Default .rcpTabs a,
+  .RadColorPicker_Default .rcpTabs a span,
+  .RadColorPicker_Default .rcpButton,
+  .RadColorPicker_Default .rcpButton span,
+  .RadColorPicker_Default .rcpMillionColorsHandle,
+  .RadColorPicker_Default .rcpSlider div.rslTrack,
+  .RadColorPicker_Default .rcpSlider .rslTrack a.rslDraghandle,
+  .RadColorPicker_Default div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    background-image: url('ColorPicker/ColorPickerSprites.png');
+    background-repeat: no-repeat; }
+  .RadColorPicker_Default .rcpPalette,
+  .RadColorPicker_Default .rcpRoundedRight,
+  .RadColorPicker_Default .rcpRoundedBottomRight,
+  .RadColorPicker_Default .rcpRightShadow,
+  .RadColorPicker_Default .rcpCornerShadow {
+    background-image: url('ColorPicker/rcpVerticalSprites.png'); }
+  .RadColorPicker_Default .rcpRoundedBottomLeft,
+  .RadColorPicker_Default .rcpBottomShadow {
+    background-image: url('ColorPicker/ColorPickerSprites.png'); }
+  .RadColorPicker_Default .rcpPalette,
+  .RadColorPicker_Default .rcpRoundedRight,
+  .RadColorPicker_Default .rcpRoundedBottomRight,
+  .RadColorPicker_Default .rcpRoundedBottomLeft {
+    _background-image: url('ColorPicker/rcpVerticalSpritesIE6.png'); }
+

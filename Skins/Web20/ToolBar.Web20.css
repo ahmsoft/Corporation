@@ -1,0 +1,77 @@
+.RadToolBar_Web20 {
+  color: #ffffff;
+  background-color: #3c558d;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadToolBar_Web20 .rtbOuter {
+    border-color: #0f1d48;
+    background-color: #3c558d; }
+  .RadToolBar_Web20 .rtbWrap {
+    *color: #ffffff; }
+  .RadToolBar_Web20 .rtbChoiceArrow {
+    background-image: url('ToolBar/rtbDropArrows.png'); }
+  .RadToolBar_Web20 .rtbItemHovered .rtbWrap, .RadToolBar_Web20 .rtbItemHovered .rtbOut, .RadToolBar_Web20 .rtbItemHovered .rtbMid, .RadToolBar_Web20 .rtbItemHovered .rtbIn {
+    color: #0f3789;
+    background-image: url('ToolBar/rtbHoverBg.png'); }
+  .RadToolBar_Web20 .rtbItemFocused .rtbWrap, .RadToolBar_Web20 .rtbItemFocused .rtbOut, .RadToolBar_Web20 .rtbItemFocused .rtbMid, .RadToolBar_Web20 .rtbItemFocused .rtbIn {
+    color: #0f3789;
+    background-image: url('ToolBar/rtbHoverBg.png'); }
+  .RadToolBar_Web20 .rtbItemClicked .rtbWrap, .RadToolBar_Web20 .rtbItemClicked .rtbOut, .RadToolBar_Web20 .rtbItemClicked .rtbMid, .RadToolBar_Web20 .rtbItemClicked .rtbIn {
+    color: #ffffff;
+    background-image: url('ToolBar/rtbClickedBg.png'); }
+  .RadToolBar_Web20 .rtbSplBtnExpanded .rtbWrap, .RadToolBar_Web20 .rtbSplBtnExpanded .rtbOut, .RadToolBar_Web20 .rtbSplBtnExpanded .rtbMid, .RadToolBar_Web20 .rtbSplBtnExpanded .rtbIn, .RadToolBar_Web20 .rtbDropDownExpanded .rtbWrap, .RadToolBar_Web20 .rtbDropDownExpanded .rtbOut, .RadToolBar_Web20 .rtbDropDownExpanded .rtbMid, .RadToolBar_Web20 .rtbDropDownExpanded .rtbIn, .RadToolBar_Web20 .rtbChecked .rtbWrap, .RadToolBar_Web20 .rtbChecked .rtbOut, .RadToolBar_Web20 .rtbChecked .rtbMid, .RadToolBar_Web20 .rtbChecked .rtbIn {
+    color: #ffffff;
+    background-image: url('ToolBar/rtbActiveBg.png'); }
+  .RadToolBar_Web20 .rtbSeparator {
+    border-color: #1b294b;
+    background-color: #576491; }
+
+.RadToolBar_Web20_Horizontal .rtbOuter {
+  background-image: url('ToolBar/rtbControlBg.png'); }
+
+.RadToolBar_Web20_Vertical .rtbOuter {
+  background-color: #53699e;
+  background-image: url('ToolBar/rtbVerticalControlBg.png');
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+
+.RadToolBarDropDown_Web20 {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #000000;
+  border-color: #6788be;
+  background-color: #ffffff;
+  background-image: url('ToolBar/rtbDropDownBg.png'); }
+  .RadToolBarDropDown_Web20 .rtbTopFix, .RadToolBarDropDown_Web20 .rtbBottomFix, .RadToolBarDropDown_Web20 .rtbRoundedCorners .rtbGroup {
+    background-image: url('ToolBar/rtbDropDownBg.png');
+    background-color: #ffffff; }
+  .RadToolBarDropDown_Web20 .rtbBottomLeft, .RadToolBarDropDown_Web20 .rtbRoundedCorners {
+    background-image: url('ToolBar/rtbRoundedLeft.png'); }
+  .RadToolBarDropDown_Web20 .rtbTopRight, .RadToolBarDropDown_Web20 .rtbBottomRight {
+    background-image: url('ToolBar/rtbRoundedRight.png'); }
+  .RadToolBarDropDown_Web20 .rtbTopFix, .RadToolBarDropDown_Web20 .rtbBottomFix {
+    border-color: #6788be; }
+  .RadToolBarDropDown_Web20 .rtbWrap {
+    border-radius: 3px;
+    *color: #000000; }
+  .RadToolBarDropDown_Web20 .rtbItemHovered .rtbWrap {
+    border-color: #bcd2f1;
+    color: #0f3789;
+    background-color: #e7f1ff;
+    background-image: linear-gradient(); }
+  .RadToolBarDropDown_Web20 .rtbItemClicked .rtbWrap {
+    border-color: #85c843;
+    color: #0e4302;
+    background-color: #d4ffbc;
+    background-image: linear-gradient(); }
+  .RadToolBarDropDown_Web20 .rtbSeparator {
+    border-color: #6788be; }
+
+.RadToolBarDropDown_Web20_rtl .rtbBottomLeft, .RadToolBarDropDown_Web20_rtl .rtbRoundedCorners {
+  background-image: url('ToolBar/rtbRoundedLeft_rtl.png'); }
+
+.RadToolBarDropDown_Web20_rtl .rtbTopRight, .RadToolBarDropDown_Web20_rtl .rtbBottomRight {
+  background-image: url('ToolBar/rtbRoundedRight_rtl.png'); }
+
+.RadToolBarDropDown_Web20_rtl .rtbTopFix, .RadToolBarDropDown_Web20_rtl .rtbBottomFix, .RadToolBarDropDown_Web20_rtl .rtbGroup, .RadToolBarDropDown_Web20_rtl .rtbShadows .rtbGroup {
+  background-position: 101% 0; }

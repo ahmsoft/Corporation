@@ -1,0 +1,74 @@
+.RadDropDownTree_Vista {
+  color: #000000;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownTree_Vista .rddtInner {
+    border-radius: 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #707070;
+    color: #000000;
+    background-color: #d2d2d2;
+    background-image: linear-gradient(#f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%); }
+  .RadDropDownTree_Vista .rddtEmptyMessage {
+    color: #8a8a8a;
+    font-style: italic; }
+  .RadDropDownTree_Vista .rddtClearButton {
+    background-position: -2px -364px; }
+  .RadDropDownTree_Vista .rddtIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -1px -20px; }
+  .RadDropDownTree_Vista .rddtHovered {
+    border-color: #3c7fb1;
+    color: #000000;
+    background-color: #abdcf7;
+    background-image: linear-gradient(#e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%); }
+    .RadDropDownTree_Vista .rddtHovered .rddtClearButton {
+      background-position: -22px -364px; }
+      .RadDropDownTree_Vista .rddtHovered .rddtClearButton.rddtClearButtonHovered {
+        background-position: -62px -364px; }
+    .RadDropDownTree_Vista .rddtHovered .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Vista .rddtFocused {
+    border-color: #3c7fb1;
+    color: #000000;
+    background-color: #ced7dd;
+    background-image: linear-gradient(#eff2f4 0%, #eaeef0 50%, #d8e0e5 50%, #ced7dd 100%); }
+    .RadDropDownTree_Vista .rddtFocused .rddtClearButton {
+      background-position: -42px -364px; }
+      .RadDropDownTree_Vista .rddtFocused .rddtClearButton.rddtClearButtonHovered {
+        background-position: -82px -364px; }
+    .RadDropDownTree_Vista .rddtFocused .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Vista .rddtDisabled {
+    border-color: #adb2b5;
+    color: #8a8a8a;
+    background-color: #d2d2d2;
+    background-image: linear-gradient(#f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%); }
+    .RadDropDownTree_Vista .rddtDisabled .rddtIcon {
+      background-position: -1px -20px; }
+
+.rddtPopup_Vista {
+  border-color: #979797;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddtPopup_Vista .rddtHeader,
+  .rddtPopup_Vista .rddtFooter {
+    border-color: #b7bdcd;
+    color: #000000;
+    background-color: #e0e5f5; }
+  .rddtPopup_Vista .rddtFilter {
+    border-color: #b7bdcd;
+    color: #000000;
+    background-color: #e0e5f5; }
+    .rddtPopup_Vista .rddtFilter .rddtFilterInput {
+      font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+      border-color: #e2e3ea;
+      color: #333333;
+      background-color: #ffffff; }
+    .rddtPopup_Vista .rddtFilter .rddtFilterEmptyMessage {
+      color: #8a8a8a;
+      font-style: italic; }
+  .rddtPopup_Vista .RadTreeView em {
+    color: #000000;
+    background-color: #55bbff; }

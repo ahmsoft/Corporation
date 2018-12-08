@@ -1,0 +1,16 @@
+.RadTagCloud_WebBlue {
+  border: 1px dotted #768ca5;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_WebBlue .rtcTagList .rtcTagItem {
+    color: #666666; }
+  .RadTagCloud_WebBlue .rtcTagList .rtcTagItem:hover {
+    color: #0e3d4f; }
+  .RadTagCloud_WebBlue .rtcTagList .rtcTagItem a {
+    color: black; }
+  .RadTagCloud_WebBlue .rtcTagList .rtcTagItem a:hover {
+    color: #0e3d4f;
+    background: #e9f8ff; }
+  .RadTagCloud_WebBlue.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

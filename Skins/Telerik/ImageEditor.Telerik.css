@@ -1,0 +1,40 @@
+.RadImageEditor_Telerik {
+  border-color: #828282;
+  background-color: #ececec; }
+  .RadImageEditor_Telerik .rieStatusBarInfo .rieLabel {
+    color: #8a8a8a; }
+  .RadImageEditor_Telerik .rieStatusBarInfo span {
+    color: #4c4e54; }
+  .RadImageEditor_Telerik .rieContentArea {
+    border-color: #828282; }
+
+/* ImageEditor Dialogs using RadDock as Wrapper */
+.RadDock_Telerik.rieDialogs .rbPrimaryIcon, .RadImageEditor_Telerik .rieResizeHandle, .RadImageEditor_Telerik .rieBackgroundImg .rtbIcon {
+  background-image: url('../Common/ImageEditor/rieToolsLight.png');
+  _background-image: url('../Common/ImageEditor/rieToolsLightIE6.png'); }
+
+.RadDock_Telerik.rieDialogs .rieThumbsBottomRow td, .RadDock_Telerik.rieDialogs .rieDialogsThumbsLeft, .RadDock_Telerik.rieDialogs .riePrintContent img {
+  border-color: #2ebf00; }
+
+.RadDock_Telerik.rieDialogs .rieThumbsLink {
+  border-color: #8e8e8e; }
+
+.RadDock_Telerik.rieDialogs .rieActiveThumbsLink, .RadDock_Telerik.rieDialogs .rieThumbsLink:hover, .RadImageEditor_Telerik .rieHighlightVertical, .RadImageEditor_Telerik .rieHighlightHorizontal {
+  border-color: #2ebf00;
+  background-color: #d0f7c3; }
+
+.RadDock_Telerik.rieDialogs .riePrintContent {
+  border-color: #828282;
+  background-color: #ececec; }
+
+.RadDock_Telerik.rieDialogs .rdContent {
+  color: #000000; }
+
+/* Webkit fix when in Telerik skin button width is set with property */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .rieDialogs .rieResizeButtons .RadButton_Telerik {
+    padding-right: 4px; } }
+
+.rieBottomCell {
+  border-color: #828282; }
+

@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'TelerikWebUI';
+  src: url('Common/TelerikWebUI.eot');
+  src: url('Common/TelerikWebUI.eot') format('embedded-opentype'), url('Common/TelerikWebUI.woff') format('woff'), url('Common/TelerikWebUI.ttf') format('truetype'); }
+
+.RadColorPicker, .RadColorPicker * {
+  box-sizing: content-box; }
+.RadColorPicker .rcpPalette {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.33333em;
+  padding: 0em 0.33333em 0.33333em 0.33333em;
+  box-sizing: border-box;
+  position: relative; }
+.RadColorPicker .rcpHeader {
+  margin: 0em -0.33333em;
+  padding: 0.16667em 0.41667em;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-radius: 0.33333em 0.33333em 0em 0em; }
+.RadColorPicker .rcpViews {
+  padding: 0.33333em 0em 0em; }
+.RadColorPicker .rcpDisabled .rcpPalette, .RadColorPicker .rcpDisabled .rcpIcon a, .RadColorPicker .rcpDisabled .rcpIcon em {
+  opacity: 0.3; }
+.RadColorPicker .rcpPalette:after, .RadColorPicker .rcpTabs:after, .RadColorPicker .rcpHeader:after, .RadColorPicker .rcpWebPalette:after, .RadColorPicker .rcpRGBPageView ul:after, .RadColorPicker .rcpMillionColorsPageView:after, .RadColorPicker .rcpInputsWrapper ul:after, .RadColorPicker .rcpRecentColors:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden; }
+.RadColorPicker ul, .RadColorPicker ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  height: auto;
+  display: block; }
+.RadColorPicker a {
+  outline: none;
+  text-decoration: none;
+  user-select: none; }
+.RadColorPicker .rcpTabs, .RadColorPicker .rcpHexInput, .RadColorPicker .rcpInput, .RadColorPicker label, .RadColorPicker .rcpButton, .RadColorPicker .rcpRecentColorsLabel {
+  font-size: 1em; }
+.RadColorPicker .rcpPalette label, .RadColorPicker .rcpRecentColorsLabel {
+  width: 1em;
+  padding-right: 0.25em;
+  line-height: 1.58333em;
+  text-align: right; }
+.RadColorPicker .rcpIcon, .RadColorPicker .rcpIcon a {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.25em; }
+.RadColorPicker .rcpIcon {
+  position: relative;
+  width: 3.25em;
+  height: 1.83333em; }
+.RadColorPicker .rcpIcon a, .RadColorPicker .rcpIcon em {
+  position: absolute; }
+.RadColorPicker .rcpIcon a {
+  z-index: 9;
+  cursor: default;
+  width: 3.08333em;
+  height: 1.66667em;
+  border-width: 1px;
+  border-style: solid;
+  color: transparent; }
+.RadColorPicker div.rcpIcon a, .RadColorPicker div.rcpIcon a:hover, .RadColorPicker div.rcpIcon a:active {
+  color: transparent; }
+.RadColorPicker .rcpIcon a:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 0.66667em;
+  height: 0.66667em;
+  vertical-align: top;
+  font-family: "TelerikWebUI";
+  font-size: 1.66667em;
+  margin: 0em 0.25em 0em 0em;
+  content: "\E00E";
+  text-indent: 0; }
+.RadColorPicker .rcpIcon em {
+  z-index: 10;
+  width: 1em;
+  height: 1em;
+  margin: 0.33333em 0em 0em 0.33333em;
+  border-width: 1px;
+  border-style: solid;
+  text-indent: -9999px; }
+.RadColorPicker .rcpColorPreview, .RadColorPicker .rcpInput, .RadColorPicker .rcpHexInput, .RadColorPicker .rcpMillionColorsPalette, .RadColorPicker .rcpMillionColorsSlider div.rslTrack {
+  border-width: 1px;
+  border-style: solid; }
+.RadColorPicker .rcpEmptyHeader {
+  padding: 0.25em 0.08333em 0em; }
+.RadColorPicker .rcpColorPreview {
+  width: 2.75em;
+  height: 1.66667em;
+  float: left;
+  margin-right: 0.08333em; }
+.RadColorPicker .rcpPalette .rcpHeader .rcpHexInput, .RadColorPicker .rcpPalette .rcpHeader .rcpInput {
+  height: 1.58333em;
+  line-height: 1.58333em;
+  display: block;
+  padding: 0.08333em 0.08333em 0em;
+  text-transform: lowercase;
+  text-align: left;
+  cursor: default; }
+.RadColorPicker .rcpHexInput, .RadForm.rfdTextbox .RadColorPicker input.rcpHexInput {
+  width: 4.16667em;
+  float: left; }
+.RadColorPicker input.rcpHexInput[readonly] {
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent; }
+.RadColorPicker .rcpInput, .RadForm.rfdTextbox .RadColorPicker input.rcpInput {
+  width: 1.83333em; }
+.RadColorPicker .rcpImageButton {
+  width: 1.83333em;
+  height: 1.83333em;
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin-left: 0.16667em; }
+.RadColorPicker .rcpImageButton span {
+  display: block;
+  height: 1.83333em;
+  line-height: 1.83333em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1px;
+  text-indent: -99999px; }
+.RadColorPicker .rcpImageButton:before {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-family: "TelerikWebUI";
+  font-size: 1.33333em;
+  margin: 0.20833em 0em 0em 0.16667em; }
+.RadColorPicker .rcpEmptyColor:before {
+  content: "\E036"; }
+.RadColorPicker .rcpCustomColorButton:before {
+  content: "\E191"; }
+.RadColorPicker .rcpButton {
+  display: block;
+  text-align: center;
+  padding: 0.08333em 0.83333em;
+  float: right;
+  margin: 0.04167em 0em 0em 0.16667em;
+  cursor: default;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  border-width: 1px;
+  border-style: solid; }
+.RadColorPicker .rcpTabs {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -2.08333em;
+  left: 0.75em; }
+  .RadColorPicker .rcpTabs ul {
+    float: left; }
+  .RadColorPicker .rcpTabs li {
+    border-width: 0 1px 1px;
+    border-style: solid;
+    float: left;
+    margin: 0.08333em 0em 0em -0.08333em; }
+  .RadColorPicker .rcpTabs a {
+    display: block;
+    padding: 0.20833em 0.5em;
+    cursor: default;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 20%); }
+  .RadColorPicker .rcpTabs .rcpSelectedTab {
+    margin-top: 0.08333em;
+    border-radius: 0em 0em 0.16667em 0.16667em; }
+  .RadColorPicker .rcpTabs .rcpSelectedTab a {
+    line-height: 1.58333em;
+    background-image: none; }
+  .RadColorPicker .rcpTabs .rcpSelectedTab + li {
+    margin: 0.08333em 0em 0em -0.08333em; }
+  .RadColorPicker .rcpTabs .rcpSelectedTab + li a {
+    border-width: 0 1px 1px 0; }
+.RadColorPicker .rcpPageView {
+  padding: 0.08333em; }
+.RadColorPicker .rcpRecentColors {
+  padding: 0.83333em 0.08333em 0em;
+  border-width: 1px 0 0;
+  border-style: solid; }
+.RadColorPicker .rcpPalette .rcpRecentColorsLabel {
+  padding: 0em 0.08333em; }
+.RadColorPicker .rcpWebPalette li, .RadColorPicker .rcpRecentColors li {
+  float: left; }
+.RadColorPicker .rcpRecentColors li {
+  margin: 0em 0.16667em 0.16667em 0em;
+  width: 1em;
+  height: 1em; }
+.RadColorPicker .rcpColorBox, .RadColorPicker .rcpSelectedColor {
+  cursor: pointer;
+  display: block; }
+.RadColorPicker .rcpColorBox span, .RadColorPicker .rcpSelectedColor span, .RadColorPicker .rcpRecentColors span {
+  display: block;
+  line-height: 0.08333em;
+  width: 1em;
+  text-indent: -9999px;
+  overflow: hidden; }
+.RadColorPicker .rcpRecentColors .rcpColorBox, .RadColorPicker .rcpRecentColors span {
+  width: 0.83333em;
+  height: 0.83333em; }
+.RadColorPicker .rcpWebPalette .rcpBreakLine {
+  float: none;
+  clear: both;
+  height: 0.08333em;
+  line-height: 0.08333em;
+  margin-bottom: -0.08333em;
+  overflow: hidden; }
+.RadColorPicker .rcpRGBPageView ul li {
+  float: left;
+  margin-bottom: 0.16667em; }
+.RadColorPicker .rcpRGBPageView .rcpInput {
+  float: left;
+  margin-left: 0.83333em;
+  padding: 0.16667em; }
+.RadColorPicker .rcpRGBPageView ul li label, .RadColorPicker .rcpSlider {
+  float: left; }
+.RadColorPicker .rcpHsbPageView .rcpVInputWrapper {
+  display: none; }
+.RadColorPicker .rcpMillionColorsPalette {
+  width: 21.33333em;
+  height: 13.33333em;
+  overflow: visible;
+  position: relative;
+  float: left;
+  cursor: crosshair; }
+.RadColorPicker .rcpHsbPageView .rcpMillionColorsPalette {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzIiPjxzdG9wIHN0b3AtY29sb3I9IiNmZjAwMDAiLz48c3RvcCBvZmZzZXQ9Ii4xNyIgc3RvcC1jb2xvcj0iI2ZmZmYwMCIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjMDBmZjAwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzAwZmZmZiIvPjxzdG9wIG9mZnNldD0iLjY3IiBzdG9wLWNvbG9yPSIjMDAwMGZmIi8+PHN0b3Agb2Zmc2V0PSIuODMiIHN0b3AtY29sb3I9IiNmZjAwZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjAwMDAiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9InJnYmEoMTI4LDEyOCwxMjgsMCkiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4MDgwODAiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZzIpIi8+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnMSkiLz48L3N2Zz4=");
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0), #808080), linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000); }
+.RadColorPicker .rcpHsbPageView .rcpMillionColorsSlider div.rslTrack {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9Ii41IiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwyNTUsMjU1LDApIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0icmdiYSgwLDAsMCwwKSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnMSkiLz48L3N2Zz4=");
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 50%, #000000); }
+.RadColorPicker .rcpHsvPageView .rcpMillionColorsPalette {
+  width: 13.33333em;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000), linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0)); }
+.RadColorPicker .rcpHsvPageView .rcpMillionColorsSlider div.rslTrack {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNmMDAiLz48c3RvcCBvZmZzZXQ9Ii4xNiIgc3RvcC1jb2xvcj0iI2YwZiIvPjxzdG9wIG9mZnNldD0iLjMzIiBzdG9wLWNvbG9yPSIjMDBmIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzBmZiIvPjxzdG9wIG9mZnNldD0iLjY3IiBzdG9wLWNvbG9yPSIjMGYwIi8+PHN0b3Agb2Zmc2V0PSIuODQiIHN0b3AtY29sb3I9IiNmZjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjAwMDQiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZzEpIi8+PC9zdmc+);
+  background-image: linear-gradient(to top, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000); }
+.RadColorPicker .rcpHsvPageView .rcpLInputWrapper {
+  display: none; }
+.RadColorPicker .rcpMillionColorsSlider div.rslTrack {
+  width: 1em;
+  left: -0.16667em; }
+.RadColorPicker .rcpMillionColorsSlider div.rslSelectedregion {
+  width: 1em;
+  background: transparent none; }
+.RadColorPicker .rcpMillionColorsPageView .rcpInputsWrapper {
+  float: left;
+  width: 3.7em; }
+.RadColorPicker .rcpMillionColorsPageView .rcpInputsWrapper li {
+  float: right;
+  margin-bottom: 0.16667em; }
+.RadColorPicker .rcpMillionColorsPageView .rcpInputsWrapper label {
+  float: left; }
+.RadColorPicker .rcpMillionColorsPageView .rcpInputsWrapper .rcpInput {
+  float: right;
+  padding: 0.16667em; }
+.RadColorPicker .rcpMillionColorsPageView .rcpInputsWrapper .rcpMillionColorsInputs {
+  margin-top: 0.41667em; }
+.RadColorPicker .rcpMillionColorsHandle {
+  position: absolute;
+  width: 0.83333em;
+  height: 0.83333em;
+  top: 0;
+  left: 0;
+  cursor: crosshair; }
+.RadColorPicker .rcpColorBox, .RadColorPicker .rcpSelectedColor {
+  border-width: 1px;
+  border-style: ridge;
+  border-color: transparent transparent rgba(153, 153, 153, 0.3) rgba(153, 153, 153, 0.4); }
+.RadColorPicker .rcpSelectedColor, .RadColorPicker .rcpColorBox:hover, .RadColorPicker .rcpColorBox:focus, .RadColorPicker .rcpColorBox:active {
+  border-color: rgba(102, 102, 102, 0.3);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.8) inset; }
+.RadColorPicker .rcpMillionColorsHandle {
+  width: 0.66667em;
+  height: 0.66667em;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #eeeeee;
+  border-radius: 45px;
+  box-shadow: 0 1px 2px #444444;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10; }
+.RadColorPicker .rcpSlider {
+  font-size: 1em; }
+  .RadColorPicker .rcpSlider .rslHorizontal a.rslDraghandle {
+    width: 0.83333em;
+    height: 0.33333em;
+    line-height: 0.83333em;
+    margin-top: 0.58333em;
+    background-image: none;
+    background-color: transparent;
+    text-indent: 0;
+    overflow: unset;
+    border: 0;
+    box-shadow: none; }
+  .RadColorPicker .rcpSlider .rslHorizontal a.rslDraghandle:hover {
+    width: 0.83333em;
+    height: 0.33333em;
+    background-image: none;
+    background-color: transparent;
+    border: none; }
+  .RadColorPicker .rcpSlider .rslHorizontal a.rslDraghandle:before {
+    display: inline-block;
+    width: 0.83333em;
+    height: 0.33333em;
+    vertical-align: top;
+    font-family: "TelerikWebUI";
+    font-size: 1.66667em;
+    margin: -0.08333em 0em 0em -0.29167em;
+    content: "\E00D"; }
+  .RadColorPicker .rcpSlider .rslHorizontal a.rslDraghandle span {
+    text-indent: -9999px; }
+  .RadColorPicker .rcpSlider .rslHorizontal .rslTrack {
+    height: 0.5em;
+    top: 0.83333em;
+    border: 0 none;
+    border-radius: 0;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiPjxzdG9wIHN0b3AtY29sb3I9IiMwMDAwMDAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9InJnYmEoMCwwLDAsMCkiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZzEpIi8+PC9zdmc+");
+    background-image: linear-gradient(to right, #000000, rgba(0, 0, 0, 0)); }
+  .RadColorPicker .rcpSlider .rslHorizontal .rslSelectedregion {
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0; }
+  .RadColorPicker .rcpSlider.rcpRedSlider .rslHorizontal .rslTrack {
+    background-color: #ff0000; }
+  .RadColorPicker .rcpSlider.rcpGreenSlider .rslHorizontal .rslTrack {
+    background-color: #00ff00; }
+  .RadColorPicker .rcpSlider.rcpBlueSlider .rslHorizontal .rslTrack {
+    background-color: #0000ff; }
+.RadColorPicker div.rcpMillionColorsSlider {
+  font-size: 1em;
+  float: left;
+  margin: 0em 0em 0em 0.83333em;
+  border-radius: 0; }
+  .RadColorPicker div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    width: 0.66667em;
+    height: 0.83333em;
+    line-height: 0.83333em;
+    margin-left: 0.33333em;
+    cursor: s-resize;
+    background-image: none;
+    text-indent: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none; }
+  .RadColorPicker div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:before {
+    display: inline-block;
+    width: 0.33333em;
+    height: 0.83333em;
+    vertical-align: top;
+    font-family: "TelerikWebUI";
+    font-size: 1.66667em;
+    margin: 0.04167em 0em 0em -0.41667em;
+    content: "\E00F"; }
+  .RadColorPicker div.rcpMillionColorsSlider .rslTrack, .RadColorPicker div.rcpMillionColorsSlider .rslSelectedregion {
+    border-radius: 0; }
+  .RadColorPicker div.rcpMillionColorsSlider .rslVertical .rslTrack .rslSelectedregion {
+    background-color: transparent;
+    background-image: none; }
+
+.RadColorPickerRTL, .RadColorPickerRTL .rcpInput, .RadColorPickerRTL .rcpHexInput {
+  text-align: right; }
+.RadColorPickerRTL .rcpIcon a:before {
+  margin: 0em 0em 0em 0.25em;
+  right: auto;
+  left: 0; }
+.RadColorPickerRTL .rcpIcon em {
+  margin: 0.33333em 0.33333em 0em 0em; }
+.RadColorPickerRTL .rcpRGBPageView .rcpInput {
+  margin: 0em 0em 0em 0.41667em; }
+.RadColorPickerRTL .rcpRGBPageView .rcpInput, .RadColorPickerRTL .rcpRGBPageView ul li label .rcpColorPreview, .RadColorPickerRTL .rcpHexInput, .RadColorPickerRTL .rcpImageButton, .RadColorPickerRTL .rcpTabs ul, .RadColorPickerRTL .rcpTabs ul li, .RadColorPickerRTL div.rcpMillionColorsPalette, .RadColorPickerRTL div.rcpMillionColorsSlider {
+  float: right; }
+.RadColorPickerRTL .rcpTabs ul {
+  margin-right: 1.08333em; }
+.RadColorPickerRTL .rcpColorPreview {
+  margin: 0em 0em 0em 0.08333em; }
+.RadColorPickerRTL .rcpHexInput, .RadColorPickerRTL .rcpImageButton {
+  margin: 0em 0em 0em 0.16667em; }
+.RadColorPickerRTL .rcpSlider, .RadColorPickerRTL .rcpButton {
+  float: left; }
+.RadColorPickerRTL .rcpMillionColorsPageView .rcpInputsWrapper {
+  margin-left: 0; }
+.RadColorPickerRTL .rcpMillionColorsPageView .rcpInputsWrapper label {
+  float: right; }
+.RadColorPickerRTL div.rcpMillionColorsSlider {
+  margin: 0em -0.83333em 0em 0em; }
+  .RadColorPickerRTL div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    margin-left: -0.75em; }
+  .RadColorPickerRTL div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:before {
+    margin: 0.04167em -0.75em 0em 0em;
+    content: "\E00C"; }
+
+div.RadColorPicker.rcpCustomColorWrapper {
+  width: 28.75em;
+  height: 17.25em;
+  padding: 0;
+  background-image: none; }
+

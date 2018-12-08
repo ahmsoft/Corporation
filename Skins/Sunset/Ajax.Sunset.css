@@ -1,0 +1,8 @@
+.RadAjax_Sunset .raDiv {
+  background-image: url('Common/loading.gif'); }
+.RadAjax_Sunset .raColor {
+  background-color: #ffffff;
+  color: #333333; }
+.RadAjax_Sunset .raTransp {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }

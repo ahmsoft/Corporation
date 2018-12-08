@@ -1,0 +1,114 @@
+.RadWindow_Sitefinity .rwTopLeft,
+.RadWindow_Sitefinity .rwTopRight,
+.RadWindow_Sitefinity .rwTitlebar,
+.RadWindow_Sitefinity .rwFooterLeft,
+.RadWindow_Sitefinity .rwFooterRight,
+.RadWindow_Sitefinity .rwFooterCenter,
+.RadWindow_Sitefinity .rwTopResize,
+.RadWindow_Sitefinity .rwStatusbar div,
+.RadWindow_Sitefinity .rwStatusbar,
+.RadWindow_Sitefinity .rwPopupButton,
+.RadWindow_Sitefinity .rwPopupButton span,
+.RadWindow_Sitefinity.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+.RadWindow_Sitefinity .rwBodyLeft,
+.RadWindow_Sitefinity .rwBodyRight,
+.RadWindow_Sitefinity .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif');
+}
+
+.RadWindow_Sitefinity .rwStatusbar input
+{
+    background-color: #f7f3e9;
+}
+
+.RadWindow_Sitefinity .rwControlButtons a
+{
+    background-image: url('Window/CommandButtonSprites.gif');
+}
+
+.RadWindow_Sitefinity a.rwIcon
+{
+	background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+div.RadWindow_Sitefinity .rwTitlebarControls em
+{
+	color: black;
+}
+
+div.RadWindow_Sitefinity .rwDialogInput
+{
+	border-top: solid 1px #abadb3;
+	border-right: solid 1px #dbdfe6;
+	border-bottom: solid 1px #e3e9ef;
+	border-left: solid 1px #e2e3ea;
+}
+
+div.RadWindow_Sitefinity .rwDialogInput:hover
+{
+	border-top: solid 1px #5794bf;
+	border-right: solid 1px #b7d5ea;
+	border-bottom: solid 1px #c7e2f1;
+	border-left: solid 1px #c5daed;
+	color: #565656;
+}
+
+div.RadWindow_Sitefinity td.rwLoading
+{
+    background-color: #fff;
+}
+
+.RadWindow_Sitefinity td.rwWindowContent
+{
+    background-color: #fff;
+}
+
+/* Loading Indicators */
+
+/* When ShowContentDuringLoad="true" */
+.RadWindow_Sitefinity td.rwWindowContent.rwLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadWindow_Sitefinity input.rwLoading
+{
+    background-image: url('Common/loading_small.gif');
+}
+
+.RadWindow_Sitefinity .rwControlButtons li a,
+.RadWindow_Sitefinity .rwControlButtons li a span
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.RadWindow_Sitefinity a.rwCancel,
+.RadWindow_Sitefinity a.rwCancel span
+{
+    background: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.RadWindow_Sitefinity a.rwCancel span span
+{
+    color: #105cb6;
+}
+
+.RadWindow_Sitefinity a.rwCancel:hover span span
+{
+    color: #002bb8;
+}
+
+.RadWindow_Sitefinity .rwTitlebar em
+{
+    font: normal 17px Arial, Sans-serif;
+    color: #000;
+}

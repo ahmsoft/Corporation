@@ -1,0 +1,360 @@
+.Outlook {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */
+}
+
+.Outlook.RadEditor,
+.Outlook.RadEditor .reModule,
+.Outlook.RadEditor .reEditorModes,
+.Outlook.RadEditor .reWrapper {
+  background-color: #d6e6f4;
+}
+
+.Outlook.reWrapper,
+.Outlook.RadEditor .reContentCell,
+.Outlook.reColorPicker,
+.Outlook.reInsertTable,
+.Outlook.reCustomLinks a:hover {
+  border: 1px solid #b7bdcd;
+  background-color: #d6e6f4;
+}
+
+.Outlook .reEmptyMessage {
+  color: #808080;
+}
+
+.Outlook.RadEditor .reContentCell {
+  background-color: #ffffff;
+}
+
+.Outlook.RadEditor .reContentCell.reNoBorder {
+  border: none;
+}
+
+.Outlook.RadEditor .reNoBorder div.reContentArea {
+  border: 1px solid #b7bdcd;
+}
+
+.Outlook.reDropDownBody {
+  border: 1px solid #b7bdcd;
+  background-color: #d6e6f4;
+}
+
+.Outlook.reDropDownBody table {
+  background: transparent;
+}
+
+.Outlook.RadEditor .reModule {
+  border-top: 1px solid #b7bdcd;
+}
+
+.Outlook.reCustomLinks a,
+.Outlook.reCustomLinks a:link,
+.Outlook.reCustomLinks a:visited {
+  border: 1px solid #ffffff;
+  /* should be the same as the background of the dropdown */
+  color: #000000 !important;
+}
+
+.Outlook.reCustomLinks a:hover {
+  background-color: #ffd294;
+  border: 1px solid #003c74;
+}
+
+.Outlook .reToolbar li,
+.Outlook .reSpinBox a,
+.Outlook.reToolbar .reSeparator,
+.Outlook.reToolbar .reGrip,
+.Outlook .reDialog .reTool,
+.Outlook .reModule .reTool,
+.Outlook .reDialog .reTool:hover,
+.Outlook .reToolbar .reTool:hover,
+.Outlook .reModule .reTool:hover,
+.Outlook .reToolbar .reTool.reTool_selected,
+.Outlook .reToolbar .reTool.reTool_selected:hover,
+.Outlook .reToolbar .reTool_text:hover,
+.Outlook .reToolbar .reTool_text.reTool_selected,
+.Outlook .reToolbar .reTool_text.reTool_selected:hover,
+.Outlook .reTool .split_arrow,
+.Outlook .reSplitButton.reTool_text .split_arrow,
+.Outlook .reToolbar .reTool_text .split_arrow,
+.Outlook .reDialog .reTool.reSplitButton,
+.Outlook .reModule .reTool.reSplitButton,
+.Outlook .reDropdown,
+.Outlook .reTool_disabled.reDropdown:hover,
+.Outlook .reResizeCell div,
+.Outlook.reInsertTable .reToolbar li .reTool:hover,
+.Outlook.RadEditor.reRtl .reDropdown:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+.Outlook.RadEditor .reTlbVertical li,
+.Outlook .reDropdown:hover,
+.Outlook.RadEditor .reTlbVertical .reToolbar.Default .reGrip,
+.Outlook.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+.Outlook .reTlbVertical .reTool:hover,
+.Outlook .reTlbVertical .reTool_text.reSplitButton:hover,
+.Outlook .reTlbVertical .reSplitButton:hover,
+.Outlook .reTlbVertical .reTool_text:hover,
+.Outlook .reTlbVertical .reTool.reTool_selected,
+.Outlook .reTlbVertical .reTool_text.reTool_selected,
+.Outlook .reTlbVertical .reTool_text.reTool_selected:hover,
+.Outlook.reDropDownBody .reTlbVertical ul li a:hover,
+.Outlook.reDropDownBody .reTlbVertical .reToolbar,
+.Outlook .reMode_selected,
+.Outlook.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+  background-image: url('Editor/ToolbarVerticalSprites.gif');
+}
+
+.Outlook .reToolbar li {
+  color: #000000;
+}
+
+.Outlook .reToolbar .reTool_text:hover,
+.Outlook .reToolbar .reTool_text.reTool_selected,
+.Outlook .reToolbar .reTool_text.reTool_selected:hover {
+  border-left: 1px solid #003c74;
+  border-right: 1px solid #003c74;
+}
+
+.Outlook .reToolbar .reTool_text.reTool_disabled,
+.Outlook .reToolbar .reTool_text.reTool_disabled:hover {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.Outlook .reDropdown:link,
+.Outlook .reDropdown:visited {
+  color: #000000 !important;
+}
+
+.Outlook .reDropdown,
+.Outlook .reTool_disabled.reDropdown:hover {
+  border: 1px solid #c3d9f9;
+  background-color: #ffffff;
+}
+
+.Outlook .reDropdown:hover {
+  border-color: #305090;
+  color: #000000;
+}
+
+.Outlook.reDropDownBody .reTlbVertical .reToolbar {
+  background-color: #ffffff;
+}
+
+.Outlook table.reSpinBox,
+.Outlook.RadEditor input {
+  border-color: #c3d9f9;
+  background-color: #ffffff;
+}
+
+.Outlook table.reSpinBox:hover,
+.Outlook.RadEditor input:hover {
+  border: 1px solid #003c74;
+}
+
+.Outlook .reModule_domlink_selected,
+.Outlook .reModule_domlink {
+  color: #000000;
+}
+
+.Outlook.reDropDownBody .reItemOver {
+  background: #306ac5;
+  color: #000000;
+}
+
+.Outlook.reColorPicker table div,
+.Outlook.reColorPicker span {
+  border: 1px solid #b7bdcd;
+}
+
+.Outlook.reColorPicker table td.reItemOver div {
+  border-color: #000000;
+}
+
+.Outlook .reAjaxspell_button {
+  border: 1px solid #003c74;
+  background-color: #ebe8e3;
+  color: #000000;
+}
+
+.Outlook .reAjaxSpellCheckSeparator {
+  background-color: #ffffff;
+}
+
+.Outlook.reCustomLinks,
+.Outlook.reCustomLinks ul {
+  color: #000000;
+}
+
+.Outlook.reCustomLinks a {
+  background: none transparent;
+  color: #000000;
+  cursor: default !important;
+}
+
+.Outlook.reCustomLinks a:hover {
+  color: #ffffff;
+}
+
+.Outlook.reInsertTable table {
+  background-color: #ffffff;
+}
+
+.Outlook.reInsertTable table td {
+  border: 1px solid #c3d9f9;
+  background-color: #ffffff;
+}
+
+.Outlook.reInsertTable table .reItemOver {
+  border: 1px solid #305090;
+  background-color: #ffeec2;
+}
+
+.Outlook.reInsertTable .reTlbVertical ul {
+  background-color: #ffffff;
+}
+
+.Outlook.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text,
+.Outlook.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link,
+.Outlook.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+  color: #000000 !important;
+  background: transparent none;
+  _background: none !important;
+}
+
+.Outlook .reCommentEdit,
+.Outlook .reCommentTextArea,
+.Outlook .reCommentView,
+.Outlook .reCommentInfoPanel {
+  border-color: transparent;
+  background-color: #d6e6f4;
+}
+
+.Outlook .reCommentTitle,
+.Outlook .reCommentInfoPanel {
+  color: #000000;
+}
+
+.Outlook .reCommentTextArea {
+  border-color: #b7bdcd;
+  background-color: #d6e6f4;
+}
+
+.Outlook.RadEditor .reCommentButton,
+.Outlook .rePopupButtonContainer .rePopupButton {
+  border-color: #c2cedb;
+  color: #1e395b;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#f4f8fa 25%, #e9f2fb 50%, #dde7f5 75%, #dde8f6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f8fa', endColorstr='#dde8f6',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Outlook.RadEditor .reCommentButton:hover,
+.Outlook .rePopupButtonContainer .rePopupButton:hover {
+  border-color: #c2dbfb;
+  color: #1e395b;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#f9f9fc 25%, #f7f8fb 50%, #edf2f9 75%, #f9f9fc 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9fc', endColorstr='#f9f9fc',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Outlook.RadEditor .reCommentButton:active,
+.Outlook .rePopupButtonContainer .rePopupButton:active {
+  color: #1e395b;
+  border-color: #9bc9ff;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#acd1fe 25%, #e9f2fb 50%, #dde7f5 75%, #acd1fe 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acd1fe', endColorstr='#acd1fe',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Outlook.rePopupContainer {
+  border-color: #c3d9f9;
+  background-color: #d6e6f4;
+}
+
+.Outlook.rePopupContainer .rePopupTitle {
+  color: #1e395b;
+  border-color: #a5b3c5;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#e9eef5 0%, #f1f5fb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9eef5', endColorstr='#f1f5fb',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Outlook.reWrapper.reInlineEditor:hover {
+  border-color: #c3d9f9;
+}
+
+.Outlook.reWrapper.reInlineEditorSelected,
+.Outlook.reWrapper.reInlineEditorSelected:hover {
+  border-color: #002d96;
+}
+
+.Outlook.RadEditor.reRtl .reTool .split_arrow:hover {
+  border-right-color: #003c74;
+}
+
+.Outlook.RadEditor.reRtl .reDropdown:hover {
+  background-color: #ffeec2;
+}
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_Outlook.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_Outlook.reToolbarWindow div.rwContent {
+  background-color: #d6e6f4;
+}
+
+.RadWindow_Outlook .reInsertTableLightWrapper .lightTable {
+  border-color: #b7bdcd;
+}
+
+.Outlook .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+/* reTool */
+.reTool span,
+.Outlook.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png');
+}
+
+.reTool .split_arrow:hover {
+  border-left-color: #003c74;
+}

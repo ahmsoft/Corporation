@@ -1,0 +1,47 @@
+.RadColorPicker_Black {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Rounded corners and shadows */ }
+  .RadColorPicker_Black .rcpViews,
+  .RadColorPicker_Black .rcpHeader,
+  .RadColorPicker_Black .rcpPageView {
+    background-color: #161616; }
+  .RadColorPicker_Black .rcpColorPreview,
+  .RadColorPicker_Black .rcpInput,
+  .RadColorPicker_Black .rcpHexInput,
+  .RadColorPicker_Black .rcpMillionColorsPalette,
+  .RadColorPicker_Black .rcpMillionColorsSlider div.rslTrack {
+    background-color: #444444;
+    border-color: #080808; }
+  .RadColorPicker_Black .rcpPalette,
+  .RadColorPicker_Black input,
+  .RadColorPicker_Black a {
+    color: white; }
+  .RadColorPicker_Black .rcpHeader,
+  .RadColorPicker_Black .rcpHeader .rcpImageButton,
+  .RadColorPicker_Black .rcpRecentColors,
+  .RadColorPicker_Black .rcpIcon a,
+  .RadColorPicker_Black .rcpTabs a,
+  .RadColorPicker_Black .rcpTabs a span,
+  .RadColorPicker_Black .rcpButton,
+  .RadColorPicker_Black .rcpButton span,
+  .RadColorPicker_Black .rcpMillionColorsHandle,
+  .RadColorPicker_Black .rcpSlider div.rslTrack,
+  .RadColorPicker_Black .rcpSlider .rslTrack a.rslDraghandle,
+  .RadColorPicker_Black div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    background-image: url('ColorPicker/ColorPickerSprites.png');
+    background-repeat: no-repeat; }
+  .RadColorPicker_Black .rcpPalette,
+  .RadColorPicker_Black .rcpRoundedRight,
+  .RadColorPicker_Black .rcpRoundedBottomRight,
+  .RadColorPicker_Black .rcpRightShadow,
+  .RadColorPicker_Black .rcpCornerShadow {
+    background-image: url('ColorPicker/rcpVerticalSprites.png'); }
+  .RadColorPicker_Black .rcpRoundedBottomLeft,
+  .RadColorPicker_Black .rcpBottomShadow {
+    background-image: url('ColorPicker/ColorPickerSprites.png'); }
+  .RadColorPicker_Black .rcpPalette,
+  .RadColorPicker_Black .rcpRoundedRight,
+  .RadColorPicker_Black .rcpRoundedBottomRight,
+  .RadColorPicker_Black .rcpRoundedBottomLeft {
+    _background-image: url('ColorPicker/rcpVerticalSpritesIE6.png'); }
+

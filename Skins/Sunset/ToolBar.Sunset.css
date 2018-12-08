@@ -1,0 +1,112 @@
+.RadToolBar_Sunset {
+  color: #ffffff;
+  background-color: #564e42;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadToolBar_Sunset .rtbOuter {
+    border-color: #36332c;
+    background-color: #564e42;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15); }
+  .RadToolBar_Sunset .rtbWrap {
+    *color: #ffffff; }
+  .RadToolBar_Sunset .rtbChoiceArrow {
+    background-image: url('ToolBar/rtbDropArrows.png'); }
+  .RadToolBar_Sunset .rtbItemHovered .rtbChoiceArrow,
+  .RadToolBar_Sunset .rtbItemClicked .rtbChoiceArrow,
+  .RadToolBar_Sunset .rtbSplBtnExpanded .rtbChoiceArrow,
+  .RadToolBar_Sunset .rtbDropDownExpanded .rtbChoiceArrow {
+    background-image: url('ToolBar/rtbHoverDropArrows.png'); }
+  .RadToolBar_Sunset .rtbItemHovered .rtbWrap,
+  .RadToolBar_Sunset .rtbItemHovered .rtbOut,
+  .RadToolBar_Sunset .rtbItemHovered .rtbMid,
+  .RadToolBar_Sunset .rtbItemHovered .rtbIn {
+    color: #3d1400;
+    background-image: url('ToolBar/rtbHoverBg.png'); }
+  .RadToolBar_Sunset .rtbItemFocused .rtbWrap,
+  .RadToolBar_Sunset .rtbItemFocused .rtbOut,
+  .RadToolBar_Sunset .rtbItemFocused .rtbMid,
+  .RadToolBar_Sunset .rtbItemFocused .rtbIn {
+    color: #3d1400;
+    background-image: url('ToolBar/rtbHoverBg.png'); }
+  .RadToolBar_Sunset .rtbItemClicked .rtbWrap,
+  .RadToolBar_Sunset .rtbItemClicked .rtbOut,
+  .RadToolBar_Sunset .rtbItemClicked .rtbMid,
+  .RadToolBar_Sunset .rtbItemClicked .rtbIn {
+    color: #3d1400;
+    background-image: url('ToolBar/rtbClickedBg.png'); }
+  .RadToolBar_Sunset .rtbSplBtnExpanded .rtbWrap,
+  .RadToolBar_Sunset .rtbSplBtnExpanded .rtbOut,
+  .RadToolBar_Sunset .rtbSplBtnExpanded .rtbMid,
+  .RadToolBar_Sunset .rtbSplBtnExpanded .rtbIn,
+  .RadToolBar_Sunset .rtbDropDownExpanded .rtbWrap,
+  .RadToolBar_Sunset .rtbDropDownExpanded .rtbOut,
+  .RadToolBar_Sunset .rtbDropDownExpanded .rtbMid,
+  .RadToolBar_Sunset .rtbDropDownExpanded .rtbIn,
+  .RadToolBar_Sunset .rtbChecked .rtbWrap,
+  .RadToolBar_Sunset .rtbChecked .rtbOut,
+  .RadToolBar_Sunset .rtbChecked .rtbMid,
+  .RadToolBar_Sunset .rtbChecked .rtbIn {
+    color: #3d1400;
+    background-image: url('ToolBar/rtbActiveBg.png'); }
+  .RadToolBar_Sunset .rtbSeparator {
+    border-color: #423c34;
+    background-color: #898379; }
+
+.RadToolBar_Sunset_Horizontal .rtbOuter {
+  background-image: url('ToolBar/rtbControlBg.png'); }
+
+.RadToolBar_Sunset_Vertical .rtbOuter {
+  background-image: url('ToolBar/rtbVerticalControlBg.png'); }
+
+.RadToolBarDropDown_Sunset {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #333333;
+  border-color: #938879;
+  background-color: #ffffff;
+  background-image: url('ToolBar/rtbDropDownBg.png'); }
+  .RadToolBarDropDown_Sunset .rtbTopFix,
+  .RadToolBarDropDown_Sunset .rtbBottomFix,
+  .RadToolBarDropDown_Sunset .rtbRoundedCorners .rtbGroup {
+    background-image: url('ToolBar/rtbDropDownBg.png');
+    background-color: #ffffff; }
+  .RadToolBarDropDown_Sunset .rtbBottomLeft,
+  .RadToolBarDropDown_Sunset .rtbRoundedCorners {
+    background-image: url('ToolBar/rtbRoundedLeft.png'); }
+  .RadToolBarDropDown_Sunset .rtbTopRight,
+  .RadToolBarDropDown_Sunset .rtbBottomRight {
+    background-image: url('ToolBar/rtbRoundedRight.png'); }
+  .RadToolBarDropDown_Sunset .rtbTopFix,
+  .RadToolBarDropDown_Sunset .rtbBottomFix {
+    border-color: #938879; }
+  .RadToolBarDropDown_Sunset .rtbWrap {
+    border-radius: 3px;
+    *color: #333333;
+    background-image: url('Common/radGradientListSprite.png') \9; }
+  .RadToolBarDropDown_Sunset .rtbItemHovered .rtbWrap {
+    border-color: #ca9a3e;
+    color: #863d02;
+    background-color: #f1d121;
+    background-image: linear-gradient(#faef93, #f1d121); }
+  .RadToolBarDropDown_Sunset .rtbItemClicked .rtbWrap {
+    border-color: #904c23;
+    color: #5d1f00;
+    background-color: #e28140;
+    background-image: linear-gradient(#f3ba7c, #e28140); }
+  .RadToolBarDropDown_Sunset .rtbSeparator {
+    border-color: #d2c7b4; }
+
+.RadToolBarDropDown_Sunset_rtl .rtbBottomLeft,
+.RadToolBarDropDown_Sunset_rtl .rtbRoundedCorners {
+  background-image: url('ToolBar/rtbRoundedLeft_rtl.png'); }
+
+.RadToolBarDropDown_Sunset_rtl .rtbTopRight,
+.RadToolBarDropDown_Sunset_rtl .rtbBottomRight {
+  background-image: url('ToolBar/rtbRoundedRight_rtl.png'); }
+
+.RadToolBarDropDown_Sunset_rtl .rtbTopFix,
+.RadToolBarDropDown_Sunset_rtl .rtbBottomFix,
+.RadToolBarDropDown_Sunset_rtl .rtbGroup,
+.RadToolBarDropDown_Sunset_rtl .rtbShadows .rtbGroup {
+  background-position: 101% 0; }

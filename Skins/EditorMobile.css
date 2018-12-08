@@ -1,0 +1,1758 @@
+@font-face {
+  font-family: 'TelerikWebUIEditor';
+  src: url('Common/TelerikWebUI/Editor.eot');
+  src: url('Common/TelerikWebUI/Editor.eot') format("embedded-opentype"), url('Common/TelerikWebUI/Editor.woff') format("woff"), url('Common/TelerikWebUI/Editor.ttf') format("truetype");
+}
+
+.RadEditor {
+  width: auto;
+  height: 100%;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.RadEditor input {
+  outline: none;
+}
+
+/* #region hbox / vbox (should be removed in t-globl.css file, once it is done) */
+.t-hbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.t-hbox > .t-spacer,
+.t-hbox > .t-flex {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.t-vbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.t-vbox > .t-spacer,
+.t-vbox > .t-flex {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+/* #endregion */
+.reHidden {
+  display: none;
+}
+
+.reVisibilityHidden {
+  visibility: hidden;
+}
+
+.reToolZone.reVisibilityHidden {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.reUserSelectNone {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* #region editor layout*/
+.reFullScreen {
+  box-sizing: border-box;
+  line-height: 1.4286em;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.reFullScreen textarea.reTextArea,
+.reFullScreen .reContentArea {
+  font-size: initial;
+}
+
+html.rePreventScrolling {
+  overflow: auto;
+}
+
+html.rePreventScrolling,
+html.rePreventScrolling body,
+html.rePreventScrolling form,
+html.rePreventScrolling div.reFullScreen {
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-width: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+html.rePreventScrolling > body,
+html.rePreventScrolling form {
+  -webkit-overflow-scrolling: auto;
+  overflow: hidden;
+}
+
+.reToolBar,
+.reHeader {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.reContent {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.reContent .reContentArea {
+  overflow-y: auto;
+}
+
+.reToolZone {
+  height: 41vh;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* #endregion */
+.reEditableDecoy {
+  position: absolute;
+  left: -1000000px;
+  top: -1000000px;
+  font-size: initial;
+}
+
+/* #region ToolBar */
+.reToolBar,
+.reHeader {
+  margin: 0;
+  padding: 9px 4px;
+  list-style: none;
+}
+
+.reToolBar > li {
+  margin: 0 10px;
+}
+
+.reToolBar .reButton,
+.reHeader .reButton {
+  padding: 4px;
+}
+
+.reToolDisabled {
+  opacity: .5;
+}
+
+/* #endregion */
+.reContent {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.reTextArea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  resize: none;
+  color: inherit;
+  font: inherit;
+}
+
+.reTextAreaHidden,
+iframe.reHtmlMode {
+  display: none;
+}
+
+.reContent,
+.reContent iframe,
+.reContent .reTextArea {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reButton {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reButton .reIcon {
+  vertical-align: top;
+}
+
+.reSpinBox input {
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 10px 0 0;
+  padding: 2px 12px;
+  border-width: 1px;
+  border-style: solid;
+  width: 80px;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.reSpinBox .reSpinBoxButtons span {
+  display: inline-block;
+  padding: 2px 8px 1px 4px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 1.4286em;
+  font-family: "TelerikWebUI";
+  text-align: center;
+  vertical-align: top;
+  width: 1.35714em;
+  height: 1.35714em;
+}
+
+.reSpinBox .reSpinBoxDecrease {
+  border-radius: 4px 0 0 4px;
+}
+
+.reSpinBox span.reSpinBoxIncrease {
+  border-radius: 0 4px 4px 0;
+  border-left-width: 0;
+}
+
+.reSpinBox .reSpinBoxIncrease:before {
+  content: "\e011";
+}
+
+.reSpinBox .reSpinBoxDecrease:before {
+  content: "\e012";
+}
+
+/* #region toolzone */
+.reToolZone .reToolView {
+  width: 100%;
+  height: 100%;
+}
+
+.reToolView {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.reToolView > .reToolContent {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.reToolView > .reDropDownsContainer {
+  display: none;
+  background-color: #000;
+  filter: alpha(opacity=30);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.reToolsOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=30);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+}
+
+.reToolHeader {
+  position: relative;
+  padding: 13px 0;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.reTabChooser {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.reTabChooserOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  filter: alpha(opacity=60);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3000;
+}
+
+._Telerik_IE9 .reTabChooserOverlay {
+  filter: alpha(opacity=100);
+}
+
+.reToolZone .reTabChooser {
+  margin-right: 20px;
+  position: relative;
+}
+
+.reTabChooser .reToolList {
+  z-index: 9000000;
+  width: 80vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.reToolHeader .reTabChooser .reButton {
+  position: relative;
+  width: 180px;
+  margin: -13px 0;
+  padding: 13px 20px;
+}
+
+.reToolHeader .reTabChooser .reMore {
+  margin: -13px -20px -13px 8px;
+  padding: 13px;
+  display: inline-block;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  position: absolute;
+  right: 22px;
+}
+
+.reToolHeader .reBackButton {
+  margin: -8px 0 -8px -20px;
+  padding: 8px;
+}
+
+.reToolHeader .reBackButton .reBack {
+  margin: -8px 0 -8px -20px;
+  padding: 8px;
+  display: inline-block;
+}
+
+.reToolHeader .reToolText.t-flex {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5em;
+  white-space: nowrap;
+}
+
+.reToolHeader .reCloseButton,
+.reToolHeader .reDeleteButton {
+  margin: -8px 0;
+  padding: 8px;
+}
+
+/* #endregion */
+/* #region DOM */
+.reModules div.reModule {
+  position: relative;
+  min-height: 20px;
+  padding: 13px 20px;
+  border-width: 1px 0;
+  border-style: solid;
+  border-top-color: transparent;
+  vertical-align: top;
+  background-image: none;
+}
+
+.reDomWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.reDomWrapper:not(*:root),
+.reDelete:not(*:root) {
+  margin-top: -7px;
+}
+
+.reDomWrapper.reScrollLeft:before,
+.reDomWrapper.reScrollRight:after {
+  content: "";
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.reDomWrapper:before {
+  left: 0;
+}
+
+.reDomWrapper:after {
+  right: 0;
+}
+
+.reDomWrapper + .reDelete .reIconDelete {
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.reDom {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.reDom .reDomElement {
+  text-decoration: none;
+}
+
+.reDom .reDomElementSelected {
+  text-decoration: underline;
+}
+
+.reDom span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* #endregion */
+/* #region Toollist */
+.reToolList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reToolList + .reToolList {
+  margin-top: 10px;
+}
+
+.reHidden + .reToolList {
+  margin-top: 0;
+}
+
+.reToolList > li {
+  position: relative;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+
+.reToolList + .reToolList li:first-child {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.reHidden + .reToolList li:first-child {
+  border-top-width: 0;
+}
+
+.reDropDownBody {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 2500;
+}
+
+.reToolDropDown {
+  width: 100%;
+}
+
+.reToolDropDown > li {
+  border: 0;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.reToolDropDown h1,
+.reToolDropDown h2,
+.reToolDropDown h3,
+.reToolDropDown h4,
+.reToolDropDown h5,
+.reToolDropDown h6,
+.reToolDropDown dir,
+.reToolDropDown menu,
+.reToolDropDown pre {
+  margin: 0;
+  padding: 0;
+}
+
+.reToolList > li {
+  position: relative;
+  padding: 13px 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+
+.reToolList > li .reToolText,
+.reToolList > li .reToolValue {
+  -webkit-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.reToolList > li .reIcon + .reToolText,
+.reToolList > li .reVisibleText .reIcon + span {
+  padding: 0 0 0 10px;
+}
+
+.reToolList > li .reToolValue {
+  text-align: right;
+}
+
+.reToolList > .reIcon {
+  margin: 0 10px 0 0;
+}
+
+.reToolList .reIcon.reIconSelected {
+  margin: 0;
+  position: absolute;
+  right: 20px;
+}
+
+.reToolList > li .reMore {
+  margin: 0 -10px -5px 10px;
+}
+
+.reToolList > li.reDropDownTool {
+  padding: 0;
+}
+
+.reToolList .reDropDown {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  padding: 13px 20px;
+}
+
+/* #endregion */
+/* #region ButtonGroup */
+.reToolList > .reButtonGroup {
+  padding: 0;
+}
+
+.reToolList > li.reButtonGroup > .reButton {
+  margin: 0 1px 0 0;
+  padding: 13px 20px;
+  text-align: center;
+  -webkit-flex: 1;
+  flex: 1;
+  background-image: none;
+  border: 0 none;
+}
+
+.reToolList > li.reButtonGroup > .reButton:last-child {
+  margin: 0;
+}
+
+.reToolList > li.reButtonGroup > .reVisibleText {
+  text-align: left;
+}
+
+/* #endregion */
+/* #region icons */
+.reIcon,
+.reTabIcon {
+  font-family: TelerikWebUIEditor, monospace;
+  font-size: 1.4286em;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reIconDisabled {
+  opacity: .5;
+}
+
+.reTabIcon:before {
+  display: inline-block;
+}
+
+.reIcon:before {
+  content: "\e620";
+  display: inline-block;
+}
+
+/*TelerikWebUI Font*/
+.reIconMore:before,
+.reIconToggleEditMode:before,
+.reIconBack:before,
+.reIconForward:before,
+.reIconClose:before,
+.reIconFontColor:before,
+.reIconBgColor:before,
+.reIconNoColor:before,
+.reIconStyles:before,
+.reIconMoreFormatting:before,
+.reIconSelected:before,
+.reIconToggleScreenMode:before,
+.reIconSettings:before,
+.reIconArrowTop:before,
+.reIconArrowRight:before,
+.reIconArrowBottom:before,
+.reIconArrowLeft:before,
+.reIconModuleVisibleIcon:before,
+.reIconDelete:before,
+.reIconFind:before,
+.reIconReplace:before,
+.reIconEditContent:before,
+.reIconClearButton:before,
+.reIconOpenLink:before {
+  font-family: "TelerikWebUI", monospace;
+}
+
+/*#region TelerikWebUI font */
+.reIconModuleVisibleIcon:before {
+  content: "\E037";
+}
+
+.reIconMore:before {
+  content: "\E0E0";
+}
+
+.reIconToggleEditMode:before {
+  content: "\E115";
+}
+
+.reIconBack:before {
+  content: "\E013";
+}
+
+.reIconForward:before {
+  content: "\E010";
+}
+
+.reIconClose:before {
+  content: "\E002";
+}
+
+.reIconFontColor:before,
+.reIconBgColor:before {
+  content: "\E0EA";
+}
+
+.reIconNoColor:before {
+  content: "\E036";
+}
+
+.reIconStyles:before {
+  content: "\E0D5";
+}
+
+.reIconMoreFormatting:before {
+  content: "\E0A4";
+}
+
+.reIconSelected:before,
+.reIconToggleScreenMode:before {
+  content: "\E037";
+}
+
+.reIconSettings:before {
+  content: "\E0A4";
+}
+
+.reIconArrowTop:before {
+  content: "\E011";
+}
+
+.reIconArrowRight:before {
+  content: "\E010";
+}
+
+.reIconArrowBottom:before {
+  content: "\E012";
+}
+
+.reIconArrowLeft:before {
+  content: "\E013";
+}
+
+.reIconDelete:before {
+  content: "\E0C3";
+}
+
+.reIconFind:before {
+  content: "\E07F";
+}
+
+.reIconReplace:before {
+  content: "\E07B";
+}
+
+.reIconEditContent:before {
+  content: "\E07B";
+  text-decoration: underline;
+}
+
+.reIconClearButton:before {
+  content: "\E036";
+  margin: 3px 0 0;
+}
+
+/* #endregion */
+/*#region TelerikWebUIEditor font */
+.reIconTableBorder:before,
+.reIconCellBorder:before,
+.reIconImageBorder:before {
+  content: "\e633";
+}
+
+.reIconMobileEdit:before {
+  content: "\e691";
+}
+
+.reIconXhtmlValidator:before {
+  content: "\e680";
+}
+
+.reIconPageProperties:before {
+  content: "\e601";
+}
+
+.reIconStyleBuilder:before {
+  content: "\e656";
+}
+
+.reIconFormatCodeBlock:before {
+  content: "\e657";
+}
+
+.reIconInsertImage:before {
+  content: "\e62a";
+}
+
+.reIconInsertLink:before {
+  content: "\e627";
+}
+
+.reIconInsertTable:before,
+.reIconInsertTableDialog:before {
+  content: "\e663";
+}
+
+.reIconInsertTableLight:before {
+  content: "\e662";
+}
+
+.reIconDeleteTable:before,
+.reIconDeleteTableItems:before {
+  content: "\e666";
+}
+
+.reIconInsertFormElement:before {
+  content: "\e634";
+}
+
+.reIconInsertFormForm:before {
+  content: "\e633";
+}
+
+.reIconInsertFormButton:before,
+.reIconInsertFormReset:before,
+.reIconInsertFormSubmit:before {
+  content: "\e630";
+}
+
+.reIconInsertFormHidden:before {
+  content: "\e636";
+}
+
+.reIconInsertFormPassword:before {
+  content: "\e637";
+}
+
+.reIconInsertFormRadio:before {
+  content: "\e638";
+}
+
+.reIconInsertFormSelect:before {
+  content: "\e639";
+}
+
+.reIconInsertFormTextarea:before {
+  content: "\e63b";
+}
+
+.reIconInsertFormText:before {
+  content: "\e63c";
+}
+
+.reIconStripAll:before,
+.reIconFormatStripper:before {
+  content: "\e651";
+}
+
+.reIconStripCss:before {
+  content: "\e652";
+}
+
+.reIconStripFont:before {
+  content: "\e653";
+}
+
+.reIconStripSpan:before {
+  content: "\e654";
+}
+
+.reIconStripWord:before {
+  content: "\e655";
+}
+
+.reIconAjaxSpellCheck:before {
+  content: "\e67f";
+}
+
+.reIconImageManager:before {
+  content: "\e62b";
+}
+
+.reIconSetImageProperties:before {
+  content: "\e62c";
+}
+
+.reIconImageMapDialog:before {
+  content: "\e62d";
+}
+
+.reIconFlashManager:before {
+  content: "\e623";
+}
+
+.reIconMediaManager:before {
+  content: "\e621";
+}
+
+.reIconInsertExternalVideo:before {
+  content: "\e622";
+}
+
+.reIconDocumentManager:before {
+  content: "\e61e";
+}
+
+.reIconTemplateManager:before {
+  content: "\e673";
+}
+
+.reIconSilverlightManager:before {
+  content: "\e624";
+}
+
+.reIconInsertRowAbove:before,
+.reIconInsertTableItems:before {
+  content: "\e66c";
+}
+
+.reIconInsertRowBelow:before {
+  content: "\e66d";
+}
+
+.reIconDeleteRow:before {
+  content: "\e669";
+}
+
+.reIconInsertColumnLeft:before {
+  content: "\e66a";
+}
+
+.reIconInsertColumnRight:before {
+  content: "\e66b";
+}
+
+.reIconDeleteColumn:before {
+  content: "\e668";
+}
+
+.reIconMergeColumns:before {
+  content: "\e66f";
+}
+
+.reIconMergeRows:before,
+.reIconMergeSplitCells:before {
+  content: "\e670";
+}
+
+.reIconSplitCell:before {
+  content: "\e672";
+}
+
+.reIconSplitCellHorizontal:before {
+  content: "\e671";
+}
+
+.reIconDeleteCell:before {
+  content: "\e667";
+}
+
+.reIconSetCellProperties:before {
+  content: "\e66e";
+}
+
+.reIconSetTableProperties:before,
+.reIconMobileTableProperties:before {
+  content: "\e664";
+}
+
+.reIconToolIcon.reInsertSymbol:before {
+  content: "\e63a";
+}
+
+.reIconUndo:before {
+  content: "\e647";
+}
+
+.reIconRedo:before {
+  content: "\e648";
+}
+
+.reIconCut:before {
+  content: "\e63d";
+}
+
+.reIconCopy:before {
+  content: "\e63e";
+}
+
+.reIconPaste:before {
+  content: "\e63f";
+}
+
+.reIconPasteMarkdown:before {
+  content: "\e644";
+}
+
+.reIconPasteFromWord:before {
+  content: "\e641";
+}
+
+.reIconPasteFromWordNoFontsNoSizes:before {
+  content: "\e642";
+}
+
+.reIconPastePlainText:before {
+  content: "\e645";
+}
+
+.reIconPasteAsHtml:before {
+  content: "\e640";
+}
+
+.reIconPasteHtml:before {
+  content: "\e643";
+}
+
+.reIconPasteStrip:before {
+  content: "\e63f";
+}
+
+.reIconPrint:before {
+  content: "\e646";
+}
+
+.reIconFindAndReplace:before {
+  content: "\e606";
+}
+
+.reIconSelectAll:before {
+  content: "\e604";
+}
+
+.reIconInsertGroupbox:before {
+  content: "\e635";
+}
+
+.reIconInsertParagraph:before {
+  content: "\e616";
+}
+
+.reIconInsertHorizontalRule:before {
+  content: "\e62f";
+}
+
+.reIconInsertSnippet:before {
+  content: "\e632";
+}
+
+.reIconInsertDate:before {
+  content: "\e61c";
+}
+
+.reIconInsertTime:before {
+  content: "\e61d";
+}
+
+.reIconAboutDialog:before {
+  content: "\e600";
+}
+
+.reIconHelp:before {
+  content: "\e625";
+}
+
+.reIconBold:before {
+  content: "\e60c";
+}
+
+.reIconItalic:before {
+  content: "\e60d";
+}
+
+.reIconUnderline:before {
+  content: "\e60e";
+}
+
+.reIconStrikeThrough:before {
+  content: "\e60f";
+}
+
+.reIconForeColor:before {
+  content: "\e612";
+}
+
+.reIconBackColor:before,
+.reIconbgColor:before,
+.reIconborderColor:before {
+  content: "\e613";
+}
+
+.reIconFormatPainter:before,
+.reIconFormatPainterCopy:before {
+  content: "\e650";
+}
+
+.reIconFormatPainterApply:before {
+  content: "\e64f";
+}
+
+.reIconFormatPainterClear:before {
+  content: "\e651";
+}
+
+.reIconJustifyLeft:before {
+  content: "\e609";
+}
+
+.reIconJustifyCenter:before {
+  content: "\e607";
+}
+
+.reIconJustifyRight:before {
+  content: "\e60a";
+}
+
+.reIconJustifyFull:before {
+  content: "\e608";
+}
+
+.reIconJustifyNone:before {
+  content: "\e60b";
+}
+
+.reIconSuperscript:before {
+  content: "\e611";
+}
+
+.reIconSubscript:before {
+  content: "\e610";
+}
+
+.reIconConvertToLower:before {
+  content: "\e614";
+}
+
+.reIconConvertToUpper:before {
+  content: "\e615";
+}
+
+.reIconIndent:before {
+  content: "\e619";
+}
+
+.reIconOutdent:before {
+  content: "\e61a";
+}
+
+.reIconInsertOrderedList:before {
+  content: "\e617";
+}
+
+.reIconInsertUnorderedList:before {
+  content: "\e618";
+}
+
+.reIconAbsolutePosition:before,
+.reIconImageSizeMargins:before {
+  content: "\e62e";
+}
+
+.reIconSetLinkProperties:before,
+.reIconLinkManager:before {
+  content: "\e628";
+}
+
+.reIconOpenLink:before {
+  content: "\e075";
+}
+
+.reIconUnlink:before {
+  content: "\e629";
+}
+
+.reIconToggleTableBorder:before {
+  content: "\e665";
+}
+
+.reIconModuleManager:before {
+  content: "\e64e";
+}
+
+.reIconAlignmentSelector:before {
+  content: "\E0C9";
+}
+
+.reIconInsertFormCheckbox:before {
+  content: "\e631";
+}
+
+.reIconTableWizard:before {
+  content: "\e663";
+}
+
+.reIconAcceptTrackChange:before {
+  content: "\e678";
+}
+
+.reIconRejectTrackChange:before {
+  content: "\e67a";
+}
+
+.reIconAcceptAllTrackChanges:before {
+  content: "\e679";
+}
+
+.reIconRejectAllTrackChanges:before {
+  content: "\e67b";
+}
+
+.reIconEnableTrackChangesOverride:before {
+  content: "\e676";
+}
+
+.reIconAddComment:before {
+  content: "\e64a";
+}
+
+.reIconRemoveComment:before {
+  content: "\e64b";
+}
+
+.reIconRemoveAllComments:before {
+  content: "\e64c";
+}
+
+.reIconNoAlignment:before,
+.reIconNoCellAlign:before {
+  content: "\e60b";
+}
+
+.reIconTopLeft:before,
+.reIconTopLeftCellAlign:before {
+  content: "\e65f";
+}
+
+.reIconTopCenter:before,
+.reIconTopCenterCellAlign:before {
+  content: "\e65e";
+}
+
+.reIconTopRight:before,
+.reIconTopRightCellAlign:before {
+  content: "\e660";
+}
+
+.reIconMiddleLeft:before,
+.reIconMiddleLeftCellAlign:before {
+  content: "\e65c";
+}
+
+.reIconMiddleCenter:before,
+.reIconMiddleCenterCellAlign:before {
+  content: "\e65b";
+}
+
+.reIconMiddleRight:before,
+.reIconMiddleRightCellAlign:before {
+  content: "\e65d";
+}
+
+.reIconBottomLeft:before,
+.reIconBottomLeftCellAlign:before {
+  content: "\e659";
+}
+
+.reIconBottomCenter:before,
+.reIconBottomCenterCellAlign:before {
+  content: "\e658";
+}
+
+.reIconBottomRight:before,
+.reIconBottomRightCellAlign:before {
+  content: "\e65a";
+}
+
+.reIconToggleFloatingToolbar:before {
+  content: "\e674";
+}
+
+.reIconClear:before {
+  content: "\e682";
+}
+
+.reIconAll:before {
+  content: "\e68b";
+}
+
+.reIconH1:before {
+  content: "\e685";
+}
+
+.reIconH2:before {
+  content: "\e686";
+}
+
+.reIconH3:before {
+  content: "\e687";
+}
+
+.reIconH4:before {
+  content: "\e688";
+}
+
+.reIconH5:before {
+  content: "\e689";
+}
+
+.reIconH6:before {
+  content: "\e68a";
+}
+
+.reIconDiv:before {
+  content: "\e684";
+}
+
+.reIconA:before {
+  content: "\e68f";
+}
+
+.reIconUl:before {
+  content: "\e618";
+}
+
+.reIconOl:before {
+  content: "\e617";
+}
+
+.reIconImg:before {
+  content: "\e62b";
+}
+
+.reIconTable:before {
+  content: "\e663";
+}
+
+.reIconTd:before {
+  content: "\e68c";
+}
+
+.reIconUpload:before {
+  content: "\E0C6";
+}
+
+.reIconList:before {
+  content: "\E077";
+}
+
+.reIconThumbnail:before {
+  content: "\E0AC";
+}
+
+.reToolBar .reToggleScreenMode {
+  height: 39px;
+  margin: -9px 18px -9px 3px;
+  padding: 4px 0;
+  width: 100%;
+  border-width: 0 1px;
+  border-style: solid;
+}
+
+.reToolBar .reIconToggleScreenMode {
+  margin: 9px -10px 0 13px;
+}
+
+.reToolBar li:last-child .reToggleScreenMode {
+  margin: -9px 0 -9px 3px;
+  padding: 4px 4px 4px 6px;
+  border-width: 0 0 0 1px;
+}
+
+.reToolBar li:last-child .reIconToggleScreenMode {
+  margin: 9px -5px 0 8px;
+}
+
+/* #endregion */
+/* #region ColorPicker */
+.reColorPicker {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.reColorPicker .reColoPickerHeader {
+  position: relative;
+}
+
+.reColorPicker .reCurrentColor,
+.reColorPicker .reClearButton {
+  display: inline-block;
+  width: 52px;
+  height: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  vertical-align: middle;
+}
+
+.reColorPicker .reClearButton {
+  float: right;
+}
+
+.reColorPicker .reCurrentColorHex {
+  padding: 0 15px;
+  vertical-align: middle;
+}
+
+.reColorPicker .reToolList {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.reColorPicker .reToolList li {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin: 0 0 10px;
+  width: 2.35vw;
+  height: 40px;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.reColorPicker li.reFirstItem {
+  border-radius: 3px 0 0 3px;
+  clear: left;
+}
+
+.reColorPicker li.reLastItem {
+  border-radius: 0 3px 3px 0;
+  border-width: 1px;
+}
+
+.reColorPicker li.reFirstItem.reLastItem {
+  border-radius: 3px;
+}
+
+.reColorPicker li.reRecentColor {
+  margin: 0 15px 10px 0;
+  border-width: 1px;
+  border-radius: 3px;
+  width: 2.25vw;
+}
+
+.reColorPicker li.reSelectedColor:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -4px 0 0 -4px;
+  border: 4px solid #ffffff;
+  content: "";
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.reColorPicker .reButton.reAddCustomColor {
+  padding: 6px 12px;
+  width: 100%;
+}
+
+/* #endregion */
+/* #region DialogOpener */
+.reMobileDialog.RadWindow {
+  border: 0;
+  padding: 0;
+}
+
+.reMobileDialog.RadWindow .rwContent {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+/* #endregion */
+/* #region Dialogs */
+.reDialog,
+.reFindOverlay {
+  padding: 20px;
+}
+
+.reDialog input {
+  -webkit-appearance: none;
+}
+
+.reDialog input[type="text"],
+.reDialog input[type="search"],
+.reFindOverlay input[type="text"],
+.reFindOverlay input[type="search"] {
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 10px 0 0;
+  width: 100%;
+  padding: 8px 12px;
+  font: inherit;
+  border-width: 1px;
+  border-style: solid;
+  font-size: initial;
+  -webkit-appearance: none;
+}
+
+.reDialog .t-hbox + .t-hbox,
+.reFindOverlay .t-hbox + .t-hbox {
+  margin-top: 14px;
+}
+
+.reDialog .rbRounded.rbHeadWest,
+.reFindOverlay .rbRounded.rbHeadWest {
+  margin: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.reDialog .rbRounded.rbHeadEast,
+.reFindOverlay .rbRounded.rbHeadEast {
+  border-radius: 0 4px 4px 0;
+  margin: 0 0 0 -1px;
+}
+
+.reDialog .rbRounded.rbGear,
+.reFindOverlay .rbRounded.rbGear {
+  margin: 0 0 0 10px;
+}
+
+.reDialog .RadButton .rbIcon:before,
+.reFindOverlay .RadButton .rbIcon:before {
+  font-size: 1.7em;
+  margin: -2px 0 0 2px;
+}
+
+.reDialog .RadButton.rbGear .rbIcon:before,
+.reFindOverlay .RadButton.rbGear .rbIcon:before {
+  margin: -2px 0 0 3px;
+}
+
+.RadButton .rbArrowHeadEast:before {
+  content: "\E010";
+}
+
+.RadButton .rbArrowHeadWest:before {
+  content: "\E013";
+}
+
+.RadButton .rbGearIcon:before {
+  content: "\E0A4";
+}
+
+.reDialog a,
+.reFindOverlay a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 0 0;
+  text-decoration: none;
+}
+
+.reReplaceButtons {
+  display: inline-block;
+  margin: 0 16px 0 0;
+}
+
+.reDialog .reSpace,
+.reFindOverlay .reSpace {
+  padding: 5px 10px 0 10px;
+}
+
+.reColorPicker .reButton,
+.reDialog .reButton,
+.reFindOverlay .reButton {
+  padding: 8px 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.reDialog .reButton .reIcon,
+.reFindOverlay .reButton .reIcon {
+  margin: 0 -4px;
+}
+
+.t-button-group {
+  white-space: nowrap;
+}
+
+.t-button-group .reButton {
+  border-radius: 0;
+}
+
+.t-button-group .reButton + .reButton {
+  margin-left: -1px;
+}
+
+.t-button-group .reButton:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.t-button-group .reButton:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+/* #endregion */
+/* #region iPhone*/
+.RadEditor.reIphone.rePortrait.reSafari {
+  padding-bottom: 68px !important;
+}
+
+.RadEditor.reIphone.rePortrait .reToolZone {
+  height: 280px;
+}
+
+.RadEditor.reIphone.rePortrait.reSafari .reToolZone {
+  height: 232px;
+}
+
+.RadEditor.reIphone.rePortrait.reOpera .reToolZone {
+  height: 230px;
+}
+
+.RadEditor.reIphone.rePortrait .reToolZone.reVisibilityHidden {
+  height: 260px;
+}
+
+.RadEditor.reIphone.rePortrait.reSafari .reToolZone.reVisibilityHidden,
+.RadEditor.reIphone.rePortrait.reOpera .reToolZone.reVisibilityHidden {
+  height: 218px;
+}
+
+.RadEditor.reIphone.rePortrait.reOpera .reToolZone.reVisibilityHidden {
+  -webkit-flex: 0.5;
+  flex: 0.5;
+}
+
+.RadEditor.reIphone.reLandScape .reToolZone {
+  height: 134px;
+}
+
+.RadEditor.reIphone.reLandScape .reToolZone.reVisibilityHidden {
+  height: 200px;
+}
+
+.RadEditor.reIphone.reLandScape.reSafari .reToolZone {
+  height: 210px;
+}
+
+.RadEditor.reIphone.reLandScape.reSafari .reToolZone.reVisibilityHidden {
+  height: 190px;
+}
+
+.RadEditor.reIphone.reLandScape.reOpera .reToolZone.reVisibilityHidden {
+  height: 175px;
+}
+
+/* #endregion */
+/* Windows Phone */
+.RadEditor.reWindowsPhone .reToolZone, .RadEditor.reWindowsPhone .reVisibilityHidden {
+  height: 43vh;
+}
+
+.RadEditor.reWindowsPhone .reModules div.reModule {
+  height: 1.42857em;
+}
+
+/* endregion */
+/* editor highlight */
+/* iOS */
+font.reIOS.__reTextHighlight,
+span.reIOS.__reTextHighlight,
+.reIOS.__reNodeHighlight {
+  background-color: rgba(10, 85, 165, 0.2);
+}
+
+.reIOS.__reHighlightStart,
+.reIOS.__reHighlightEnd,
+.reIOS.__reHighlightCollapsed {
+  border-color: #146fe1;
+  border-width: 0;
+}
+
+.reIOS.__reHighlightStart {
+  border-left-width: 2px;
+}
+
+.reIOS.__reHighlightEnd {
+  border-right-width: 2px;
+}
+
+.reIOS.__reHighlightCollapsed {
+  border-width: 0 1px;
+}
+
+.reIOS.__reHighlightMarker {
+  border-color: #146fe1;
+  border-width: 0 1px;
+  border-style: solid;
+}
+
+/* endregion */
+/* Android */
+font.reAndroid.__reTextHighlight,
+span.reAndroid.__reTextHighlight,
+.reAndroid.__reNodeHighlight {
+  background-color: rgba(0, 190, 255, 0.3);
+}
+
+font.reAndroid.__reTextHighlight::selection,
+span.reAndroid.__reTextHighlight::selection,
+.reAndroid.__reNodeHighlight::selection {
+  background-color: transparent;
+}
+
+font.reAndroid.__reTextHighlight::-moz-selection,
+span.reAndroid.__reTextHighlight::-moz-selection,
+.reAndroid.__reNodeHighlight::-moz-selection {
+  background-color: transparent;
+}
+
+.reAndroid.__reHighlightStart,
+.reAndroid.__reHighlightEnd,
+.reAndroid.__reHighlightCollapsed {
+  border: none;
+}
+
+.reAndroid.__reHighlightStart {
+  border: none;
+}
+
+.reAndroid.__reHighlightEnd {
+  border: none;
+}
+
+.reAndroid.__reHighlightCollapsed {
+  border: none;
+}
+
+.reAndroid.__reHighlightMarker {
+  border: 1px solid #ade1f5;
+}
+
+/* endregion */
+/* Windows Phone */
+font.reWindowsPhone.__reTextHighlight,
+span.reWindowsPhone.__reTextHighlight,
+.reWindowsPhone.__reNodeHighlight {
+  background-color: rgba(36, 36, 36, 0.2);
+}
+
+.reWindowsPhone.__reHighlightCollapsed {
+  border-color: #797979;
+  border-width: 0;
+  border-left-width: 2px;
+}
+
+.reWindowsPhone.__reHighlightMarker {
+  border-color: #797979;
+  border-width: 0;
+  border-left-width: 2px;
+  border-style: solid;
+}
+
+/* #endregion */
+/* #endregion */
+/* #region Media Queries */
+@media (max-width: 319px) {
+  .reColorPicker .reToolList > li {
+    padding: 10px;
+  }
+}
+
+/* #endregion */

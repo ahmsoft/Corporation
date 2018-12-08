@@ -1,0 +1,149 @@
+.RadRating {
+  overflow: hidden;
+  /*right-to-left mode scrollbars fix*/
+  cursor: pointer;
+  cursor: default;
+  direction: ltr;
+  /*use the IsDirectionReversed property of the rating to change the direction*/
+  /*Rating item*/
+  /* Fix for mobile Safari - iPhone/iPad */
+  /*The SPAN element represents the selected part of the item*/
+  /*selected star*/
+  /*Reversed direction*/
+  /*The SPAN element represents the unselected part of the reveresed item*/
+  /*Selected/not selected parts in mode Precision!=Item*/ }
+  .RadRating, .RadRating * {
+    box-sizing: content-box;
+    outline: none;
+    user-select: none; }
+  .RadRating ul {
+    margin: 0;
+    padding: 0.08333em;
+    list-style: none;
+    white-space: nowrap; }
+  .RadRating li {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin: 0; }
+  .RadRating .rrtVertical li {
+    display: block; }
+  .RadRating a {
+    color: inherit;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: default;
+    text-decoration: none;
+    display: block; }
+  .RadRating a:before {
+    position: absolute;
+    z-index: 1; }
+  .RadRating a span {
+    text-indent: -9999px; }
+  .RadRating a span,
+  .RadRating a span:before {
+    width: 0;
+    height: 1.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden; }
+  .RadRating .rrtOver a span,
+  .RadRating .rrtOver a span:before,
+  .RadRating .rrtSelected a span,
+  .RadRating .rrtSelected a span:before {
+    overflow: visible; }
+  .RadRating a:before,
+  .RadRating a span:before {
+    font-family: "TelerikWebUI";
+    display: inline-block;
+    width: 1.1em;
+    content: "";
+    font-size: 1.33333em;
+    text-align: center;
+    line-height: 1.25em;
+    text-indent: 0; }
+  .RadRating a:before,
+  .RadRating a span:before,
+  .RadRating .rrtHalf .rrtSelected a:before,
+  .RadRating .rrtExact .rrtSelected a:before {
+    content: "\E048"; }
+  .RadRating .rrtOver a:before,
+  .RadRating .rrtSelected a:before,
+  .RadRating .rrtVertical .rrtSelected.rrtOver a:before,
+  .RadRating .rrtOver span:before,
+  .RadRating .rrtSelected span:before,
+  .RadRating .rrtHalf .rrtSelected.rrtOver a:before,
+  .RadRating .rrtReversed .rrtPart:before,
+  .RadRating .rrtPartComplement:before,
+  .RadRating .rrtSelected.rrtOver a:before {
+    content: "\E047"; }
+  .RadRating .rrtHalf .rrtSelected span,
+  .RadRating .rrtExact .rrtSelected span {
+    overflow: hidden; }
+  .RadRating ._Telerik_MobileSafari a {
+    width: 1.41667em;
+    height: 1.41667em; }
+  .RadRating .rrtVertical a span {
+    width: 1.5em;
+    height: 0; }
+  .RadRating .rrtVertical.rrtExact a .rrtPartComplement, .RadRating .rrtVertical.rrtExact a .rrtPartComplement:before, .RadRating .rrtVertical.rrtExact a .rrtPart, .RadRating .rrtVertical.rrtExact a .rrtPart:before {
+    margin-top: auto; }
+  .RadRating .rrtSelected a span {
+    width: 1.5em;
+    height: 1.5em; }
+  .RadRating .rrtReversed {
+    padding: 0;
+    /*selected star*/ }
+    .RadRating .rrtReversed .rrtPart {
+      z-index: 1; }
+    .RadRating .rrtReversed .rrtSelected .rrtPartComplement {
+      z-index: 2; }
+    .RadRating .rrtReversed a span {
+      left: 0;
+      bottom: 0; }
+    .RadRating .rrtReversed a span:before {
+      top: auto;
+      left: 0;
+      bottom: -.377em; }
+    .RadRating .rrtReversed.rrtHalf a span, .RadRating .rrtReversed.rrtHalf a span:before {
+      left: auto;
+      right: 0.0125em; }
+    .RadRating .rrtReversed.rrtExact a span, .RadRating .rrtReversed.rrtExact a span:before {
+      left: auto;
+      right: .014em;
+      right: 0.025em \9; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .RadRating .rrtReversed.rrtExact a span, .RadRating .rrtReversed.rrtExact a span:before {
+        right: 0.025em; } }
+    .RadRating .rrtReversed.rrtVertical .rrtOver a span,
+    .RadRating .rrtReversed.rrtVertical .rrtSelected a span,
+    .RadRating .rrtReversed.rrtVertical .rrtPartComplement,
+    .RadRating .rrtReversed.rrtVertical .rrtPartComplement:before {
+      top: auto;
+      right: 0.0125em; }
+    .RadRating .rrtReversed.rrtVertical .rrtPart, .RadRating .rrtReversed.rrtVertical .rrtPart:before {
+      top: auto;
+      right: 0.025em; }
+  .RadRating ul li .rrtPart {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+  .RadRating ul li .rrtPartComplement {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .RadRating ul.rrtReversed li .rrtPart {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+  .RadRating .rrtHiddenImages {
+    position: absolute;
+    top: -9999px;
+    visibility: hidden; }

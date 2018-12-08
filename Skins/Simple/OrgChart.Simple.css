@@ -1,0 +1,77 @@
+/**
+ * Organizational Chart Simple Skin
+ */
+/*----------------------------------------------------------------------------*/
+/** Global wrapper */
+.RadOrgChart_Simple {
+  color: #333333;
+  font: normal 12px/22px "Segoe UI", Arial, sans-serif; }
+
+/** Viewport */
+/** NodeList */
+/** Node */
+/** Group */
+.RadOrgChart_Simple .rocGroup {
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** ItemList */
+/** ItemWrap */
+/** Items */
+.RadOrgChart_Simple .rocItemContent,
+.RadOrgChart_Simple .rocItemTemplate {
+  border-color: #c98400;
+  background-color: #ffefbd; }
+
+/** Toggle handle */
+/*.RadOrgChart_Simple .rocToggleHandle,*/
+.RadOrgChart_Simple .rocExpandArrow,
+.RadOrgChart_Simple .rocCollapseArrow,
+.RadOrgChart_Simple .rocExpandGroupArrow,
+.RadOrgChart_Simple .rocCollapseGroupArrow {
+  border-color: #c98400;
+  background-color: #ffefbd;
+  background-image: url('../Common/Actions/actionExpandCollapseDark.png'); }
+
+/* Loading states */
+.RadOrgChart_Simple .rocLoadingNodes .rocExpandArrow,
+.RadOrgChart_Simple .rocLoadingNodes .rocCollapseArrow,
+.RadOrgChart_Simple .rocLoadingGroups .rocExpandGroupArrow,
+.RadOrgChart_Simple .rocLoadingGroups .rocCollapseGroupArrow {
+  background-image: url('Common/loading_small.gif'); }
+
+/** Node lines */
+.RadOrgChart_Simple .rocLineUp,
+.RadOrgChart_Simple .rocLineDown,
+.RadOrgChart_Simple .rocLineHorizontal {
+  background-image: url('../Common/OrgChart/rocLinesDark.png'); }
+
+/** Drag and Drop */
+/** Drag ghost */
+.rocDetachedItemContainer.RadOrgChart_Simple .rocGhostItem,
+.rocDetachedNodeContainer.RadOrgChart_Simple .rocGhostNode {
+  border-color: #c98400;
+  background-color: #ffefbd; }
+
+/** Drag Drop Clue */
+.rocDetachedItemContainer.RadOrgChart_Simple .rocDropClue,
+.rocDetachedNodeContainer.RadOrgChart_Simple .rocDropClue {
+  background-image: url('../Common/Actions/actionDragDropDark.png'); }
+
+/** Toolbar */
+.rocToolbar_Simple {
+  padding: 4px;
+  border: 0;
+  border-radius: 0;
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** Toolbar button */
+.rocToolbar_Simple .rocToolbarButton {
+  border-color: #c98400;
+  background-color: #ffefbd;
+  text-indent: -999em;
+  float: left;
+  overflow: hidden; }

@@ -1,0 +1,93 @@
+/**
+ * Organizational Chart WebBlue Skin
+ */
+/*----------------------------------------------------------------------------*/
+/** Global wrapper */
+.RadOrgChart_WebBlue {
+  color: #333333;
+  font: normal 12px/22px "Segoe UI", Arial, sans-serif; }
+
+/** Viewport */
+/** NodeList */
+/** Node */
+/** Group */
+.RadOrgChart_WebBlue .rocGroup {
+  border-radius: 10px;
+  background-color: #dae2e8; }
+
+/** ItemList */
+/** ItemWrap */
+/** Items */
+.RadOrgChart_WebBlue .rocItem {
+  color: #ffffff; }
+
+.RadOrgChart_WebBlue .rocItemContent,
+.RadOrgChart_WebBlue .rocItemTemplate {
+  border-color: #768ca5;
+  border-radius: 5px;
+  background-color: #718ca1;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Toggle handle */
+/*.RadOrgChart_WebBlue .rocToggleHandle,*/
+.RadOrgChart_WebBlue .rocExpandArrow,
+.RadOrgChart_WebBlue .rocCollapseArrow,
+.RadOrgChart_WebBlue .rocExpandGroupArrow,
+.RadOrgChart_WebBlue .rocCollapseGroupArrow {
+  border-color: #768ca5;
+  border-radius: 3px;
+  background-color: #718ca1;
+  background-image: url('../Common/Actions/actionExpandCollapseLight.png'); }
+
+/* Loading states */
+.RadOrgChart_WebBlue .rocLoadingNodes .rocExpandArrow,
+.RadOrgChart_WebBlue .rocLoadingNodes .rocCollapseArrow,
+.RadOrgChart_WebBlue .rocLoadingGroups .rocExpandGroupArrow,
+.RadOrgChart_WebBlue .rocLoadingGroups .rocCollapseGroupArrow {
+  background-image: url('Common/loading_small.gif'); }
+
+/** Node lines */
+.RadOrgChart_WebBlue .rocLineUp,
+.RadOrgChart_WebBlue .rocLineDown,
+.RadOrgChart_WebBlue .rocLineHorizontal {
+  background-image: url('../Common/OrgChart/rocLinesDark.png'); }
+
+/** Drag and Drop */
+/** Drag ghost */
+.rocDetachedItemContainer.RadOrgChart_WebBlue .rocGhostItem,
+.rocDetachedNodeContainer.RadOrgChart_WebBlue .rocGhostNode {
+  border-color: #768ca5;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #718ca1;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Drag Drop Clue */
+.rocDetachedItemContainer.RadOrgChart_WebBlue .rocDropClue,
+.rocDetachedNodeContainer.RadOrgChart_WebBlue .rocDropClue {
+  background-image: url('../Common/Actions/actionDragDropLight.png'); }
+
+/** Toolbar */
+.rocToolbar_WebBlue {
+  border-color: #dae2e8;
+  border-radius: 5px;
+  background-color: #dae2e8; }
+
+/** Toolbar button */
+.rocToolbar_WebBlue .rocToolbarButton {
+  border-color: #768ca5;
+  border-radius: 3px;
+  background-color: #718ca1;
+  text-indent: -999em;
+  float: left;
+  overflow: hidden; }
+
+/** Icons */
+.rocToolbar_WebBlue .rocToolbarButton.rocActionDrillHere {
+  background-position: -32px 0; }
+
+.rocToolbar_WebBlue .rocToolbarButton.rocActionGoToParent {
+  background-position: -32px -16px; }
+
+.rocToolbar_WebBlue .rocToolbarButton.rocActionGoToRoot {
+  background-position: -32px -32px; }

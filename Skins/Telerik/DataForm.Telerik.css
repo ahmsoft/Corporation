@@ -1,0 +1,43 @@
+.RadDataForm_Telerik {
+  font: normal 12px / 1.33 "Segoe UI", Arial, Helvetica, sans-serif;
+  color: black;
+  overflow: hidden; }
+  .RadDataForm_Telerik .rdfLegend,
+  .RadDataForm_Telerik .rdfBorders {
+    border-color: #828282; }
+  .RadDataForm_Telerik .rdfHr {
+    color: #8e8e8e; }
+  .RadDataForm_Telerik .rdfFieldHint {
+    color: gray; }
+  .RadDataForm_Telerik .rdfLegend {
+    font-size: 1.17em; }
+  .RadDataForm_Telerik .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0; }
+  .RadDataForm_Telerik .rdfLabel.rdfBlock {
+    padding: 0 0 .17em 0; }
+  .RadDataForm_Telerik .rdfPager {
+    margin-top: 1.25em; }
+    .RadDataForm_Telerik .rdfPager .rdfFirst,
+    .RadDataForm_Telerik .rdfPager .rdfPrev,
+    .RadDataForm_Telerik .rdfPager .rdfNext,
+    .RadDataForm_Telerik .rdfPager .rdfLast {
+      width: 25px;
+      height: 25px;
+      background: transparent no-repeat url('DataForm/sprite.png');
+      border: none; }
+    .RadDataForm_Telerik .rdfPager .rdfFirst {
+      background-position: 0 0; }
+      .RadDataForm_Telerik .rdfPager .rdfFirst:hover {
+        background-position: 0 -50px; }
+    .RadDataForm_Telerik .rdfPager .rdfPrev {
+      background-position: 0 -100px; }
+      .RadDataForm_Telerik .rdfPager .rdfPrev:hover {
+        background-position: 0 -150px; }
+    .RadDataForm_Telerik .rdfPager .rdfNext {
+      background-position: 0 -200px; }
+      .RadDataForm_Telerik .rdfPager .rdfNext:hover {
+        background-position: 0 -250px; }
+    .RadDataForm_Telerik .rdfPager .rdfLast {
+      background-position: 0 -300px; }
+      .RadDataForm_Telerik .rdfPager .rdfLast:hover {
+        background-position: 0 -350px; }

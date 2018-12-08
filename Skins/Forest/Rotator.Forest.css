@@ -1,0 +1,91 @@
+/* RadRotator for ASP.Net Forest Skin */
+
+/* new styles */
+.RadRotator_Forest .rrClipRegion
+{
+	border: solid 1px #588a4d;
+}
+
+/*================== The list ========================*/
+
+.RadRotator_Forest .rrClipRegion  .rrItemsList 
+{
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;          
+}
+
+/* For vertical carousel, not set, width defaults to auto */
+/* Note if you explicitly set width to auto, this might cause */
+/* problems with Safari */
+
+.RadRotator_Forest .rrButton
+{
+	background-image: url('Rotator/RotatorButtons.gif');
+	background-repeat: no-repeat;
+	/*Button size is defined here, we use margins to position them too */
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	/* Very important for the layout!*/	
+}
+
+.RadRotator_Forest .rrButton.rrButtonUp
+{
+	background-position: 0 0;
+	top: -20px; /* -15px */
+	left: 50%;
+	margin-left: -10px;
+}
+
+.RadRotator_Forest .rrButton.rrButtonUp:hover
+{
+	background-position: -20px 0;
+}
+
+.RadRotator_Forest .rrButton.rrButtonRight
+{
+	background-position: 0 -20px;
+	margin-top: -10px;
+	right: -20px; /* -16px */
+	top: 50%;   
+}
+
+.RadRotator_Forest .rrButton.rrButtonRight:hover
+{
+	background-position: -20px -20px;
+}
+
+.RadRotator_Forest .rrButton.rrButtonDown
+{
+	background-position: 0 -40px;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.RadRotator_Forest .rrButton.rrButtonDown:hover
+{
+	background-position: -20px -40px;
+}
+
+.RadRotator_Forest .rrButton.rrButtonLeft
+{
+	background-position: 0 -60px;
+	margin-top: -10px;
+	left: -20px; /* -15px */
+	top: 50%;
+}
+
+.RadRotator_Forest .rrButton.rrButtonLeft:hover
+{
+	background-position: -20px -60px;
+}
+
+.RadRotator_Forest .rrButton.rrButtonDisabled
+{
+	filter: alpha(opacity=20);
+	opacity: .2;
+	-moz-opacity: .2;
+}

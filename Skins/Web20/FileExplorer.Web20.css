@@ -1,0 +1,56 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_Web20 {
+  /* Web20 */
+  /* Overwrites padding for better presentation and space saving */
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_Web20 .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_Web20,
+  .RadFileExplorer_Web20 .rfeAddressBox,
+  .RadFileExplorer_Web20
+.rfeFilterTxt {
+    border-color: #4e75b3; }
+  .RadFileExplorer_Web20 div.selectedFileName {
+    border-top: 1px solid #6788be; }
+  .RadFileExplorer_Web20 .RadGrid .rgRow td,
+  .RadFileExplorer_Web20 .RadGrid .rgAltRow td,
+  .RadFileExplorer_Web20 .RadGrid .rgEditRow td,
+  .RadFileExplorer_Web20 .RadGrid .rgFooter td {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .RadFileExplorer_Web20 .RadFileExplorer_Web20 .rfeThumbList .rfeLink {
+    color: #25507b; }
+  .RadFileExplorer_Web20 .rfeThumbList .rfeLink:hover,
+  .RadFileExplorer_Web20 .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_Web20 .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Web20 .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/web20_smoothSprite_20.png');
+    border-color: #3fa7d2;
+    background-color: #ccddf2; }
+  .RadFileExplorer_Web20 .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Web20 .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #617fc5;
+    border-color: #25507b;
+    color: #ffffff;
+    /* used error-bg-color var to match the white color */ }
+  .RadFileExplorer_Web20
+.RadFileExplorer_Web20 .rfeFilterContainer {
+    background-image: url('../Common/Gradients/web20_smoothSprite_20.png');
+    background-color: #83a5d3; }
+  .RadFileExplorer_Web20
+.RadFileExplorer_Web20 .rfeFilterContainer .rfeFilterLbl {
+    color: #ffffff;
+    /* used error-bg-color var to match the white color */ }
+  .RadFileExplorer_Web20 .rfeDropZone {
+    background-color: rgba(158, 184, 220, 0.8); }
+  .RadFileExplorer_Web20 .rfeDropUploadInfoPanel {
+    background-color: #dce5f3;
+    color: #000000; }
+
+.RadForm_Web20 .DialogSeparator {
+  border-left: 1px solid #6788be;
+  border-right: 1px solid #6788be;
+  background-color: #93b4df; }

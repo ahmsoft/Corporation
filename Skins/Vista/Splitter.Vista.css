@@ -1,0 +1,63 @@
+.RadSplitter_Vista {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Borders */
+  /* When ShowContentDuringLoad="false" */
+  /* RadSplitBar/RadSlidingPane resize elements */
+  /* RadSlidingPane tab */
+  /* RadSlidingPane tab */
+  /* RadSplitBar buttons */
+  /* RadSlidingPane buttons */
+  /* RadSlidingPane header */
+  /* RadSlidingPane header elements */
+  /* RadSlidingPane title text */ }
+  .RadSplitter_Vista,
+  .RadSplitter_Vista .rspPaneTabContainer,
+  .RadSplitter_Vista .rspPane,
+  .RadSplitter_Vista .rspResizeBar,
+  .RadSplitter_Vista .rspSlideContainerResize,
+  .RadSplitter_Vista .rspPaneHorizontal,
+  .RadSplitter_Vista .rspResizeBarHorizontal,
+  .RadSplitter_Vista .rspSlideContainerResizeHorizontal {
+    border-color: #e2e3ea; }
+  .RadSplitter_Vista .rspLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadSplitter_Vista .rspResizeBar,
+  .RadSplitter_Vista .rspSlideContainerResize,
+  .RadSplitter_Vista .rspResizeBarOver,
+  .RadSplitter_Vista .rspSlideContainerResizeOver {
+    background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+    background-color: white;
+    border-right-color: #e2e3ea; }
+  .RadSplitter_Vista .rspResizeBarHorizontal,
+  .RadSplitter_Vista .rspSlideContainerResizeHorizontal,
+  .RadSplitter_Vista .rspResizeBarOverHorizontal,
+  .RadSplitter_Vista .rspSlideContainerResizeOverHorizontal {
+    background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+    background-color: white;
+    border-bottom-color: #e2e3ea; }
+  .RadSplitter_Vista .rspPaneTabContainer,
+  .RadSplitter_Vista .rspSlideHeaderDockIcon,
+  .RadSplitter_Vista .rspSlideHeaderUndockIcon,
+  .RadSplitter_Vista .rspSlideHeaderCollapseIcon,
+  .RadSplitter_Vista .rspCollapseBarExpand,
+  .RadSplitter_Vista .rspCollapseBarCollapse,
+  .RadSplitter_Vista .rspCollapseBarHorizontalExpand,
+  .RadSplitter_Vista .rspCollapseBarHorizontalCollapse {
+    background-image: url('Splitter/ExpandCollapseBarsCommands.gif'); }
+  .RadSplitter_Vista .rspSlideHeader,
+  .RadSplitter_Vista .rspSlideTitleContainer,
+  .RadSplitter_Vista .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Vista .rspTop .rspPaneTabContainer {
+    background-image: url('Splitter/slideTitleContainerBgr.gif');
+    background-repeat: repeat-x; }
+  .RadSplitter_Vista .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Vista .rspTop .rspPaneTabContainer {
+    background-position: 0 -1px; }
+  .RadSplitter_Vista .rspSlideTitleContainer,
+  .RadSplitter_Vista .rspSlideHeaderIconWrapper {
+    border-bottom: 1px solid #e2e3ea; }
+  .RadSplitter_Vista .rspSlideTitle,
+  .RadSplitter_Vista .rspPaneTabText {
+    color: black; }
+

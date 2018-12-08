@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'TelerikWebUIEditor';
+  src: url('Common/TelerikWebUI/Editor.eot');
+  src: url('Common/TelerikWebUI/Editor.eot') format('embedded-opentype'), url('Common/TelerikWebUI/Editor.woff') format('woff'), url('Common/TelerikWebUI/Editor.ttf') format('truetype'); }
+
+.RadSpreadsheet {
+  width: 800px;
+  height: 600px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: default; }
+  .RadSpreadsheet .rssSelection, .RadSpreadsheet .rssActiveCell {
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    box-sizing: border-box; }
+  .RadSpreadsheet .rssActiveCell.k-left {
+    border-left-width: 0; }
+  .RadSpreadsheet .rssActiveCell td {
+    border-width: 0 !important; }
+  .RadSpreadsheet .RadToolBar {
+    border-width: 0;
+    overflow: visible;
+    display: block;
+    width: 100%; }
+  .RadSpreadsheet .rssFontSize, .RadSpreadsheet .rssFontFamily, .RadSpreadsheet .rssBgColor, .RadSpreadsheet .rssTextColor {
+    padding: 4px 0; }
+  .RadSpreadsheet .rssBgColor .rcpIcon em, .RadSpreadsheet .rssTextColor .rcpIcon em {
+    margin: 0;
+    height: 3px;
+    font-style: normal;
+    position: absolute;
+    bottom: 0.3333em;
+    left: 0.3333em; }
+  .RadSpreadsheet .rssBgColor .rcpIcon em:before, .RadSpreadsheet .rssTextColor .rcpIcon em:before {
+    width: 1em;
+    height: 1em;
+    font-family: "TelerikWebUIEditor";
+    font-size: 14px;
+    line-height: 1;
+    text-indent: 0;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    bottom: 2px; }
+  .RadSpreadsheet .rssBgColor .rcpIcon em:before {
+    content: "\e613"; }
+  .RadSpreadsheet .rssTextColor .rcpIcon em:before {
+    content: "\e612"; }
+  .RadSpreadsheet .rssFormulaBar {
+    padding-left: 31px;
+    border-width: 1px 0;
+    border-style: solid;
+    position: relative; }
+  .RadSpreadsheet .rssFormulaBar:before {
+    content: "\e69d";
+    padding: 2px 6px;
+    width: 1em;
+    height: 1em;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: inherit;
+    font-family: "TelerikWebUIEditor";
+    font-size: 16px;
+    line-height: 1;
+    text-indent: 0;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 3px;
+    left: 3px; }
+  .RadSpreadsheet .rssFormulaInput {
+    outline: none;
+    border-width: 0;
+    height: 26px;
+    line-height: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 3px 0.5em 0; }
+  .RadSpreadsheet .rssFormulaInput > .k-syntax-func.k-syntax-at-point, .RadSpreadsheet .rssFormulaInput > .k-syntax-bool.k-syntax-at-point, .RadSpreadsheet .rssFormulaInput > .k-syntax-ref.k-syntax-at-point, .RadSpreadsheet .rssFormulaInput > .k-syntax-str.k-syntax-at-point, .RadSpreadsheet .rssFormulaInput > .k-syntax-num.k-syntax-at-point {
+    text-decoration: underline; }
+  .RadSpreadsheet .rssFormulaInput > .k-series-a, .RadSpreadsheet .rssFormulaInput > .k-series-b, .RadSpreadsheet .rssFormulaInput > .k-series-c, .RadSpreadsheet .rssFormulaInput > .k-series-d {
+    background-color: transparent; }
+  .RadSpreadsheet .rssSheetsbar {
+    border-width: 1px 0 0;
+    border-style: solid;
+    position: relative; }
+  .RadSpreadsheet .rssSheetsbar .k-button {
+    padding: 4px;
+    box-sizing: border-box;
+    line-height: 1; }
+  .RadSpreadsheet .rssSheetsbar .t-spreadsheet-sheets-bar-add {
+    padding: 2px;
+    position: absolute;
+    left: 5px;
+    top: 5px; }
+  .RadSpreadsheet .rssSheetsbar .t-spreadsheet-sheets-remove {
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    padding: 0; }
+  .RadSpreadsheet .rssSheetsbar .t-spreadsheet-sheets-items {
+    margin-left: 2.7em; }
+  .RadSpreadsheet .rssView {
+    position: relative;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif; }
+  .RadSpreadsheet .rssFixedContainer {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2; }
+  .RadSpreadsheet .rssScroller {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    z-index: 1; }
+  .RadSpreadsheet .rssViewSize {
+    position: relative; }
+  .RadSpreadsheet .rssPane {
+    padding-right: 1px;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    overflow: hidden;
+    box-sizing: border-box; }
+  .RadSpreadsheet .rssPane.k-top {
+    border-top-width: 0; }
+  .RadSpreadsheet .rssPane.k-left {
+    border-left-width: 0; }
+  .RadSpreadsheet .rssPane table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    position: absolute; }
+  .RadSpreadsheet .rssPane td {
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .RadSpreadsheet .rssTopCorner {
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000; }
+  .RadSpreadsheet .rssTopCorner:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: inherit;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .RadSpreadsheet .rssRowHeader, .RadSpreadsheet .rssColumnHeader {
+    text-align: center; }
+  .RadSpreadsheet .rssRowHeader td {
+    border-left-width: 0; }
+  .RadSpreadsheet .rssColumnHeader td {
+    border-top-width: 0; }
+  .RadSpreadsheet .rssCellEditor {
+    position: absolute;
+    display: none;
+    padding: 0 0.3em;
+    line-height: 20px;
+    z-index: 2000;
+    overflow: hidden; }
+  .RadSpreadsheet .rssPane table.rssMergedCell {
+    width: auto;
+    height: auto; }
+  .RadSpreadsheet .rssMergedCellsWrapper, .RadSpreadsheet .rssSelectionWrapper, .RadSpreadsheet .k-filter-headers, .RadSpreadsheet .rssColumnHeader {
+    position: relative; }
+  .RadSpreadsheet .k-spreadsheet-sample {
+    float: right; }
+  .RadSpreadsheet .k-resize-handle, .RadSpreadsheet .k-resize-hint {
+    position: absolute; }
+  .RadSpreadsheet .k-resize-hint-handle {
+    width: 100%;
+    height: 20px; }
+  .RadSpreadsheet .k-resize-hint-marker {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto; }
+  .RadSpreadsheet .k-resize-hint-vertical .k-resize-hint-handle {
+    height: 100%;
+    width: 32px;
+    float: left; }
+  .RadSpreadsheet .k-resize-hint-vertical .k-resize-hint-marker {
+    height: 2px;
+    width: 100%; }
+  .RadSpreadsheet .rssSlectionDashed {
+    border-width: 1px;
+    border-style: dashed;
+    position: absolute;
+    box-sizing: border-box; }
+
+.rssUndo .rtbImage, .rssRedo .rtbImage, .rssSave .rtbImage, .rssBold .rtbImage, .rssItalic .rtbImage, .rssUnderline .rtbImage, .rssAlignLeft .rtbImage, .rssAlignCenter .rtbImage, .rssAlignRight .rtbImage, .rssAlignTop .rtbImage, .rssAlignMiddle .rtbImage, .rssAlignBottom .rtbImage, .rssMergeCells .rtbImage, .rssMergeH .rtbImage, .rssMergeV .rtbImage, .rssUnmerge .rtbImage {
+  text-align: center; }
+.rssUndo .rtbImage:before, .rssRedo .rtbImage:before, .rssSave .rtbImage:before, .rssBold .rtbImage:before, .rssItalic .rtbImage:before, .rssUnderline .rtbImage:before, .rssAlignLeft .rtbImage:before, .rssAlignCenter .rtbImage:before, .rssAlignRight .rtbImage:before, .rssAlignTop .rtbImage:before, .rssAlignMiddle .rtbImage:before, .rssAlignBottom .rtbImage:before, .rssMergeCells .rtbImage:before, .rssMergeH .rtbImage:before, .rssMergeV .rtbImage:before, .rssUnmerge .rtbImage:before {
+  font-family: TelerikWebUIEditor;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top; }
+
+.rssUndo .rtbImage:before {
+  content: "\e647"; }
+
+.rssRedo .rtbImage:before {
+  content: "\e648"; }
+
+.rssSave .rtbImage:before {
+  content: "\e603"; }
+
+.rssBold .rtbImage:before {
+  content: "\e60c"; }
+
+.rssItalic .rtbImage:before {
+  content: "\e60d"; }
+
+.rssUnderline .rtbImage:before {
+  content: "\e60e"; }
+
+.rssAlignLeft .rtbImage:before {
+  content: "\e609"; }
+
+.rssAlignCenter .rtbImage:before {
+  content: "\e607"; }
+
+.rssAlignRight .rtbImage:before {
+  content: "\e60a"; }
+
+.rssAlignTop .rtbImage:before {
+  content: "\e6a3"; }
+
+.rssAlignMiddle .rtbImage:before {
+  content: "\e6a4"; }
+
+.rssAlignBottom .rtbImage:before {
+  content: "\e6a5"; }
+
+.rssMergeCells .rtbImage:before {
+  content: "\e6a9"; }
+
+.rssMergeH .rtbImage:before {
+  content: "\e66f"; }
+
+.rssMergeV .rtbImage:before {
+  content: "\e670"; }
+
+.rssUnmerge .rtbImage:before {
+  content: "\e6a8"; }
+
+.k-spreadsheet-clipboard-paste, .k-spreadsheet-clipboard {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  box-sizing: border-box; }
+
+.rssFormulaList {
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  list-style: none;
+  cursor: default; }
+
+.rssFormulaList > .k-item {
+  padding: 0.16667em 0.5em; }
+
+.t-spreadsheet-sheets-items-hint .t-spreadsheet-sheets-remove {
+  display: none !important; }

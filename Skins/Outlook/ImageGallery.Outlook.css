@@ -1,0 +1,92 @@
+.RadImageGallery_Outlook {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: black; }
+  .RadImageGallery_Outlook .rigDescriptionBox {
+    background-color: #6797d1;
+    background-color: rgba(103, 151, 209, 0.6);
+    color: white; }
+  .RadImageGallery_Outlook .rigToolbar,
+  .RadImageGallery_Outlook .rigCloseButton,
+  .RadImageGallery_Outlook .rigDrawerButton {
+    background-color: #d7e6f7;
+    background-color: rgba(215, 230, 247, 0.8);
+    color: #0045d6; }
+  .RadImageGallery_Outlook .rigProgressBar div {
+    background-color: #f2c527; }
+  .RadImageGallery_Outlook .rigPager {
+    background-color: #d5e4f3;
+    color: #646559; }
+    .RadImageGallery_Outlook .rigPager a {
+      color: #646559; }
+    .RadImageGallery_Outlook .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_Outlook .rigIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadImageGallery_Outlook .rigDotList > a {
+    border-color: #8fb2e6; }
+  .RadImageGallery_Outlook .rigDotList a span {
+    background-color: white; }
+  .RadImageGallery_Outlook .rigDotList a.rigCurrentItem span {
+    background-color: #fabc39;
+    border-color: white; }
+  .RadImageGallery_Outlook .rigTooltip {
+    background-color: #ccddf5;
+    border-color: #6187b8; }
+    .RadImageGallery_Outlook .rigTooltip:after {
+      border-top-color: #ccddf5; }
+  .RadImageGallery_Outlook .rigPrevButton,
+  .RadImageGallery_Outlook .rigNextButton,
+  .RadImageGallery_Outlook .rigScrollPrevIcon,
+  .RadImageGallery_Outlook .rigScrollNextIcon,
+  .RadImageGallery_Outlook .rigCloseIcon {
+    background-image: url('LightBox/sprite.png'); }
+  .RadImageGallery_Outlook .rigPrevButton {
+    background-position: 0 -140px; }
+  .RadImageGallery_Outlook .rigNextButton {
+    background-position: -60px -140px; }
+  .RadImageGallery_Outlook .rigScrollPrevIcon {
+    background-position: -79px  -49px; }
+  .RadImageGallery_Outlook .rigScrollNextIcon {
+    background-position: -104px -49px; }
+  .RadImageGallery_Outlook.RadImageGallery_RightOutside .rigScrollPrevIcon,
+  .RadImageGallery_Outlook.RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Outlook .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery_Outlook .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -62px -89px; }
+  .RadImageGallery_Outlook .RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Outlook .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -96px -89px; }
+  .RadImageGallery_Outlook .rigCloseIcon {
+    background-position: -79px -12px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigCloseIcon {
+    background-position: -101px -12px; }
+  .RadImageGallery_Outlook .rigDrawerIcon {
+    background-position: -52px -60px; }
+  .RadImageGallery_Outlook .rigPlayIcon {
+    background-position: 1px -1999px; }
+  .RadImageGallery_Outlook .rigPauseIcon {
+    background-position: 1px -2019px; }
+  .RadImageGallery_Outlook .rigFullScrIcon {
+    background-position: 1px -2099px; }
+  .RadImageGallery_Outlook .rigExtFullScrIcon {
+    background-position: 1px -2119px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigPlayIcon {
+    background-position: -19px -1999px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigPauseIcon {
+    background-position: -19px -2019px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigFullScrIcon {
+    background-position: -19px -2099px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigExtFullScrIcon {
+    background-position: -19px -2119px; }
+  .RadImageGallery_Outlook .rigShowThumbnIcon {
+    background-position: 0px -2159px; }
+  .RadImageGallery_Outlook .rigHideThumbnIcon {
+    background-position: 0px -2179px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigShowThumbnIcon {
+    background-position: -20px -2159px; }
+  .RadImageGallery_Outlook .rigActionButton:hover .rigHideThumbnIcon {
+    background-position: -20px -2179px; }

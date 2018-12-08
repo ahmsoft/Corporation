@@ -1,0 +1,222 @@
+.RadProgressBar {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  text-align: left;
+  position: relative;
+  vertical-align: middle;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+  border-radius: 0.33333em;
+  /* Horizontal ProgressBar */
+  /* Vertical ProgressBar */
+  /* Reversed and RTL Support */
+  /* Older IE Fix */ }
+  .RadProgressBar .rpbLeftAlign {
+    text-align: left; }
+  .RadProgressBar .rpbRightAlign {
+    text-align: right; }
+  .RadProgressBar .rpbCentered {
+    text-align: center; }
+  .RadProgressBar.rpbHorizontal > .rpbStateSelected.rpbStateCompleted, .RadProgressBar.rpbHorizontal.rpbRtl > .rpbStateSelected.rpbStateCompleted, .RadProgressBar.rpbVertical > .rpbStateSelected.rpbStateCompleted, .RadProgressBar.rpbVertical.rpbRtl > .rpbStateSelected.rpbStateCompleted {
+    border-radius: 0.33333em; }
+  .RadProgressBar > .rpbReset {
+    border-radius: 0.33333em;
+    height: 100%;
+    left: -1px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+    width: 100%; }
+  .RadProgressBar.rpbHorizontal {
+    height: 1.9em;
+    width: 27em; }
+  .RadProgressBar .rpbLabelWrapper {
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 100%;
+    line-height: 1.66667em;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .RadProgressBar .rpbLabelWrapper, .RadProgressBar.rpbHorizontal.rpbRtl.rpbReversed .rpbLabelWrapper {
+    left: 0;
+    right: auto;
+    text-align: right; }
+  .RadProgressBar > .rpbLabelWrapper {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.33333em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .RadProgressBar .rpbLabel {
+    display: inline-block;
+    min-width: 0.83333em;
+    padding: 0 0.5em;
+    white-space: nowrap; }
+  .RadProgressBar .rpbStateSelected {
+    box-shadow: none; }
+  .RadProgressBar .rpbStateSelected, .RadProgressBar .rpbStateSelected:hover {
+    background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 100%); }
+  .RadProgressBar > .rpbStateSelected {
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    position: absolute;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .RadProgressBar.rpbHorizontal > .rpbStateSelected, .RadProgressBar.rpbHorizontal.rpbRtl.rpbReversed > .rpbStateSelected {
+    border-radius: 0.33333em 0em 0em 0.33333em;
+    height: 100%;
+    left: 0;
+    right: auto;
+    top: 0; }
+  .RadProgressBar .rpbChunksWrapper {
+    border: 0;
+    font-size: 100%;
+    list-style: none outside none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-decoration: none; }
+  .RadProgressBar > .rpbChunksWrapper {
+    border-radius: 0.33333em;
+    height: 100%;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 100%; }
+  .RadProgressBar.rpbHorizontal .rpbChunk {
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .RadProgressBar.rpbHorizontal .rpbChunkFirst, .RadProgressBar.rpbHorizontal.rpbRtl .rpbChunkLast {
+    border-left-width: 1px;
+    border-radius: 0.33333em 0em 0em 0.33333em; }
+  .RadProgressBar.rpbHorizontal .rpbChunkLast, .RadProgressBar.rpbHorizontal.rpbRtl .rpbChunkFirst {
+    border-radius: 0em 0.33333em 0.33333em 0em; }
+  .RadProgressBar.rpbVertical {
+    width: 1.9em;
+    height: 27em; }
+  .RadProgressBar.rpbVertical > .rpbStateSelected {
+    border-radius: 0em 0em 0.33333em 0.33333em;
+    bottom: -1px;
+    left: 0;
+    width: 100%; }
+  .RadProgressBar.rpbVertical span.rpbLabelWrapper {
+    direction: ltr;
+    text-align: center; }
+  .RadProgressBar.rpbVertical .rpbStateSelected .rpbLabelWrapper {
+    top: auto;
+    bottom: -1px; }
+  .RadProgressBar.rpbVertical .rpbLabel {
+    -webkit-transform: rotate(90deg) translateX(-2.1em);
+    -webkit-transform-origin: 0 100% 0;
+    transform: rotate(90deg) translateX(-2.1em);
+    transform-origin: 0 100% 0;
+    *padding: 0.5em 0;
+    *writing-mode: tb-rl;
+    *white-space: nowrap; }
+  .RadProgressBar.rpbVertical.rpbReversed .rpbLabel {
+    -webkit-transform: rotate(-90deg) translateX(-2.1em);
+    -webkit-transform-origin: 0 0 0;
+    transform: rotate(-90deg) translateX(-2.1em);
+    transform-origin: 0 0 0; }
+  @media screen\0 {
+    .RadProgressBar.rpbVertical .rpbLabel, .RadProgressBar.rpbVertical.rpbReversed .rpbLabel {
+      writing-mode: tb-rl;
+      white-space: nowrap;
+      padding: 2px;
+      transform: none; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .RadProgressBar.rpbVertical .rpbLabel {
+      transform: rotate(90deg) translateX(-2.1em);
+      transform-origin: 0 100% 0;
+      writing-mode: rl-tb;
+      padding: 0 0.6em; } }
+  .RadProgressBar.rpbVertical .rpbChunk {
+    border-style: solid;
+    border-width: 1px 1px 0;
+    margin-top: -1px;
+    width: 100%; }
+  .RadProgressBar.rpbVertical .rpbChunk.rpbChunkFirst {
+    margin-top: 0; }
+  .RadProgressBar.rpbVertical .rpbChunkFirst {
+    border-radius: 0.33333em 0.33333em 0em 0em; }
+  .RadProgressBar.rpbVertical .rpbChunkLast {
+    border-bottom-width: 1px;
+    border-radius: 0em 0em 0.33333em 0.33333em; }
+  .RadProgressBar.rpbIndeterminate {
+    background-repeat: repeat; }
+  .RadProgressBar.rpbIndeterminate .rpbLabelWrapper, .RadProgressBar.rpbIndeterminate .rpbStateSelected {
+    display: none; }
+  .RadProgressBar.rpbHorizontal.rpbReversed .rpbLabelWrapper, .RadProgressBar.rpbHorizontal.rpbRtl .rpbLabelWrapper {
+    left: auto;
+    right: -1px;
+    text-align: left; }
+  .RadProgressBar.rpbHorizontal.rpbReversed.rpbRtl .rpbLabelWrapper {
+    left: -1px;
+    right: auto;
+    text-align: right; }
+  .RadProgressBar.rpbHorizontal.rpbReversed > .rpbStateSelected, .RadProgressBar.rpbHorizontal.rpbRtl > .rpbStateSelected {
+    border-radius: 0em 0.33333em 0.33333em 0em;
+    left: auto;
+    right: -1px; }
+  .RadProgressBar.rpbRtl > .rpbChunksWrapper {
+    left: auto;
+    right: -1px; }
+  .RadProgressBar.rpbHorizontal.rpbReversed .rpbChunk {
+    border-width: 1px 0 1px 1px; }
+  .RadProgressBar.rpbHorizontal.rpbRtl .rpbChunk {
+    border-width: 1px 1px 1px 0; }
+  .RadProgressBar.rpbHorizontal .rpbChunk .rpbChunkFirst {
+    margin-left: 0; }
+  .RadProgressBar.rpbHorizontal .rpbChunkFirst, .RadProgressBar.rpbHorizontal.rpbRtl .rpbChunkLast, .RadProgressBar.rpbHorizontal.rpbRtl.rpbReversed .rpbChunkLast {
+    border-left-width: 1px;
+    border-radius: 0.33333em 0em 0em 0.33333em; }
+  .RadProgressBar.rpbHorizontal.rpbRtl.rpbReversed .rpbChunk {
+    border-width: 1px; }
+  .RadProgressBar.rpbHorizontal.rpbReversed .rpbChunkLast {
+    border-right-width: 1px; }
+  .RadProgressBar.rpbHorizontal.rpbRtl.rpbReversed .rpbChunkFirst {
+    border-left-width: 0; }
+  .RadProgressBar.rpbHorizontal.rpbReversed .rpbStateSelected.rpbChunkLast, .RadProgressBar.rpbHorizontal.rpbRtl .rpbStateSelected.rpbChunkLast {
+    border-left-width: 1px; }
+  .RadProgressBar.rpbHorizontal.rpbRtl .rpbStateSelected.rpbChunkFirst {
+    border-left-color: transparent; }
+  .RadProgressBar.rpbVertical .rpbLabelWrapper {
+    top: auto; }
+  .RadProgressBar.rpbVertical.rpbReversed .rpbLabelWrapper {
+    bottom: auto;
+    top: -1px; }
+  .RadProgressBar.rpbVertical.rpbReversed > .rpbStateSelected {
+    border-radius: 0.33333em 0.33333em 0em 0em;
+    bottom: auto;
+    top: -1px; }
+  .RadProgressBar.rpbVertical.rpbReversed .rpbChunk {
+    border-width: 1px 1px 1px; }
+  .RadProgressBar.rpbVertical.rpbReversed .rpbChunkFirst {
+    border-top-width: 1px; }
+  .RadProgressBar.rpbVertical.rpbReversed .rpbLabel {
+    bottom: 0;
+    left: 0;
+    position: absolute; }
+  .RadProgressBar.rpbDisabled {
+    opacity: 0.7; }
+  @media \0screen\,screen\9 {
+    .RadProgressBar .rpbChunksWrapper .rpbChunk.rpbStateSelected {
+      border-color: #44585e; } }
+  @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+    .RadProgressBar .rpbChunksWrapper .rpbChunk.rpbStateSelected {
+      border-color: #44585e; } }
+

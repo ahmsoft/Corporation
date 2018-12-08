@@ -1,0 +1,9 @@
+.RadRating_Sunset a,
+.RadRating_Sunset a span {
+  background-image: url('Rating/Sprite.png');
+  _background-image: url('Rating/Sprite.gif'); }
+@media print {
+  .RadRating_Sunset a:before,
+  .RadRating_Sunset a span:before {
+    content: url('Rating/Sprite.png'); } }
+

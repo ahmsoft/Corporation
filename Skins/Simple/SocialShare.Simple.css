@@ -1,0 +1,15 @@
+.RadSocialShare_Simple {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #616161;
+  background-color: white; }
+  .RadSocialShare_Simple .sshLinkItem .sshText {
+    color: black; }
+  .RadSocialShare_Simple .sshLinkItem:hover .sshText {
+    color: black; }
+
+div.RadComboBox_Simple.sshComboWrapper table td.rcbArrowCell {
+  background-image: none;
+  background-color: transparent;
+  border-left-color: transparent; }
+

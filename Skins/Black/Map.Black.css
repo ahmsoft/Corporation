@@ -1,0 +1,70 @@
+/*$main-sprite: skin-image-url( "Common", "radActionsSprite.png" );
+$main-spriteIE6: skin-image-url( "Common", "radActionsSpriteIE6.png" );*/
+.RadMap_Black {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Additional styles */
+  /*Buttons*/
+  /* Markers */
+  /* Older IE Fix */ }
+  .RadMap_Black .k-header, .RadMap_Black .k-widget, .RadMap_Black .k-popup {
+    color: #fff; }
+  .RadMap_Black .k-widget, .RadMap_Black .k-header {
+    border-color: #080808; }
+  .RadMap_Black .k-widget {
+    background-color: #464646; }
+  .RadMap_Black .k-header, .RadMap_Black .k-button {
+    background-color: #444;
+    background-image: none, linear-gradient(to bottom, #7d7d7d 0, #1b1b1b 100%); }
+  .RadMap_Black.k-widget.k-tooltip {
+    background-color: #999;
+    border-color: #999;
+    background-image: none, linear-gradient(to bottom, #cccccc 0, #999999 100%);
+    color: #000; }
+  .RadMap_Black .k-tooltip-button {
+    background-color: #fff; }
+  .RadMap_Black .k-tooltip-button:hover {
+    background-color: #7bba00; }
+  .RadMap_Black .k-i-close:before, .RadMap_Black .k-i-close:hover:before {
+    color: #000; }
+  .RadMap_Black .k-callout-n {
+    border-bottom-color: #999; }
+  .RadMap_Black .k-callout-e {
+    border-left-color: #999; }
+  .RadMap_Black .k-callout-s {
+    border-top-color: #999; }
+  .RadMap_Black .k-callout-w {
+    border-right-color: #999; }
+  .RadMap_Black .k-button {
+    border-color: #080808;
+    color: #fff;
+    background-color: #4a4a4a;
+    background-image: linear-gradient(#959595 0%, #4b4b4b 50%, #313131 50%, #1c1c1c 100%); }
+  .RadMap_Black .k-button:hover {
+    background-image: linear-gradient(#5b5b5b 0%, #2b2b2d 50%, #060606 50%, #020202 100%);
+    color: #9eda29;
+    background-color: #4a4a4a;
+    border-color: #080808; }
+  .RadMap_Black .k-button:active, .RadMap_Black .k-button:focus {
+    background-image: linear-gradient(#699F00 0, #9EDA29 50%, #8CC913 50%, #9EDA29 100%);
+    background-color: #80b618;
+    border-color: #699f00;
+    color: #fff; }
+  .RadMap_Black div.k-navigator > .k-button:hover {
+    background-image: none, linear-gradient(to bottom, #585859 0, #080808 100%);
+    background-color: #4a4a4a;
+    border-color: #1c1c1c; }
+  .RadMap_Black div.k-navigator > .k-button:active, .RadMap_Black div.k-navigator > .k-button:focus {
+    background-image: none, linear-gradient(to bottom, #9ad526 0, #5e8d03 100%);
+    background-color: #80b618;
+    border-color: #699f00; }
+  .RadMap_Black div.k-navigator > .k-button:hover .k-icon:before {
+    color: #9eda29; }
+  .RadMap_Black div.k-navigator > .k-button .k-icon:before, .RadMap_Black div.k-navigator > .k-button:active .k-icon:before, .RadMap_Black div.k-navigator > .k-button:focus .k-icon:before {
+    color: #fff; }
+  .RadMap_Black .k-marker:before {
+    color: #7bba00; }
+  @media \0screen\,screen\9 {
+    .RadMap_Black .k-icon {
+      background-image: url('Common/radActionsSprite.png'); } }
+

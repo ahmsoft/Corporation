@@ -1,0 +1,135 @@
+.RadNotification {
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  word-wrap: break-word;
+  z-index: 9001;
+  overflow: hidden;
+  /* Right to left support */
+  /* We need it because of IE9 */ }
+  .RadNotification, .RadNotification * {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+  .RadNotification.rnRoundedCorners {
+    border-radius: 0.41667em; }
+  .RadNotification.rnRoundedCorners .rnTitleBar {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadNotification .rnTitleBar {
+    margin: 0;
+    padding: 0em 0.33333em;
+    height: 2em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background-repeat: repeat-x;
+    background-position: 0 0; }
+  .RadNotification .rnTitleBarIcon {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 0.33333em 0.33333em 0em 0em;
+    overflow: hidden; }
+    .RadNotification .rnTitleBarIcon img {
+      vertical-align: top; }
+  .RadNotification .rnTitleBarTitle {
+    display: block;
+    width: 70%;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden; }
+  .RadNotification .rnCommands {
+    width: auto;
+    height: 16px;
+    line-height: 16px;
+    float: right;
+    list-style: none;
+    margin: 0.25em 0em 0em 0em;
+    padding: 0; }
+  .RadNotification .rnCommands li {
+    float: left; }
+  .RadNotification .rnCommands a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-decoration: none; }
+  .RadNotification .rnCommands .rnMenuIcon a {
+    background-position: -2px -662px; }
+  .RadNotification .rnCommands .rnMenuIcon a:hover {
+    background-position: -22px -662px; }
+  .RadNotification .rnCommands .rnCloseIcon a {
+    background-position: -2px -762px; }
+  .RadNotification .rnCommands .rnCloseIcon a:hover {
+    background-position: -22px -762px; }
+  .RadNotification .rnCommands a .rnAccessibility {
+    display: none; }
+  .RadNotification div.rnNoTitleBar .rnContentWrapper {
+    border-top: 0; }
+  .RadNotification .rnCommands li a:before {
+    display: block;
+    vertical-align: middle;
+    content: "";
+    font-family: "TelerikWebUI";
+    font-size: 1.33333em;
+    line-height: 1.33333em;
+    color: #000; }
+  .RadNotification .rnContentWrapper {
+    padding: 5px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: transparent; }
+  .RadNotification .rnContentIconClipIn {
+    position: relative;
+    float: left;
+    margin: -2px 0 -34px 15px;
+    width: 32px;
+    height: 32px;
+    *margin: 15px 0 -35px 0; }
+    .RadNotification .rnContentIconClipIn img {
+      vertical-align: top; }
+  .RadNotification .rnContentIconClip {
+    position: absolute;
+    top: -1px;
+    clip: rect(16px 32px 48px 0); }
+  * + html .RadNotification .rnContentIconClip {
+    top: -18px;
+    right: -18px; }
+  .RadNotification .rnContentIconClipIn .rnCustomIcon {
+    clip: auto;
+    margin-top: 12px;
+    *cliptop: 0; }
+  .RadNotification .rnContent {
+    padding: 1em 1.66667em 1.66667em 5.58333em; }
+  .RadNotification .rnContentTemplate, .RadNotification div.rnNoContentIcon .rnContent {
+    padding: 0; }
+  .RadNotification.rnRtl .rnCommands li, .RadNotification.rnRtl .rnTitleBarIcon, .RadNotification.rnRtl .rnTitleBarTitle, .RadNotification.rnRtl .rnContentIconClipIn {
+    float: right; }
+  .RadNotification.rnRtl .rnTitleBarTitle {
+    padding-right: 4px; }
+  .RadNotification.rnRtl .rnCommands {
+    float: left;
+    margin-left: -4px;
+    *margin-top: 4px;
+    *margin-right: 55px;
+    *width: 40px; }
+  .RadNotification.rnRtl .rnTitleBarIcon {
+    direction: ltr;
+    margin: 0.33333em 0em 0em 0em; }
+  .RadNotification.rnRtl .rnContent {
+    padding: 1em 5.58333em 1.66667em 1.66667em; }
+  .RadNotification.rnRtl .rnContentIconClipIn {
+    margin: -2px 15px -34px 0;
+    *margin: 15px 30px -35px 0;
+    *position: fixed; }
+
+.rnEmbed {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -99999px;
+  top: -99999px; }
+

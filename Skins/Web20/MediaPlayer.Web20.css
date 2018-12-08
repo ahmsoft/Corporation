@@ -1,0 +1,237 @@
+.RadMediaPlayer_Web20 {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #ffffff; }
+  .RadMediaPlayer_Web20 .rmpToolbar {
+    color: #ffffff;
+    border-color: #213468;
+    background-image: -webkit-linear-gradient(bottom, rgba(61, 86, 142, 0.8) 0%, rgba(41, 60, 110, 0.8) 51%, rgba(53, 68, 123, 0.8) 52%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -moz-linear-gradient(bottom, rgba(61, 86, 142, 0.8) 0%, rgba(41, 60, 110, 0.8) 51%, rgba(53, 68, 123, 0.8) 52%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -ms-linear-gradient(bottom, rgba(61, 86, 142, 0.8) 0%, rgba(41, 60, 110, 0.8) 51%, rgba(53, 68, 123, 0.8) 52%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(61, 86, 142, 0.8) 0%, rgba(41, 60, 110, 0.8) 51%, rgba(53, 68, 123, 0.8) 52%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: linear-gradient(to top, rgba(61, 86, 142, 0.8) 0%, rgba(41, 60, 110, 0.8) 51%, rgba(53, 68, 123, 0.8) 52%, rgba(89, 113, 165, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC5971A5', endColorstr='#CC3D568E',GradientType=0 ); }
+  .RadMediaPlayer_Web20 div.rmpRightControlsSet {
+    padding-top: 9px; }
+  .RadMediaPlayer_Web20 div.rmpVolContrBar {
+    padding: 11px 8px;
+    border: 1px solid #213468;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, rgba(41, 60, 110, 0.8) 0%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -moz-linear-gradient(top, rgba(41, 60, 110, 0.8) 0%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -ms-linear-gradient(top, rgba(41, 60, 110, 0.8) 0%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: -o-linear-gradient(top, rgba(41, 60, 110, 0.8) 0%, rgba(89, 113, 165, 0.8) 100%);
+    background-image: linear-gradient(to bottom, rgba(41, 60, 110, 0.8) 0%, rgba(89, 113, 165, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC293C6E', endColorstr='#CC5971A5',GradientType=0 ); }
+  .RadMediaPlayer_Web20 .rslVertical div.rslTrack,
+  .RadMediaPlayer_Web20 .rslHorizontal div.rslTrack {
+    background-image: none;
+    background-color: #d8e8ff; }
+  .RadMediaPlayer_Web20 div.rslHorizontal .rslTrack {
+    border: 1px solid #d5dce4;
+    border-top-color: #7d92aa;
+    background-image: -webkit-linear-gradient(top, #c4ddff 0%, #ecf4ff 100%);
+    background-image: -moz-linear-gradient(top, #c4ddff 0%, #ecf4ff 100%);
+    background-image: -ms-linear-gradient(top, #c4ddff 0%, #ecf4ff 100%);
+    background-image: -o-linear-gradient(top, #c4ddff 0%, #ecf4ff 100%);
+    background-image: linear-gradient(to bottom, #c4ddff 0%, #ecf4ff 100%); }
+  .RadMediaPlayer_Web20 div.rslVertical .rslTrack {
+    border-left: 0 none;
+    background-image: -webkit-linear-gradient(left, #c4ddff, #ecf4ff);
+    background-image: -moz-linear-gradient(left, #c4ddff, #ecf4ff);
+    background-image: -ms-linear-gradient(left, #c4ddff, #ecf4ff);
+    background-image: -o-linear-gradient(left, #c4ddff, #ecf4ff);
+    background-image: linear-gradient(to right, #c4ddff, #ecf4ff); }
+  .RadMediaPlayer_Web20 .rslVertical div.rslSelectedregion,
+  .RadMediaPlayer_Web20 .rslHorizontal div.rslSelectedregion {
+    background-image: none;
+    background-color: #67cd0f; }
+  .RadMediaPlayer_Web20 div.rslHorizontal .rslSelectedregion {
+    height: 4px;
+    border: 1px solid #6eff79;
+    background-image: -webkit-linear-gradient(left, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -moz-linear-gradient(left, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -ms-linear-gradient(left, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -o-linear-gradient(left, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: linear-gradient(to right, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%); }
+  .RadMediaPlayer_Web20 div.rslVertical .rslSelectedregion {
+    width: 4px;
+    border: 1px solid #6eff79;
+    background-image: -webkit-linear-gradient(bottom, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -moz-linear-gradient(bottom, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -ms-linear-gradient(bottom, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: -o-linear-gradient(bottom, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%);
+    background-image: linear-gradient(to top, #67cd0f 0%, #67cd0f 70%, #e0ff91 100%); }
+  .RadMediaPlayer_Web20 .rmpLoadProgressBar {
+    background-color: #86a4dc; }
+  .RadMediaPlayer_Web20 .rslDraghandle,
+  .RadMediaPlayer_Web20 .rslTrack,
+  .RadMediaPlayer_Web20 .rslSelectedregion {
+    border-radius: 1px; }
+  .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle,
+  .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle {
+    background-image: -webkit-linear-gradient(top, #a0badd 0%, #7a94c6 52%, #7a94c6 52%, #95b6e0 100%);
+    background-image: -moz-linear-gradient(top, #a0badd 0%, #7a94c6 52%, #7a94c6 52%, #95b6e0 100%);
+    background-image: -ms-linear-gradient(top, #a0badd 0%, #7a94c6 52%, #7a94c6 52%, #95b6e0 100%);
+    background-image: -o-linear-gradient(top, #a0badd 0%, #7a94c6 52%, #7a94c6 52%, #95b6e0 100%);
+    background-image: linear-gradient(to bottom, #a0badd 0%, #7a94c6 52%, #7a94c6 52%, #95b6e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0badd', endColorstr='#95b6e0',GradientType=0 );
+    border: 1px solid #6788be; }
+    .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle span,
+    .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle span {
+      border: 1px solid #b5c8e4; }
+    .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle:hover, .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle:active,
+    .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle:hover,
+    .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle:active {
+      background-image: -webkit-linear-gradient(top, #ffffff 0%, #b0caf3 52%, #b0caf3 52%, #ebf4ff 100%);
+      background-image: -moz-linear-gradient(top, #ffffff 0%, #b0caf3 52%, #b0caf3 52%, #ebf4ff 100%);
+      background-image: -ms-linear-gradient(top, #ffffff 0%, #b0caf3 52%, #b0caf3 52%, #ebf4ff 100%);
+      background-image: -o-linear-gradient(top, #ffffff 0%, #b0caf3 52%, #b0caf3 52%, #ebf4ff 100%);
+      background-image: linear-gradient(to bottom, #ffffff 0%, #b0caf3 52%, #b0caf3 52%, #ebf4ff 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebf4ff',GradientType=0 );
+      border: 1px solid #7496ce;
+      background-position: 0 0; }
+  .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle {
+    width: 6px;
+    height: 16px;
+    margin-top: -6px; }
+    .RadMediaPlayer_Web20 div.rslHorizontal a.rslDraghandle span {
+      height: 14px; }
+  .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle {
+    width: 16px;
+    height: 6px;
+    margin-left: -6px; }
+    .RadMediaPlayer_Web20 div.rslVertical a.rslDraghandle span {
+      height: 4px; }
+  .RadMediaPlayer_Web20 .rmpPlaylist {
+    background: #e7f1ff; }
+    .RadMediaPlayer_Web20 .rmpPlaylist li a {
+      background: #e7f1ff;
+      color: #000000; }
+      .RadMediaPlayer_Web20 .rmpPlaylist li a:hover {
+        background: #cddef7; }
+    .RadMediaPlayer_Web20 .rmpPlaylist li.rmpActive a {
+      background: #d4ffbc; }
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpTitle {
+      margin-right: 12px;
+      font: normal 10px/17px "Segoe UI", Arial, sans-serif; }
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistPrevButton,
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistNextButton {
+      width: 100%;
+      height: 100%;
+      background: #c7d4e8;
+      vertical-align: top; }
+      .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistPrevButton:hover,
+      .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistNextButton:hover {
+        background: #96a9c6; }
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpIcon {
+      margin: 0; }
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistNextIcon,
+    .RadMediaPlayer_Web20 .rmpPlaylist .rmpPlaylistPrevIcon {
+      margin: 2px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical li,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside li {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #94aac8; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpPlaylistPrevButtonWrap,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpPlaylistPrevButtonWrap {
+    border-bottom: 1px solid #94aac8; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpPlaylistNextButtonWrap,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpPlaylistNextButtonWrap {
+    border-top: 1px solid #94aac8; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal li {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #94aac8; }
+    .RadMediaPlayer_Web20 .rmpPlaylistHorizontal li .rmpTitle {
+      padding-top: 7px;
+      max-height: 45px;
+      line-height: 15px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpPlaylistPrevButtonWrap {
+    border-right: 1px solid #94aac8; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpPlaylistNextButtonWrap {
+    border-left: 1px solid #94aac8; }
+  .RadMediaPlayer_Web20 .rmpBanner {
+    border: 1px solid #b5c8e4; }
+    .RadMediaPlayer_Web20 .rmpBanner .rmpActionButton {
+      background: #b5c8e4; }
+  .RadMediaPlayer_Web20 .rmpBigPlayButton,
+  .RadMediaPlayer_Web20 .rmpBigPauseButton {
+    background: rgba(133, 200, 67, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6685C843', endColorstr='#6685C843',GradientType=0 ); }
+  .RadMediaPlayer_Web20 .rmpIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadMediaPlayer_Web20 .rmpToolTip,
+  .RadMediaPlayer_Web20 .rmpBigPlayIcon,
+  .RadMediaPlayer_Web20 .rmpBigPauseIcon {
+    background-image: url('MediaPlayer/sprite.png'); }
+  .RadMediaPlayer_Web20 .rmpBigPlayIcon {
+    background-position: 6px -108px; }
+  .RadMediaPlayer_Web20 .rmpBigPauseIcon {
+    background-position: -122px 4px; }
+  .RadMediaPlayer_Web20 .rmpToolTip {
+    background-position: -123px -241px; }
+  .RadMediaPlayer_Web20 .rmpPlayIcon {
+    background-position: 0px -1999px; }
+  .RadMediaPlayer_Web20 .rmpPauseIcon {
+    background-position: 0px -2019px; }
+  .RadMediaPlayer_Web20 .rmpVolumeIcon {
+    background-position: 1px -2039px; }
+  .RadMediaPlayer_Web20 .rmpMuteIcon {
+    background-position: 1px -2059px; }
+  .RadMediaPlayer_Web20 .rmpHDIcon {
+    background-position: 0px -2079px; }
+  .RadMediaPlayer_Web20 .rmpFullScrIcon {
+    background-position: 0px -2099px; }
+  .RadMediaPlayer_Web20 .rmpExtFullScrIcon {
+    background-position: 0px -2119px; }
+  .RadMediaPlayer_Web20 .rmpShareIcon {
+    background-position: 0px -2139px; }
+  .RadMediaPlayer_Web20 .rmpClosePlaylistIcon {
+    background-position: 0px -2220px; }
+  .RadMediaPlayer_Web20 .rmpOpenPlaylistIcon {
+    background-position: 0px -2200px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpPlaylistPrevIcon,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpPlaylistPrevIcon {
+    background-position: 0px -2240px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpPlaylistNextIcon,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpPlaylistNextIcon {
+    background-position: 0px -2260px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpPlaylistPrevIcon {
+    background-position: 0px -2280px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpPlaylistNextIcon {
+    background-position: 0px -2300px; }
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpPlayIcon {
+    background-position: -20px -1999px; }
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpPauseIcon {
+    background-position: -20px -2019px; }
+  .RadMediaPlayer_Web20 .rmpVolContr:hover .rmpVolumeIcon {
+    background-position: -19px -2039px; }
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpMuteIcon {
+    background-position: -19px -2059px; }
+  .RadMediaPlayer_Web20 .rmpHDActiveIcon,
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpHDIcon {
+    background-position: -34px -2079px; }
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpFullScrIcon {
+    background-position: -20px -2099px; }
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpExtFullScrIcon {
+    background-position: -20px -2119px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpActionButton:hover .rmpPlaylistPrevIcon,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpActionButton:hover .rmpPlaylistPrevIcon {
+    background-position: -20px -2240px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistVertical .rmpActionButton:hover .rmpPlaylistNextIcon,
+  .RadMediaPlayer_Web20 .rmpPlaylistVerticalInside .rmpActionButton:hover .rmpPlaylistNextIcon {
+    background-position: -20px -2260px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpActionButton:hover .rmpPlaylistPrevIcon {
+    background-position: -20px -2280px; }
+  .RadMediaPlayer_Web20 .rmpPlaylistHorizontal .rmpActionButton:hover .rmpPlaylistNextIcon {
+    background-position: -20px -2300px; }
+  .RadMediaPlayer_Web20 .rmpCloseBannerIcon {
+    background-position: 0px -760px; }
+  .RadMediaPlayer_Web20 .rmpCloseBannerIcon:hover {
+    background-position: -20px -760px; }
+  .RadMediaPlayer_Web20 .rmpSubtitlesIcon {
+    background-position: 0px -2320px; }
+  .RadMediaPlayer_Web20 .rmpSubtitlesActiveIcon,
+  .RadMediaPlayer_Web20 .rmpActionButton:hover .rmpSubtitlesIcon {
+    background-position: -20px -2320px; }

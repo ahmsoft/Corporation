@@ -1,0 +1,69 @@
+.RadSplitter_Outlook {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Borders */
+  /* When ShowContentDuringLoad="false" */
+  /* RadSplitBar/RadSlidingPane resize elements */
+  /* RadSlidingPane tab */
+  /* RadSlidingPane tab */
+  /* RadSplitBar buttons */
+  /* RadSlidingPane buttons */
+  /* RadSlidingPane header */
+  /* RadSlidingPane title text */
+  /* RadSlidingPane header elements */ }
+  .RadSplitter_Outlook,
+  .RadSplitter_Outlook .rspPaneTabContainer,
+  .RadSplitter_Outlook .rspPane,
+  .RadSplitter_Outlook .rspResizeBar,
+  .RadSplitter_Outlook .rspSlideContainerResize,
+  .RadSplitter_Outlook .rspPaneHorizontal,
+  .RadSplitter_Outlook .rspResizeBarHorizontal,
+  .RadSplitter_Outlook .rspSlideContainerResizeHorizontal {
+    border-color: #c3d9f9; }
+  .RadSplitter_Outlook .rspLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadSplitter_Outlook .rspResizeBar,
+  .RadSplitter_Outlook .rspSlideContainerResize,
+  .RadSplitter_Outlook .rspResizeBarOver,
+  .RadSplitter_Outlook .rspSlideContainerResizeOver {
+    background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+    background-color: #d6e6f4; }
+  .RadSplitter_Outlook .rspResizeBarOver,
+  .RadSplitter_Outlook .rspSlideContainerResizeOver {
+    background: #d6e6f4 none;
+    /*-4px 0*/ }
+  .RadSplitter_Outlook .rspResizeBarHorizontal,
+  .RadSplitter_Outlook .rspSlideContainerResizeHorizontal {
+    background-iamge: url('Splitter/ResizeBarHorizontalSprites.gif');
+    background-color: #d6e6f4; }
+  .RadSplitter_Outlook .rspResizeBarOverHorizontal,
+  .RadSplitter_Outlook .rspSlideContainerResizeOverHorizontal {
+    background: #d6e6f4 none;
+    /*0 -4px;*/ }
+  .RadSplitter_Outlook .rspPaneTabContainer,
+  .RadSplitter_Outlook .rspSlideHeaderDockIcon,
+  .RadSplitter_Outlook .rspSlideHeaderUndockIcon,
+  .RadSplitter_Outlook .rspSlideHeaderCollapseIcon,
+  .RadSplitter_Outlook .rspCollapseBarExpand,
+  .RadSplitter_Outlook .rspCollapseBarCollapse,
+  .RadSplitter_Outlook .rspCollapseBarHorizontalExpand,
+  .RadSplitter_Outlook .rspCollapseBarHorizontalCollapse {
+    background-image: url('Splitter/ExpandCollapseBarsCommands.gif'); }
+  .RadSplitter_Outlook .rspPaneTabContainer {
+    background-color: #d6e6f4; }
+  .RadSplitter_Outlook .rspSlideHeader,
+  .RadSplitter_Outlook .rspSlideTitleContainer,
+  .RadSplitter_Outlook .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Outlook .rspTop .rspPaneTabContainer {
+    background-image: url('Splitter/slideTitleContainerBgr.gif');
+    background-repeat: repeat-x; }
+  .RadSplitter_Outlook .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Outlook .rspTop .rspPaneTabContainer {
+    background-position: 0 -1px; }
+  .RadSplitter_Outlook .rspSlideTitle,
+  .RadSplitter_Outlook .rspPaneTabText {
+    color: black; }
+  .RadSplitter_Outlook .rspSlideTitleContainer,
+  .RadSplitter_Outlook .rspSlideHeaderIconWrapper {
+    border-bottom: 1px solid #c3d9f9; }
+

@@ -1,0 +1,29 @@
+.RadToolTip_Black.rtLoading {
+  background: url('Common/loading.gif') no-repeat center; }
+.RadToolTip_Black .rtWrapper .rtWrapperTopLeft,
+.RadToolTip_Black .rtWrapper .rtWrapperTopRight,
+.RadToolTip_Black .rtWrapper .rtWrapperBottomLeft,
+.RadToolTip_Black .rtWrapper .rtWrapperBottomRight,
+.RadToolTip_Black .rtWrapper .rtWrapperTopCenter,
+.RadToolTip_Black .rtWrapper .rtWrapperBottomCenter,
+.RadToolTip_Black table.rtShadow .rtWrapperTopLeft,
+.RadToolTip_Black table.rtShadow .rtWrapperTopRight,
+.RadToolTip_Black table.rtShadow .rtWrapperBottomLeft,
+.RadToolTip_Black table.rtShadow .rtWrapperBottomRight,
+.RadToolTip_Black table.rtShadow .rtWrapperTopCenter,
+.RadToolTip_Black table.rtShadow .rtWrapperBottomCenter,
+.RadToolTip_Black .rtCloseButton {
+  background-image: url('ToolTip/ToolTipSprites.png'); }
+.RadToolTip_Black .rtWrapper .rtWrapperLeftMiddle,
+.RadToolTip_Black .rtWrapper .rtWrapperRightMiddle,
+.RadToolTip_Black table.rtShadow .rtWrapperLeftMiddle,
+.RadToolTip_Black table.rtShadow .rtWrapperRightMiddle {
+  background-image: url('ToolTip/ToolTipVerticalSprites.png'); }
+.RadToolTip_Black .rtWrapper .rtWrapperContent {
+  background-color: #ccc;
+  color: black; }
+.RadToolTip_Black .rtTitlebar {
+  color: black; }
+.RadToolTip_Black .rtCallout {
+  background-image: url('ToolTip/Callouts.gif'); }
+

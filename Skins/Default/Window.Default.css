@@ -1,0 +1,114 @@
+.RadWindow_Default {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Window Background */
+  /* Horiznotal */
+  /* Vertical */
+  /* Window Shadows */
+  /* Horiznotal */
+  /* Vertical */
+  /* Shadows End */
+  /* Loading Indicators */
+  /* When ShowContentDuringLoad="true" */
+  /* When ShowContentDuringLoad="false" */
+  /* Shadow Control Buttons */
+  /* ctrl buttons when winodw is minimized */
+  /* Icon when winodw is minimized */
+  /*title buttons when winodw is minimized */ }
+  .RadWindow_Default .rwTopLeft,
+  .RadWindow_Default .rwTopRight,
+  .RadWindow_Default .rwTitlebar,
+  .RadWindow_Default .rwFooterLeft,
+  .RadWindow_Default .rwFooterRight,
+  .RadWindow_Default .rwFooterCenter,
+  .RadWindow_Default .rwTopResize,
+  .RadWindow_Default .rwStatusbar div,
+  .RadWindow_Default .rwStatusbar,
+  .RadWindow_Default .rwPopupButton,
+  .RadWindow_Default .rwPopupButton span, .RadWindow_Default.rwMinimizedWindow .rwCorner {
+    background-image: url('Window/WindowHorizontalSprites.gif'); }
+  .RadWindow_Default .rwBodyLeft,
+  .RadWindow_Default .rwBodyRight,
+  .RadWindow_Default .rwStatusbarRow .rwCorner {
+    background-image: url('Window/WindowVerticalSprites.gif'); }
+  .RadWindow_Default .rwShadow .rwTopLeft,
+  .RadWindow_Default .rwShadow .rwTopRight,
+  .RadWindow_Default .rwShadow .rwTitlebar,
+  .RadWindow_Default .rwShadow .rwFooterLeft,
+  .RadWindow_Default .rwShadow .rwFooterRight,
+  .RadWindow_Default .rwShadow .rwFooterCenter,
+  .RadWindow_Default .rwShadow .rwTopResize,
+  .RadWindow_Default .rwShadow .rwStatusbar div,
+  .RadWindow_Default .rwShadow .rwStatusbar,
+  .RadWindow_Default .rwShadow .rwPopupButton,
+  .RadWindow_Default .rwShadow .rwPopupButton span,
+  .RadWindow_Default .rwShadow .rwBodyLeft,
+  .RadWindow_Default .rwShadow .rwBodyRight,
+  .RadWindow_Default .rwShadow .rwStatusbarRow .rwBodyLeft,
+  .RadWindow_Default .rwShadow .rwStatusbarRow .rwBodyRight {
+    background-image: url('Window/WindowHorizontalSprites.png'); }
+  .RadWindow_Default .rwShadow .rwBodyLeft,
+  .RadWindow_Default .rwShadow .rwBodyRight,
+  .RadWindow_Default .rwShadow .rwStatusbarRow .rwBodyLeft,
+  .RadWindow_Default .rwShadow .rwStatusbarRow .rwBodyRight {
+    background-image: url('Window/WindowVerticalSprites.png'); }
+  .RadWindow_Default .rwStatusbar input {
+    background-color: white; }
+  .RadWindow_Default .rwControlButtons a {
+    background-image: url('Window/CommandButtonSprites.gif'); }
+  .RadWindow_Default a.rwIcon {
+    background-image: url('Window/WindowHorizontalSprites.gif'); }
+  .RadWindow_Default .rwTable .rwTitlebarControls em {
+    color: #333333; }
+  .RadWindow_Default .rwTable .rwDialogInput {
+    border: 1px solid #cdcdcd; }
+  .RadWindow_Default .rwTable .rwDialogInput:hover {
+    border: 1px solid #aaaaaa;
+    color: #333333; }
+  .RadWindow_Default td.rwWindowContent {
+    background-color: white; }
+  .RadWindow_Default .rwTable tr td.rwLoading {
+    background-color: white; }
+  .RadWindow_Default td.rwWindowContent.rwLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadWindow_Default input.rwLoading {
+    background-image: url('Common/loading_small.gif'); }
+  .RadWindow_Default .rwTable a.rwCancel,
+  .RadWindow_Default .rwTable a.rwCancel span {
+    background: none;
+    cursor: pointer; }
+  .RadWindow_Default .rwTable a.rwCancel span span {
+    color: #333333;
+    text-decoration: underline; }
+  .RadWindow_Default .rwShadow .rwControlButtons {
+    margin: 5px -2px 0 0; }
+  .RadWindow_Default .rwShadow .rwControlButtons {
+    margin: 5px -1px 0 0\9; }
+  .RadWindow_Default.rwMinimizedWindowShadow .rwShadow .rwControlButtons {
+    margin: 7px -8px 0 0; }
+  .RadWindow_Default.rwMinimizedWindowShadow .rwShadow .rwIcon {
+    margin: 9px 6px 0 0; }
+  .RadWindow_Default.rwMinimizedWindowShadow .rwShadow em {
+    margin: 4px 0 0 -1px; }
+  .RadWindow_Default .rwShadow .rwControlButtons li {
+    float: left;
+    padding: 0; }
+  .RadWindow_Default .rwShadow .rwControlButtons a {
+    width: 26px; }
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwTopLeft,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwTopRight,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwTitlebar,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwFooterLeft,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwFooterRight,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwFooterCenter,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwTopResize,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwStatusbar div,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwStatusbar,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwPopupButton,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwPopupButton span,
+  .RadWindow_Default .rwInactiveWindow .rwShadow.rwMinimizedWindow .rwCorner, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopLeft, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTitlebar, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopRight, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterLeft, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterCenter, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterRight {
+    background-image: url('Window/WindowHorizontalSprites.gif') !important; }
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwBodyLeft,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwBodyRight,
+  .RadWindow_Default .rwInactiveWindow .rwShadow .rwStatusbarRow .rwCorner, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyLeft, .RadWindow_Default.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyRight {
+    background-image: url('Window/WindowVerticalSprites.gif') !important; }

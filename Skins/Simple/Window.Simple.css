@@ -1,0 +1,67 @@
+.RadWindow_Simple {
+  border: 1px solid #828282;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* end shadows */
+  /* When ShowContentDuringLoad="false" */ }
+  .RadWindow_Simple .rwTopLeft, .RadWindow_Simple .rwTopRight, .RadWindow_Simple .rwTitlebar, .RadWindow_Simple .rwFooterLeft, .RadWindow_Simple .rwFooterRight, .RadWindow_Simple .rwFooterCenter, .RadWindow_Simple .rwTopResize, .RadWindow_Simple .rwStatusbar div, .RadWindow_Simple .rwStatusbar, .RadWindow_Simple .rwBodyLeft, .RadWindow_Simple .rwBodyRight, .RadWindow_Simple .rwStatusbarRow .rwCorner {
+    background: #ececec; }
+  .RadWindow_Simple table.rwShadow .rwTopLeft, .RadWindow_Simple table.rwShadow .rwTopRight, .RadWindow_Simple.rwMinimizedWindow table.rwShadow .rwCorner.rwTopLeft, .RadWindow_Simple.rwMinimizedWindow table.rwShadow .rwCorner.rwTopRight, .RadWindow_Simple table.rwShadow .rwBodyLeft, .RadWindow_Simple table.rwShadow .rwBodyRight, .RadWindow_Simple table.rwShadow .rwFooterLeft, .RadWindow_Simple table.rwShadow .rwFooterRight {
+    width: 7px !important; }
+  .RadWindow_Simple .rwShadow td.rwFooterLeft, .RadWindow_Simple .rwShadow td.rwFooterRight, .RadWindow_Simple .rwShadow td.rwFooterCenter {
+    height: 7px; }
+  .RadWindow_Simple iframe {
+    display: block; }
+  .RadWindow_Simple a.rwIcon {
+    background: url('Window/Icon.gif') no-repeat center; }
+  .RadWindow_Simple ul.rwControlButtons {
+    margin: 0; }
+  .RadWindow_Simple .rwControlButtons a {
+    background-color: #e2e2e2;
+    background-image: url('Window/CommandButtonSprites.gif');
+    width: 29px;
+    height: 19px;
+    border: 1px solid #7e7e7e; }
+  .RadWindow_Simple .rwControlButtons a:hover {
+    border-color: #c98400;
+    background-color: #ffe79c; }
+  .RadWindow_Simple table.rwTitlebarControls em {
+    color: #000000; }
+  .RadWindow_Simple input.rwDialogInput {
+    border: 1px solid #616161; }
+  .RadWindow_Simple input.rwDialogInput:hover {
+    border: 1px solid #c98400; }
+  .RadWindow_Simple table tr td.rwLoading {
+    background-color: #ffffff; }
+  .RadWindow_Simple tr td.rwWindowContent.rwLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadWindow_Simple input.rwLoading {
+    background-image: url('Common/loading_small.gif'); }
+  .RadWindow_Simple .rwDialogPopup a.rwPopupButton {
+    background: #e2e2e2;
+    border: 1px solid #7e7e7e; }
+  .RadWindow_Simple .rwDialogPopup a.rwPopupButton:hover {
+    background: #ffe79c;
+    border-color: #c98400; }
+  .RadWindow_Simple .rwShadow .rwFooterLeft, .RadWindow_Simple .rwShadow .rwFooterRight, .RadWindow_Simple .rwShadow .rwFooterCenter {
+    height: 5px; }
+  .RadWindow_Simple.rwMinimizedWindowShadow .rwFooterRow {
+    display: none; }
+  .RadWindow_Simple.rwMinimizedWindowShadow .rwTable {
+    width: 200px; }
+  .RadWindow_Simple .rwShadow a.rwIcon {
+    margin: 5px 5px 0 0; }
+  .RadWindow_Simple table.rwShadow em {
+    padding: 5px 0 0 1px; }
+  .RadWindow_Simple.rwMinimizedWindow .rwShadow .rwControlButtons {
+    margin: 2px 0 0 0; }
+
+div.RadWindow_Simple a.rwCancel, div.RadWindow_Simple a.rwCancel span {
+  background: none !important;
+  cursor: pointer;
+  border: 0 !important; }
+
+div.RadWindow_Simple a.rwCancel span span, div.RadWindow_Simple a.rwCancel:hover span span {
+  color: #000000;
+  text-decoration: underline; }
+

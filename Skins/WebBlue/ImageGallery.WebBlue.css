@@ -1,0 +1,91 @@
+.RadImageGallery_WebBlue {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: black; }
+  .RadImageGallery_WebBlue .rigDescriptionBox {
+    background-color: #a7c0df;
+    background-color: rgba(167, 192, 223, 0.6); }
+  .RadImageGallery_WebBlue .rigToolbar,
+  .RadImageGallery_WebBlue .rigCloseButton,
+  .RadImageGallery_WebBlue .rigDrawerButton {
+    background-color: #0e3d4f;
+    background-color: rgba(14, 61, 79, 0.8);
+    color: white; }
+  .RadImageGallery_WebBlue .rigProgressBar div {
+    background-color: #9ddaf2; }
+  .RadImageGallery_WebBlue .rigPager {
+    background-color: #dae2e8;
+    color: #0d202b; }
+    .RadImageGallery_WebBlue .rigPager a {
+      color: #0d202b; }
+    .RadImageGallery_WebBlue .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_WebBlue .rigIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadImageGallery_WebBlue .rigDotList > a {
+    border-color: #768ca5; }
+  .RadImageGallery_WebBlue .rigDotList a span {
+    background-color: white; }
+  .RadImageGallery_WebBlue .rigDotList a.rigCurrentItem span {
+    background-color: #5d9fb7;
+    border-color: white; }
+  .RadImageGallery_WebBlue .rigTooltip {
+    background-color: #e4e5f0;
+    border-color: #e4e5f0; }
+    .RadImageGallery_WebBlue .rigTooltip:after {
+      border-top-color: #e4e5f0; }
+  .RadImageGallery_WebBlue .rigPrevButton,
+  .RadImageGallery_WebBlue .rigNextButton,
+  .RadImageGallery_WebBlue .rigScrollPrevIcon,
+  .RadImageGallery_WebBlue .rigScrollNextIcon,
+  .RadImageGallery_WebBlue .rigCloseIcon {
+    background-image: url('LightBox/sprite.png'); }
+  .RadImageGallery_WebBlue .rigPrevButton {
+    background-position: 0 -140px; }
+  .RadImageGallery_WebBlue .rigNextButton {
+    background-position: -60px -140px; }
+  .RadImageGallery_WebBlue .rigScrollPrevIcon {
+    background-position: -79px  -49px; }
+  .RadImageGallery_WebBlue .rigScrollNextIcon {
+    background-position: -104px -49px; }
+  .RadImageGallery_WebBlue.RadImageGallery_RightOutside .rigScrollPrevIcon,
+  .RadImageGallery_WebBlue.RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_WebBlue .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery_WebBlue .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -62px -89px; }
+  .RadImageGallery_WebBlue .RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_WebBlue .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -96px -89px; }
+  .RadImageGallery_WebBlue .rigCloseIcon {
+    background-position: -79px -12px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigCloseIcon {
+    background-position: -101px -12px; }
+  .RadImageGallery_WebBlue .rigDrawerIcon {
+    background-position: -52px -60px; }
+  .RadImageGallery_WebBlue .rigPlayIcon {
+    background-position: 1px -1999px; }
+  .RadImageGallery_WebBlue .rigPauseIcon {
+    background-position: 1px -2019px; }
+  .RadImageGallery_WebBlue .rigFullScrIcon {
+    background-position: 1px -2099px; }
+  .RadImageGallery_WebBlue .rigExtFullScrIcon {
+    background-position: 1px -2119px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigPlayIcon {
+    background-position: -19px -1999px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigPauseIcon {
+    background-position: -19px -2019px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigFullScrIcon {
+    background-position: -19px -2099px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigExtFullScrIcon {
+    background-position: -19px -2119px; }
+  .RadImageGallery_WebBlue .rigShowThumbnIcon {
+    background-position: 0px -2159px; }
+  .RadImageGallery_WebBlue .rigHideThumbnIcon {
+    background-position: 0px -2179px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigShowThumbnIcon {
+    background-position: -20px -2159px; }
+  .RadImageGallery_WebBlue .rigActionButton:hover .rigHideThumbnIcon {
+    background-position: -20px -2179px; }

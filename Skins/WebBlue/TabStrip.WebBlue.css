@@ -1,0 +1,159 @@
+.RadTabStrip_WebBlue {
+  color: #000000;
+  font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 26px; }
+  .RadTabStrip_WebBlue .rtsGhostTab {
+    border-color: #4e667e;
+    border-radius: 5px;
+    color: #0d202b;
+    background-color: #c2d2dd; }
+  .RadTabStrip_WebBlue .rtsLI,
+  .RadTabStrip_WebBlue .rtsLink {
+    color: #fff;
+    font: 12px/26px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTabStrip_WebBlue .rtsLink {
+    background-image: none; }
+    .RadTabStrip_WebBlue .rtsLink:hover {
+      color: #000000;
+      text-decoration: underline; }
+  .RadTabStrip_WebBlue .rtsOut {
+    background-image: none; }
+  .RadTabStrip_WebBlue .rtsSelected,
+  .RadTabStrip_WebBlue .rtsSelected:hover {
+    color: #000000;
+    text-decoration: underline; }
+  .RadTabStrip_WebBlue .rtsDisabled,
+  .RadTabStrip_WebBlue .rtsDisabled:hover {
+    color: #555; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsLink {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 0 0; }
+    .RadTabStrip_WebBlue .rtsLevel .rtsLink:hover {
+      color: #000000;
+      background-position: 0 -52px;
+      text-decoration: none; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsSelected,
+  .RadTabStrip_WebBlue .rtsLevel .rtsSelected:hover {
+    color: #000000;
+    text-decoration: none;
+    background-position: 0 -26px; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsOut {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 100% 0; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -52px; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStrip_WebBlue .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -26px; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsDisabled:hover {
+    color: #555;
+    background-position: 0 0; }
+  .RadTabStrip_WebBlue .rtsLevel .rtsDisabled:hover .rtsOut {
+    background-position: 100% 0; }
+  .RadTabStrip_WebBlue .rtsNextArrow,
+  .RadTabStrip_WebBlue .rtsPrevArrow,
+  .RadTabStrip_WebBlue .rtsPrevArrowDisabled,
+  .RadTabStrip_WebBlue .rtsNextArrowDisabled {
+    background-image: url('TabStrip/TabStripStates.png'); }
+
+.RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel .rtsLink,
+.RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel .rtsOut {
+  background-image: none; }
+.RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel1 {
+  background-image: none; }
+  .RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel1 .rtsLink {
+    background-image: url('TabStrip/TabStripVStates.png');
+    *zoom: 1; }
+  .RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel1 .rtsOut {
+    background-image: none; }
+.RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel.rtsLevel2, .RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel.rtsLevel3, .RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel.rtsLevel4, .RadTabStrip_WebBlue.RadTabStripVertical .rtsLevel.rtsLevel5 {
+  background-image: none; }
+
+.RadTabStripBottom_WebBlue .rtsLevel.rtsLevel2, .RadTabStripBottom_WebBlue .rtsLevel.rtsLevel3 {
+  background-image: none; }
+.RadTabStripBottom_WebBlue .rtsLevel {
+  background-position: 0 -599px;
+  background-repeat: repeat-x; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsLink {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_WebBlue .rtsLevel .rtsLink:hover {
+      background-position: 0 -130px; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsOut {
+    background-position: 100% -182px; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -130px; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsSelected,
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsSelected:hover {
+    background-position: 0 -156px; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -156px; }
+  .RadTabStripBottom_WebBlue .rtsLevel .rtsDisabled:hover {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_WebBlue .rtsLevel .rtsDisabled:hover .rtsOut {
+      background-position: 100% -182px; }
+
+.RadTabStripLeft_WebBlue .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripLeft_WebBlue .rtsLevel1 .rtsLink:hover {
+    background-position: 0 -200px; }
+  .RadTabStripLeft_WebBlue .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 0 -400px; }
+.RadTabStripLeft_WebBlue .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripLeft_WebBlue .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripRight_WebBlue .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripRight_WebBlue .rtsLevel1 .rtsLink:hover {
+    background-position: 100% -200px; }
+  .RadTabStripRight_WebBlue .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 100% -400px; }
+.RadTabStripRight_WebBlue .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripRight_WebBlue .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripTop_WebBlue_Baseline .rtsLevel1,
+.RadTabStripBottom_WebBlue_Baseline .rtsLevel1 {
+  background-image: url('TabStrip/TabStripStates.png');
+  background-position: 0 100%; }
+
+.RadTabStripBottom_WebBlue_Baseline .rtsLevel1 {
+  background-position: 0 -599px; }
+
+html .RadTabStrip_WebBlue_disabled .rtsLevel1 .rtsLink {
+  color: #8d8d8d;
+  cursor: default; }
+  html .RadTabStrip_WebBlue_disabled .rtsLevel1 .rtsLink:hover {
+    background: transparent;
+    text-decoration: none; }
+    html .RadTabStrip_WebBlue_disabled .rtsLevel1 .rtsLink:hover .rtsOut {
+      background: transparent; }
+
+/* <focus cue> */
+div.RadTabStrip_Office2010Blue a.rtsLink:focus {
+  outline-color: #6f6f6f; }
+
+div.RadTabStrip_Office2010Blue a.rtsLink:focus:after {
+  border-color: #6f6f6f \9; }
+
+/* </focus cue> */
+/** DropClues */
+.rtsDropClue_WebBlue {
+  background-image: url('../Common/TabStrip/rtsDropClueSprite.png'); }
+
+.rtsDropClueTop_WebBlue {
+  background-position: 0 -20px; }
+
+.rtsDropClueRight_WebBlue {
+  background-position: 0 -30px; }
+
+.rtsDropClueBottom_WebBlue {
+  background-position: 0 0; }
+
+.rtsDropClueLeft_WebBlue {
+  background-position: 0 -10px; }
+
+/*# sourceMappingURL=TabStrip.WebBlue.css.map */

@@ -1,0 +1,16 @@
+.RadSocialShare_Default {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #8a8a8a;
+  background-color: white; }
+  .RadSocialShare_Default .sshLinkItem .sshText {
+    color: #333333; }
+  .RadSocialShare_Default .sshLinkItem:hover .sshText {
+    color: black; }
+
+.RadComboBoxDropDown_Default .rcbItem .sshLinkItem .sshText {
+  color: #333333; }
+
+.RadComboBoxDropDown_Default .rcbHovered .sshLinkItem .sshText {
+  color: black; }
+

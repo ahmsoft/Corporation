@@ -1,0 +1,46 @@
+.RadUploadProgressArea {
+  line-height: 1.42857;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+  .RadUploadProgressArea.RadUploadProgressAreaHidden {
+    display: none; }
+  .RadUploadProgressArea p {
+    margin: 0;
+    padding: 0; }
+  .RadUploadProgressArea .ruHeader, .RadUploadProgressArea .ruBody, .RadUploadProgressArea .ruFooter {
+    padding: 12px; }
+.RadUploadProgressArea .ruHeader {
+  font-size: 1.3em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+.RadUploadProgressArea .ruFooter {
+  border-top-width: 1px;
+  border-top-style: solid;
+  text-align: right; }
+.RadUploadProgressArea .ruFileProgress, .RadUploadProgressArea .ruOverallProgress {
+  margin-bottom: 20px;
+  font-size: 0.9em; }
+.RadUploadProgressArea .ruProgressBar, .RadUploadProgressArea .ruProgress {
+  display: block; }
+.RadUploadProgressArea .ruProgressBar {
+  margin-bottom: 0.58333em;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden; }
+.RadUploadProgressArea .ruProgress {
+  height: 17px;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  background-size: 22px 22px, 100% 100%;
+  transition: width 0.6s ease; }
+.RadUploadProgressArea .ruCurrentFile {
+  font-size: 1.1em; }
+.RadUploadProgressArea .ruTimeSpeed {
+  font-size: 0.9em;
+  opacity: 0.7; }
+.RadUploadProgressArea .radButton {
+  padding: 4px 12px;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  cursor: pointer; }

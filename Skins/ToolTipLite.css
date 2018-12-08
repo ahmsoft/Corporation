@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'TelerikWebUI';
+  src: url('Common/TelerikWebUI.eot');
+  src: url('Common/TelerikWebUI.eot') format('embedded-opentype'), url('Common/TelerikWebUI.woff') format('woff'), url('Common/TelerikWebUI.ttf') format('truetype'); }
+
+.RadToolTip {
+  position: absolute;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  curosor: default;
+  font-size: 1em;
+  /* Callouts */
+  /* Right to Left mode */ }
+  .RadToolTip, .RadToolTip .rtTitleWrapper * {
+    box-sizing: content-box; }
+  .RadToolTip.rtLoading {
+    width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .RadToolTip.rtRoundedCorner {
+    border-radius: 0.41667em; }
+  .RadToolTip.rtShadow {
+    box-shadow: 2px 3px 4px #828282; }
+  .RadToolTip .rtRelativeWrapper {
+    position: relative;
+    height: 100%; }
+  .RadToolTip .rtTitleBar {
+    position: relative; }
+  .RadToolTip.rtRoundedCorner .rtTitleBar {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadToolTip .rtTitleBar .rtTitleWrapper {
+    padding: 0.33333em 0.83333em; }
+  .RadToolTip .rtTitleWrapper .rtTitle {
+    margin: 0;
+    padding: 0;
+    font-size: 1.33333em;
+    font-weight: normal;
+    display: inline-block;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    border: 0; }
+  .RadToolTip .rtClose {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    position: absolute;
+    top: -0.75em;
+    right: -0.75em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 45px;
+    display: block;
+    text-indent: -9999px;
+    background-color: transparent;
+    font-size: inherit; }
+  .RadToolTip .rtClose:hover {
+    cursor: pointer; }
+  .RadToolTip .rtCloseIcon:before {
+    display: block;
+    text-indent: 0;
+    text-indent: -0.75em \9;
+    vertical-align: middle;
+    line-height: 1em;
+    content: "\E038";
+    font-family: "TelerikWebUI";
+    font-size: 1.25em;
+    font-size: 1.33333em;
+    margin: -0.04167em 0em 0em -0.04167em;
+    margin: 0.04167em -0.70833em 0em 0em \9; }
+  .RadToolTip _:-ms-fullscreen, :root .RadToolTip .rtCloseIcon:before {
+    margin: 0.04167em 0em 0em 0em; }
+  @media \0screen {
+    .RadToolTip .rtCloseIcon:before {
+      text-align: center; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .RadToolTip .rtCloseIcon:before {
+      margin: 0em 0em 0em -0.08333em; } }
+  .RadToolTip .rtContent {
+    padding: 0.41667em 0.83333em; }
+  .RadToolTip.rtRoundedCorner .rtContent {
+    border-radius: 0.41667em; }
+  .RadToolTip.rtRoundedCorner .rtTitleBar + .rtContent {
+    border-radius: 0em 0em 0.41667em 0.41667em; }
+  .RadToolTip .rtCallout {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    display: none; }
+  .RadToolTip .rtCallout:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    display: block;
+    position: absolute; }
+  .RadToolTip.rtVisibleCallout .rtCallout {
+    display: block; }
+  .RadToolTip .rtCalloutTopRight, .RadToolTip .rtCalloutTopCenter, .RadToolTip .rtCalloutTopLeft {
+    margin: -10px 0 0;
+    border-width: 0 10px 10px 10px;
+    top: 0;
+    left: 50%; }
+  .RadToolTip .rtCalloutTopRight {
+    left: auto;
+    right: 30px; }
+  .RadToolTip .rtCalloutTopLeft {
+    left: 30px; }
+  .RadToolTip .rtCalloutTopRight:before, .RadToolTip .rtCalloutTopCenter:before, .RadToolTip .rtCalloutTopLeft:before {
+    border-width: 0 8px 8px 8px;
+    top: 2px;
+    left: -8px; }
+  .RadToolTip .rtCalloutMiddleRight {
+    margin: -10px 0 0;
+    border-width: 10px 0 10px 10px;
+    top: 50%;
+    left: 100%; }
+  .RadToolTip .rtCalloutMiddleRight:before {
+    border-width: 8px 0 8px 8px;
+    top: -8px;
+    left: -10px; }
+  .RadToolTip .rtCalloutMiddleLeft {
+    margin: -10px 0 0;
+    border-width: 10px 10px 10px 0;
+    top: 50%;
+    right: 100%; }
+  .RadToolTip .rtCalloutMiddleLeft:before {
+    border-width: 8px 8px 8px 0;
+    top: -8px;
+    right: -10px; }
+  .RadToolTip .rtCalloutBottomRight, .RadToolTip .rtCalloutBottomCenter, .RadToolTip .rtCalloutBottomLeft {
+    margin: 0 0 -10px 0;
+    border-width: 10px 10px 0 10px;
+    bottom: 0;
+    left: 50%; }
+  .RadToolTip .rtCalloutBottomRight {
+    left: auto;
+    right: 30px; }
+  .RadToolTip .rtCalloutBottomLeft {
+    left: 30px; }
+  .RadToolTip .rtCalloutBottomRight:before, .RadToolTip .rtCalloutBottomCenter:before, .RadToolTip .rtCalloutBottomLeft:before {
+    border-width: 8px 8px 0 8px;
+    bottom: 2px;
+    left: -8px; }
+  .RadToolTip.rtRtl .rtClose {
+    left: -0.75em;
+    right: auto; }
+

@@ -1,0 +1,84 @@
+/**
+ * Organizational Chart Telerik Skin
+ */
+/*----------------------------------------------------------------------------*/
+/** Global wrapper */
+.RadOrgChart_Telerik {
+  color: #333333;
+  font: normal 12px/22px "Segoe UI", Arial, sans-serif; }
+
+/** Viewport */
+/** NodeList */
+/** Node */
+/** Group */
+.RadOrgChart_Telerik .rocGroup {
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** ItemList */
+/** ItemWrap */
+/** Items */
+.RadOrgChart_Telerik .rocItemContent,
+.RadOrgChart_Telerik .rocItemTemplate {
+  border-color: #239500;
+  border-radius: 5px;
+  background-color: #9fe987;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Toggle handle */
+/*.RadOrgChart_Telerik .rocToggleHandle,*/
+.RadOrgChart_Telerik .rocExpandArrow,
+.RadOrgChart_Telerik .rocCollapseArrow,
+.RadOrgChart_Telerik .rocExpandGroupArrow,
+.RadOrgChart_Telerik .rocCollapseGroupArrow {
+  border-color: #239500;
+  border-radius: 3px;
+  background-color: #9fe987;
+  background-image: url('../Common/Actions/actionExpandCollapseDark.png'); }
+
+/* Loading states */
+.RadOrgChart_Telerik .rocLoadingNodes .rocExpandArrow,
+.RadOrgChart_Telerik .rocLoadingNodes .rocCollapseArrow,
+.RadOrgChart_Telerik .rocLoadingGroups .rocExpandGroupArrow,
+.RadOrgChart_Telerik .rocLoadingGroups .rocCollapseGroupArrow {
+  background-image: url('Common/loading_small.gif'); }
+
+/** Node lines */
+.RadOrgChart_Telerik .rocLineUp,
+.RadOrgChart_Telerik .rocLineDown,
+.RadOrgChart_Telerik .rocLineHorizontal {
+  background-image: url('../Common/OrgChart/rocLinesDark.png'); }
+
+/** Drag and Drop */
+/** Drag ghost */
+.rocDetachedItemContainer.RadOrgChart_Telerik .rocGhostItem,
+.rocDetachedNodeContainer.RadOrgChart_Telerik .rocGhostNode {
+  border-color: #239500;
+  border-radius: 5px;
+  background-color: #9fe987;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Drag Drop Clue */
+.rocDetachedItemContainer.RadOrgChart_Telerik .rocDropClue,
+.rocDetachedNodeContainer.RadOrgChart_Telerik .rocDropClue {
+  background-image: url('../Common/Actions/actionDragDropDark.png'); }
+
+/** Toolbar */
+.rocToolbar_Telerik {
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** Toolbar button */
+.rocToolbar_Telerik .rocToolbarButton {
+  border-color: #239500;
+  border-radius: 3px;
+  background-color: #9fe987;
+  text-indent: -999em;
+  float: left;
+  overflow: hidden; }

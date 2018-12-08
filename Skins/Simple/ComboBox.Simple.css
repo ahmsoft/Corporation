@@ -1,0 +1,118 @@
+.RadComboBox_Simple {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBox_Simple .rcbInputCell, .RadComboBox_Simple .rcbArrowCell {
+    height: 20px;
+    border-width: 1px;
+    border-style: solid; }
+  .RadComboBox_Simple table td.rcbInputCell, .RadComboBox_Simple table td.rcbArrowCell {
+    border-width: 1px; }
+  .RadComboBox_Simple .rcbInputCell {
+    border-color: #7e7e7e;
+    color: #000000;
+    background-color: #ffffff; }
+  .RadComboBox_Simple table td.rcbInputCellLeft {
+    border-right-width: 0; }
+  .RadComboBox_Simple table td.rcbInputCellRight {
+    border-left-width: 0; }
+  .RadComboBox_Simple .rcbInput {
+    height: 17px;
+    color: #000000;
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 16px; }
+  .RadComboBox_Simple .rcbEmptyMessage {
+    color: #999999; }
+  .RadComboBox_Simple .rcbArrowCell {
+    border-color: #7e7e7e;
+    color: #000000;
+    background-color: #e2e2e2; }
+  .RadComboBox_Simple .rcbArrowCell a {
+    width: 16px;
+    height: 20px;
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -2px -20px;
+    background-repeat: no-repeat; }
+  .RadComboBox_Simple .rcbArrowCellHidden, .RadComboBox_Simple .rcbArrowCellHidden a {
+    width: 0; }
+  .RadComboBox_Simple .rcbArrowCellHidden.rcbArrowCellLeft {
+    border-right-width: 0; }
+  .RadComboBox_Simple .rcbArrowCellHidden.rcbArrowCellRight {
+    border-left-width: 0; }
+  .RadComboBox_Simple .rcbReadOnly .rcbArrowCellLeft {
+    border-right-width: 0; }
+  .RadComboBox_Simple .rcbReadOnly .rcbArrowCellRight {
+    border-left-width: 0; }
+  .RadComboBox_Simple .rcbHovered .rcbInputCell {
+    border-color: #c98400;
+    color: #882501;
+    background-color: #ffffff; }
+  .RadComboBox_Simple .rcbHovered .rcbInput {
+    color: #882501; }
+  .RadComboBox_Simple .rcbHovered .rcbArrowCell {
+    border-color: #c98400;
+    color: #882501;
+    background-color: #ffe79c; }
+  .RadComboBox_Simple .rcbHovered .rcbArrowCell a {
+    background-position: -2px -20px; }
+  .RadComboBox_Simple .rcbFocused .rcbInputCell {
+    border-color: #ca4b0c;
+    color: #882501;
+    background-color: #ffffff; }
+  .RadComboBox_Simple .rcbFocused .rcbInput {
+    color: #882501; }
+  .RadComboBox_Simple .rcbFocused .rcbArrowCell {
+    border-color: #ca4b0c;
+    color: #882501;
+    background-color: #ffa517; }
+  .RadComboBox_Simple .rcbFocused .rcbArrowCell a {
+    background-position: -42px -20px; }
+  .RadComboBox_Simple .rcbReadOnly .rcbInputCell {
+    border-color: #7e7e7e;
+    background-color: #e2e2e2;
+    color: #000000; }
+  .RadComboBox_Simple .rcbReadOnly .rcbInput {
+    color: #000000; }
+  .RadComboBox_Simple .rcbHovered .rcbReadOnly .rcbInputCell {
+    border-color: #c98400;
+    color: #882501;
+    background-color: #ffe79c; }
+  .RadComboBox_Simple .rcbHovered .rcbReadOnly .rcbInput {
+    color: #882501; }
+  .RadComboBox_Simple .rcbFocused .rcbReadOnly .rcbInputCell {
+    border-color: #ca4b0c;
+    color: #882501;
+    background-color: #ffa517; }
+  .RadComboBox_Simple .rcbFocused .rcbReadOnly .rcbInput {
+    color: #882501; }
+
+.RadComboBoxDropDown_Simple {
+  border-color: #828282;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBoxDropDown_Simple .rcbHovered {
+    color: #000000;
+    background-color: #fff7ac; }
+  .RadComboBoxDropDown_Simple .rcbSelected {
+    color: #882501;
+    background-color: #ffe79c; }
+  .RadComboBoxDropDown_Simple .rcbLoading {
+    color: #000000;
+    background-color: #fff7ac; }
+  .RadComboBoxDropDown_Simple .rcbItem em {
+    color: #000000;
+    background-color: #fff7ac; }
+  .RadComboBoxDropDown_Simple .rcbCheckAllItems {
+    border-color: #828282;
+    color: #000000;
+    background-color: #eaeaea; }
+  .RadComboBoxDropDown_Simple .rcbMoreResults {
+    border-color: #828282;
+    color: #000000;
+    background-color: #eaeaea; }
+  .RadComboBoxDropDown_Simple .rcbSeparator {
+    color: #000000;
+    background: #eaeaea; }

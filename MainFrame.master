@@ -1,0 +1,250 @@
+﻿<%@ Master Language="VB" CodeFile="MainFrame.master.vb" Inherits="MainFrame" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style>
+        html::-webkit-scrollbar {
+            background-color: rgb(50,50,50);
+            width: 10px;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background-color: #7baa00;
+        }
+
+            html::-webkit-scrollbar-thumb:hover {
+                background-color: #7b9900;
+            }
+
+        html::-o-scrollbar {
+            background-color: rgb(50,50,50);
+            width: 10px;
+        }
+
+        html::-o-scrollbar-thumb {
+            background-color: #7baa00;
+        }
+
+            html::-o-scrollbar-thumb:hover {
+                background-color: #7b9900;
+            }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- CSS
+  ================================================== -->
+    <%--    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />--%>
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="/Lamonte/styles/style.css" />
+    <link rel="stylesheet" href="/Lamonte/styles/inner.css" />
+    <link rel="stylesheet" href="/Lamonte/styles/flexslider.css" />
+    <link rel="stylesheet" href="/Lamonte/styles/prettyPhoto.css" media="screen" />
+    <link rel="stylesheet" href="/Lamonte/styles/color.css" />
+    <link rel="stylesheet" href="/Lamonte/styles/layout.css" />
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="/Lamonte/images/favicon.ico" />
+    <script type="text/javascript">
+        function CloseSession() {  
+        location.href = 'LogOut.aspx';  
+        }  
+        window.onbeforeunload = CloseSession;  
+    </script>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <div id="bodychild">
+            <div id="outercontainer">
+
+                <!-- HEADER -->
+                <div id="outerheader">
+
+                    <header>
+                        <!-- LOGO -->
+                        <div id="logo">
+                            <a href="<% Server.MapPath("Home") %>/Home">
+                                <img src="/Lamonte/images/logo.png" alt="" /></a>
+                        </div>
+                        <!-- END LOGO -->
+
+                        <!-- MAINMENU -->
+                        <div id="outermainmenu">
+                            <div class="container">
+                                <div class="row">
+                                    <section id="navigation" class="twelve columns">
+                                        <nav id="nav-wrap">
+                                            <ul id="topnav" class="sf-menu">
+                                                <li runat="server" id="menuLIHome"><a href="<% Server.MapPath("Home") %>/Home">صفحه اصلی</a></li>
+
+                                                <li runat="server" id="menuLIAbout"><a>درباره ما</a>
+                                                    <ul>
+                                                        <li><a href="<% Server.MapPath("Biography") %>/Biography">مدیریت - بیوگرافی</a></li>
+                                                        <li><a href="<% Server.MapPath("About") %>/About">درباره سایت</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li runat="server" id="menuLIMarket"><a href="<% Server.MapPath("Order") %>/Order">سفارش آنلاین</a></li>
+                                                <li runat="server" id="menuLIPost" class="space"><a href="<% Server.MapPath("Posts") %>/Posts">مطالب سایت</a></li>
+                                                <li runat="server" id="menuLINews"><a href="<% Server.MapPath("News") %>/News">اخبار سایت</a></li>
+                                                <li runat="server" id="menuLIContact"><a href="<% Server.MapPath("Contact") %>/Contact">تماس با ما</a></li>
+                                            </ul>
+                                            <!-- topnav -->
+                                        </nav>
+                                        <!-- nav -->
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MAINMENU -->
+
+                        <div id="bg-image">
+                            <!-- TITLE -->
+                            <div id="outertitle">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="eight columns">
+                                            <div class="pagetitle">
+                                                <h1>مطالب سایت</h1>
+                                                <asp:Label ID="StatusPage" runat="server" class="pagedesc" Text=" سایت پست‌ها و پیام‌های مدیر که به اشتراک گذاشته شده است." />
+                                            </div>
+                                        </div>
+                                        <div class="four columns">
+                                            <div class="pagetitle">
+                                                <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+                                                </telerik:RadScriptManager>
+                                                <telerik:RadSearchBox ID="txtSearch" runat="server" Skin="Glow" EmptyMessage="جستجو . . ." EnableAutoComplete="False" RegisterWithScriptManager="False" Width="100%">
+                                                </telerik:RadSearchBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TITLE -->
+                            <section id="slider" class="flexslider">
+                                <div class="slider-pattern"></div>
+                                <img src="/Images/sd2017.jpg" alt="" />
+                            </section>
+                        </div>
+
+                    </header>
+                </div>
+                <!-- END HEADER -->
+
+                <!-- MAIN CONTENT -->
+                <div id="outermain">
+                    <div class="container">
+                        <div class="row">
+                            <section id="maincontent" class="nine columns positionright">
+                                <div class="padcontent">
+
+                                    <section class="content">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+                                    </section>
+
+                                </div>
+                            </section>
+
+                            <aside class="sidebar three columns">
+
+                                <asp:PlaceHolder ID="PlaceHolderLeft" runat="server"></asp:PlaceHolder>
+
+                            </aside>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END MAIN CONTENT -->
+
+
+                <!-- FOOTER -->
+                <footer id="footersection">
+
+                    <!-- COPYRIGHT -->
+                    <div id="outerfooter">
+                        <div class="container">
+                            <div class="row">
+                                <div class="twelve columns">
+
+                                    <ul id="footer-nav">
+                                        <li><a href="/Home">صفحه اصلی</a></li>
+                                        <li><a href="/About">درباره ما</a></li>
+                                        <li><a href="/Order">سفارش آنلاین</a></li>
+                                        <li><a href="/Posts">مطالب سایت</a></li>
+                                        <li><a href="http://www.zarinp.al/@ahmsoft">درگاه پرداخت آنلاین</a></li>
+                                        <li><a href="/News">اخبار سایت</a></li>
+                                        <li><a href="/Contact">تماس با ما</a></li>
+                                    </ul>
+
+                                    <ul class="sn">
+                                        <li><a href="https://twitter.com/ahmoravveji" title="Twitter"><span class="icon-img twitter"></span></a></li>
+                                        <li><a href="https://facebook.com/ah.moravveji/" title="Facebook"><span class="icon-img facebook"></span></a></li>
+                                        <li><a href="https://plus.google.com/+AmirHasanMoravveji" title="Google+"><span class="icon-img google"></span></a></li>
+                                        <li><a href="http://telegram.me/ahmoravveji" title="Telegram"><span class="icon-img pinterest"></span></a></li>
+                                    </ul>
+
+                                    <div id="copyleft">
+                                        مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، تضمین کیفیت طبق متن قرارداد نامه بین ما و شما.<br />
+                                        کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به برند شـرکت آریـا سـافت می‌باشد
+                                    <a href="http://www.AriyaSoft.com">شرکت طراحی و توسعه نرم افزار مبتنی بر وب AriyaSoft.com</a>
+                                    </div>
+                                    <div id="toTop">top</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END COPYRIGHT -->
+
+                </footer>
+                <!-- END FOOTER -->
+                <div class="clear"></div>
+                <!-- clear float -->
+            </div>
+            <!-- end outercontainer -->
+        </div>
+
+    </form>
+
+    <!-- ////////////////////////////////// -->
+    <!-- //      Javascript Files        // -->
+    <!-- ////////////////////////////////// -->
+    <script type="text/javascript" src="/Lamonte/js/jquery-1.7.1.min.js"></script>
+
+    <!-- jQuery Superfish -->
+    <script type="text/javascript" src="/Lamonte/js/hoverIntent.js"></script>
+    <script type="text/javascript" src="/Lamonte/js/superfish.js"></script>
+    <script type="text/javascript" src="/Lamonte/js/supersubs.js"></script>
+
+
+
+    <!-- jQuery Dropdown Mobile -->
+    <script type="text/javascript" src="/Lamonte/js/tinynav.min.js"></script>
+
+    <!-- Custom Script -->
+    <script type="text/javascript" src="/Lamonte/js/custom.js"></script>
+    <!-- Page script -->
+    <script src="/Admin/AdminComponents/dist/js/persian-date-0.1.8.min.js"></script>
+    <script src="/Admin/AdminComponents/dist/js/persian-datepicker-0.4.5.min.js"></script>
+    <!-- Page script -->
+
+</body>
+</html>

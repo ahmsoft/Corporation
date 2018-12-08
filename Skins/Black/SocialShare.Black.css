@@ -1,0 +1,38 @@
+.RadSocialShare_Black {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #080808;
+  background-color: #464646; }
+  .RadSocialShare_Black .sshLinkItem .sshText {
+    color: #ffffff; }
+  .RadSocialShare_Black .sshLinkItem:hover .sshText {
+    color: #9eda29; }
+  .RadSocialShare_Black .sshForm label {
+    color: #ffffff; }
+
+.RadComboBoxDropDown_Black .rcbItem .sshLinkItem .sshText {
+  color: #ffffff; }
+
+.RadComboBoxDropDown_Black .rcbHovered .sshLinkItem .sshText {
+  color: #9eda29; }
+
+.RadComboBox_Black.sshComboWrapper td.rcbArrowCellRight, .RadComboBox_Black.sshComboWrapper .rcbFocused td.rcbArrowCellRight {
+  background-position: right -154px; }
+
+.RadWindow_Black label {
+  color: #ffffff; }
+
+.RadWindow_Black .sshFormSendBtn {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  border: 1px solid #080808; }
+
+.RadWindow_Black .sshFormSendBtn:hover {
+  background-color: #020202;
+  color: #9eda29;
+  border: 1px solid #080808; }
+
+.RadWindow_Black .sshFormSendBtn:active {
+  background-color: #202020;
+  color: #ffffff;
+  border: 1px solid #080808; }

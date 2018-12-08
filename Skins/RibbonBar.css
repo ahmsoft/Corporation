@@ -1,0 +1,913 @@
+.RadRibbonBar .rrbQuickAccessToolbar, .RadRibbonBar .rrbMenu .rrbMenuGroup, .RadRibbonBar .rrbCategory, .rrbPopup .rrbList, .rrbPopup .rrbMenuGroup, .rrbPopup .rrbCategory {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.RadRibbonBar {
+  position: relative;
+  min-width: 20px;
+  text-decoration: inherit;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none; }
+  .RadRibbonBar * {
+    box-sizing: content-box; }
+  .RadRibbonBar div, .RadRibbonBar ul, .RadRibbonBar li {
+    *zoom: 1; }
+    .RadRibbonBar div:after, .RadRibbonBar ul:after, .RadRibbonBar li:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .RadRibbonBar li {
+    line-height: inherit; }
+  .RadRibbonBar input, .RadRibbonBar input:focus {
+    box-shadow: none; }
+  .RadRibbonBar .rrbIcon {
+    margin: -8px 0 0 -8px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%; }
+  .RadRibbonBar .rrbDisabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+  .RadRibbonBar .rrbContentWrapIn {
+    border-width: 1px;
+    border-style: solid;
+    position: relative; }
+  .RadRibbonBar .rrbDetachedContainer .rrbContentWrapIn {
+    border: 0; }
+  .RadRibbonBar .rrbResizeHandle {
+    width: 10px;
+    height: 10px;
+    font: 0/0 monospace;
+    line-height: 0;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    cursor: e-resize; }
+
+.RadRibbonBar .rrbButtonArea .rrbHiddenGroup {
+  display: none; }
+
+.rrbDetachedContainer {
+  position: absolute;
+  visibility: visible;
+  width: auto;
+  min-width: inherit;
+  height: auto;
+  z-index: 3;
+  margin: 3px; }
+
+.RadRibbonBar .rrbTemplateItemLarge, .RadRibbonBar .rrbTemplateItem {
+  float: left;
+  position: relative;
+  overflow: visible;
+  -moz-user-select: text; }
+
+.RadRibbonBar .rrbTemplateItem {
+  max-height: 22px; }
+
+.RadRibbonBar .rrbTemplateItemLarge {
+  max-height: 66px; }
+
+.RadRibbonBar .rrbTab .rrbKeyBox {
+  top: 10px; }
+
+.RadRibbonBar .rrbKeyBox, .rrbPopup .rrbKeyBox {
+  margin: 0 0 0 -8px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #999999;
+  color: #000000;
+  background-color: #dddddd;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  z-index: 100; }
+
+.rrbPopup .rrbMIInner > .rrbKeyBox {
+  margin: 0;
+  top: 50%;
+  left: 16px; }
+
+.rrbPopup .rrbMIToggle .rrbKeyBox {
+  top: 50%;
+  margin: 0; }
+
+.RadRibbonBar .rrbQuickAccessToolbar {
+  padding: 3px 3px 0;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1000; }
+* + html .RadRibbonBar .rrbQuickAccessToolbar {
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbQuickAccessToolbar > li {
+  display: inline-block;
+  vertical-align: top; }
+* + html .RadRibbonBar .rrbQuickAccessToolbar > li {
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbQatItem {
+  margin: 0; }
+.RadRibbonBar .rrbQatButton {
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  outline: none; }
+.RadRibbonBar .rrbQatDropDown .rrbQatButton {
+  width: 14px; }
+  .RadRibbonBar .rrbQatDropDown .rrbQatButton .rrbIcon {
+    background-image: url('Common/RibbonBar/rrbQatExpandArrow.png');
+    background-position: center center; }
+.RadRibbonBar .rrbQatDropDown .rrbSlide {
+  line-height: 22px;
+  position: absolute;
+  top: 20px; }
+.RadRibbonBar .rrbTabs {
+  margin: 0;
+  padding: 3px 3px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  line-height: 24px;
+  list-style: none;
+  white-space: nowrap; }
+.RadRibbonBar .rrbTabs > li {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 1; }
+* + html .RadRibbonBar .rrbTabs > li {
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbTabs > li > a, .RadRibbonBar .rrbTabs > li > span {
+  padding: 0 10px;
+  border-width: 1px;
+  border-style: solid;
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  cursor: pointer; }
+.RadRibbonBar .rrbTab {
+  bottom: -1px; }
+.RadRibbonBar .rrbApplicationTab {
+  margin-right: 3px;
+  z-index: 3;
+  bottom: -1px; }
+.RadRibbonBar .rrbHeaderBarTab {
+  width: 0;
+  height: 26px;
+  z-index: 2; }
+  .RadRibbonBar .rrbHeaderBarTab .rrbHeaderBar {
+    height: 28px;
+    border-width: 1px;
+    border-style: solid;
+    position: absolute;
+    top: -3px; }
+.RadRibbonBar .rrbTabs .rrbApplicationTab {
+  z-index: 3; }
+.RadRibbonBar .rrbTabs .rrbHeaderBarTab {
+  z-index: 2; }
+.RadRibbonBar .rrbContextualTab {
+  margin-top: -3px;
+  padding: 27px 0 0 0; }
+  .RadRibbonBar .rrbContextualTab .rrbContextualTabLabel {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: url('Common/Gradients/lightSmoothTile.png') 0 0 repeat-x;
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .RadRibbonBar .rrbContextualTab .rrbTabs {
+    padding: 0;
+    border-width: 0; }
+.RadRibbonBar .rrbQuickAccessToolbar + .rrbTabs .rrbContextualTab {
+  margin-top: -30px; }
+.RadRibbonBar .rrbTabs .rrbContextualTab {
+  display: none; }
+.RadRibbonBar .rrbTabs .rrbContextualTabActive {
+  display: inline-block; }
+* + html .RadRibbonBar .rrbTabs .rrbContextualTabActive {
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbMenu {
+  padding: 1px;
+  border-width: 1px;
+  border-style: solid; }
+.RadRibbonBar .rrbMenu .rrbMenuLabel {
+  padding: 0 5px;
+  font-weight: bold;
+  display: block; }
+.RadRibbonBar .rrbMenu .rrbMenuItem {
+  margin: 0;
+  padding: 1px;
+  background-image: url('Common/Gradients/lightSmoothTile.png');
+  background-position: -100px -100px;
+  background-repeat: repeat-x;
+  position: relative;
+  cursor: default; }
+.RadRibbonBar .rrbMenu .rrbMenuItem:hover, .RadRibbonBar .rrbMenu .rrbMenuItemHovered {
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  background-position: 0 0; }
+.RadRibbonBar .rrbMenu .rrbMenuItemCheckbox label {
+  padding: 0 5px 0 32px;
+  background-position: 3px 3px;
+  background-repeat: no-repeat;
+  display: block;
+  cursor: inherit; }
+.RadRibbonBar .rrbMenu .rrbMenuItemCheckbox input {
+  margin: 3px 0 0 -29px;
+  width: 16px;
+  height: 16px;
+  float: left;
+  display: inline; }
+.RadRibbonBar .rrbMenu .rrbMenuItemCheckboxChecked label {
+  background-image: url('Common/RibbonBar/rrbQatMenuCheckboxSelected.png'); }
+.RadRibbonBar .rrbMenu input {
+  padding: 0;
+  margin: 0;
+  filter: alpha(opacity=0);
+  opacity: 0; }
+.RadRibbonBar .rrbToolTip {
+  padding: 4px;
+  width: 200px;
+  min-height: 50px;
+  border-width: 1px;
+  border-style: solid;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-image: url('Common/OrgChart/rocItemTileLight.png');
+  position: absolute;
+  z-index: 9000; }
+  .RadRibbonBar .rrbToolTip .rrbToolTipTitle {
+    font-weight: bold;
+    display: block; }
+  .RadRibbonBar .rrbToolTip .rrbToolTipDescription {
+    margin: 5px 0 0 0;
+    padding: 0 0 0 10px; }
+    .RadRibbonBar .rrbToolTip .rrbToolTipDescription p {
+      margin: 5px 0 0 0; }
+.RadRibbonBar.rrbMinimized, .RadRibbonBar.rrbExtendedChromeMinimized {
+  overflow: visible; }
+.RadRibbonBar.rrbMinimized {
+  height: 27px; }
+.RadRibbonBar.rrbExtendedChromeMinimized {
+  height: 47px; }
+.RadRibbonBar.rrbMinimized .rrbButtonArea, .RadRibbonBar.rrbMinimized .rrbResizeHandle, .RadRibbonBar.rrbExtendedChromeMinimized .rrbButtonArea, .RadRibbonBar.rrbExtendedChromeMinimized .rrbResizeHandle {
+  display: none; }
+.RadRibbonBar .rrbToggleHandle {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 13px;
+  right: 3px;
+  left: auto; }
+.RadRibbonBar.rrbExtendedChrome .rrbToggleHandle {
+  top: 33px; }
+.RadRibbonBar .rrbButtonArea {
+  padding: 3px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbHiddenButtonAreaIn {
+  display: none; }
+.RadRibbonBar .rrbButtonGroup {
+  width: 108px;
+  min-width: 30px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative; }
+.RadRibbonBar .rrbButtonGroup ~ .rrbButtonGroup {
+  margin-left: 3px; }
+* + html .RadRibbonBar .rrbButtonGroup {
+  margin-left: 3px;
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbButtonGroupIn {
+  padding: 2px 2px 20px;
+  min-width: 32px;
+  height: 66px;
+  border-width: 1px;
+  border-style: solid;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbGroupTitle {
+  width: auto;
+  box-sizing: border-box;
+  text-align: center;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: transparent;
+  cursor: default;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+.RadRibbonBar .rrbGroupLauncher {
+  margin-right: 4px;
+  margin-top: 5px;
+  width: 8px;
+  height: 8px;
+  float: right;
+  font-size: 0;
+  outline: 0;
+  zoom: 1;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -23px -34px; }
+.RadRibbonBar .rrbDetachedGroup {
+  margin: 0;
+  width: auto;
+  float: none; }
+.RadRibbonBar .rrbCollapsedGroup {
+  min-width: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer; }
+  .RadRibbonBar .rrbCollapsedGroup .rrbButtonGroupIn {
+    padding: 2px;
+    min-width: 40px;
+    height: 84px; }
+  .RadRibbonBar .rrbCollapsedGroup .rrbGroupTitle {
+    margin: 5px 0 0 0;
+    width: auto;
+    border: 0;
+    background: none;
+    display: block;
+    position: static; }
+  .RadRibbonBar .rrbCollapsedGroup .rrbGroupToggleIcon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat; }
+  .RadRibbonBar .rrbCollapsedGroup .rrbGroupIcon {
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block; }
+.RadRibbonBar .rrbCollapsedGroup ~ .rrbCollapsedGroup {
+  margin-left: 3px; }
+* + html .RadRibbonBar .rrbCollapsedGroup {
+  margin-left: 3px;
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbControlGroup {
+  height: 66px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden; }
+* + html .RadRibbonBar .rrbControlGroup {
+  display: inline;
+  zoom: 1; }
+.RadRibbonBar .rrbAbox > .rrbButton, .RadRibbonBar .rrbAbox > .rrbButtonStrip, .RadRibbonBar .rrbAbox > .rrbTemplateItem, .RadRibbonBar .rrbAbox > .rrbTemplateItemLarge, .RadRibbonBar .rrbAbox > .rrbColorPicker, .RadRibbonBar .rrbAbox > .rrbComboBox, .RadRibbonBar .rrbAbox > .rrbDropDown, .RadRibbonBar .rrbAbox > .rrbNumericTextBox {
+  clear: both; }
+.RadRibbonBar .rrbAbox > .rrbMediumButton {
+  float: none; }
+.RadRibbonBar .rrbAbox > .rrbLargeButton {
+  float: left; }
+.RadRibbonBar .rrbAbox > .rrbColorPicker, .RadRibbonBar .rrbAbox > .rrbComboBox, .RadRibbonBar .rrbAbox > .rrbDropDown, .RadRibbonBar .rrbAbox > .rrbNumericTextBox {
+  float: left; }
+.RadRibbonBar .rrbAbox > .rrbControlGroup {
+  height: 22px;
+  display: block; }
+.RadRibbonBar .rrbVbox > .rrbButton, .RadRibbonBar .rrbVbox > .rrbMediumButton, .RadRibbonBar .rrbVbox > .rrbLargeButton, .RadRibbonBar .rrbVbox > .rrbButtonStrip, .RadRibbonBar .rrbVbox > .rrbTemplateItem, .RadRibbonBar .rrbVbox > .rrbTemplateItemLarge, .RadRibbonBar .rrbVbox > .rrbColorPicker, .RadRibbonBar .rrbVbox > .rrbComboBox, .RadRibbonBar .rrbVbox > .rrbDropDown, .RadRibbonBar .rrbVbox > .rrbNumericTextBox {
+  clear: both; }
+.RadRibbonBar .rrbVbox > .rrbColorPicker, .RadRibbonBar .rrbVbox > .rrbComboBox, .RadRibbonBar .rrbVbox > .rrbDropDown, .RadRibbonBar .rrbVbox > .rrbNumericTextBox {
+  float: left; }
+.RadRibbonBar .rrbVbox > .rrbControlGroup {
+  height: 22px;
+  display: block; }
+.RadRibbonBar .rrbHbox > .rrbButton, .RadRibbonBar .rrbHbox > .rrbMediumButton, .RadRibbonBar .rrbHbox > .rrbButtonStrip, .RadRibbonBar .rrbHbox > .rrbTemplateItem, .RadRibbonBar .rrbHbox > .rrbTemplateItemLarge {
+  clear: none; }
+.RadRibbonBar .rrbHbox > .rrbColorPicker, .RadRibbonBar .rrbHbox > .rrbComboBox, .RadRibbonBar .rrbHbox > .rrbDropDown, .RadRibbonBar .rrbHbox > .rrbNumericTextBox {
+  float: left;
+  clear: none; }
+.RadRibbonBar .rrbButtonOut {
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  outline: none;
+  background-position: 0 1000px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  white-space: nowrap;
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbButtonMid, .RadRibbonBar .rrbButtonIn {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbButtonIn {
+  padding: 2px; }
+.RadRibbonBar .rrbImagePlaceholder {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbButtonImage {
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip: rect(0 16px 16px 0); }
+.RadRibbonBar .rrbLargeButton .rrbButtonImage {
+  margin-top: -16px;
+  clip: rect(16px 100px 100px 0pt); }
+.RadRibbonBar .rrbDualImage .rrbButtonImage {
+  margin-top: 0;
+  clip: auto;
+  position: static; }
+.RadRibbonBar .rrbButtonText {
+  min-height: 15px;
+  white-space: nowrap;
+  vertical-align: top;
+  display: inline-block; }
+.RadRibbonBar .rrbButtonArrow {
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  background-repeat: repeat-x;
+  overflow: hidden;
+  position: absolute; }
+.RadRibbonBar .rrbButtonArrow .rrbButtonText {
+  display: none; }
+.RadRibbonBar .rrbButtonOut:hover, .RadRibbonBar .rrbButtonHovered {
+  background-position: 0 0;
+  background-position: 0 -1000px\9; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .RadRibbonBar .rrbButtonOut:hover, .RadRibbonBar .rrbButtonHovered {
+      background-position: 0 0; } }
+.RadRibbonBar .rrbButtonOut.rrbButtonClicked, .RadRibbonBar .rrbButtonOut.rrbToggled {
+  background-position: 0 0;
+  background-position: 0 -2000px\9; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .RadRibbonBar .rrbButtonOut.rrbButtonClicked, .RadRibbonBar .rrbButtonOut.rrbToggled {
+      background-position: 0 0; } }
+.RadRibbonBar .rrbButton .rrbMenuButton .rrbButtonIn, .RadRibbonBar .rrbButton .rrbSplitButton .rrbButtonIn, .RadRibbonBar .rrbSmallButton .rrbMenuButton .rrbButtonIn, .RadRibbonBar .rrbSmallButton .rrbSplitButton .rrbButtonIn {
+  padding-right: 12px; }
+.RadRibbonBar .rrbButton .rrbButtonText, .RadRibbonBar .rrbSmallButton .rrbButtonText {
+  display: none; }
+.RadRibbonBar .rrbButton .rrbButtonArrow, .RadRibbonBar .rrbSmallButton .rrbButtonArrow {
+  width: 10px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto; }
+.RadRibbonBar .rrbMediumButton .rrbMenuButton .rrbButtonIn, .RadRibbonBar .rrbMediumButton .rrbSplitButton .rrbButtonIn {
+  padding-right: 12px; }
+.RadRibbonBar .rrbMediumButton .rrbButtonArrow {
+  width: 10px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto; }
+.RadRibbonBar .rrbLargeButton {
+  line-height: 1.1;
+  text-align: center;
+  display: block; }
+  .RadRibbonBar .rrbLargeButton .rrbButtonIn {
+    height: 60px; }
+  .RadRibbonBar .rrbLargeButton .rrbImagePlaceholder {
+    width: 32px;
+    height: 32px; }
+  .RadRibbonBar .rrbLargeButton .rrbButtonText {
+    margin-top: 3px;
+    line-height: 1;
+    display: block; }
+  .RadRibbonBar .rrbLargeButton .rrbButtonArrow {
+    width: 100%;
+    height: 27px;
+    z-index: 2;
+    top: auto;
+    bottom: 0;
+    left: 0; }
+  .RadRibbonBar .rrbLargeButton .rrbIcon {
+    margin-top: -4px; }
+  .RadRibbonBar .rrbLargeButton .rrbButtonArrow .rrbButtonText {
+    margin: 0;
+    display: block; }
+.RadRibbonBar .rrbMenuGroupOut {
+  display: none;
+  position: absolute;
+  z-index: 4; }
+.RadRibbonBar .rrbMenuGroupMid {
+  border-width: 1px;
+  border-style: solid;
+  outline: none; }
+.RadRibbonBar .rrbMenuGroupIn {
+  padding: 1px;
+  position: relative; }
+.RadRibbonBar .rrbMenuGroupOut .rrbButtonOut {
+  line-height: 19px;
+  text-align: left;
+  float: none; }
+.RadRibbonBar .rrbMenuGroupOut .rrbButtonIn {
+  padding-left: 24px;
+  padding-right: 50px; }
+.RadRibbonBar .rrbMenuGroupOut .rrbImagePlaceholder {
+  position: absolute;
+  left: 4px;
+  top: 3px; }
+.RadRibbonBar .rrbButton .rrbSplitButton .rrbButtonArrow, .RadRibbonBar .rrbSmallButton .rrbSplitButton .rrbButtonArrow, .RadRibbonBar .rrbMediumButton .rrbSplitButton .rrbButtonArrow {
+  border-left-width: 1px; }
+.RadRibbonBar .rrbLargeButton .rrbSplitButton .rrbButtonArrow {
+  border-top-width: 1px; }
+.RadRibbonBar .rrbButtonStrip {
+  border-width: 0;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  background: transparent !important; }
+.RadRibbonBar .rrbButtonStripPart {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  text-decoration: none;
+  float: none;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  vertical-align: top; }
+  .RadRibbonBar .rrbButtonStripPart .rrbButtonImage {
+    position: static; }
+.RadRibbonBar .rrbButtonStripPart + .rrbButtonStripPart {
+  margin-left: -1px; }
+.RadRibbonBar .rrbButtonStripPart:hover, .RadRibbonBar .rrbButtonStripPart:active {
+  z-index: 2; }
+.RadRibbonBar .rrbComboBox, .RadRibbonBar .rrbDropDown, .RadRibbonBar .rrbNumericTextBox, .RadRibbonBar .rrbColorPicker {
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+.RadRibbonBar .rrbComboBox .rrbCBInner, .RadRibbonBar .rrbDropDown .rrbDDInner, .RadRibbonBar .rrbNumericTextBox .rrbNTBInner, .RadRibbonBar .rrbColorPicker .rrbCPInner {
+  padding: 2px 18px 2px 2px;
+  height: 16px;
+  border-width: 1px;
+  border-style: solid;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+.RadRibbonBar .rrbComboBox .rrbCBInput, .RadRibbonBar .rrbDropDown .rrbDDFakeInput, .RadRibbonBar .rrbNumericTextBox .rrbNTBInput, .RadRibbonBar .rrbColorPicker .rrbCPFakeInput {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 16px;
+  border: 0;
+  color: inherit;
+  background: none;
+  font: inherit;
+  line-height: 16px;
+  display: inline-block; }
+.RadRibbonBar .rrbComboBox .rrbActionButton, .RadRibbonBar .rrbDropDown .rrbActionButton, .RadRibbonBar .rrbNumericTextBox .rrbActionButton, .RadRibbonBar .rrbColorPicker .rrbActionButton {
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 22px;
+  border-width: 1px;
+  border-style: solid;
+  color: inherit;
+  font: inherit;
+  overflow: hidden;
+  position: absolute;
+  left: auto;
+  top: -1px;
+  right: -1px; }
+  .RadRibbonBar .rrbComboBox .rrbActionButton .rrbButtonText, .RadRibbonBar .rrbDropDown .rrbActionButton .rrbButtonText, .RadRibbonBar .rrbNumericTextBox .rrbActionButton .rrbButtonText, .RadRibbonBar .rrbColorPicker .rrbActionButton .rrbButtonText {
+    display: none; }
+.RadRibbonBar .rrbAbox > .rrbComboBox, .RadRibbonBar .rrbAbox > .rrbDropDown, .RadRibbonBar .rrbAbox > .rrbNumericTextBox, .RadRibbonBar .rrbVbox > .rrbComboBox, .RadRibbonBar .rrbVbox > .rrbDropDown, .RadRibbonBar .rrbVbox > .rrbNumericTextBox {
+  display: block !important; }
+.RadRibbonBar .rrbComboBox {
+  width: 160px; }
+.RadRibbonBar .rrbDropDown {
+  width: 160px; }
+  .RadRibbonBar .rrbDropDown .rrbDDFakeInput {
+    overflow: hidden; }
+  .RadRibbonBar .rrbDropDown .rrbActionButton {
+    border: 0;
+    background: none; }
+.RadRibbonBar .rrbNumericTextBox {
+  width: 50px; }
+  .RadRibbonBar .rrbNumericTextBox .rrbNTBInner {
+    padding-right: 20px; }
+  .RadRibbonBar .rrbNumericTextBox .rrbActionButton {
+    height: 9px; }
+  .RadRibbonBar .rrbNumericTextBox .rrbActionButtonUp {
+    top: 1px;
+    right: 1px; }
+  .RadRibbonBar .rrbNumericTextBox .rrbActionButtonDown {
+    top: auto;
+    bottom: 1px;
+    right: 1px; }
+.RadRibbonBar .rrbColorPicker {
+  width: 36px; }
+  .RadRibbonBar .rrbColorPicker .rrbCPInner {
+    padding-right: 16px; }
+  .RadRibbonBar .rrbColorPicker .rrbCPFakeInput {
+    width: 16px;
+    position: relative; }
+  .RadRibbonBar .rrbColorPicker .rrbCPColorPreview {
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    overflow: hidden; }
+  .RadRibbonBar .rrbColorPicker .rrbCPImage {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+  .RadRibbonBar .rrbColorPicker .rrbCPImage + .rrbCPColorPreview {
+    margin-top: 11px;
+    height: 3px;
+    position: relative;
+    *top: 4px;
+    z-index: 2; }
+  .RadRibbonBar .rrbColorPicker .rrbActionButton {
+    border: 0;
+    background: none; }
+.RadRibbonBar .rrbGallery {
+  padding: 1px;
+  height: 54px;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+  cursor: default; }
+.RadRibbonBar .rrbGalleryScrollWrap {
+  padding-right: 15px;
+  height: 54px;
+  overflow: hidden; }
+.RadRibbonBar .rrbGalleryExpanded .rrbGalleryScrollWrap {
+  padding: 1px;
+  height: auto;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  overflow-y: scroll;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 9999; }
+.RadRibbonBar .rrbGalleryActions {
+  width: 15px;
+  height: 58px;
+  position: absolute;
+  left: auto;
+  top: -1px;
+  right: -1px; }
+.RadRibbonBar .rrbGalleryExpanded .rrbGalleryActions {
+  display: none; }
+.RadRibbonBar .rrbGalleryAction {
+  width: 13px;
+  height: 18px;
+  border-width: 1px;
+  border-style: solid;
+  position: absolute;
+  overflow: hidden; }
+.RadRibbonBar .rrbGalleryActionUp {
+  top: 0; }
+.RadRibbonBar .rrbGalleryActionDown {
+  top: 19px; }
+.RadRibbonBar .rrbGalleryActionExpand {
+  top: 38px; }
+.RadRibbonBar .rrbCategoryTitle {
+  display: none; }
+.RadRibbonBar .rrbGalleryItem {
+  padding: 2px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  float: left;
+  overflow: hidden; }
+.RadRibbonBar .rrbGalleryItemInner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+.RadRibbonBar .rrbGalleryTextPositionBottom .rrbGalleryItemText {
+  display: block; }
+.RadRibbonBar .rrbGalleryTextPositionInline .rrbGalleryItemText {
+  display: inline; }
+.RadRibbonBar .rrbGalleryTextPositionNone .rrbGalleryItemText {
+  display: none; }
+
+.rrbSlide {
+  position: absolute;
+  z-index: 9000; }
+
+.rrbDropDownSlide {
+  width: 160px;
+  position: absolute;
+  z-index: 9000; }
+
+.rrbPopup {
+  border-width: 1px;
+  border-style: solid;
+  cursor: default;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default; }
+  .rrbPopup .rrbIcon {
+    margin: -8px 0 0 -8px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%; }
+  .rrbPopup .rrbHeader {
+    padding: 2px 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: block; }
+  .rrbPopup .rrbListItem {
+    margin: 0 1px;
+    padding: 2px 6px; }
+  .rrbPopup .rrbColorList {
+    padding: 2px;
+    *zoom: 1; }
+    .rrbPopup .rrbColorList:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .rrbPopup .rrbColorListItem {
+    margin: 0;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    float: left; }
+  .rrbPopup .rrbCPColorBox {
+    width: 14px;
+    height: 14px;
+    display: block;
+    overflow: hidden; }
+    .rrbPopup .rrbCPColorBox span {
+      display: none; }
+  .rrbPopup .rrbMenuItem {
+    padding: 0;
+    margin: 0;
+    position: relative; }
+  .rrbPopup .rrbMIInner {
+    padding: 0 50px 0 30px;
+    border: 1px solid transparent;
+    position: relative;
+    display: block; }
+  .rrbPopup .rrbMIToggle {
+    width: 25px;
+    height: 100%;
+    border: 1px solid transparent;
+    position: absolute;
+    left: auto;
+    top: -1px;
+    right: -1px;
+    left: auto; }
+    .rrbPopup .rrbMIToggle .rrbIcon {
+      background-position: -2px -62px; }
+  .rrbPopup .rrbMIExpanded .rrbMIToggle .rrbIcon {
+    background-position: -42px -62px; }
+  .rrbPopup .rrbMIImage {
+    position: absolute; }
+  .rrbPopup .rrbMenuItem .rrbPopup {
+    display: none; }
+  .rrbPopup .rrbMIExpanded > .rrbPopup {
+    display: block; }
+  .rrbPopup .rrbGallery {
+    padding: 1px; }
+  .rrbPopup .rrbGalleryScrollWrap {
+    overflow: hidden;
+    overflow-y: scroll; }
+  .rrbPopup .rrbCategoryTitle {
+    padding: 2px 5px;
+    display: block; }
+  .rrbPopup .rrbGalleryItem {
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    float: left;
+    overflow: hidden; }
+  .rrbPopup .rrbGalleryItemInner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  .rrbPopup .rrbGalleryTextPositionBottom .rrbGalleryItemText {
+    display: block; }
+  .rrbPopup .rrbGalleryTextPositionInline .rrbGalleryItemText {
+    display: inline; }
+  .rrbPopup .rrbGalleryTextPositionNone .rrbGalleryItemText {
+    display: none; }
+
+.rrbApplicationMenuPopup {
+  margin-top: -1px;
+  padding: 0;
+  width: 500px;
+  position: relative;
+  overflow: hidden; }
+  .rrbApplicationMenuPopup .rrbHeaderBar {
+    display: none; }
+  .rrbApplicationMenuPopup .rrbApplicationMenu {
+    width: 199px;
+    float: left;
+    position: relative;
+    z-index: 2; }
+  .rrbApplicationMenuPopup .rrbMenuItem {
+    position: static; }
+  .rrbApplicationMenuPopup .rrbMIInner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 42px;
+    min-height: 32px;
+    line-height: 32px; }
+  .rrbApplicationMenuPopup .rrbMIImage {
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    left: 5px; }
+  .rrbApplicationMenuPopup .rrbPopup {
+    padding: 0;
+    width: 300px;
+    border: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    overflow: hidden; }
+    .rrbApplicationMenuPopup .rrbPopup .rrbMIInner {
+      line-height: 16px; }
+    .rrbApplicationMenuPopup .rrbPopup .rrbMIText {
+      font-weight: bold;
+      display: block; }
+    .rrbApplicationMenuPopup .rrbPopup .rrbMIDesc {
+      display: block; }
+  .rrbApplicationMenuPopup .rrbAuxiliaryPane {
+    width: 300px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    float: right;
+    position: relative;
+    z-index: 1; }
+  .rrbApplicationMenuPopup .rrbFooterPane {
+    padding: 8px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    clear: both;
+    position: relative;
+    z-index: 3; }

@@ -1,0 +1,46 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_WebBlue {
+  /* Overwrites padding for better presentation and space saving */
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_WebBlue .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_WebBlue,
+  .RadFileExplorer_WebBlue .rfeAddressBox,
+  .RadFileExplorer_WebBlue .rfeFilterTxt {
+    border-color: #768ca5; }
+  .RadFileExplorer_WebBlue .RadGrid_WebBlue .rgRow td,
+  .RadFileExplorer_WebBlue .RadGrid_WebBlue .rgAltRow td,
+  .RadFileExplorer_WebBlue .RadGrid_WebBlue .rgEditRow td,
+  .RadFileExplorer_WebBlue .RadGrid_WebBlue .rgFooter td {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .RadFileExplorer_WebBlue .rfeThumbList a:hover,
+  .RadFileExplorer_WebBlue .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_WebBlue .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_WebBlue .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/webblue_smoothSprite_20.png');
+    background-color: #bee3f6;
+    border-color: #d9eef9; }
+  .RadFileExplorer_WebBlue .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_WebBlue .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #75b7cc;
+    border-color: #abcddf; }
+  .RadFileExplorer_WebBlue .rfeFilterContainer {
+    background-image: url('../Common/Gradients/webblue_smoothSprite_20.png');
+    background-color: #6c889e; }
+  .RadFileExplorer_WebBlue .rfeFilterContainer .rfeFilterLbl {
+    color: #ffffff;
+    /* used error-bg-color var to match white color */ }
+  .RadFileExplorer_WebBlue .rfeDropZone {
+    background-color: rgba(218, 226, 232, 0.8); }
+  .RadFileExplorer_WebBlue .rfeDropUploadInfoPanel {
+    background-color: #e0e8ea;
+    color: #000000; }
+
+.RadForm_WebBlue .DialogSeparator {
+  border-left: 1px solid #768ca5;
+  border-right: 1px solid #768ca5;
+  background-color: #e0e7ed; }

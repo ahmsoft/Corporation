@@ -1,0 +1,135 @@
+.RadDataPager {
+  padding: 4px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.42857; }
+  .RadDataPager .rdpWrap {
+    white-space: nowrap;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-shrink: 0; }
+  .RadDataPager .RadComboBox {
+    min-width: 55px; }
+  .RadDataPager .RadComboBox,
+  .RadDataPager .RadInput,
+  .RadDataPager .riTextBox {
+    font: inherit; }
+  .RadDataPager span.rcbInner {
+    padding: 0 6px; }
+  .RadDataPager input.rcbInput {
+    height: 2.2857em;
+    line-height: 2.2857; }
+  .RadDataPager .RadInput {
+    height: auto;
+    line-height: normal; }
+    .RadDataPager .RadInput .riTextBox {
+      padding: 6px 0;
+      height: 1.42857em;
+      line-height: normal;
+      min-height: 0;
+      text-align: center;
+      box-sizing: content-box; }
+    .RadDataPager .RadInput + .rdpPagerButton {
+      margin-left: 6px; }
+  .RadDataPager .RadSlider,
+  .RadDataPager .RadSlider .rslHorizontal {
+    height: 2.2857em !important; }
+  .RadDataPager .rdpSliderLabel {
+    line-height: 2.2857; }
+  .RadDataPager .rdpPagerLabel {
+    margin: auto 6px; }
+  .RadDataPager .rdpNumPart {
+    padding: 0 4px; }
+  .RadDataPager .rdpNumPart a {
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent; }
+    .RadDataPager .rdpNumPart a.rdpCurrentPage {
+      cursor: default; }
+    .RadDataPager .rdpNumPart a + a {
+      margin-left: 4px; }
+  .RadDataPager [type="submit"] {
+    -webkit-appearance: none; }
+  .RadDataPager .rdpActionButton {
+    font-family: "TelerikWebUI"; }
+  .RadDataPager .rdpActionButton + .rdpActionButton {
+    margin-left: 4px; }
+  .RadDataPager .rdpNumPart a,
+  .RadDataPager .rdpPagerButton,
+  .RadDataPager .rdpActionButton {
+    padding: 6px;
+    width: 1.42857em;
+    height: 1.42857em;
+    line-height: 1.42857;
+    font-size: 1em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    border-radius: 100%; }
+  .RadDataPager .rdpPagerButton {
+    border-radius: 4px;
+    width: auto; }
+  .RadDataPager .rdpIcon:before {
+    font-size: 1em; }
+  .RadDataPager .rdpPageFirst .rdpIcon:before {
+    content: "\e00b"; }
+  .RadDataPager .rdpPagePrev .rdpIcon:before {
+    content: "\e003"; }
+  .RadDataPager .rdpPageNext .rdpIcon:before {
+    content: "\e000"; }
+  .RadDataPager .rdpPageLast .rdpIcon:before {
+    content: "\e008"; }
+  @media (max-width: 360px) {
+    .RadDataPager .rdpHiddenXs,
+    .RadDataPager .rdpTrimXs .rdpHiddentItem {
+      display: none !important; }
+    .RadDataPager .rdpLeftXs {
+      margin-right: auto; }
+    .RadDataPager .rdpRightXs {
+      margin-left: auto; }
+    .RadDataPager .rdpCenterXs {
+      margin: auto; } }
+  @media (min-width: 361px) and (max-width: 768px) {
+    .RadDataPager .rdpHiddenSm,
+    .RadDataPager .rdpTrimSm .rdpHiddentItem {
+      display: none !important; }
+    .RadDataPager .rdpLeftSm {
+      margin-right: auto; }
+    .RadDataPager .rdpRightSm {
+      margin-left: auto; }
+    .RadDataPager .rdpCenterSm {
+      margin: auto; } }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .RadDataPager .rdpHiddenMd,
+    .RadDataPager .rdpTrimMd .rdpHiddentItem {
+      display: none !important; }
+    .RadDataPager .rdpLeftMd {
+      margin-right: auto; }
+    .RadDataPager .rdpRightMd {
+      margin-left: auto; }
+    .RadDataPager .rdpCenterMd {
+      margin: auto; } }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .RadDataPager .rdpHiddenLg,
+    .RadDataPager .rdpTrimLg .rdpHiddentItem {
+      display: none !important; }
+    .RadDataPager .rdpLeftLg {
+      margin-right: auto; }
+    .RadDataPager .rdpRightLg {
+      margin-left: auto; }
+    .RadDataPager .rdpCenterLg {
+      margin: auto; } }
+  @media (min-width: 1281px) {
+    .RadDataPager .rdpHiddenXl,
+    .RadDataPager .rdpTrimXl .rdpHiddentItem {
+      display: none !important; }
+    .RadDataPager .rdpLeftXl {
+      margin-right: auto; }
+    .RadDataPager .rdpRightXl {
+      margin-left: auto; }
+    .RadDataPager .rdpCenterXl {
+      margin: auto; } }

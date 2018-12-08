@@ -1,0 +1,62 @@
+.RadColorPicker_Outlook {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Rounded corners and shadows */ }
+  .RadColorPicker_Outlook .rcpViews,
+  .RadColorPicker_Outlook .rcpHeader,
+  .RadColorPicker_Outlook .rcpPageView {
+    background-color: #f8fbfd; }
+  .RadColorPicker_Outlook .rcpColorPreview,
+  .RadColorPicker_Outlook .rcpInput,
+  .RadColorPicker_Outlook .rcpHexInput,
+  .RadColorPicker_Outlook .rcpMillionColorsPalette,
+  .RadColorPicker_Outlook .rcpMillionColorsSlider div.rslTrack {
+    background-color: white;
+    border-color: #c3d9f9; }
+  .RadColorPicker_Outlook .rcpPalette,
+  .RadColorPicker_Outlook input,
+  .RadColorPicker_Outlook a,
+  .RadColorPicker_Outlook .rcpApplyButton:hover span {
+    color: black; }
+  .RadColorPicker_Outlook .rcpTabs ul li a {
+    color: black;
+    background-position: left -289px;
+    padding: 0 0 0 6px !important; }
+  .RadColorPicker_Outlook .rcpTabs ul li a span {
+    padding: 0 6px 0 0 !important;
+    background-position: right top; }
+  .RadColorPicker_Outlook .rcpTabs ul li.rcpSelectedTab a {
+    color: black;
+    background-position: -1014px -289px;
+    padding-left: 6px !important; }
+  .RadColorPicker_Outlook .rcpTabs ul li.rcpSelectedTab a span {
+    background-position: right -26px;
+    padding-right: 6px !important; }
+  .RadColorPicker_Outlook .rcpHeader,
+  .RadColorPicker_Outlook .rcpHeader .rcpImageButton,
+  .RadColorPicker_Outlook .rcpRecentColors,
+  .RadColorPicker_Outlook .rcpIcon a,
+  .RadColorPicker_Outlook .rcpTabs a,
+  .RadColorPicker_Outlook .rcpTabs a span,
+  .RadColorPicker_Outlook .rcpButton,
+  .RadColorPicker_Outlook .rcpButton span,
+  .RadColorPicker_Outlook .rcpMillionColorsHandle,
+  .RadColorPicker_Outlook .rcpSlider div.rslTrack,
+  .RadColorPicker_Outlook .rcpSlider .rslTrack a.rslDraghandle,
+  .RadColorPicker_Outlook div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    background-image: url('ColorPicker/ColorPickerSprites.png');
+    background-repeat: no-repeat; }
+  .RadColorPicker_Outlook .rcpPalette,
+  .RadColorPicker_Outlook .rcpRoundedRight,
+  .RadColorPicker_Outlook .rcpRoundedBottomRight,
+  .RadColorPicker_Outlook .rcpRightShadow,
+  .RadColorPicker_Outlook .rcpCornerShadow {
+    background-image: url('ColorPicker/rcpVerticalSprites.png'); }
+  .RadColorPicker_Outlook .rcpRoundedBottomLeft,
+  .RadColorPicker_Outlook .rcpBottomShadow {
+    background-image: url('ColorPicker/ColorPickerSprites.png'); }
+  .RadColorPicker_Outlook .rcpPalette,
+  .RadColorPicker_Outlook .rcpRoundedRight,
+  .RadColorPicker_Outlook .rcpRoundedBottomRight,
+  .RadColorPicker_Outlook .rcpRoundedBottomLeft {
+    _background-image: url('ColorPicker/rcpVerticalSpritesIE6.png'); }
+

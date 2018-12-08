@@ -1,0 +1,103 @@
+/* RadWindow for ASP.NET Forest Skin */
+
+.RadWindow_Forest .rwTopLeft,
+.RadWindow_Forest .rwTopRight,
+.RadWindow_Forest .rwTitlebar,
+.RadWindow_Forest .rwFooterLeft,
+.RadWindow_Forest .rwFooterRight,
+.RadWindow_Forest .rwFooterCenter,
+.RadWindow_Forest .rwTopResize,
+.RadWindow_Forest .rwStatusbar div,
+.RadWindow_Forest .rwStatusbar,
+.RadWindow_Forest .rwPopupButton,
+.RadWindow_Forest .rwPopupButton span,
+.RadWindow_Forest.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+.RadWindow_Forest .rwBodyLeft,
+.RadWindow_Forest .rwBodyRight,
+.RadWindow_Forest .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif');
+}
+
+.RadWindow_Forest .rwStatusbar input
+{
+    background-color: #f7f3e9;
+}
+
+.RadWindow_Forest .rwControlButtons a
+{
+    background-image: url('Window/CommandButtonSprites.gif');
+}
+
+.RadWindow_Forest a.rwIcon
+{
+	background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+div.RadWindow_Forest .rwTitlebarControls em
+{
+	color: #e7f1d7;
+}
+
+div.RadWindow_Forest .rwDialogInput
+{
+	border: solid 1px #618740;
+}
+
+div.RadWindow_Forest .rwDialogInput:hover
+{
+	border: solid 1px #3c4c30;
+}
+
+div.RadWindow_Forest td.rwLoading
+{
+    background-color: #fff;
+}
+
+div.RadWindow_Forest .rwPopupButton span
+{
+    color: #e7f1d7;
+}
+
+div.RadWindow_Forest .rwPopupButton:hover span
+{
+    color: #fff;
+}
+
+.RadWindow_Forest td.rwWindowContent
+{
+    background-color: #fff;
+}
+
+/* Loading Indicators */
+
+/* When ShowContentDuringLoad="true" */
+.RadWindow_Forest td.rwWindowContent.rwLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadWindow_Forest input.rwLoading
+{
+    background-image: url('Common/loading_small.gif');
+}
+
+div.RadWindow_Forest a.rwCancel,
+div.RadWindow_Forest a.rwCancel span
+{
+    background: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+div.RadWindow_Forest a.rwCancel span span,
+div.RadWindow_Forest a.rwCancel:hover span span
+{
+    color: #324721;
+    text-decoration: underline;
+}

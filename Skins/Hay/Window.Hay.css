@@ -1,0 +1,93 @@
+/* RadWindow for ASP.NET AJAX Hay Skin */
+
+.RadWindow_Hay .rwTopLeft,
+.RadWindow_Hay .rwTopRight,
+.RadWindow_Hay .rwTitlebar,
+.RadWindow_Hay .rwFooterLeft,
+.RadWindow_Hay .rwFooterRight,
+.RadWindow_Hay .rwFooterCenter,
+.RadWindow_Hay .rwTopResize,
+.RadWindow_Hay .rwStatusbar div,
+.RadWindow_Hay .rwStatusbar,
+.RadWindow_Hay .rwPopupButton,
+.RadWindow_Hay .rwPopupButton span,
+.RadWindow_Hay.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+.RadWindow_Hay .rwBodyLeft,
+.RadWindow_Hay .rwBodyRight,
+.RadWindow_Hay .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif');
+}
+
+.RadWindow_Hay .rwStatusbar input
+{
+    background-color: #f7f3e9;
+}
+
+.RadWindow_Hay .rwControlButtons a
+{
+    background-image: url('Window/CommandButtonSprites.gif');
+}
+
+.RadWindow_Hay a.rwIcon
+{
+	background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+div.RadWindow_Hay .rwTitlebarControls em
+{
+	color: white;
+}
+
+div.RadWindow_Hay .rwDialogInput
+{
+	border: solid 1px #898772;
+}
+
+div.RadWindow_Hay .rwDialogInput:hover
+{
+	border: solid 1px #44a41f;
+}
+
+div.RadWindow_Hay td.rwLoading
+{
+    background-color: #fff;
+}
+
+.RadWindow_Hay td.rwWindowContent
+{
+    background-color: #fff;
+}
+
+/* Loading Indicators */
+
+/* When ShowContentDuringLoad="true" */
+.RadWindow_Hay td.rwWindowContent.rwLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* When ShowContentDuringLoad="false" */
+.RadWindow_Hay input.rwLoading
+{
+    background-image: url('Common/loading_small.gif');
+}
+
+div.RadWindow_Hay a.rwCancel,
+div.RadWindow_Hay a.rwCancel span
+{
+    background: none;
+    cursor: pointer;
+    cursor: hand;
+}
+
+div.RadWindow_Hay a.rwCancel span span,
+div.RadWindow_Hay a.rwCancel:hover span span
+{
+    color: #185d00;
+    text-decoration: underline;
+}

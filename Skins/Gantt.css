@@ -1,0 +1,1258 @@
+.RadGantt {
+  border-width: 1px;
+  border-style: solid;
+  line-height: normal;
+  outline: 0;
+  white-space: nowrap;
+  position: relative; }
+  .RadGantt, .RadGantt * {
+    box-sizing: content-box; }
+  .RadGantt .rgtHeader, .RadGantt .rgtFooter, .RadGantt .radToolbar {
+    *zoom: 1; }
+    .RadGantt .rgtHeader:after, .RadGantt .rgtFooter:after, .RadGantt .radToolbar:after {
+      content: "";
+      clear: both;
+      display: block; }
+  .RadGantt a {
+    text-decoration: none; }
+  .RadGantt .radButton .rgtCreateButton {
+    box-sizing: border-box; }
+  .RadGantt .radToolbar .radGroup > li {
+    border-style: solid;
+    border-width: 1px 1px 1px 0; }
+  .RadGantt .radToolbar .radGroup > li:first-child {
+    border-width: 1px; }
+  .RadGantt .radFauxRows, .RadGantt .radFauxColumns {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .RadGantt .k-resize-handle {
+    position: absolute;
+    cursor: col-resize;
+    z-index: 2; }
+  .RadGantt .k-textbox, .RadGantt .radTextbox {
+    width: 100%;
+    box-sizing: border-box; }
+  .RadGantt .radNumericTextbox, .RadGantt .radNumericTextBox {
+    width: 100%; }
+  .RadGantt .radDatePicker {
+    width: 100%; }
+  .RadGantt .radDateTimePicker {
+    width: 100%; }
+  .RadGantt .k-loading-mask, .RadGantt .k-loading-color, .RadGantt .k-loading-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .RadGantt .k-loading-mask {
+    cursor: default;
+    z-index: 10; }
+  .RadGantt .k-loading-color {
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    z-index: 1; }
+  .RadGantt .k-loading-image {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 2; }
+  .RadGantt .k-loading-text {
+    text-align: center;
+    z-index: 2;
+    display: none; }
+  .RadGantt .rgtHeader, .RadGantt .rgtFooter {
+    padding: 2px 7px;
+    border-style: solid;
+    line-height: 2em; }
+    .RadGantt .rgtHeader .rgtActions, .RadGantt .rgtFooter .rgtActions {
+      float: left; }
+    .RadGantt .rgtHeader .rgtViews, .RadGantt .rgtFooter .rgtViews {
+      float: right; }
+    .RadGantt .rgtHeader .rgtPdfButton .radIcon, .RadGantt .rgtFooter .rgtPdfButton .radIcon {
+      display: none; }
+  .RadGantt .rgtHeader {
+    border-width: 0 0 1px; }
+  .RadGantt .rgtFooter {
+    border-width: 1px 0 0; }
+  .RadGantt .rgtTreelistWrapper, .RadGantt .rgtSplitbar, .RadGantt .rgtTimelineWrapper {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal; }
+  .RadGantt .rgtSplitbar {
+    width: 5px;
+    border-width: 0 1px;
+    border-style: solid;
+    outline: 0;
+    background-repeat: repeat-y;
+    font-size: 0;
+    cursor: e-resize;
+    position: relative;
+    -moz-user-select: none;
+    user-select: none;
+    overflow: hidden; }
+  .RadGantt .rgtSplitbar .radResizeHandle {
+    margin: -10px 0 0 0;
+    width: 3px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 1px; }
+  .RadGantt .rgtTreelist, .RadGantt .rgtTimeline {
+    height: 100%;
+    border-width: 0;
+    position: relative; }
+    .RadGantt .rgtTreelist table, .RadGantt .rgtTimeline table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-width: 0;
+      empty-cells: show;
+      outline: medium none; }
+    .RadGantt .rgtTreelist .radStateSelected td, .RadGantt .rgtTimeline .radStateSelected td {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-style: solid; }
+    .RadGantt .rgtTreelist .radStateSelected:first-child td, .RadGantt .rgtTimeline .radStateSelected:first-child td {
+      border-top-color: transparent; }
+    .RadGantt .rgtTreelist .rgtEditCell, .RadGantt .rgtTimeline .rgtEditCell {
+      padding-top: 3px;
+      padding-bottom: 3px; }
+    .RadGantt .rgtTreelist .radStateSelected .rgtEditCell, .RadGantt .rgtTimeline .radStateSelected .rgtEditCell {
+      padding-top: 2px;
+      padding-bottom: 2px; }
+  .RadGantt .rgtDependencies {
+    left: 0;
+    position: absolute;
+    top: 0; }
+  .RadGantt .radLine {
+    position: absolute; }
+  .RadGantt .radLineH {
+    height: 2px; }
+  .RadGantt .radLineV {
+    width: 2px; }
+  .RadGantt .radLine.radStateSelected {
+    z-index: 9999; }
+  .RadGantt .radArrowE, .RadGantt .radArrowW {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    top: -4px; }
+  .RadGantt .radArrowE {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    right: -6px; }
+  .RadGantt .radArrowW {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    left: -6px; }
+  .RadGantt .rgtTreelist .radGridHeader tr {
+    height: 64px; }
+  .RadGantt .rgtTreelist .radGridHeader th {
+    text-align: left; }
+  .RadGantt .rgtTreelist .rgtTreelistContent td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .RadGantt .rgtTreelist .rgtTreelistContent td.rgtEditCell {
+    overflow: visible; }
+  .RadGantt .rgtTreelist .rgtTreelistContent .radIcon {
+    vertical-align: text-top; }
+  .RadGantt .rgtTreelist .rgtTreelistGroup {
+    font-weight: bolder; }
+  .RadGantt .rgtTreelist .radIconExpand {
+    background-position: -2px -62px; }
+  .RadGantt .rgtTreelist .radIconCollapse {
+    background-position: -2px -22px; }
+  .RadGantt .rgtTreelistContent {
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+  .RadGantt .rgtTimeline {
+    outline: 0; }
+    .RadGantt .rgtTimeline th {
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .RadGantt .rgtTimeline .radGridHeader {
+      padding-right: 17px; }
+    .RadGantt .rgtTimeline .radGridHeader tr:first-child th {
+      border-bottom-width: 1px; }
+  .RadGantt .rgtTimelineContent {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: scroll;
+    position: relative; }
+  .RadGantt .radMarquee {
+    position: absolute;
+    z-index: 100000; }
+  .RadGantt .radMarqueeColor, .RadGantt .radMarqueeText {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .RadGantt .k-current-time {
+    background-color: red;
+    position: absolute; }
+  .RadGantt .rgtTasks td {
+    vertical-align: top; }
+  .RadGantt .rgtTaskWrap {
+    margin: 0 -20px;
+    padding: 0 20px 5px;
+    position: absolute;
+    z-index: 2; }
+  .RadGantt .rgtTask {
+    position: relative; }
+  .RadGantt .rgtTaskDot {
+    cursor: pointer;
+    display: none;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 0;
+    width: 16px; }
+    .RadGantt .rgtTaskDot:before {
+      content: "";
+      width: 0;
+      height: 16px;
+      vertical-align: middle;
+      display: inline-block; }
+    .RadGantt .rgtTaskDot:after {
+      content: "";
+      margin-left: 4px;
+      height: 7px;
+      width: 7px;
+      border-radius: 4px;
+      vertical-align: middle;
+      display: inline-block; }
+  .RadGantt .rgtTaskWrap:hover .rgtTaskDot {
+    display: block; }
+  .RadGantt .rgtTaskWrap .rgtTaskDot:hover:after {
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 3px; }
+  .RadGantt .rgtTaskStart {
+    left: 0; }
+  .RadGantt .rgtTaskEnd {
+    right: 0; }
+  .RadGantt .rgtResourceWrap {
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    z-index: 2; }
+    .RadGantt .rgtResourceWrap .rgtResource {
+      margin: 0 5px; }
+  .RadGantt .rgtMilestoneWrap {
+    margin: 0 -13px 0 -28px; }
+  .RadGantt .rgtTaskMilestone {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .RadGantt .rgtTaskMilestone ~ .rgtTaskDot {
+    top: 3px; }
+  .RadGantt .rgtTaskSummary {
+    margin-top: 3px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: top; }
+  .RadGantt .rgtTaskSummary:before, .RadGantt .rgtComplete:before, .RadGantt .rgtTaskSummary:after, .RadGantt .rgtComplete:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent;
+    position: absolute;
+    top: 0; }
+  .RadGantt .rgtTaskSummary:before, .RadGantt .rgtComplete:before {
+    border-left-color: inherit;
+    left: 0; }
+  .RadGantt .rgtTaskSummary:after, .RadGantt .rgtComplete:after {
+    border-right-color: inherit;
+    right: 0; }
+  .RadGantt .rgtProgress {
+    height: 15px;
+    overflow: hidden; }
+  .RadGantt .rgtComplete {
+    height: 10px;
+    position: relative;
+    z-index: 2; }
+  .RadGantt .rgtTaskSingle {
+    min-height: 1.3em;
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: default;
+    overflow: hidden; }
+  .RadGantt .rgtTaskSingle .radResizeHandle {
+    width: 0.4em;
+    cursor: col-resize;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: 2; }
+  .RadGantt .rgtTaskSingle:hover .radResizeHandle {
+    visibility: visible; }
+  .RadGantt .rgtTaskSingle .radResizeW {
+    left: 0; }
+  .RadGantt .rgtTaskSingle .radResizeE {
+    right: 0; }
+  .RadGantt .rgtTaskSingle .radResizeE:after, .RadGantt .rgtTaskSingle .radResizeW:after {
+    content: "";
+    width: 1px;
+    height: 1.4em;
+    margin-top: -0.7em;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%; }
+  .RadGantt .rgtTaskSingle .radResizeE:after {
+    left: 2px; }
+  .RadGantt .rgtTaskSingle .radResizeW:after {
+    right: 2px; }
+  .RadGantt .rgtTaskContent {
+    position: relative;
+    z-index: 2; }
+  .RadGantt .rgtTaskTemplate {
+    padding: 2px 20px 2px 6px;
+    line-height: 17px; }
+  .RadGantt .rgtTaskComplete {
+    width: 20%;
+    box-sizing: border-box;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+  .RadGantt .rgtTaskSingle ~ .rgtTaskDot {
+    top: 3px; }
+  .RadGantt .rgtDragHanle {
+    margin-left: 16px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    display: none;
+    cursor: e-resize;
+    position: absolute;
+    z-index: 100;
+    bottom: 0; }
+  .RadGantt .rgtTaskWrap:hover .rgtDragHanle {
+    display: block; }
+  .RadGantt .rgtTaskActions {
+    white-space: nowrap;
+    visibility: hidden;
+    right: 4px;
+    top: 3px;
+    position: absolute;
+    z-index: 1; }
+  .RadGantt .rgtTaskWrap:hover .rgtTaskActions {
+    visibility: visible; }
+  .RadGantt .rgtTaskActions .radButton {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border-width: 0;
+    background-color: transparent;
+    background-image: none;
+    white-space: nowrap; }
+  .RadGantt .rgtTaskActions .radButton .radIcon {
+    margin: 0; }
+  .RadGantt.rgtRowheight .rgtTaskSummary, .RadGantt.rgtRowheight .rgtTaskMilestone, .RadGantt.rgtRowheight .rgtTaskDot, .RadGantt.rgtRowheight .rgtTaskSingle + .rgtTaskDot, .RadGantt.rgtRowheight .rgtTaskSingle + .rgtTaskDot + .rgtTaskDot {
+    top: 50%; }
+  .RadGantt.rgtRowheight .rgtTaskSummary, .RadGantt.rgtRowheight .rgtTaskMilestone {
+    margin-top: -7px; }
+  .RadGantt.rgtRowheight .rgtTaskDot, .RadGantt.rgtRowheight .rgtTaskSingle + .rgtTaskDot, .RadGantt.rgtRowheight .rgtTaskSingle + .rgtTaskDot + .rgtTaskDot {
+    margin-top: -11px; }
+
+.k-icon, .radIcon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden; }
+
+.radIconNone {
+  background-image: none !important; }
+
+.radIconPlus, .radIconAdd {
+  background-position: -2px -1202px; }
+
+.radIconEdit {
+  background-position: -2px -1242px; }
+
+.radIconMinus, .radIconRemove {
+  background-position: -2px -1282px; }
+
+.radIconDelete {
+  background-position: -2px -1342px; }
+
+.radIconExpand {
+  background-position: -2px -1362px; }
+
+.radIconCollapse {
+  background-position: -2px -1382px; }
+
+.radIconInsertTop {
+  background-position: -2px -1522px; }
+
+.radIconInsertBottom {
+  background-position: -2px -1562px; }
+
+.radIconInsertMiddle {
+  background-position: -2px -1542px; }
+
+.radIconDenied, .radIconNotAllowed {
+  background-position: -2px -1162px; }
+
+.k-i-arrow-n, .radIconArrowN, .radIconArrowUp {
+  background-position: -2px -2px; }
+
+.k-i-arrow-e, .radIconArrowE, .radIconArrowRight {
+  background-position: -2px -62px; }
+
+.k-i-arrow-w, .radIconArrowW, .radIconArrowLeft {
+  background-position: -2px -42px; }
+
+.k-i-arrow-s, .radIconArrowS, .radIconArrowDown {
+  background-position: -2px -22px; }
+
+.k-i-calendar, .radIconCalendar {
+  background-position: -2px -1682px; }
+
+.k-i-clock, .radIconClock {
+  background-position: -2px -1702px; }
+
+.k-i-close, .radIconClose {
+  background-position: -2px -762px; }
+
+.k-filter, .k-i-filter, .radIconFilter {
+  background-position: -2px -1802px; }
+
+.k-button, .radButton {
+  padding: 0 1.1em;
+  border-style: solid;
+  border-width: 1px;
+  font: inherit;
+  display: inline-block;
+  cursor: default; }
+  .k-button::-moz-focus-inner, .radButton::-moz-focus-inner {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; }
+  .k-button .k-icon, .k-button .radIcon, .radButton .k-icon, .radButton .radIcon {
+    margin-left: -6px;
+    margin-right: 6px;
+    vertical-align: text-top; }
+
+.radCalendar {
+  width: 220px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+  .radCalendar .k-link {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    display: block; }
+  .radCalendar .k-header, .radCalendar .k-footer {
+    padding: 3px 5px;
+    position: relative; }
+  .radCalendar .k-header {
+    border-width: 0 0 1px;
+    border-style: solid;
+    background-position: 0 0;
+    background-repeat: repeat-x; }
+  .radCalendar .k-nav-prev, .radCalendar .k-nav-next {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 0.16666em; }
+  .radCalendar .k-nav-prev {
+    left: 2px; }
+  .radCalendar .k-nav-next {
+    right: 2px; }
+  .radCalendar .k-nav-fast {
+    width: 75%;
+    display: inline-block; }
+  .radCalendar .k-content {
+    width: 100%;
+    border-spacing: 0;
+    border-width: 0;
+    outline: 0;
+    table-layout: fixed; }
+  .radCalendar th {
+    padding: 4px 6px 3px 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    font-weight: normal; }
+  .radCalendar td {
+    padding: 0;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    background-position: 0 0;
+    background-repeat: repeat-x; }
+  .radCalendar td .k-link {
+    padding: 0 5px 0 1px; }
+
+.radPopup .radCalendar {
+  border-width: 0;
+  background-color: transparent; }
+
+.k-popup, .radPopup {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid; }
+
+.radDragClue {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid; }
+  .radDragClue > .radIcon, .radDragClue > .k-icon {
+    margin: 0 2px;
+    vertical-align: text-top; }
+
+.radToolbar {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .radToolbar > li {
+    margin: 0 2px;
+    display: inline-block; }
+  .radToolbar.rgtViews {
+    border: 1px solid transparent; }
+  .radToolbar.rgtViews > li.rgtCurrentView {
+    display: none; }
+  .radToolbar .radButton {
+    display: block;
+    border-color: transparent;
+    color: inherit;
+    background: none; }
+
+.radList, .k-list {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  cursor: default; }
+
+.radList .radItem, .k-list .k-item {
+  padding: 1px 5px;
+  min-height: 1.8em;
+  line-height: 1.8em; }
+
+.radGrid {
+  position: relative; }
+  .radGrid table {
+    width: 100%;
+    margin: 0;
+    border-spacing: 0;
+    border-width: 0;
+    border-collapse: separate;
+    empty-cells: show;
+    outline: medium none;
+    table-layout: fixed; }
+  .radGrid tr {
+    height: 32px; }
+  .radGrid th, .radGrid td {
+    padding: 5px 7px;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    font-weight: inherit;
+    vertical-align: middle; }
+    .radGrid th:first-child, .radGrid td:first-child {
+      border-left-width: 0; }
+  .radGrid td {
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.radGridHeaderWrap {
+  width: 100%;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  position: relative;
+  overflow: hidden; }
+
+.radGridHeader {
+  border-width: 0 0 1px 0;
+  border-style: solid; }
+  .radGridHeader th {
+    text-align: left;
+    vertical-align: bottom; }
+  .radGridHeader th a {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block; }
+  .radGridHeader th:hover a {
+    text-decoration: underline; }
+  .radGridHeader th .k-icon {
+    margin-left: 2px;
+    vertical-align: text-top; }
+
+.radGrid {
+  border-width: 1px;
+  border-style: solid;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative; }
+  .radGrid table {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    empty-cells: show;
+    outline: 0; }
+  .radGrid th, .radGrid td {
+    padding: 5px 7px;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    font-weight: inherit;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .radGrid th:first-child, .radGrid td:first-child {
+      border-left-width: 0; }
+  .radGrid td {
+    vertical-align: middle; }
+  .radGrid th {
+    vertical-align: bottom; }
+  .radGrid .rgtEditCell {
+    padding-top: 4px;
+    padding-bottom: 4px; }
+
+.k-grid-header table, .k-grid-content table, .k-grid-footer table, .k-grid-content-locked > table {
+  table-layout: fixed; }
+
+.k-grid-header, .k-grid-footer {
+  padding-right: 17px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.k-grid-header-wrap, .k-grid-footer-wrap {
+  width: 100%;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  position: relative;
+  overflow: hidden; }
+
+.k-grid-header {
+  background-position: 0 0;
+  background-repeat: repeat-x; }
+  .k-grid-header .k-header > .k-link {
+    margin: -5px -7px;
+    padding: 5px 7px;
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .k-grid-header .k-header:hover > .k-link {
+    text-decoration: underline; }
+  .k-grid-header .k-with-icon > .k-link {
+    margin-right: 20px; }
+  .k-grid-header .k-header .k-icon, .k-grid-header .k-header .radIcon {
+    margin-left: 2px;
+    vertical-align: text-top; }
+  .k-grid-header .k-header > .k-grid-filter, .k-grid-header .k-header > .k-header-column-menu {
+    margin: -5px -7px;
+    padding: 5px 2px;
+    float: right;
+    position: relative;
+    z-index: 1; }
+
+.k-grid-content {
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: scroll; }
+
+.k-textbox, .radTextbox {
+  padding: 2px 5px 1px;
+  border-width: 1px;
+  border-style: solid;
+  font: inherit;
+  display: inline-block;
+  vertical-align: middle; }
+
+.k-numerictextbox, .radNumericTextbox, .radNumericTextBox {
+  width: 160px;
+  position: relative;
+  overflow: hidden;
+  overflow: visible;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .k-numerictextbox .k-numeric-wrap, .radNumericTextbox .k-numeric-wrap, .radNumericTextBox .k-numeric-wrap {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 22px 0 5px;
+    position: relative;
+    cursor: default;
+    display: block; }
+  .k-numerictextbox .k-input, .radNumericTextbox .k-input, .radNumericTextBox .k-input {
+    padding: 2px 0 1px;
+    width: 100%;
+    border: 0;
+    background: none;
+    line-height: 1.4em;
+    font: inherit; }
+  .k-numerictextbox .k-select, .radNumericTextbox .k-select, .radNumericTextBox .k-select {
+    height: 100%;
+    width: 22px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .k-numerictextbox .k-link, .radNumericTextbox .k-link, .radNumericTextBox .k-link {
+    padding: 0;
+    height: 12px;
+    border-width: 0;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    overflow: hidden;
+    position: relative; }
+    .k-numerictextbox .k-link .k-icon, .radNumericTextbox .k-link .k-icon, .radNumericTextBox .k-link .k-icon {
+      margin: -8px 0 0 -8px;
+      position: absolute;
+      top: 50%;
+      left: 50%; }
+  .k-numerictextbox .k-input, .radNumericTextbox .k-input, .radNumericTextBox .k-input {
+    color: inherit; }
+
+.k-dropdown, .radDropdown {
+  width: 160px;
+  position: relative;
+  overflow: hidden;
+  overflow: visible;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .k-dropdown .k-dropdown-wrap, .radDropdown .k-dropdown-wrap {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 22px 0 5px;
+    position: relative;
+    cursor: default;
+    display: block; }
+  .k-dropdown .k-input, .radDropdown .k-input {
+    padding: 2px 0 1px;
+    width: 100%;
+    line-height: 1.4em;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden; }
+  .k-dropdown .k-select, .radDropdown .k-select {
+    height: 100%;
+    width: 22px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .k-dropdown .k-icon, .radDropdown .k-icon {
+    margin: -8px 0 0 -8px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%; }
+
+.radDatePicker {
+  width: 160px;
+  position: relative;
+  overflow: hidden;
+  overflow: visible;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .radDatePicker .k-picker-wrap {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 22px 0 5px;
+    position: relative;
+    cursor: default;
+    display: block; }
+  .radDatePicker .k-input {
+    padding: 2px 0 1px;
+    width: 100%;
+    border: 0;
+    background: none;
+    line-height: 1.4em;
+    font: inherit; }
+  .radDatePicker .k-select {
+    height: 100%;
+    width: 22px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .radDatePicker .k-icon {
+    margin: -8px 0 0 -8px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%; }
+  .radDatePicker .k-input {
+    color: inherit; }
+
+.radDateTimePicker {
+  width: 160px;
+  position: relative;
+  overflow: hidden;
+  overflow: visible;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .radDateTimePicker .k-picker-wrap {
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 48px 0 5px;
+    position: relative;
+    cursor: default;
+    display: block; }
+  .radDateTimePicker .k-input {
+    padding: 2px 0 1px;
+    width: 100%;
+    border: 0;
+    background: none;
+    line-height: 1.4em;
+    font: inherit; }
+  .radDateTimePicker .k-select {
+    height: 100%;
+    width: 48px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .radDateTimePicker .k-select .k-icon {
+      margin: -8px 0 0 -8px;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      top: 50%; }
+    .radDateTimePicker .k-select .k-i-calendar {
+      margin: -8px 0 0 -20px; }
+    .radDateTimePicker .k-select .k-i-clock {
+      margin: -8px 0 0 4px; }
+  .radDateTimePicker .k-input {
+    color: inherit; }
+
+.k-tooltip, .radTooltip {
+  padding: 4px 8px;
+  min-width: 20px;
+  background-repeat: repeat-x;
+  border-width: 1px;
+  border-style: solid;
+  text-align: left;
+  position: absolute;
+  z-index: 12000; }
+
+.radTooltipContent {
+  height: 100%; }
+
+.k-tooltip-validation > .radIcon, .k-tooltip-validation > .k-icon {
+  margin: 0 8px 0 0;
+  vertical-align: text-bottom; }
+.k-tooltip-validation .k-icon.k-warning {
+  background-image: url('Common/Notification/warning.png');
+  background-position: 0 0; }
+
+.k-callout, .radCallout {
+  height: 0;
+  width: 0;
+  border-width: 6px;
+  border-color: transparent;
+  border-style: solid;
+  position: absolute; }
+
+.k-callout-n, .radCalloutN {
+  top: -13px;
+  left: 50%; }
+
+.k-callout-e, .radCalloutE {
+  top: 50%;
+  right: -13px; }
+
+.k-callout-s, .radCalloutS {
+  left: 50%;
+  bottom: -13px; }
+
+.k-callout-w, .radCalloutW {
+  top: 50%;
+  left: -13px; }
+
+.k-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  left: 0; }
+
+.k-window {
+  padding-top: 2em;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  position: absolute;
+  z-index: 10001; }
+
+.k-window-titlebar {
+  margin-top: -2em;
+  padding: 0.4em 0;
+  width: 100%;
+  height: 1.1em;
+  min-height: 16px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  white-space: nowrap;
+  position: absolute; }
+
+.k-window-title {
+  cursor: default;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 0.44em;
+  right: 0.44em; }
+
+.k-window-titlebar .k-window-actions {
+  padding-top: 0.4em;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0.3em; }
+
+.k-window-content {
+  padding: 0.58em;
+  height: 100%;
+  outline: 0;
+  overflow: auto;
+  position: relative; }
+
+.radPopupEditForm {
+  padding: 1em; }
+
+.radEditFormContainer {
+  width: 400px;
+  position: relative; }
+
+.radEditFormContainer .radFormLabel {
+  margin-left: 2%;
+  padding: 0.4em 0 1em;
+  width: 30%;
+  text-align: right;
+  float: left;
+  clear: both; }
+
+.radEditFormContainer .radFormField {
+  margin-right: 2%;
+  padding: 0 0 0.6em;
+  width: 60%;
+  float: right;
+  clear: right; }
+
+.radPopupEditForm .rgtButtonsContainer {
+  margin: 0 -1em;
+  padding: 0.6em;
+  clear: both;
+  text-align: right;
+  border-width: 1px 0 0;
+  border-style: solid;
+  position: relative;
+  bottom: -1em; }
+
+.radPopupEditForm .rgtButtonsContainer .radButton {
+  margin: 0 0.16em;
+  text-decoration: none; }
+
+.radPopupMessage {
+  margin: 0;
+  text-align: center; }
+
+.k-filter-menu .k-widget, .k-filter-menu .k-textbox {
+  margin: 5px 0 0 0;
+  display: block; }
+.k-filter-menu .k-filter-and {
+  margin: 10px 0;
+  width: 6em; }
+.k-filter-menu .k-button {
+  width: 48%;
+  margin: 10px 0 0 0; }
+.k-filter-menu .k-button + .k-button {
+  margin-left: 4%; }
+
+.rgtTaskDetails {
+  padding: 0.4em;
+  text-align: left;
+  white-space: nowrap; }
+
+.rgtTaskDetails > strong {
+  display: block; }
+
+.rgtTaskDetails > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 1.6; }
+
+.rgtTaskPct {
+  margin: 0.8em 0 0.3em;
+  font-size: 160%; }
+
+.RadGantt_rtl {
+  direction: rtl; }
+  .RadGantt_rtl .rgtHeader .rgtActions, .RadGantt_rtl .rgtFooter .rgtActions {
+    float: right; }
+  .RadGantt_rtl .rgtHeader .rgtViews, .RadGantt_rtl .rgtFooter .rgtViews {
+    float: left; }
+  .RadGantt_rtl .radToolbar.rgtViews.rgtExpanded {
+    text-align: left; }
+  .RadGantt_rtl .radGrid th, .RadGantt_rtl .radGrid td {
+    text-align: right; }
+    .RadGantt_rtl .radGrid th:first-child, .RadGantt_rtl .radGrid td:first-child {
+      border-right-width: 0;
+      border-left-width: 1px; }
+  .RadGantt_rtl .rgtTimeline .radGridHeader {
+    padding-left: 17px;
+    padding-right: 0; }
+  .RadGantt_rtl .radGridHeaderWrap {
+    border-width: 0 0 0 1px; }
+  .RadGantt_rtl .rgtTreelist .radGridHeader th {
+    text-align: right; }
+  .RadGantt_rtl .rgtTreelist .radIconExpand {
+    background-position: -2px -43px; }
+  .RadGantt_rtl .k-button .k-icon, .RadGantt_rtl .k-button .radIcon, .RadGantt_rtl .radButton .k-icon, .RadGantt_rtl .radButton .radIcon {
+    margin-left: 6px;
+    margin-right: -6px; }
+  .RadGantt_rtl .rgtTaskSingle {
+    text-align: right; }
+  .RadGantt_rtl .rgtTaskActions {
+    left: 4px;
+    right: auto; }
+  .RadGantt_rtl .radFauxRows, .RadGantt_rtl .radFauxColumns {
+    left: auto;
+    right: 0; }
+  .RadGantt_rtl .k-picker-wrap {
+    padding: 0 5px 0 22px; }
+  .RadGantt_rtl .radDatePicker .k-select {
+    right: auto;
+    left: 0; }
+  .RadGantt_rtl .radDateTimePicker .k-picker-wrap {
+    padding-right: 5px;
+    padding-left: 48px; }
+  .RadGantt_rtl .radDateTimePicker .k-select {
+    right: auto;
+    left: 0;
+    border-width: 0 1px 0 0; }
+    .RadGantt_rtl .radDateTimePicker .k-select .k-i-clock {
+      margin-left: -20px; }
+    .RadGantt_rtl .radDateTimePicker .k-select .k-i-calendar {
+      margin-left: 4px; }
+  .RadGantt_rtl .rgtTasks {
+    position: relative; }
+  .RadGantt_rtl .rgtDependencies {
+    left: auto;
+    right: 0; }
+  .RadGantt_rtl .rgtTaskEnd {
+    right: auto;
+    left: 0; }
+  .RadGantt_rtl .rgtTaskStart {
+    left: auto;
+    right: 0; }
+  .RadGantt_rtl .rgtTaskComplete {
+    left: auto;
+    right: 0; }
+  .RadGantt_rtl .rgtTaskTemplate {
+    padding-right: 6px;
+    padding-left: 20px; }
+  .RadGantt_rtl .rgtResourceWrap {
+    margin-left: 0;
+    margin-right: 20px; }
+  .RadGantt_rtl .rgtDragHanle {
+    margin-left: 0;
+    margin-right: 16px; }
+  .RadGantt_rtl .rgtTaskDetails {
+    text-align: right; }
+
+.k-rtl {
+  direction: rtl; }
+  .k-rtl.k-calendar-container .k-nav-prev {
+    left: auto;
+    right: 2px; }
+  .k-rtl.k-calendar-container .k-nav-next {
+    right: auto;
+    left: 2px; }
+  .k-rtl.k-calendar-container .k-icon.k-i-arrow-e {
+    background-position: -2px -42px; }
+  .k-rtl.k-calendar-container .k-icon.k-i-arrow-w {
+    background-position: -2px -62px; }
+  .k-rtl .k-window-titlebar .k-window-actions {
+    right: auto;
+    left: 0.3em; }
+  .k-rtl .radEditFormContainer .radFormLabel {
+    margin-left: 0;
+    margin-right: 2%;
+    float: right;
+    text-align: left; }
+  .k-rtl .radEditFormContainer .radFormField {
+    margin-left: 2%;
+    margin-right: 0;
+    float: left;
+    clear: left; }
+  .k-rtl .radDateTimePicker .k-picker-wrap {
+    padding: 0 5px 0 48px; }
+  .k-rtl .radDateTimePicker .k-select {
+    border-width: 0 1px 0 0;
+    right: auto;
+    left: 0; }
+  .k-rtl .k-select .k-i-calendar {
+    margin: -8px 0 0 4px; }
+  .k-rtl .k-select .k-i-clock {
+    margin: -8px 0 0 -20px; }
+  .k-rtl .k-numerictextbox .k-numeric-wrap, .k-rtl .radNumericTextBox .k-numeric-wrap {
+    padding: 0 5px 0 22px; }
+  .k-rtl .k-numerictextbox .k-select, .k-rtl .radNumericTextBox .k-select {
+    right: auto;
+    left: 0;
+    border-width: 0 1px 0 0; }
+    .k-rtl .k-numerictextbox .k-select .k-i-clock, .k-rtl .radNumericTextBox .k-select .k-i-clock {
+      margin-left: -20px; }
+    .k-rtl .k-numerictextbox .k-select .k-i-calendar, .k-rtl .radNumericTextBox .k-select .k-i-calendar {
+      margin-left: 4px; }
+  .k-rtl .radPopupEditForm .rgtButtonsContainer {
+    text-align: left; }
+
+button.k-gantt-toggle {
+  display: none;
+  float: left;
+  margin-right: 0.5em; }
+
+.k-rtl button.k-gantt-toggle {
+  float: right;
+  margin-right: 0;
+  margin-left: 0.5em; }
+
+@media only screen and (max-width: 1024px) {
+  .rgtToolbar > ul.rgtViews {
+    position: absolute;
+    right: 6px;
+    top: 1px;
+    z-index: 10000; }
+    .rgtToolbar > ul.rgtViews > li:not(.rgtCurrentView) {
+      display: none; }
+    .rgtToolbar > ul.rgtViews > li.rgtCurrentView {
+      display: block;
+      border-width: 1px; }
+      .rgtToolbar > ul.rgtViews > li.rgtCurrentView > .radButton {
+        display: block;
+        position: relative;
+        padding-right: 2.5em;
+        padding-left: 1em; }
+        .rgtToolbar > ul.rgtViews > li.rgtCurrentView > .radButton:after {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 50%;
+          margin-top: -0.6em;
+          right: 0.333em;
+          width: 16px;
+          height: 16px; }
+    .rgtToolbar > ul.rgtViews.rgtExpanded {
+      border: 1px solid #c5c5c5;
+      background-color: #fff;
+      background-image: none;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
+      .rgtToolbar > ul.rgtViews.rgtExpanded > li, .rgtToolbar > ul.rgtViews.rgtExpanded > li:first-child + li {
+        display: block;
+        border: 0;
+        border-radius: 0; }
+
+  .k-rtl .rgtToolbar > ul.rgtViews {
+    right: auto;
+    left: 6px; }
+    .k-rtl .rgtToolbar > ul.rgtViews > li.radStateSelected {
+      text-align: left;
+      padding-left: 1em; }
+      .k-rtl .rgtToolbar > ul.rgtViews > li.radStateSelected > .k-link {
+        padding-left: 0; }
+    .k-rtl .rgtToolbar > ul.rgtViews.rgtExpanded {
+      text-align: left; }
+ }
+
+@media only screen and (max-width: 480px) {
+  button.k-gantt-toggle {
+    display: inline-block; }
+
+  .k-gantt-create span + span, .k-gantt-pdf span + span {
+    display: none; }
+
+  .radButton .radIcon {
+    margin-right: -6px; }
+
+  .RadGantt .rgtSplitbar {
+    display: none;
+    width: 0;
+    border-width: 0; }
+  .RadGantt .rgtTreelistWrapper {
+    display: none;
+    max-width: 0; }
+  .RadGantt .rgtTreelist .radGridContent {
+    overflow-y: scroll; }
+  .RadGantt .rgtTimelineWrapper {
+    width: 100%; }
+ }

@@ -1,0 +1,90 @@
+.RadImageGallery_Telerik {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: black; }
+  .RadImageGallery_Telerik .rigDescriptionBox {
+    background-color: #c5c5c5;
+    background-color: rgba(197, 197, 197, 0.7); }
+  .RadImageGallery_Telerik .rigToolbar,
+  .RadImageGallery_Telerik .rigCloseButton,
+  .RadImageGallery_Telerik .rigDrawerButton {
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.8); }
+  .RadImageGallery_Telerik .rigProgressBar div {
+    background-color: #2ebf00; }
+  .RadImageGallery_Telerik .rigPager {
+    background-color: #eeeeee;
+    color: black; }
+    .RadImageGallery_Telerik .rigPager a {
+      color: black; }
+    .RadImageGallery_Telerik .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_Telerik .rigIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadImageGallery_Telerik .rigDotList > a {
+    border-color: #8e8e8e; }
+  .RadImageGallery_Telerik .rigDotList a span {
+    background-color: white; }
+  .RadImageGallery_Telerik .rigDotList a.rigCurrentItem span {
+    background-color: #2ebf00;
+    border-color: white; }
+  .RadImageGallery_Telerik .rigTooltip {
+    background-color: white;
+    border-color: #828282; }
+    .RadImageGallery_Telerik .rigTooltip:after {
+      border-top-color: white; }
+  .RadImageGallery_Telerik .rigPrevButton,
+  .RadImageGallery_Telerik .rigNextButton,
+  .RadImageGallery_Telerik .rigScrollPrevIcon,
+  .RadImageGallery_Telerik .rigScrollNextIcon,
+  .RadImageGallery_Telerik .rigCloseIcon {
+    background-image: url('LightBox/sprite.png'); }
+  .RadImageGallery_Telerik .rigPrevButton {
+    background-position: 0 -140px; }
+  .RadImageGallery_Telerik .rigNextButton {
+    background-position: -60px -140px; }
+  .RadImageGallery_Telerik .rigScrollPrevIcon {
+    background-position: -79px  -49px; }
+  .RadImageGallery_Telerik .rigScrollNextIcon {
+    background-position: -104px -49px; }
+  .RadImageGallery_Telerik.RadImageGallery_RightOutside .rigScrollPrevIcon,
+  .RadImageGallery_Telerik.RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Telerik .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery_Telerik .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -62px -89px; }
+  .RadImageGallery_Telerik .RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Telerik .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -96px -89px; }
+  .RadImageGallery_Telerik .rigCloseIcon {
+    background-position: -79px -12px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigCloseIcon {
+    background-position: -101px -12px; }
+  .RadImageGallery_Telerik .rigDrawerIcon {
+    background-position: -52px -60px; }
+  .RadImageGallery_Telerik .rigPlayIcon {
+    background-position: 1px -1999px; }
+  .RadImageGallery_Telerik .rigPauseIcon {
+    background-position: 1px -2019px; }
+  .RadImageGallery_Telerik .rigFullScrIcon {
+    background-position: 1px -2099px; }
+  .RadImageGallery_Telerik .rigExtFullScrIcon {
+    background-position: 1px -2119px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigPlayIcon {
+    background-position: -19px -1999px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigPauseIcon {
+    background-position: -19px -2019px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigFullScrIcon {
+    background-position: -19px -2099px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigExtFullScrIcon {
+    background-position: -19px -2119px; }
+  .RadImageGallery_Telerik .rigShowThumbnIcon {
+    background-position: 0px -2159px; }
+  .RadImageGallery_Telerik .rigHideThumbnIcon {
+    background-position: 0px -2179px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigShowThumbnIcon {
+    background-position: -20px -2159px; }
+  .RadImageGallery_Telerik .rigActionButton:hover .rigHideThumbnIcon {
+    background-position: -20px -2179px; }

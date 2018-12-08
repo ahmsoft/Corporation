@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'TelerikWebUI';
+  src: url('../Common/TelerikWebUI.eot');
+  src: url('../Common/TelerikWebUI.eot') format('embedded-opentype'), url('../Common/TelerikWebUI.woff') format('woff'), url('../Common/TelerikWebUI.ttf') format('truetype'); }
+
+.t-icon, .t-sprite {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden; }
+
+.t-font-icon {
+  width: 1em;
+  height: 1em;
+  background-image: none;
+  font-family: "TelerikWebUI";
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none; }
+
+.t-i-x:before, .t-i-close:before {
+  content: "\e038"; }
+
+.t-i-add:before, .t-i-plus:before {
+  content: "\e039"; }

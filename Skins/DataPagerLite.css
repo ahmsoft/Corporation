@@ -1,0 +1,86 @@
+.RadDataPager {
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1.42857; }
+  .RadDataPager:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .RadDataPager .rdpWrap {
+    float: left;
+    padding-right: .5em;
+    white-space: nowrap; }
+  .RadDataPager .rdpWrapRight {
+    float: right; }
+  .RadDataPager .rdpWrapNone {
+    float: none; }
+  .RadDataPager .rdpAdvPart {
+    line-height: 2.2857; }
+  .RadDataPager .RadComboBox {
+    min-width: 55px; }
+  .RadDataPager .RadComboBox,
+  .RadDataPager .RadInput,
+  .RadDataPager .riTextBox {
+    font: inherit; }
+  .RadDataPager span.rcbInner {
+    padding: 0 6px; }
+  .RadDataPager input.rcbInput {
+    height: 2.2857em;
+    line-height: 2.2857; }
+  .RadDataPager .RadInput,
+  .RadDataPager .rdpPagerButton {
+    margin-right: 6px; }
+  .RadDataPager .RadInput {
+    height: auto;
+    vertical-align: top; }
+    .RadDataPager .RadInput .riTextBox {
+      padding: 6px 0;
+      height: 1.42857em;
+      line-height: normal;
+      min-height: 0;
+      text-align: center;
+      box-sizing: content-box; }
+  .RadDataPager .RadSlider {
+    float: left; }
+  .RadDataPager .RadSlider,
+  .RadDataPager .RadSlider .rslHorizontal {
+    height: 2.2857em !important; }
+  .RadDataPager .rdpSliderLabel {
+    line-height: 2.2857; }
+  .RadDataPager .rdpPagerLabel {
+    margin: 0 6px;
+    vertical-align: middle; }
+  .RadDataPager .rdpPagerTextBox {
+    vertical-align: middle; }
+  .RadDataPager .rdpNumPart a {
+    margin-left: 1px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent; }
+    .RadDataPager .rdpNumPart a.rdpCurrentPage {
+      cursor: default; }
+  .RadDataPager .rdpActionButton {
+    font-family: "TelerikWebUI";
+    width: 1.42857em;
+    margin: 0 4px 0 0; }
+  .RadDataPager .rdpNumPart a,
+  .RadDataPager .rdpPagerButton,
+  .RadDataPager .rdpActionButton {
+    padding: 6px;
+    height: 1.42857em;
+    line-height: 1.42857;
+    font-size: 1em;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    box-sizing: content-box; }
+  .RadDataPager .rdpPageFirst .rdpIcon:before {
+    content: "\e00b"; }
+  .RadDataPager .rdpPagePrev .rdpIcon:before {
+    content: "\e003"; }
+  .RadDataPager .rdpPageNext .rdpIcon:before {
+    content: "\e000"; }
+  .RadDataPager .rdpPageLast .rdpIcon:before {
+    content: "\e008"; }

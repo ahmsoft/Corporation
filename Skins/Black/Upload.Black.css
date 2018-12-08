@@ -1,0 +1,82 @@
+/* <general styles> */
+.RadUpload_Black,
+.RadUpload_Black a,
+.RadUpload_Black input {
+  font: normal 11px/10px "Segoe UI", Arial, sans-serif; }
+
+/* </general styles> */
+/* <file inputs> */
+.RadUpload_Black .ruStyled .ruFileInput {
+  border-color: #abadb3; }
+
+.RadUpload_Black input.ruFakeInput {
+  border-color: #000;
+  color: #fff;
+  background-color: #000;
+  background-image: url('Upload/ruSprite.png'); }
+
+* + html .RadUpload_Black .ruFileWrap .ruInputHover {
+  border-color: #777; }
+
+.RadUpload_Black .ruReadOnly .ruFakeInput {
+  background: #f3f3f3; }
+
+/* </file inputs> */
+/* <buttons> */
+.RadUpload_Black .ruButton {
+  background-image: url('Upload/ruSprite.png');
+  color: #fff; }
+
+.RadUpload_Black .ruRemove {
+  color: #fff; }
+
+div.RadUpload_Black .ruInputs .ruButtonHover,
+div.RadUpload_Black .ruActions .ruButtonHover {
+  background-position: 100% -23px; }
+
+div.RadUpload_Black .ruFileWrap .ruButtonHover {
+  background-position: 100% 0; }
+
+.RadUpload_Black .ruFileWrap .ruButton.ruButtonFocus {
+  border-color: #828282;
+  background-position: -1px -1px; }
+
+.RadUpload_Black .ruFileWrap .ruButton.ruButtonFocus.ruButtonHover {
+  background-position: 64px -1px;
+  background-repeat: repeat-x; }
+
+/* </buttons> */
+/* <submit button> */
+/* (use this class to style a single button for uploads) */
+.RadUploadSubmit {
+  background-image: url('Upload/ruSprite.png');
+  color: #000; }
+
+/* </submit button> */
+/* <RadAsyncUpload> */
+.RadUpload_Black .ruFileProgress,
+.RadUpload_Black .ruFileProgressWrap {
+  background-image: url('Upload/AsyncProgress.png'); }
+
+.RadUpload_Black .ruFileProgress,
+.RadUpload_Black_rtl .ruFileProgressWrap {
+  background-position: 0 0; }
+
+.RadUpload_Black .ruFileProgressWrap,
+.RadUpload_Black_rtl .ruFileProgress {
+  background-position: 100% 0; }
+
+.RadUpload_Black .ruProgressStarted,
+.RadUpload_Black_rtl .ruProgressComplete {
+  background-position: 0 -5px; }
+
+.RadUpload_Black .ruProgressComplete,
+.RadUpload_Black_rtl .ruProgressStarted {
+  background-position: 100% -5px; }
+
+/* </RadAsyncUpload> */
+.RadUpload_Black .ruDropZone,
+.RadUpload_Black_rtl .ruDropZone {
+  border-color: #080808;
+  color: #848484;
+  background-color: #2c2c2c; }

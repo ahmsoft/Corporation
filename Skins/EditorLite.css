@@ -1,0 +1,1557 @@
+@font-face {
+  font-family: 'TelerikWebUIEditor';
+  src: url('Common/TelerikWebUI/Editor.eot');
+  src: url('Common/TelerikWebUI/Editor.eot') format('embedded-opentype'), url('Common/TelerikWebUI/Editor.woff') format('woff'), url('Common/TelerikWebUI/Editor.ttf') format('truetype'); }
+
+.RadEditor {
+  font-size: 12px;
+  font-family: 'Segoe UI', Arial, Tahoma, sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.41667em; }
+  .RadEditor.reFullScreen {
+    position: absolute;
+    z-index: 3000; }
+
+.reClear, .reDropDownBody ul li.reClear {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  float: none;
+  width: 0;
+  height: 0;
+  line-height: 0; }
+
+.reToolBarWrapper {
+  margin: 0em 0em 0.41667em; }
+
+.reToolBar {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  min-height: 2em;
+  padding: 0.16667em;
+  margin: 0em 0em 0.08333em;
+  list-style: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.16667em;
+  vertical-align: top; }
+
+.reToolBar li {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle; }
+
+.reTool {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2em;
+  height: 1.83333em;
+  vertical-align: middle;
+  border-radius: 0.16667em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  text-decoration: none;
+  color: #000; }
+
+.reTool:active, .reTool:focus {
+  outline: none; }
+
+.reToolIcon:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.3333em;
+  width: 1.83333em;
+  height: 1.83333em;
+  margin-left: 0.19167em;
+  line-height: 1.25;
+  text-align: center;
+  vertical-align: middle;
+  content: "\e620";
+  font-family: TelerikWebUIEditor, monospace; }
+
+a.reTool.reToolText {
+  width: auto;
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 0em 0.16667em; }
+
+.reTool.reToolText:before {
+  height: 1.83333em; }
+
+.reTool.reSplitButton {
+  width: 2.91667em; }
+
+.reToolText.reToolIcon:before {
+  margin: 0em 0.25em 0em 0em;
+  vertical-align: top; }
+
+.reSplitArrow {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 0.91667em;
+  height: 1.75em;
+  margin: 0em 0em 0em 0.16667em;
+  vertical-align: top;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: transparent; }
+
+.reSplitArrow:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 0.91667em;
+  height: 1.66667em;
+  line-height: 1;
+  font-family: TelerikWebUI, monospace;
+  font-size: 1.75em;
+  text-align: center;
+  color: #000;
+  content: "\E00E";
+  margin: 0 0 0 -0.26em; }
+
+.reSeparator {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0em 0.08333em 0em 0em;
+  width: 0.16667em;
+  max-width: 0.16667em;
+  height: 1.5em;
+  max-height: 1.5em;
+  overflow: hidden;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  vertical-align: middle; }
+
+/* Prevents undeline if user sets a:hover globally */
+.reToolBar a:hover {
+  text-decoration: none; }
+
+/* Side Navigation Positions */
+.reToolBarLeft {
+  position: relative;
+  padding-left: 4.33333em; }
+
+.reToolBarRight {
+  position: relative;
+  padding-right: 4.33333em; }
+
+.reToolBarWrapperLeft {
+  position: absolute;
+  width: 3.5em;
+  top: 0.41667em;
+  left: 0.41667em; }
+
+.reToolBarWrapperRight {
+  position: absolute;
+  width: 3.5em;
+  top: 0.41667em;
+  right: 0.41667em; }
+
+.reToolBarWrapperLeft .reToolBar, .reToolBarWrapperRight .reToolBar {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.reToolBarWrapperLeft .reTool.reSplitButton, .reToolBarWrapperRight .reTool.reSplitButton {
+  margin-left: 0; }
+
+.reToolBarWrapperLeft .reSeparator, .reToolBarWrapperRight .reSeparator {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.83333em;
+  max-width: 2.83333em;
+  height: 0.16667em;
+  max-height: 0.16667em;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.reToolBarLeft .reRow {
+  position: static;
+  margin: 0em -0.41667em 0em 0em; }
+
+.reToolBarRight .reRow {
+  position: static;
+  margin: 0em 0em 0em -0.41667em; }
+
+.reToolBarLeft .reResize, .reToolBarRight .reResize {
+  float: none;
+  position: absolute;
+  right: 8px;
+  bottom: 7px; }
+
+.reToolBarLeft .reResize:before, .reToolBarRight .reResize:before {
+  margin: 0; }
+
+.reToolBarLeft.reToolBarRight .reRow {
+  margin: 0; }
+
+.reToolBarLeft .reHTMLStructure, .reToolBarRight .reHTMLStructure {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.reXhtmlValidator:before {
+  content: "\e680"; }
+
+.rePageProperties:before {
+  content: "\e601"; }
+
+.reStyleBuilder:before {
+  content: "\e656"; }
+
+.reFormatCodeBlock:before {
+  content: "\e657"; }
+
+.reInsertImage:before {
+  content: "\e62a"; }
+
+.reInsertLink:before {
+  content: "\e627"; }
+
+.reInsertTable:before {
+  content: "\e663"; }
+
+.reInsertTableLight:before {
+  content: "\e662"; }
+
+.reDeleteTable:before {
+  content: "\e666"; }
+
+.reInsertFormElement:before {
+  content: "\e634"; }
+
+.reInsertFormForm:before {
+  content: "\e633"; }
+
+.reInsertFormButton:before, .reInsertFormReset:before, .reInsertFormSubmit:before {
+  content: "\e630"; }
+
+.reInsertFormHidden:before {
+  content: "\e636"; }
+
+.reInsertFormPassword:before {
+  content: "\e637"; }
+
+.reInsertFormRadio:before {
+  content: "\e638"; }
+
+.reInsertFormSelect:before {
+  content: "\e639"; }
+
+.reInsertFormTextarea:before {
+  content: "\e63b"; }
+
+.reInsertFormText:before {
+  content: "\e63c"; }
+
+.reStripAll:before, .reFormatStripper:before {
+  content: "\e651"; }
+
+.reStripCss:before {
+  content: "\e652"; }
+
+.reStripFont:before {
+  content: "\e653"; }
+
+.reStripSpan:before {
+  content: "\e654"; }
+
+.reStripWord:before {
+  content: "\e655"; }
+
+.reAjaxSpellCheck:before {
+  content: "\e67f"; }
+
+.reImageManager:before {
+  content: "\e62b"; }
+
+.reSetImageProperties:before {
+  content: "\e62c"; }
+
+.reImageMapDialog:before {
+  content: "\e62d"; }
+
+.reFlashManager:before {
+  content: "\e623"; }
+
+.reMediaManager:before {
+  content: "\e621"; }
+
+.reInsertExternalVideo:before {
+  content: "\e622"; }
+
+.reDocumentManager:before {
+  content: "\e61e"; }
+
+.reTemplateManager:before {
+  content: "\e673"; }
+
+.reSilverlightManager:before {
+  content: "\e624"; }
+
+.reInsertRowAbove:before {
+  content: "\e66c"; }
+
+.reInsertRowBelow:before {
+  content: "\e66d"; }
+
+.reDeleteRow:before {
+  content: "\e669"; }
+
+.reInsertColumnLeft:before {
+  content: "\e66a"; }
+
+.reInsertColumnRight:before {
+  content: "\e66b"; }
+
+.reDeleteColumn:before {
+  content: "\e668"; }
+
+.reMergeColumns:before {
+  content: "\e670"; }
+
+.reMergeRows:before {
+  content: "\e66f"; }
+
+.reSplitCell:before {
+  content: "\e670"; }
+
+.reSplitCellHorizontal:before {
+  content: "\e671"; }
+
+.reDeleteCell:before {
+  content: "\e667"; }
+
+.reSetCellProperties:before {
+  content: "\e66e"; }
+
+.reSetTableProperties:before {
+  content: "\e664"; }
+
+.reToolIcon.reInsertSymbol:before {
+  content: "\e63a"; }
+
+.reUndo:before {
+  content: "\e647"; }
+
+.reRedo:before {
+  content: "\e648"; }
+
+.reCut:before {
+  content: "\e63d"; }
+
+.reCopy:before {
+  content: "\e63e"; }
+
+.rePaste:before {
+  content: "\e63f"; }
+
+.rePasteMarkdown:before {
+  content: "\e644"; }
+
+.rePasteFromWord:before {
+  content: "\e641"; }
+
+.rePasteFromWordNoFontsNoSizes:before {
+  content: "\e642"; }
+
+.rePastePlainText:before {
+  content: "\e645"; }
+
+.rePasteAsHtml:before {
+  content: "\e640"; }
+
+.rePasteHtml:before {
+  content: "\e643"; }
+
+.rePasteStrip:before {
+  content: "\e63f"; }
+
+.rePrint:before {
+  content: "\e646"; }
+
+.reFindAndReplace:before {
+  content: "\e606"; }
+
+.reSelectAll:before {
+  content: "\e604"; }
+
+.reInsertGroupbox:before {
+  content: "\e635"; }
+
+.reInsertParagraph:before {
+  content: "\e616"; }
+
+.reInsertHorizontalRule:before {
+  content: "\e62f"; }
+
+.reInsertSnippet:before {
+  content: "\e632"; }
+
+.reInsertDate:before {
+  content: "\e61c"; }
+
+.reInsertTime:before {
+  content: "\e61d"; }
+
+.reAboutDialog:before {
+  content: "\e600"; }
+
+.reHelp:before {
+  content: "\e625"; }
+
+.reToggleScreenMode:before {
+  content: "\e675"; }
+
+.reBold:before {
+  content: "\e60c"; }
+
+.reItalic:before {
+  content: "\e60d"; }
+
+.reUnderline:before {
+  content: "\e60e"; }
+
+.reStrikeThrough:before {
+  content: "\e60f"; }
+
+.reForeColor:before {
+  content: "\e612"; }
+
+.reBackColor:before, .rebgColor:before, .reborderColor:before {
+  content: "\e613"; }
+
+.reFormatPainter:before, .reFormatPainterCopy:before {
+  content: "\e650"; }
+
+.reFormatPainterApply:before {
+  content: "\e64f"; }
+
+.reFormatPainterClear:before {
+  content: "\e651"; }
+
+.reJustifyLeft:before {
+  content: "\e609"; }
+
+.reJustifyCenter:before {
+  content: "\e607"; }
+
+.reJustifyRight:before {
+  content: "\e60a"; }
+
+.reJustifyFull:before {
+  content: "\e608"; }
+
+.reJustifyNone:before {
+  content: "\e60b"; }
+
+.reSuperscript:before {
+  content: "\e611"; }
+
+.reSubscript:before {
+  content: "\e610"; }
+
+.reConvertToLower:before {
+  content: "\e614"; }
+
+.reConvertToUpper:before {
+  content: "\e615"; }
+
+.reIndent:before {
+  content: "\e619"; }
+
+.reOutdent:before {
+  content: "\e61a"; }
+
+.reInsertOrderedList:before {
+  content: "\e617"; }
+
+.reInsertUnorderedList:before {
+  content: "\e618"; }
+
+.reAbsolutePosition:before {
+  content: "\e62e"; }
+
+.reSetLinkProperties:before, .reLinkManager:before {
+  content: "\e628"; }
+
+.reOpenLink:before {
+  font-family: TelerikWebUI, monospace;
+  content: "\e075";
+}
+
+.reUnlink:before {
+  content: "\e629"; }
+
+.reToggleTableBorder:before {
+  content: "\e665"; }
+
+.reModuleManager:before {
+  content: "\e64e"; }
+
+.reAlignmentSelector:before {
+  content: "\E0C9"; }
+
+.reInsertFormCheckbox:before {
+  content: "\e631"; }
+
+.reTableWizard:before {
+  content: "\e663"; }
+
+.reToggleEditMode:before {
+  font-family: TelerikWebUI, monospace;
+  content: "\E014"; }
+
+.reAcceptTrackChange:before {
+  content: "\e678"; }
+
+.reRejectTrackChange:before {
+  content: "\e67a"; }
+
+.reAcceptAllTrackChanges:before {
+  content: "\e679"; }
+
+.reRejectAllTrackChanges:before {
+  content: "\e67b"; }
+
+.reEnableTrackChangesOverride:before {
+  content: "\e676"; }
+
+.reAddComment:before {
+  content: "\e64a"; }
+
+.reRemoveComment:before {
+  content: "\e64b"; }
+
+.reRemoveAllComments:before {
+  content: "\e64c"; }
+
+.reNoAlignment:before {
+  content: "\e661"; }
+
+.reTopLeft:before {
+  content: "\e65f"; }
+
+.reTopCenter:before {
+  content: "\e65e"; }
+
+.reTopRight:before {
+  content: "\e660"; }
+
+.reMiddleLeft:before {
+  content: "\e65c"; }
+
+.reMiddleCenter:before {
+  content: "\e65b"; }
+
+.reMiddleRight:before {
+  content: "\e65d"; }
+
+.reBottomLeft:before {
+  content: "\e659"; }
+
+.reBottomCenter:before {
+  content: "\e658"; }
+
+.reBottomRight:before {
+  content: "\e65a"; }
+
+.reToggleFloatingToolbar:before {
+  content: "\e674"; }
+
+.reModuleVisibleIcon:before {
+  font-family: TelerikWebUI, monospace;
+  vertical-align: text-bottom;
+  padding: 0em 0.16667em 0em 0em;
+  content: "\E037"; }
+
+.reModuleHiddenIcon:before {
+  font-family: TelerikWebUI, monospace;
+  vertical-align: text-bottom;
+  padding: 0em 0.16667em 0em 0em;
+  content: "\E038"; }
+
+/* DropDown Styles */
+.reDropdown {
+  position: relative;
+  display: inline-block;
+  height: 1.5em;
+  width: 6.66667em;
+  margin: 0em 0.08333em;
+  padding: 0.08333em 0.83333em 0.08333em 0.41667em;
+  color: #000;
+  overflow: hidden;
+  vertical-align: top;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid; }
+
+.reDropdown.reRealFontSize {
+  width: 2.83333em; }
+
+.reDropdown.reFontSize {
+  width: 1.75em; }
+
+.reDropdown.reZoom {
+  width: 3.66667em; }
+
+.reToolBarWrapperLeft .reDropdown, .reToolBarWrapperLeft .reDropdown:hover, .reToolBarWrapperRight .reDropdown, .reToolBarWrapperRight .reDropdown:hover {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 2.5em; }
+
+@media screen\0 {
+  .reDropdown {
+    padding: 0.08333em 0.83333em 0.08333em 0.41667em;
+    text-overflow: clip; }
+ }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .reDropdown {
+    padding: 0.08333em 0.83333em 0.08333em 0.41667em;
+    text-overflow: ellipsis; }
+ }
+
+.reDropdown:before {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 1.66667em;
+  width: 1.33333em;
+  line-height: 1.66667em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "\E002";
+  font-family: TelerikWebUI, monospace;
+  font-size: 1em;
+  color: #000;
+  text-align: center; }
+
+/* Disabled States */
+a.reToolDisabled, a.reToolDisabled .reSplitArrow, a.reToolDisabled.reDropdown:before {
+  opacity: 0.5; }
+a.reToolDisabled li:hover .reToolDisabled, a.reToolDisabled.reTool:hover, a.reToolDisabled.reTool:active, a.reToolDisabled.reTool:focus, .reInsertTable a.reToolDisabled.reTool:hover:before, a.reToolDisabled.reTool.reToolSelected, a.reToolDisabled.reTool:hover .reSplitArrow, a.reToolDisabled.reTool:active .reSplitArrow, a.reToolDisabled.reTool:focus .reSplitArrow {
+  cursor: default;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+a.reToolDisabled.reDropdown, a.reToolDisabled.reDropdown:hover, a.reToolDisabled.reDropdown:active, a.reToolDisabled.reDropdown:focus {
+  cursor: default;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+
+/* Content */
+.reContent {
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  color: #000; }
+
+.reTextArea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  border: 0;
+  resize: none;
+  color: #000080;
+  font-size: 11px;
+  font-family: Tahoma; }
+
+.reTextAreaHidden {
+  display: none; }
+
+.reContent iframe {
+  display: block; }
+
+.reIframeWrapperIOS {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.reModule {
+  margin: 0em -0.41667em;
+  padding: 0.41667em 0em 0em; }
+
+.reRow {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  margin: 0em -0.41667em;
+  padding: 0.33333em 0.41667em; }
+
+.reTableDiv .reModule, .reTableDiv .reRow {
+  border-top-width: 1px;
+  border-top-style: solid; }
+
+.reAltRow {
+  border-bottom-style: none; }
+
+.reModes {
+  width: 60%;
+  float: left; }
+
+.reModes a {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  width: 6.25em;
+  height: 1.83333em;
+  margin: 0em 0.16667em 0em 0em;
+  line-height: 1.5em;
+  border-radius: 0.16667em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.reModes a:hover {
+  border-style: solid;
+  border-width: 1px; }
+
+.reModes a .reIcon {
+  display: inline-block;
+  width: 2.25em;
+  height: 1.33333em;
+  vertical-align: text-top; }
+
+.reModes a .reIcon:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: TelerikWebUI, monospace;
+  font-size: 1.33em;
+  color: #000;
+  display: block;
+  width: 1.33333em;
+  height: 1.33333em;
+  line-height: 1;
+  content: "";
+  margin: 0.08333em 0em 0em 0.33333em; }
+
+.reModes a .reDesignIcon:before {
+  content: "\E07B"; }
+
+.reModes a .reHTMLIcon:before {
+  content: "\E014"; }
+
+.reModes a .rePreviewIcon:before {
+  content: "\E080"; }
+
+.reDOMElement, .reDOMElementSelected {
+  text-decoration: none; }
+
+.reDOMElement {
+  text-decoration: none; }
+
+.reDOMElement:hover {
+  text-decoration: underline; }
+
+.reDOMElementSelected {
+  font-weight: bold; }
+
+.reRemoveDOMElement {
+  position: relative;
+  padding: 0em 0em 0em 1.25em;
+  text-decoration: none; }
+
+.reRemoveDOMElement:before {
+  font-family: TelerikWebUI, monospace;
+  font-size: 1.08em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "\E031";
+  position: absolute;
+  left: 0;
+  top: 0.08333em; }
+
+.reDOMElement + span {
+  padding: 0em 0.25em; }
+
+.reModule.reStatistic {
+  display: inline-block;
+  line-height: 1.83333em;
+  position: absolute;
+  right: 4.16667em;
+  top: 0; }
+
+.reTableDiv .reModule.reStatistic {
+  top: -2.66667em;
+  border: 0; }
+
+.reResize {
+  width: 1em;
+  height: 1em;
+  float: right; }
+
+.reResize:hover {
+  cursor: se-resize; }
+
+.reResize:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: TelerikWebUI, monospace;
+  font-size: 2.16em;
+  color: #000;
+  display: block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  content: "\E006";
+  margin: 0.25em 0 0 -0.3em; }
+
+.reTableDiv {
+  position: relative;
+  display: table;
+  width: 100%; }
+
+.reHTMLStructure {
+  width: 100%; }
+
+.reCaptionRow {
+  /*caption-side: top;
+	display: table-caption;*/ }
+
+.reHTMLStructure a span:before {
+  font-family: TelerikWebUI, monospace;
+  font-size: 1em;
+  width: 0.41667em 0em;
+  height: 0.41667em 0em;
+  color: #000;
+  content: "\E038";
+  vertical-align: bottom; }
+
+.reTableDiv .reAltRow {
+  display: table-row; }
+
+.reAltRow .reLabel {
+  display: table-cell;
+  padding: 0.16667em 0.25em 0.41667em 0.5em;
+  text-align: right; }
+
+.reLabel + span {
+  vertical-align: middle; }
+
+.reSpinBox {
+  display: table-cell;
+  position: relative;
+  display: inline-block;
+  width: 3.5em; }
+
+.reTableDiv input[type="text"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Segoe UI', Arial, Tahoma;
+  width: 6.66667em;
+  padding: 0.08333em 0.41667em;
+  border-width: 1px;
+  border-style: solid; }
+
+.reSpinBox input[type="text"] {
+  width: 3.5em;
+  padding: 0.08333em 1.25em 0.08333em 0.08333em;
+  text-align: right; }
+
+.reSpinBoxButtons {
+  display: block;
+  width: 1.25em;
+  height: 1.66667em;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.reSpinBoxButtons span {
+  display: block;
+  width: 0.66667em;
+  height: 0.66667em;
+  position: absolute;
+  right: 0.08333em;
+  text-align: center; }
+
+.reSpinBoxButtons .reSpinBoxIncrease {
+  top: 0.08333em; }
+
+.reSpinBoxButtons .reSpinBoxDecrease {
+  bottom: 0.08333em; }
+
+.reSpinBoxButtons span {
+  border-radius: 0.16667em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent; }
+
+.reSpinBoxButtons span:hover {
+  cursor: pointer; }
+
+.reSpinBoxButtons span:before {
+  font-family: TelerikWebUI, monospace;
+  font-size: 0.8333em;
+  color: #000;
+  width: 0.66667em;
+  height: 0.66667em;
+  line-height: 0.66667em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center; }
+
+.reSpinBoxButtons .reSpinBoxIncrease:before {
+  content: "\E001";
+  margin: -0.35em 0 0 -0.5em; }
+
+.reSpinBoxButtons .reSpinBoxDecrease:before {
+  content: "\E002";
+  margin: -0.25em 0 0 -0.5em; }
+
+.reTableDiv .reRow .reDropdown {
+  vertical-align: middle; }
+
+/* ContentArea */
+.reContentArea {
+  overflow: auto;
+  padding: 0em 0.41667em; }
+
+/* Inline Editor */
+.RadEditor.RadWindow.reInlineEditor {
+  padding: 0.41667em;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: -0.83333em;
+  box-shadow: 0 1px 4px #b3b3b3; }
+
+.RadEditor.RadWindow .rwContent {
+  border-color: transparent; }
+
+.RadEditor.reInlineEditor {
+  border-color: transparent;
+  padding: 0;
+  margin-top: 0; }
+
+.RadEditor.reInlineEditor {
+  font-family: inherit;
+  font-style: normal; }
+
+.RadEditor.reInlineEditor .reContent, .RadEditor.reInlineEditor {
+  background-color: transparent;
+  color: inherit; }
+
+.RadEditor.reInlineEditorSelected, .RadEditor.reInlineEditor:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent; }
+
+.RadEditor.reInlineEditor .reContentArea, .RadEditor.reInlineEditor .reContent {
+  border: 0;
+  outline: none; }
+
+.RadEditor.reInlineEditor .reContentArea {
+  font-size: 1.3333em; }
+
+/* PopUp DropDown Styles */
+.reDropDownBody {
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 0 0 0.16667em 0.16667em;
+  /* DropDown ColorPicker */ }
+  .reDropDownBody ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.16667em;
+    box-sizing: border-box; }
+  .reDropDownBody li {
+    padding: 0.16667em 0.41667em 0.25em; }
+  .reDropDownBody .reToolBar {
+    border: 0; }
+  .reDropDownBody .reTool, .reDropDownBody .reTool:hover, .reDropDownBody .reTool:active, .reDropDownBody .reTool:focus {
+    border: 0; }
+  .reDropDownBody .reTlbVertical .reTool:hover {
+    background-color: transparent;
+    background-image: none; }
+  .reDropDownBody .reTlbVertical ul.reToolBar {
+    display: block;
+    height: auto; }
+  .reDropDownBody .reTlbVertical ul.reToolBar .reTool {
+    width: 100%; }
+  .reDropDownBody .reTlbVertical ul.reToolBar .reToolIcon:before {
+    padding-right: 0.66667em; }
+  .reDropDownBody .reTlbVertical li {
+    display: block; }
+  .reDropDownBody .reFormatSetsHeader {
+    text-transform: uppercase; }
+  .reDropDownBody.reColorPicker li, .reDropDownBody.reColorPicker li div {
+    padding: 0;
+    width: 1em;
+    height: 1em; }
+  .reDropDownBody.reColorPicker li {
+    margin: 0.16667em;
+    border-width: 1px;
+    border-style: solid; }
+  .reDropDownBody.reColorPicker .reClear {
+    width: 0;
+    height: 0;
+    border: 0 none; }
+  .reDropDownBody.reColorPicker ul + div {
+    clear: both; }
+  .reDropDownBody.reColorPicker .reCustomColor {
+    text-decoration: none; }
+  .reDropDownBody.reColorPicker .reColorPickerFooter {
+    width: 13.66667em;
+    height: 1.66667em;
+    margin: 0 auto;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid; }
+  .reDropDownBody.reColorPicker .reColorPickerFooter span {
+    height: 1.66667em;
+    line-height: 1.5em;
+    width: 6.83333em;
+    cursor: default;
+    display: block;
+    float: left;
+    text-align: center; }
+  .reDropDownBody.reAjaxSpellCheck:before {
+    content: ""; }
+  .reDropDownBody.reAjaxSpellCheck > ul > .reClear:first-child + li:hover {
+    background-color: transparent; }
+  .reDropDownBody.reAjaxSpellCheck .reToolIcon:before {
+    font-family: TelerikWebUI, monospace;
+    font-size: 1.5em;
+    width: 1.33333em;
+    height: 1.33333em;
+    padding: 0em 0.33333em 0em 0em;
+    line-height: normal;
+    vertical-align: middle;
+    content: ""; }
+  .reDropDownBody.reAjaxSpellCheck .reIgnoreIcon:before {
+    content: "\E038"; }
+  .reDropDownBody.reAjaxSpellCheck .reOkIcon:before {
+    content: "\E07B"; }
+  .reDropDownBody.reAjaxSpellCheck .reAddIcon:before {
+    font-family: TelerikWebUIEditor, monospace;
+    content: "\e67e"; }
+  .reDropDownBody.reCustomLinks ul li:hover {
+    background-color: transparent; }
+  .reDropDownBody.reCustomLinks a {
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000; }
+  .reDropDownBody.reCustomLinks a:hover {
+    text-decoration: underline; }
+  .reDropDownBody.reCustomLinks .reCustomLinksIcon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-right: 0.41667em;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    cursor: default; }
+  .reDropDownBody.reCustomLinks .reCustomLinksIcon:before {
+    display: inline-block;
+    position: absolute;
+    top: -0.25em;
+    left: -0.25em;
+    width: 1em;
+    height: 1em;
+    font-family: TelerikWebUI, monospace;
+    font-size: 1.8em;
+    line-height: normal;
+    vertical-align: middle;
+    content: ""; }
+  .reDropDownBody.reCustomLinks .reIconAdd:before {
+    content: "\E00C"; }
+  .reDropDownBody.reCustomLinks .reIconRemove:before {
+    content: "\E00E"; }
+  .reDropDownBody.reInsertTable:before {
+    content: ""; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar {
+    background-color: transparent;
+    background-image: none; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar, .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar li {
+    padding: 0; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar li:hover {
+    background-color: transparent; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar .reTool.reToolIcon:before {
+    padding-right: 0;
+    border-radius: 0.16667em; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar li {
+    display: block; }
+  .reDropDownBody.reInsertTable .reToolBar li .reTool {
+    width: 2em;
+    height: 2em;
+    margin: 0; }
+  .reDropDownBody.reInsertTable .reTableWizard {
+    display: block;
+    text-align: center; }
+  .reDropDownBody.reInsertTable .reTableWizard.reTool:hover:before {
+    background-color: transparent;
+    background-image: none; }
+  .reDropDownBody.reInsertTable table {
+    margin-left: 3px; }
+  .reDropDownBody.reInsertTable td {
+    border-width: 1px;
+    border-style: solid; }
+  .reDropDownBody.reInsertTable table td div {
+    width: 1.08333em;
+    height: 1.08333em; }
+  .reDropDownBody.reAlignmentSelector:before {
+    content: ""; }
+  .reDropDownBody.reAlignmentSelector table {
+    border-spacing: 0.16667em;
+    text-align: center; }
+  .reDropDownBody.reAlignmentSelector td div:before {
+    display: inline-block;
+    padding: 0.08333em;
+    border-radius: 0.16667em;
+    width: 1em;
+    height: 1em;
+    font-size: 1.3333em;
+    font-family: TelerikWebUIEditor, monospace;
+    line-height: normal;
+    vertical-align: middle;
+    content: ""; }
+  .reDropDownBody.reAlignmentSelector .reNoAlignment:before {
+    content: "\e661"; }
+  .reDropDownBody.reAlignmentSelector .reTopLeft:before {
+    content: "\e65f"; }
+  .reDropDownBody.reAlignmentSelector .reTopCenter:before {
+    content: "\e65e"; }
+  .reDropDownBody.reAlignmentSelector .reTopRight:before {
+    content: "\e660"; }
+  .reDropDownBody.reAlignmentSelector .reMiddleLeft:before {
+    content: "\e65c"; }
+  .reDropDownBody.reAlignmentSelector .reMiddleCenter:before {
+    content: "\e65b"; }
+  .reDropDownBody.reAlignmentSelector .reMiddleRight:before {
+    content: "\e65d"; }
+  .reDropDownBody.reAlignmentSelector .reBottomLeft:before {
+    content: "\e659"; }
+  .reDropDownBody.reAlignmentSelector .reBottomCenter:before {
+    content: "\e658"; }
+  .reDropDownBody.reAlignmentSelector .reBottomRight:before {
+    content: "\e65a"; }
+  .reDropDownBody.reInsertTable .reTlbVertical ul.reToolBar li, .reDropDownBody.reColorPicker li, .reDropDownBody.reInsertSymbol li {
+    float: left; }
+  .reDropDownBody.reAjaxSpellCheck input[type="text"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Segoe UI', Arial, Tahoma;
+    width: 12.5em;
+    padding: 0.08333em 0.41667em;
+    border-width: 1px;
+    border-style: solid; }
+  .reDropDownBody.reAjaxSpellCheck > div {
+    padding: 0.41667em; }
+  .reDropDownBody.reAjaxSpellCheck .reAjaxSpellButton {
+    vertical-align: top; }
+  .reDropDownBody.reAjaxSpellCheck .reAjaxSpellButton:before {
+    font-size: 1.3333em;
+    font-family: TelerikWebUI, monospace;
+    content: "\E037"; }
+  .reDropDownBody.reApplyClass .reRuleIcon:before {
+    display: inline-block;
+    padding: 0.08333em 0.41667em 0.08333em 0.08333em;
+    width: 1em;
+    height: 1em;
+    font-size: 1.3333em;
+    font-family: TelerikWebUIEditor, monospace;
+    line-height: normal;
+    vertical-align: middle;
+    content: "\e600"; }
+  .reDropDownBody.reApplyClass .reRulePreview {
+    vertical-align: middle; }
+  .reDropDownBody.reApplyClass .reIconClear:before {
+    content: "\e682"; }
+  .reDropDownBody.reApplyClass .reIconAll:before {
+    content: "\e68b"; }
+  .reDropDownBody.reApplyClass .reIconH1:before {
+    content: "\e685"; }
+  .reDropDownBody.reApplyClass .reIconH2:before {
+    content: "\e686"; }
+  .reDropDownBody.reApplyClass .reIconH3:before {
+    content: "\e687"; }
+  .reDropDownBody.reApplyClass .reIconH4:before {
+    content: "\e688"; }
+  .reDropDownBody.reApplyClass .reIconH5:before {
+    content: "\e689"; }
+  .reDropDownBody.reApplyClass .reIconH6:before {
+    content: "\e68a"; }
+  .reDropDownBody.reApplyClass .reIconDiv:before {
+    content: "\e684"; }
+  .reDropDownBody.reApplyClass .reIconA:before {
+    content: "\e68f"; }
+  .reDropDownBody.reApplyClass .reIconItalic:before {
+    content: "\e60d"; }
+  .reDropDownBody.reApplyClass .reIconBold:before {
+    content: "\e60c"; }
+  .reDropDownBody.reApplyClass .reIconUnderline:before {
+    content: "\e60e"; }
+  .reDropDownBody.reApplyClass .reIconUl:before {
+    content: "\e618"; }
+  .reDropDownBody.reApplyClass .reIconOl:before {
+    content: "\e617"; }
+  .reDropDownBody.reApplyClass .reIconImg:before {
+    content: "\e62b"; }
+  .reDropDownBody.reApplyClass .reIconTable:before {
+    content: "\e663"; }
+  .reDropDownBody.reApplyClass .reIconTd:before {
+    content: "\e68c"; }
+
+/* AjaxSpellCheck Popup */
+.reAjaxSpellWrapper {
+  padding: 1em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #adadad;
+  background-color: #ffffcc; }
+
+.reAjaxSpellInfoContainer {
+  float: left; }
+
+.reAjaxSpellButtonsContainer {
+  float: right; }
+
+.reAjaxSpellButton {
+  font-size: 1em;
+  font-family: 'Segoe UI', Arial, Tahoma, sans-serif;
+  height: 1.83333em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25em;
+  margin: 0em 0em 0em 0.41667em;
+  color: #000;
+  white-space: nowrap; }
+
+/* Track Changes */
+/* generic popups */
+.RadEditor.rePopupContainer {
+  padding: 0.41667em 0em 0em;
+  border-width: 1px;
+  border-style: solid;
+  min-width: 16.66667em;
+  /* Dialog will be no smaller than this */
+  max-width: 25em;
+  /* Dialog will wrap after this width */
+  border-radius: 0.41667em;
+  position: absolute; }
+  .RadEditor.rePopupContainer .rePopupTitle {
+    font-size: 1em;
+    height: 1.83333em;
+    line-height: 1.83333em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0em 0em 0em 0.41667em;
+    margin: 0;
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadEditor.rePopupContainer .rePopupContent {
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+    padding: 0.83333em;
+    border-radius: 0em 0em 0.41667em 0.41667em; }
+  .RadEditor.rePopupContainer .rePopupContent.alert {
+    background-image: url('Common/ModalDialogAlert.gif'); }
+  .RadEditor.rePopupContainer .rePopupContent.confirm {
+    background-image: url('Common/ModalDialogConfirm.gif'); }
+  .RadEditor.rePopupContainer .rePopupMessage, .RadEditor.rePopupContainer .rePopupButtonContainer {
+    padding-left: 4em;
+    /*48px; -- put this if image is included*/ }
+
+.RadEditor .reCommentEdit, .RadEditor .reCommentView {
+  border-width: 1px;
+  border-style: solid;
+  width: 20em;
+  height: 25.83333em;
+  max-height: 25.83333em;
+  border-radius: 0.41667em;
+  padding: 0.41667em 0.58333em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  text-align: right;
+  z-index: 9001; }
+
+/* comment title */
+.RadEditor .reCommentTitle {
+  text-align: left;
+  font-weight: bold;
+  height: 1.66667em;
+  line-height: 1.33333em;
+  padding: 0em 0em 0.16667em; }
+
+.RadEditor .reCommentTextArea {
+  font-size: 1em;
+  font-family: 'Segoe UI', Arial, Tahoma, sans-serif;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  width: 19.58333em;
+  max-width: 19.58333em;
+  height: 21.25em;
+  max-height: 21.25em; }
+
+/* popup view mode */
+.RadEditor .reCommentViewText {
+  display: block;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.16667em;
+  text-align: left;
+  z-index: 9001; }
+
+.RadEditor .reCommentButton, .rePopupButton {
+  font-size: 1em;
+  font-family: 'Segoe UI', Arial, Tahoma, sans-serif;
+  height: 1.66667em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25em;
+  margin: 0.33333em 0.08333em;
+  cursor: auto; }
+
+.RadEditor .reCommentInfoPanel {
+  width: 20.83333em;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  padding: 0.41667em 0.58333em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.41667em; }
+
+.RadEditor .reCommentTextAreaWatermark {
+  color: #666; }
+
+/* Editor Comments Styles */
+font.reComment_u0, span.reComment_u0 {
+  border: 2px dashed #FF9933 !important; }
+
+font.reComment_u1, span.reComment_u1 {
+  border: 2px dashed #ff0101 !important; }
+
+font.reComment_u2, span.reComment_u2 {
+  border: 2px dashed #0101ff !important; }
+
+del.reU1 hr {
+  border: 1px solid #ff0101 !important; }
+
+ins.reU1 hr {
+  border-bottom: 1px solid #ff0101 !important; }
+
+/* Base styles */
+.reFormat {
+  border-width: 0 2px;
+  border-style: solid;
+  padding: 0 2px; }
+
+li.reFormat {
+  padding: 0; }
+
+ol.reFormat, ul.reFormat {
+  padding: 0 0 0 2.5em; }
+
+ins table, .reComment {
+  border: 2px dashed;
+  padding: 1px; }
+
+del table {
+  border: 2px dashed;
+  text-decoration: line-through;
+  padding: 1px; }
+
+ins td, ins img {
+  border: 1px dashed;
+  padding: 1px; }
+
+del td, del img {
+  border: 2px solid;
+  padding: 1px; }
+
+/*User border and text colors*/
+ins.reU0, del.reU0 {
+  color: #FF9933 !important; }
+
+ins.reU1, del.reU1 {
+  color: #ff0101 !important; }
+
+ins.reU2, del.reU2 {
+  color: #f37e0c !important; }
+
+ins.reU3, del.reU3 {
+  color: #04b4b6 !important; }
+
+ins.reU4, del.reU4 {
+  color: #c85100 !important; }
+
+ins.reU5, del.reU5 {
+  color: #008380 !important; }
+
+ins.reU6, del.reU6 {
+  color: #800000 !important; }
+
+ins.reU7, del.reU7 {
+  color: #a4a000 !important; }
+
+ins.reU8, del.reU8 {
+  color: #808080 !important; }
+
+ins.reU9, del.reU9 {
+  color: #38fd11 !important; }
+
+/* user border colors */
+.reFormat.reU0, ins.reU0 table, del.reU0 table, ins.reU0 td, ins.reU0 img, del.reU0 td, del.reU0 img, .reComment.reU0 {
+  border-color: #f93; }
+
+.reFormat.reU1, ins.reU1 table, del.reU1 table, ins.reU1 td, ins.reU1 img, del.reU1 td, del.reU1 img, .reComment.reU1 {
+  border-color: #f00; }
+
+.reFormat.reU2, ins.reU2 table, del.reU2 table, ins.reU2 td, ins.reU2 img, del.reU2 td, del.reU2 img, .reComment.reU2 {
+  border-color: #f37e0c; }
+
+.reFormat.reU3, ins.reU3 table, del.reU3 table, ins.reU3 td, ins.reU3 img, del.reU3 td, del.reU3 img, .reComment.reU3 {
+  border-color: #04b4b6; }
+
+.reFormat.reU4, ins.reU4 table, del.reU4 table, ins.reU4 td, ins.reU4 img, del.reU4 td, del.reU4 img, .reComment.reU4 {
+  border-color: #c85100; }
+
+.reFormat.reU5, ins.reU5 table, del.reU5 table, ins.reU5 td, ins.reU5 img, del.reU5 td, del.reU5 img, .reComment.reU5 {
+  border-color: #008380; }
+
+.reFormat.reU6, ins.reU6 table, del.reU6 table, ins.reU6 td, ins.reU6 img, del.reU6 td, del.reU6 img, .reComment.reU6 {
+  border-color: #800000; }
+
+.reFormat.reU7, ins.reU7 table, del.reU7 table, ins.reU7 td, ins.reU7 img, del.reU7 td, del.reU7 img, .reComment.reU7 {
+  border-color: #a4a000; }
+
+.reFormat.reU8, ins.reU8 table, del.reU8 table, ins.reU8 td, ins.reU8 img, del.reU8 td, del.reU8 img, .reComment.reU8 {
+  border-color: #808080; }
+
+.reFormat.reU9, ins.reU9 table, del.reU9 table, ins.reU9 td, ins.reU9 img, del.reU9 td, del.reU9 img, .reComment.reU9 {
+  border-color: #38fd11; }
+
+ins.trackchanges_curr_rev, del.trackchanges_curr_rev {
+  color: Green; }
+
+/* ResizableWidgets Handles */
+.RadEditor .reContentArea .rrHandle, .rrHandle[rel='rrWidget'] {
+  background-color: #fff;
+  border: 1px solid #000;
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+.RadEditor .reContentArea .rrHandle:hover, .rrHandle[rel='rrWidget']:hover {
+  background-color: #000; }
+
+/*Light dialogs CSS - should be reworked */
+.reInsertImageWrapper, .reInsertLinkWrapper, .reInsertTableLightWrapper {
+  padding: 20px 0 0 0;
+  font: 12px "segoe ui", arial, sans-serif; }
+
+.RadWindow .reInsertTableLightWrapper .lightTable {
+  border: 1px solid; }
+
+.reControlsLayout {
+  width: 100%;
+  height: 100%; }
+
+.reInsertLinkWrapper .reControlsLayout td {
+  padding: 3px 0 3px 3px; }
+
+.reInsertLinkWrapper .reControlsLayout td, .reInsertImageWrapper .reControlsLayout td, .reInsertTableLightWrapper .reControlsLayout td, .reControlsLayout .reImgPropertyControlCell td, .reImgPropertyControlCell span, .reImgPropertyControlCell input {
+  vertical-align: middle; }
+
+.reInsertImageWrapper .reControlsLayout td {
+  padding: 3px 0; }
+
+.reDialogLabelLight span {
+  width: 80px;
+  display: block;
+  text-overflow: ellipsis; }
+
+.reDialogLabelLight span, .reImgPropertyControlCell span, .reImgPropertyControlCell input {
+  text-align: right; }
+
+.reConfirmCancelButtonsTblLight button {
+  width: 75px; }
+
+.reConfirmCancelButtonsTblLight .reAllPropertiesLight button {
+  width: 126px; }
+
+.reControlsLayout {
+  width: 100%;
+  height: 100%; }
+
+.reControlsLayout .reControlCellLight input {
+  width: 215px; }
+
+.reControlsLayout .reControlCellLight select {
+  width: 220px; }
+
+.reControlsLayout .reConfirmCancelButtonsTblLight {
+  height: auto;
+  margin: 12px 0;
+  text-align: center;
+  width: 100%; }
+
+.reControlsLayout .reImgPropertyControlCell td, .reControlsLayout .reTablePropertyControlCell td {
+  padding: 2px; }
+
+.reControlsLayout .reTablePropertyControlCell td input[type="text"], .reControlsLayout .reTablePropertyControlCell td input[type="password"] {
+  padding: 2px 1px 0; }
+
+.reImgPropertyControlCell span, .reImgPropertyControlCell input, .reTablePropertyControlCell input {
+  width: 40px; }
+
+.reImgPropertyControlCell table {
+  width: 100%;
+  height: 100%; }
+
+.reControlsLayout td.reImgPropertyControlCell {
+  padding: 0 22px 0 38px; }
+
+.reInsertImageWrapper .reControlsLayout .reControlCellLight input {
+  width: 190px; }
+
+.reTablePropertyControlCell .short {
+  width: 80px; }
+
+.reTablePropertyControlCell .lightTable {
+  margin: -10px 4px 0 4px;
+  *margin-top: -3px; }
+
+table.reControlsLayout .reTablePropertyControlCell input.rfdIgnore, table.reControlsLayout .reImgPropertyControlCell input.rfdIgnore {
+  width: 40px; }
+
+/*# sourceMappingURL=EditorLite.css.map */

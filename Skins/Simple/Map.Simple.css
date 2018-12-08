@@ -1,0 +1,72 @@
+/*$main-sprite: skin-image-url( "Common", "radActionsSprite.png" );
+$main-spriteIE6: skin-image-url( "Common", "radActionsSpriteIE6.png" );*/
+.RadMap_Simple {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Additional styles */
+  /* Remove border radius */
+  /*Buttons*/
+  /* Markers */
+  /* Older IE Fix */ }
+  .RadMap_Simple .k-header,
+  .RadMap_Simple .k-widget,
+  .RadMap_Simple .k-popup {
+    color: #000000; }
+  .RadMap_Simple .k-widget,
+  .RadMap_Simple .k-header {
+    border-color: #616161; }
+  .RadMap_Simple .k-widget,
+  .RadMap_Simple .k-header,
+  .RadMap_Simple .k-button {
+    background-color: #c6c6c6; }
+  .RadMap_Simple .k-button {
+    border-color: #616161;
+    color: #000000; }
+  .RadMap_Simple.k-widget.k-tooltip {
+    background-color: #ffe3a5;
+    border-color: #ffe3a5;
+    color: #282828;
+    background-image: none, linear-gradient(to bottom, #ffefbd 0, #ffe3a5 100%); }
+  .RadMap_Simple .k-tooltip-button {
+    background-color: #000; }
+  .RadMap_Simple .k-tooltip-button:hover {
+    background-color: #882501; }
+  .RadMap_Simple .k-i-close:before,
+  .RadMap_Simple .k-i-close:hover:before {
+    color: #fff; }
+  .RadMap_Simple .k-callout-s {
+    border-top-color: #ffe3a5; }
+  .RadMap_Simple .k-callout-n {
+    border-bottom-color: #ffe3a5; }
+  .RadMap_Simple .k-callout-e {
+    border-left-color: #ffe3a5; }
+  .RadMap_Simple .k-callout-w {
+    border-right-color: #ffe3a5; }
+  .RadMap_Simple .k-buttons-horizontal .k-zoom-out,
+  .RadMap_Simple .k-buttons-horizontal *:first-child,
+  .RadMap_Simple .k-touch-scrollbar {
+    border-radius: 0; }
+  .RadMap_Simple div.k-navigator > .k-button .k-icon:before {
+    color: #000000; }
+  .RadMap_Simple .k-button:hover,
+  .RadMap_Simple div.k-navigator > .k-button:hover {
+    background-color: #ffe79c;
+    border-color: #c98400;
+    color: #882501; }
+  .RadMap_Simple .k-button:active,
+  .RadMap_Simple .k-button:focus,
+  .RadMap_Simple div.k-navigator > .k-button:active,
+  .RadMap_Simple div.k-navigator > .k-button:focus {
+    background-color: #ffa517;
+    border-color: #ca4b0c;
+    color: #882501; }
+  .RadMap_Simple div.k-navigator > .k-button:hover .k-icon:before {
+    color: #882501; }
+  .RadMap_Simple div.k-navigator > .k-button:active .k-icon:before,
+  .RadMap_Simple div.k-navigator > .k-button:focus .k-icon:before {
+    color: #882501; }
+  .RadMap_Simple .k-marker:before {
+    color: #ffa517; }
+  @media \0screen\,screen\9 {
+    .RadMap_Simple .k-icon {
+      background-image: url('Common/radActionsSprite.png'); } }

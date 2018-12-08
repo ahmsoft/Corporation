@@ -1,0 +1,92 @@
+.RadImageGallery_Default {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #333333; }
+  .RadImageGallery_Default .rigDescriptionBox {
+    background-color: #4b4b4b;
+    background-color: rgba(75, 75, 75, 0.6);
+    color: white; }
+  .RadImageGallery_Default .rigToolbar,
+  .RadImageGallery_Default .rigCloseButton,
+  .RadImageGallery_Default .rigDrawerButton {
+    background-color: #d9d9d9;
+    background-color: rgba(217, 217, 217, 0.8);
+    color: black; }
+  .RadImageGallery_Default .rigProgressBar div {
+    background-color: #4b4b4b; }
+  .RadImageGallery_Default .rigPager {
+    background-color: #eeeeee;
+    color: #333333; }
+    .RadImageGallery_Default .rigPager a {
+      color: #333333; }
+    .RadImageGallery_Default .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_Default .rigIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadImageGallery_Default .rigDotList > a {
+    border-color: #8c8c8c; }
+  .RadImageGallery_Default .rigDotList a span {
+    background-color: white; }
+  .RadImageGallery_Default .rigDotList a.rigCurrentItem span {
+    background-color: #6c6c6c;
+    border-color: white; }
+  .RadImageGallery_Default .rigTooltip {
+    background-color: white;
+    border-color: #828282; }
+    .RadImageGallery_Default .rigTooltip:after {
+      border-top-color: white; }
+  .RadImageGallery_Default .rigPrevButton,
+  .RadImageGallery_Default .rigNextButton,
+  .RadImageGallery_Default .rigScrollPrevIcon,
+  .RadImageGallery_Default .rigScrollNextIcon,
+  .RadImageGallery_Default .rigCloseIcon {
+    background-image: url('LightBox/sprite.png'); }
+  .RadImageGallery_Default .rigPrevButton {
+    background-position: 0 -140px; }
+  .RadImageGallery_Default .rigNextButton {
+    background-position: -60px -140px; }
+  .RadImageGallery_Default .rigScrollPrevIcon {
+    background-position: -79px  -49px; }
+  .RadImageGallery_Default .rigScrollNextIcon {
+    background-position: -104px -49px; }
+  .RadImageGallery_Default.RadImageGallery_RightOutside .rigScrollPrevIcon,
+  .RadImageGallery_Default.RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Default .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery_Default .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -62px -89px; }
+  .RadImageGallery_Default .RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Default .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -96px -89px; }
+  .RadImageGallery_Default .rigCloseIcon {
+    background-position: -79px -12px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigCloseIcon {
+    background-position: -101px -12px; }
+  .RadImageGallery_Default .rigDrawerIcon {
+    background-position: -52px -60px; }
+  .RadImageGallery_Default .rigPlayIcon {
+    background-position: 1px -1999px; }
+  .RadImageGallery_Default .rigPauseIcon {
+    background-position: 1px -2019px; }
+  .RadImageGallery_Default .rigFullScrIcon {
+    background-position: 1px -2099px; }
+  .RadImageGallery_Default .rigExtFullScrIcon {
+    background-position: 1px -2119px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigPlayIcon {
+    background-position: -19px -1999px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigPauseIcon {
+    background-position: -19px -2019px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigFullScrIcon {
+    background-position: -19px -2099px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigExtFullScrIcon {
+    background-position: -19px -2119px; }
+  .RadImageGallery_Default .rigShowThumbnIcon {
+    background-position: 0px -2159px; }
+  .RadImageGallery_Default .rigHideThumbnIcon {
+    background-position: 0px -2179px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigShowThumbnIcon {
+    background-position: -20px -2159px; }
+  .RadImageGallery_Default .rigActionButton:hover .rigHideThumbnIcon {
+    background-position: -20px -2179px; }

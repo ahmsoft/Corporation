@@ -1,0 +1,17 @@
+.RadTagCloud_Telerik {
+  background-color: #ececec;
+  border: 1px dotted #8e8e8e;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_Telerik .rtcTagList .rtcTagItem {
+    color: #333333; }
+  .RadTagCloud_Telerik .rtcTagList .rtcTagItem:hover {
+    color: black; }
+  .RadTagCloud_Telerik .rtcTagList .rtcTagItem a {
+    color: black; }
+  .RadTagCloud_Telerik .rtcTagList .rtcTagItem a:hover {
+    color: black;
+    background: #2ebf00; }
+  .RadTagCloud_Telerik.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

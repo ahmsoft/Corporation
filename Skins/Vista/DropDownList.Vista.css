@@ -1,0 +1,52 @@
+.RadDropDownList_Vista {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownList_Vista .rddlInner {
+    border-radius: 3px;
+    border-color: #707070;
+    color: #000000;
+    background-color: #dddddd;
+    background-image: url('Common/radGradientButtonSprite.png');
+    background-image: linear-gradient(#f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%); }
+  .RadDropDownList_Vista .rddlEmptyMessage,
+  .RadDropDownList_Vista .rddlDefaultMessage {
+    color: #8a8a8a; }
+  .RadDropDownList_Vista .rddlIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -2px -20px; }
+  .RadDropDownList_Vista .rddlHovered {
+    border-color: #3c7fb1;
+    color: #000000;
+    background-color: #bee6fd;
+    background-image: linear-gradient(#e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%); }
+    .RadDropDownList_Vista .rddlHovered .rddlIcon {
+      background-position: -2px -20px; }
+  .RadDropDownList_Vista .rddlFocused {
+    border-color: #3c7fb1;
+    color: #000000;
+    background-color: #d8e0e5;
+    background-image: linear-gradient(#eff2f4 0%, #eaeef0 50%, #d8e0e5 50%, #ced7dd 100%); }
+    .RadDropDownList_Vista .rddlFocused .rddlIcon {
+      background-position: -2px -20px; }
+
+.rddlPopup_Vista {
+  border-color: #979797;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddlPopup_Vista .rddlHeader,
+  .rddlPopup_Vista .rddlFooter {
+    border-color: #b7bdcd;
+    color: #000000;
+    background-color: #e0e5f5; }
+  .rddlPopup_Vista .rddlItemHovered {
+    color: #000000;
+    background-color: #55bbff; }
+  .rddlPopup_Vista .rddlItemSelected {
+    color: #ffffff;
+    background-color: #3399ff; }
+  .rddlPopup_Vista .rddlItemLoading {
+    color: #000000;
+    background-color: #55bbff; }

@@ -1,0 +1,118 @@
+.RadDataForm .rdfFieldset {
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+  border: none; }
+.RadDataForm button,
+.RadDataForm [type="button"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+.RadDataForm .rdfInlineBlock, .RadDataForm.rdfInlineBlock {
+  display: inline-block; }
+html .RadDataForm .rdfBlock {
+  display: block; }
+.RadDataForm .rdfBorders {
+  border-width: 1px;
+  border-style: solid; }
+.RadDataForm .rdfHr {
+  width: 160px;
+  margin: 0 0 1.08em 0;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  text-align: left;
+  /*for ie*/ }
+.RadDataForm.rdfNoFieldHint .rdfHr {
+  width: 100%; }
+html .RadDataForm.rdfRightAligned .rdfFloatNone {
+  float: none; }
+.RadDataForm.rdfLeftAligned .rdfRow {
+  overflow: hidden; }
+.RadDataForm .rdfRow {
+  padding-bottom: .92em; }
+.RadDataForm.rdfRightAligned .rdfRow {
+  clear: both; }
+.RadDataForm .rdfLegend {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  line-height: 1.6; }
+.RadDataForm.rdfLeftAligned .rdfLegend {
+  width: 100%; }
+.RadDataForm .rdfBorders .rdfLegend {
+  width: auto;
+  border: none; }
+.RadDataForm .rdfFieldHint {
+  font-size: 0.83em;
+  line-height: 1.2;
+  padding: 0 0 0 .42em; }
+.RadDataForm.rdfLeftAligned .rdfLabel, .RadDataForm.rdfRightAligned .rdfLabel {
+  float: left;
+  width: 30%;
+  padding-right: 1.2em;
+  box-sizing: border-box;
+  line-height: 1;
+  vertical-align: top; }
+.RadDataForm.rdfRightAligned .rdfLabel {
+  text-align: right; }
+.RadDataForm .rdfCommandButtons .RadButton,
+.RadDataForm .rdfCommandButtons .RadButton .rbDecorated {
+  font-size: 1em; }
+.RadDataForm.rdfLeftAligned .rdfCommandButtons, .RadDataForm.rdfRightAligned .rdfCommandButtons {
+  padding-left: 30%; }
+.RadDataForm.rdfRightAligned .rdfCommandButtons {
+  clear: right; }
+.RadDataForm .rdfPager > span {
+  display: inline-block;
+  overflow: hidden; }
+  .RadDataForm .rdfPager > span:first-child {
+    margin-right: 1em; }
+.RadDataForm .rdfPager > span + span {
+  float: right; }
+.RadDataForm .rdfPager .rdfFirst,
+.RadDataForm .rdfPager .rdfPrev,
+.RadDataForm .rdfPager .rdfNext,
+.RadDataForm .rdfPager .rdfLast {
+  cursor: pointer;
+  float: left; }
+.RadDataForm .rdfPagerRight {
+  float: right; }
+  .RadDataForm .rdfPagerRight > span + span {
+    float: none; }
+.RadDataForm.rdfNoFieldHint .rdfInput,
+.RadDataForm.rdfNoFieldHint .rdfPicker {
+  width: 70% !important; }
+.RadDataForm.rdfNoFieldHint .rdfInput,
+.RadDataForm.rdfNoFieldHint .riTextBox,
+.RadDataForm.rdfNoFieldHint .rdfPicker,
+.RadDataForm.rdfNoFieldHint .rdfPicker .RadInput {
+  font-size: 1em; }
+
+* + html .RadDataForm {
+  width: 600px; }
+  * + html .RadDataForm .rdfInlineBlock, * + html .RadDataForm.rdfInlineBlock {
+    display: inline;
+    zoom: 1; }
+  * + html .RadDataForm .rdfLegend {
+    margin: 0 0 20px -7px; }
+  * + html .RadDataForm .rdfFieldHint {
+    text-align: left; }
+  * + html .RadDataForm .rdfFieldset {
+    width: 600px; }
+  * + html .RadDataForm.rdfRightAligned {
+    min-width: 350px; }
+  * + html .RadDataForm.rdfRightAligned .rdfRow {
+    width: 100%; }
+  * + html .RadDataForm.rdfRightAligned label.rdfLabel {
+    float: left; }
+  * + html .RadDataForm .rdfCommandButtons {
+    width: 160px; }
+  * + html .RadDataForm.rdfNoFieldHint .rdfInput,
+  * + html .RadDataForm.rdfNoFieldHint .rdfPicker {
+    width: 160px !important; }
+  * + html .RadDataForm.rdfNoFieldHint .rdfInput,
+  * + html .RadDataForm.rdfNoFieldHint .riTextBox,
+  * + html .RadDataForm.rdfNoFieldHint .rdfPicker,
+  * + html .RadDataForm.rdfNoFieldHint .rdfPicker .RadInput {
+    font-size: 1em; }
+  * + html .RadDataForm.rdfLeftAligned .rdfLabel, * + html .RadDataForm.rdfRightAligned .rdfLabel {
+    width: 200px; }

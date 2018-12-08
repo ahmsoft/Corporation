@@ -1,0 +1,297 @@
+.RadOrgChart {
+  /** Expand / Collapse */ }
+  .RadOrgChart {
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none; }
+    .RadOrgChart ul {
+      padding: 0;
+      margin: 0; }
+  .RadOrgChart .rocViewPort {
+    margin: 0 auto;
+    text-align: center; }
+  .RadOrgChart .rocNodeList {
+    margin-top: 4.16667em;
+    padding: 0;
+    list-style: none; }
+  .RadOrgChart .rocNode {
+    padding: 0em 0.41667em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative; }
+    .RadOrgChart .rocNode.rocShadowNode {
+      opacity: 0.5; }
+  .RadOrgChart .rocGroup {
+    display: inline-block;
+    position: relative;
+    padding: 0.83333em;
+    vertical-align: top;
+    text-align: left; }
+  .RadOrgChart .rocItemList {
+    /*margin: px2em(0 -5, 12);*/
+    padding: 0;
+    list-style: none;
+    clear: both; }
+  .RadOrgChart .rocItemWrap {
+    margin: 0.41667em;
+    width: 16.66667em;
+    display: inline-block;
+    vertical-align: top; }
+    .RadOrgChart .rocItemWrap.rocFirst, .RadOrgChart .rocItemWrap.rocFirstInRow {
+      margin-left: 0; }
+    .RadOrgChart .rocItemWrap.rocLast, .RadOrgChart .rocItemWrap.rocLastInRow {
+      margin-right: 0; }
+  .RadOrgChart .rocItem, .RadOrgChart .rocItemTemplate {
+    width: 16.66667em;
+    height: 8.33333em;
+    margin: 0 auto;
+    padding: 0.83333em;
+    border: 1px solid;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative; }
+  .RadOrgChart .rocItem {
+    padding-left: 5.66667em; }
+    .RadOrgChart .rocItem.rocNoOwnImage {
+      padding-left: 0.83333em; }
+    .RadOrgChart .rocItem.rocShadowItem {
+      opacity: 0.5; }
+    .RadOrgChart .rocItem.rocItemTemplate {
+      padding-left: 0.83333em; }
+    .RadOrgChart .rocItem.rocEmptyItem {
+      border-color: transparent;
+      background: transparent; }
+  .RadOrgChart .rocItemText {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; }
+  .RadOrgChart .rocImage {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 0.83333em;
+    left: 0.83333em;
+    overflow: hidden; }
+  .RadOrgChart .rocImageReplacement:before {
+    content: "\e0e4";
+    position: absolute;
+    top: 0.1773em;
+    left: 0.17655em;
+    font-size: 4.7em;
+    font-family: 'TelerikWebUI';
+    line-height: 1em;
+    opacity: 0.3;
+    text-indent: -0.08865em; }
+  .RadOrgChart .rocNode:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -2.08333em;
+    border-top: 1px dotted; }
+  .RadOrgChart .rocFirst:before {
+    width: 50%;
+    left: 50%; }
+  .RadOrgChart .rocLast:before {
+    width: 50%; }
+  .RadOrgChart .rocRootNode:before, .RadOrgChart .rocOnly:before {
+    display: none; }
+  .RadOrgChart .rocGroup:before, .RadOrgChart.rocSimple .rocNode:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -2.08333em;
+    height: 2em;
+    border-left: 1px dotted; }
+  .RadOrgChart .rocRootNode > .rocGroup:before, .RadOrgChart.rocSimple .rocRootNode:after {
+    display: none; }
+  .RadOrgChart .rocGroup:after, .RadOrgChart.rocSimple .rocItem:after, .RadOrgChart.rocSimple .rocItemTemplate:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2.08333em;
+    height: 2.08333em;
+    border-left: 1px dotted; }
+  .RadOrgChart .rocLastLevel .rocGroup:after, .RadOrgChart .rocCollapsedNode .rocGroup:after, .RadOrgChart .rocCollapsedNode .rocItem:after, .RadOrgChart .rocCollapsedNode .rocItemTemplate:after, .RadOrgChart.rocSimple .rocLastLevel .rocItem:after, .RadOrgChart.rocSimple .rocLastLevel .rocItemTemplate:after, .RadOrgChart .rocLoadingNodes > .rocGroup:after, .RadOrgChart.rocSimple .rocLoadingNodes > .rocItem:after, .RadOrgChart.rocSimple .rocLoadingNodes > .rocItemTemplate:after {
+    display: none; }
+  .RadOrgChart .rocExpandArrow, .RadOrgChart .rocCollapseArrow, .RadOrgChart .rocExpandGroupArrow, .RadOrgChart .rocCollapseGroupArrow {
+    width: 0.8125em;
+    height: 0.8125em;
+    font-size: 1.33333em;
+    line-height: 0.8125em;
+    font-family: 'TelerikWebUI';
+    cursor: pointer;
+    border: 1px solid;
+    overflow: hidden;
+    text-indent: -0.125em;
+    position: relative;
+    z-index: 1; }
+    .RadOrgChart .rocExpandArrow:before, .RadOrgChart .rocCollapseArrow:before, .RadOrgChart .rocExpandGroupArrow:before, .RadOrgChart .rocCollapseGroupArrow:before {
+      display: block; }
+  .RadOrgChart .rocExpandArrow, .RadOrgChart .rocCollapseArrow {
+    position: absolute;
+    left: 50%;
+    bottom: -0.5em;
+    margin-left: -0.5em; }
+    .RadOrgChart .rocExpandArrow:hover, .RadOrgChart .rocCollapseArrow:hover {
+      text-decoration: none; }
+  .RadOrgChart .rocExpandGroupArrow, .RadOrgChart .rocCollapseGroupArrow {
+    float: right; }
+  .RadOrgChart .rocExpandGroupArrow:before {
+    content: "\E00C"; }
+  .RadOrgChart .rocCollapseGroupArrow:before {
+    content: "\E00F"; }
+  .RadOrgChart .rocExpandArrow:before {
+    content: "\E03B"; }
+  .RadOrgChart .rocCollapseArrow:before {
+    content: "\E03C"; }
+  .RadOrgChart .rocLoadingNodes .rocExpandArrow, .RadOrgChart .rocLoadingNodes .rocCollapseArrow, .RadOrgChart .rocLoadingGroups .rocExpandGroupArrow, .RadOrgChart .rocLoadingGroups .rocCollapseGroupArrow {
+    padding: 0.08333em;
+    width: 1.33333em;
+    height: 1.33333em;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    .RadOrgChart .rocLoadingNodes .rocExpandArrow:before, .RadOrgChart .rocLoadingNodes .rocCollapseArrow:before, .RadOrgChart .rocLoadingGroups .rocExpandGroupArrow:before, .RadOrgChart .rocLoadingGroups .rocCollapseGroupArrow:before {
+      content: ""; }
+  .RadOrgChart .rocLoadingNodes .rocExpandArrow, .RadOrgChart .rocLoadingNodes .rocCollapseArrow {
+    margin-left: -0.83333em;
+    bottom: -0.83333em; }
+  .RadOrgChart .rocLoadingGroups .rocExpandGroupArrow, .RadOrgChart .rocLoadingGroups .rocCollapseGroupArrow {
+    top: 0.41667em; }
+  .RadOrgChart .rocCollapsedNode .rocLineDown {
+    display: none; }
+  .RadOrgChart .rocCollapsedNode .rocNodeList {
+    display: none; }
+  .RadOrgChart .rocCollapsedGroup .rocItemWrap {
+    display: none; }
+  .RadOrgChart .rocCollapsedGroup .rocItemWrap.rocFirst {
+    display: inline-block; }
+
+.RadOrgChart.rocHorizontal {
+  padding-top: 28px; }
+  .RadOrgChart.rocHorizontal .rocViewPort {
+    text-align: left; }
+  .RadOrgChart.rocHorizontal .rocNodeFields {
+    padding: 0 3px; }
+  .RadOrgChart.rocHorizontal .rocNodeList {
+    margin-top: 0;
+    margin-left: 55px;
+    display: inline-block;
+    vertical-align: middle; }
+  .RadOrgChart.rocHorizontal .rocRootNodeList {
+    margin-left: 0; }
+  .RadOrgChart.rocHorizontal .rocCollapsedNode .rocNodeList {
+    display: none; }
+  .RadOrgChart.rocHorizontal .rocNode {
+    display: block;
+    padding: 1.33333em 0em; }
+  .RadOrgChart.rocHorizontal .rocItemWrap {
+    margin: 0;
+    padding: 5px; }
+  .RadOrgChart.rocHorizontal .rocGroup {
+    display: inline-block;
+    vertical-align: middle; }
+  .RadOrgChart.rocHorizontal .rocItemList {
+    margin: 0; }
+  .RadOrgChart.rocHorizontal .rocExpandArrow, .RadOrgChart.rocHorizontal .rocCollapseArrow {
+    left: auto;
+    right: -0.5em;
+    top: 50%;
+    margin-top: -0.5em; }
+  .RadOrgChart.rocHorizontal .rocCollapseGroupArrow, .RadOrgChart.rocHorizontal .rocExpandGroupArrow {
+    margin-right: 5px; }
+  .RadOrgChart.rocHorizontal .rocGroup:before, .RadOrgChart.rocHorizontal.rocSimple .rocNode:after {
+    height: 0;
+    width: 34px;
+    border-top: 1px dotted;
+    left: -34px;
+    top: 50%; }
+  .RadOrgChart.rocHorizontal .rocGroup:after, .RadOrgChart.rocHorizontal.rocSimple .rocItem:after, .RadOrgChart.rocHorizontal.rocSimple .rocItemTemplate:after {
+    left: auto;
+    right: -20px;
+    top: 50%;
+    height: 0;
+    width: 20px;
+    border-top: 1px dotted; }
+  .RadOrgChart.rocHorizontal .rocCollapsedNode .rocGroup:after, .RadOrgChart.rocHorizontal.rocSimple .rocCollapsedNode .rocItem:after, .RadOrgChart.rocHorizontal.rocSimple .rocCollapsedNode .rocItemTemplate:after {
+    display: none; }
+  .RadOrgChart.rocHorizontal .rocNode:before {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: -35px;
+    border-left: 1px dotted; }
+  .RadOrgChart.rocHorizontal .rocFirst:before {
+    height: 50%;
+    top: 50%; }
+  .RadOrgChart.rocHorizontal .rocLast:before {
+    height: 50%; }
+  .RadOrgChart.rocHorizontal.rocSimple .rocItem, .RadOrgChart.rocHorizontal.rocSimple .rocItemTemplate {
+    display: inline-block;
+    vertical-align: middle; }
+
+.rocDetachedItem, .rocDetachedNode {
+  position: absolute;
+  z-index: 9000;
+  display: none;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid;
+  overflow: hidden;
+  white-space: nowrap; }
+  .rocDetachedItem:before, .rocDetachedNode:before {
+    display: inline-block;
+    font-size: 1.4em;
+    font-family: 'TelerikWebUI';
+    margin: 0 7px 0 -22px;
+    vertical-align: bottom; }
+  .rocDetachedItem.rocNoDropClue:before, .rocDetachedNode.rocNoDropClue:before {
+    content: "\E036"; }
+  .rocDetachedItem.rocAddClue:before, .rocDetachedNode.rocAddClue:before {
+    content: "\E039"; }
+  .rocDetachedItem.rocAppendClue:before, .rocDetachedNode.rocAppendClue:before {
+    border-top: 1px solid;
+    content: "\E139"; }
+
+.rocToolbar {
+  padding: 0.33333em;
+  display: none;
+  position: absolute;
+  z-index: 3000;
+  *zoom: 1; }
+  .rocToolbar:after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block; }
+  .rocToolbar ul {
+    margin: 0em 0em 0em -0.25em;
+    padding: 0;
+    list-style: none;
+    *zoom: 1; }
+    .rocToolbar ul:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .rocToolbar li {
+    margin: 0em 0em 0em 0.25em;
+    float: left; }
+  .rocToolbar .rocToolbarButton {
+    width: 1.11111em;
+    height: 1.11111em;
+    float: left;
+    color: inherit;
+    font-size: 1.2em;
+    font-family: 'TelerikWebUI';
+    line-height: 1.11111em;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none; }
+    .rocToolbar .rocToolbarButton:before {
+      content: "\E151"; }
+    .rocToolbar .rocToolbarButton.rocActionGoToParent:before {
+      content: "\E152"; }
+    .rocToolbar .rocToolbarButton.rocActionGoToRoot:before {
+      content: "\E153"; }
+  .rocToolbar .rocHidden {
+    display: none; }

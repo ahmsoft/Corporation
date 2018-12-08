@@ -1,0 +1,21 @@
+.RadNotification_Telerik {
+  border-color: #8e8e8e;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* base style overwrites */ }
+  .RadNotification_Telerik.rnShadows {
+    box-shadow: 2px 2px 3px #b8b7b7; }
+  .RadNotification_Telerik .rnTitleBar {
+    border-bottom-color: transparent;
+    background-image: linear-gradient(#fdfdfd, #eaeaea);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='lst(#fdfdfd, #eaeaea)',GradientType=0 ); }
+  .RadNotification_Telerik .rnCommands a {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadNotification_Telerik .rnTitleBarTitle {
+    color: #000000; }
+  .RadNotification_Telerik .rnContentWrapper {
+    border-top-color: #8e8e8e; }
+  .RadNotification_Telerik .rnCommands {
+    margin: 0.16667em 0em 0em; }

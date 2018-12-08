@@ -1,0 +1,1353 @@
+
+/*Disabled tools*/
+.RadEditor .RadRibbonBar .rrbImagePlaceholderDisabled,
+.RadEditor .RadRibbonBar .reTool_disabled span
+{
+	opacity: .45;
+	filter: alpha(opacity = 45);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
+}
+
+.RadEditor .RadRibbonBar .rrbImagePlaceholderDisabled span,
+.RadEditor .RadRibbonBar .rrbImagePlaceholderDisabled img,
+.RadEditor .RadRibbonBar .reTool_disabled span
+{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
+}
+
+/* Position the RibbonBar wrapper div out side the visible screen */
+.reWrapper .reRibbonBarWrapper
+{
+	width: 2000px;
+	position: absolute;
+	top: -20000px;
+	left: -20000px; 
+}
+	
+.RadEditor .RadRibbonBar .rrbContentWrapOut, 
+.RadEditor .RadRibbonBar .rrbContentWrapMid, 
+.RadEditor .RadRibbonBar .rrbContentWrapIn
+{
+	border-style: none;
+}
+
+.RadEditor .RadRibbonBar .rrbContentWrapOut,
+.RadEditor .RadRibbonBar .rrbTabs
+{
+	margin: 0px -1px;
+}
+/* set the margin to 0px in IE */
+.RadEditor .RadRibbonBar .rrbContentWrapOut,
+.RadEditor .RadRibbonBar .rrbTabs
+{
+	margin: 0px \9;
+}
+
+/* ButtonStrip Height Porblem */
+/*.RadEditor .RadRibbonBar .rrbButtonStrip span 
+{
+	height: 19px;
+}*/
+
+/* Dropdowns */
+
+.RadEditor .reDropdown span
+{
+	line-height: 19px;
+}
+
+.RadEditor .reDropdown, .RadEditor .reTool_disabled.reDropdown:hover
+{
+	margin: 1px 0 2px;
+}
+
+/*.RadEditor .RadRibbonBar .rrbTemplateItem 
+{
+	margin: 0 0 3px;
+	max-height: 20px;
+}*/
+
+/*.RadEditor .RadRibbonBar .rrbButtonStrip 
+{
+	margin: 1px 0 0;
+}*/
+
+.RadEditor .RadRibbonBar .rrbTemplateItem .reSplitButton
+{
+	margin: -1px 0 0;
+}
+
+/*Small icons styles*/
+.RadEditor .RadRibbonBar .rrbImagePlaceholder
+{
+	overflow: hidden;
+}
+
+div.RadEditor .RadRibbonBar .rrbButtonImage
+{
+	position: absolute;
+	top: -7px;
+}
+
+.RadEditor .RadRibbonBar .XhtmlValidator .rrbButtonImage
+{
+	clip: rect(8px 2545px 24px 2527px);
+	left: -2528px;
+}
+
+.RadEditor .RadRibbonBar .InsertLink .rrbButtonImage
+{
+	clip: rect(7px 3714px 24px 3697px);
+	left: -3698px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormForm .rrbButtonImage
+{
+	clip: rect(8px 1821px 24px 1807px);
+	left: -1807px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormHidden .rrbButtonImage
+{
+	clip: rect(7px 1853px 24px 1836px);
+	left: -1836px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormSubmit .rrbButtonImage,
+.RadEditor .RadRibbonBar .InsertFormButton .rrbButtonImage,
+.RadEditor .RadRibbonBar .InsertFormReset .rrbButtonImage
+{
+	clip: rect(8px 1733px 24px 1716px);
+	left: -1717px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormTextarea .rrbButtonImage
+{
+	clip: rect(8px 2001px 24px 1986px);
+	left: -1987px;
+}
+
+.RadEditor .RadRibbonBar .StripCss .rrbButtonImage
+{
+	clip: rect(8px 2662px 24px 2646px);
+	left: -2646px;
+}
+
+.RadEditor .RadRibbonBar .StripWord .rrbButtonImage
+{
+	clip: rect(8px 2752px 24px 2736px);
+	left: -2737px;
+}
+
+.RadEditor .RadRibbonBar .SetImageProperties .rrbButtonImage
+{
+	clip: rect(8px 1133px 24px 1116px);
+	left: -1117px;
+}
+
+.RadEditor .RadRibbonBar .SilverlightManager .rrbButtonImage
+{
+	clip: rect(7px 3653px 24px 3636px);
+	left: -3637px;
+}
+
+.RadEditor .RadRibbonBar .TemplateManager .rrbButtonImage
+{
+	clip: rect(5px 2781px 24px 2768px);
+	left: -2766px;
+}
+
+.RadEditor .RadRibbonBar .InsertRowBelow .rrbButtonImage
+{
+	clip: rect(6px 1401px 24px 1388px);
+	left: -1387px;
+}
+
+.RadEditor .RadRibbonBar .InsertColumnRight .rrbButtonImage
+{
+	clip: rect(6px 1613px 24px 1597px);
+	left: -1596px;
+}
+
+.RadEditor .RadRibbonBar .MergeRows .rrbButtonImage
+{
+	clip: rect(6px 2361px 24px 2348px);
+	left: -2347px;
+}
+
+.RadEditor .RadRibbonBar .DeleteCell .rrbButtonImage
+{
+	clip: rect(6px 1342px 24px 1327px);
+	left: -1327px;
+}
+
+.RadEditor .RadRibbonBar .InsertSymbol .rrbButtonImage
+{
+	clip: rect(6px 2212px 24px 2198px);
+	left: -2196px;
+}
+
+.RadEditor .RadRibbonBar .Redo .rrbButtonImage
+{
+	clip: rect(6px 980px 24px 969px);
+	left: -966px;
+}
+
+.RadEditor .RadRibbonBar .Paste .rrbButtonImage
+{
+	clip: rect(6px 803px 24px 787px);
+	left: -787px;
+}
+
+.RadEditor .RadRibbonBar .PastePlainText .rrbButtonImage
+{
+	clip: rect(6px 923px 24px 907px);
+	left: -907px;
+}
+
+.RadEditor .RadRibbonBar .Print .rrbButtonImage
+{
+	clip: rect(6px 953px 24px 937px);
+	left: -937px;
+}
+
+.RadEditor .RadRibbonBar .InsertGroupbox .rrbButtonImage
+{
+	clip: rect(6px 2032px 24px 2017px);
+	left: -2016px;
+}
+
+.RadEditor .RadRibbonBar .InsertSnippet .rrbButtonImage
+{
+	clip: rect(6px 2184px 24px 2166px);
+	left: -2166px;
+}
+
+.RadEditor .RadRibbonBar .AboutDialog .rrbButtonImage,
+.RadEditor .RadRibbonBar .ModuleManager .rrbButtonImage
+{
+	clip: rect(6px 24px 24px 6px);
+	left: -7px;
+}
+
+.RadEditor .RadRibbonBar .Italic .rrbButtonImage
+{
+	clip: rect(6px 500px 24px 489px);
+	left: -486px;
+}
+
+.RadEditor .RadRibbonBar .JustifyLeft .rrbButtonImage
+{
+	clip: rect(6px 591px 24px 578px);
+	left: -577px;
+}
+
+.RadEditor .RadRibbonBar .JustifyFull .rrbButtonImage
+{
+	clip: rect(6px 561px 24px 548px);
+	left: -547px;
+}
+
+.RadEditor .RadRibbonBar .Subscript .rrbButtonImage
+{
+	clip: rect(6px 2841px 24px 2829px);
+	left: -2826px;
+}
+
+.RadEditor .RadRibbonBar .Indent .rrbButtonImage
+{
+	clip: rect(6px 443px 24px 426px);
+	left: -427px;
+}
+
+.RadEditor .RadRibbonBar .InsertUnorderedList .rrbButtonImage
+{
+	clip: rect(6px 2300px 24px 2288px);
+	left: -2287px;
+}
+
+.RadEditor .RadRibbonBar .Unlink .rrbButtonImage
+{
+	clip: rect(6px 2873px 24px 2856px);
+	left: -2856px;
+}
+
+.RadEditor .RadRibbonBar .ForeColor .rrbButtonImage
+{
+	clip: rect(6px 290px 24px 278px);
+	left: -276px;
+}
+
+.RadEditor .RadRibbonBar .PageProperties .rrbButtonImage
+{
+	clip: rect(6px 771px 24px 759px);
+	left: -757px;
+}
+
+.RadEditor .RadRibbonBar .FormatCodeBlock .rrbButtonImage
+{
+	clip: rect(6px 322px 24px 306px);
+	left: -306px;
+}
+
+.RadEditor .RadRibbonBar .InsertTableLight .rrbButtonImage
+{
+	clip: rect(6px 3807px 24px 3792px);
+	left: -3792px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormButton .rrbButtonImage
+{
+	clip: rect(6px 1733px 24px 1716px);
+	left: -1717px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormPassword .rrbButtonImage
+{
+	clip: rect(6px 1911px 24px 1898px);
+	left: -1897px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormSelect .rrbButtonImage
+{
+	clip: rect(6px 3563px 24px 3547px);
+	left: -3547px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormText .rrbButtonImage
+{
+	clip: rect(6px 2001px 24px 1988px);
+	left: -1986px;
+}
+
+.RadEditor .RadRibbonBar .StripFont .rrbButtonImage
+{
+	clip: rect(6px 2694px 24px 2676px);
+	left: -2676px;
+}
+
+.RadEditor .RadRibbonBar .AjaxSpellCheck .rrbButtonImage
+{
+	clip: rect(6px 84px 24px 66px);
+	left: -66px;
+}
+
+.RadEditor .RadRibbonBar .ImageMapDialog .rrbButtonImage
+{
+	clip: rect(6px 412px 24px 396px);
+	left: -397px;
+}
+
+.RadEditor .RadRibbonBar .MediaManager .rrbButtonImage
+{
+	clip: rect(6px 713px 24px 696px);
+	left: -697px;
+}
+
+.RadEditor .RadRibbonBar .InsertTable .rrbButtonImage,
+.RadEditor .RadRibbonBar .TableWizard .rrbButtonImage
+{
+	clip: rect(6px 3592px 24px 3578px);
+	left: -3577px;
+}
+
+.RadEditor .RadRibbonBar .DeleteRow .rrbButtonImage
+{
+	clip: rect(6px 3443px 24px 3425px);
+	left: -3427px;
+}
+
+.RadEditor .RadRibbonBar .DeleteColumn .rrbButtonImage
+{
+	clip: rect(6px 3411px 24px 3397px);
+	left: -3397px;
+}
+
+.RadEditor .RadRibbonBar .SplitCellHorizontal .rrbButtonImage
+{
+	clip: rect(6px 3351px 24px 3337px);
+	left: -3336px;
+}
+
+.RadEditor .RadRibbonBar .SetCellProperties .rrbButtonImage
+{
+	clip: rect(6px 2513px 24px 2496px);
+	left: -2496px;
+}
+
+.RadEditor .RadRibbonBar .FormatStripper .rrbButtonImage,
+.RadEditor .RadRibbonBar .StripAll .rrbButtonImage,
+.RadEditor .RadRibbonBar .FormatPainterClear .rrbButtonImage
+{
+	clip: rect(6px 2603px 24px 2586px);
+	left: -2586px;
+}
+
+.RadEditor .RadRibbonBar .Cut .rrbButtonImage
+{
+	clip: rect(6px 170px 24px 157px);
+	left: -157px;
+}
+
+.RadEditor .RadRibbonBar .PasteFromWord .rrbButtonImage
+{
+	clip: rect(6px 864px 24px 846px);
+	left: -846px;
+}
+
+.RadEditor .RadRibbonBar .PasteAsHtml .rrbButtonImage
+{
+	clip: rect(6px 832px 24px 817px);
+	left: -816px;
+}
+
+.RadEditor .RadRibbonBar .FindAndReplace .rrbButtonImage
+{
+	clip: rect(6px 232px 24px 216px);
+	left: -216px;
+}
+
+.RadEditor .RadRibbonBar .InsertParagraph .rrbButtonImage
+{
+	clip: rect(6px 473px 24px 457px);
+	left: -456px;
+}
+
+.RadEditor .RadRibbonBar .InsertDate .rrbButtonImage
+{
+	clip: rect(6px 1671px 24px 1657px);
+	left: -1656px;
+}
+
+.RadEditor .RadRibbonBar .Help .rrbButtonImage
+{
+	clip: rect(6px 352px 24px 337px);
+	left: -336px;
+}
+
+.RadEditor .RadRibbonBar .Underline .rrbButtonImage
+{
+	clip: rect(6px 3289px 24px 3280px);
+	left: -3276px;
+}
+
+.RadEditor .RadRibbonBar .JustifyCenter .rrbButtonImage
+{
+	clip: rect(6px 532px 24px 517px);
+	left: -517px;
+}
+
+.RadEditor .RadRibbonBar .JustifyNone .rrbButtonImage
+{
+	clip: rect(6px 622px 24px 607px);
+	left: -607px;
+}
+
+.RadEditor .RadRibbonBar .ConvertToLower .rrbButtonImage
+{
+	clip: rect(6px 1162px 24px 1146px);
+	left: -1146px;
+}
+
+.RadEditor .RadRibbonBar .Outdent .rrbButtonImage
+{
+	clip: rect(6px 743px 24px 727px);
+	left: -727px;
+}
+
+.RadEditor .RadRibbonBar .AbsolutePosition .rrbButtonImage
+{
+	clip: rect(6px 54px 24px 35px);
+	left: -37px;
+}
+
+.RadEditor .RadRibbonBar .ToggleTableBorder .rrbButtonImage
+{
+	clip: rect(6px 2903px 24px 2886px);
+	left: -2885px;
+}
+
+.RadEditor .RadRibbonBar .BackColor .rrbButtonImage,
+.RadEditor .RadRibbonBar .borderColor .rrbButtonImage,
+.RadEditor .RadRibbonBar .bgColor .rrbButtonImage
+{
+	clip: rect(6px 1043px 24px 1027px);
+	left: -1027px;
+}
+
+.RadEditor .RadRibbonBar .StyleBuilder .rrbButtonImage
+{
+	clip: rect(6px 2963px 24px 2947px);
+	left: -2946px;
+}
+
+.RadEditor .RadRibbonBar .InsertImage .rrbButtonImage
+{
+	clip: rect(6px 3744px 24px 3727px);
+	left: -3727px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormElement .rrbButtonImage
+{
+	clip: rect(6px 1791px 24px 1778px);
+	left: -1776px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormCheckbox .rrbButtonImage
+{
+	clip: rect(6px 1761px 24px 1748px);
+	left: -1746px;
+}
+
+.RadEditor .RadRibbonBar .InsertFormRadio .rrbButtonImage
+{
+	clip: rect(6px 1941px 24px 1929px);
+	left: -1926px;
+}
+
+.RadEditor .RadRibbonBar .StripSpan .rrbButtonImage
+{
+	clip: rect(6px 2723px 24px 2706px);
+	left: -2706px;
+}
+
+.RadEditor .RadRibbonBar .ImageManager .rrbButtonImage
+{
+	clip: rect(6px 382px 24px 368px);
+	left: -367px;
+}
+
+.RadEditor .RadRibbonBar .FlashManager .rrbButtonImage,
+.RadEditor .RadRibbonBar .InsertFlash .rrbButtonImage
+{
+	clip: rect(6px 263px 24px 247px);
+	left: -246px;
+}
+
+.RadEditor .RadRibbonBar .DocumentManager .rrbButtonImage,
+.RadEditor .RadRibbonBar .InsertDocument .rrbButtonImage
+{
+	clip: rect(6px 203px 24px 187px);
+	left: -186px;
+}
+
+.RadEditor .RadRibbonBar .InsertRowAbove .rrbButtonImage
+{
+	clip: rect(6px 1372px 24px 1358px);
+	left: -1356px;
+}
+
+.RadEditor .RadRibbonBar .InsertColumnLeft .rrbButtonImage
+{
+	clip: rect(6px 1644px 24px 1626px);
+	left: -1627px;
+}
+
+.RadEditor .RadRibbonBar .MergeColumns .rrbButtonImage
+{
+	clip: rect(6px 2332px 24px 2318px);
+	left: -2317px;
+}
+
+.RadEditor .RadRibbonBar .SplitCell .rrbButtonImage
+{
+	clip: rect(6px 3622px 24px 3608px);
+	left: -3607px;
+}
+
+.RadEditor .RadRibbonBar .SetTableProperties .rrbButtonImage
+{
+	clip: rect(6px 3384px 24px 3365px);
+	left: -3366px;
+}
+
+.RadEditor .RadRibbonBar .Undo .rrbButtonImage
+{
+	clip: rect(6px 1011px 24px 998px);
+	left: -997px;
+}
+
+.RadEditor .RadRibbonBar .Copy .rrbButtonImage
+{
+	clip: rect(6px 142px 24px 126px);
+	left: -126px;
+}
+
+.RadEditor .RadRibbonBar .PasteFromWordNoFontsNoSizes .rrbButtonImage
+{
+	clip: rect(6px 894px 24px 876px);
+	left: -876px;
+}
+
+.RadEditor .RadRibbonBar .PasteHtml .rrbButtonImage
+{
+	clip: rect(6px 3777px 24px 3757px);
+	left: -3759px;
+}
+
+.RadEditor .RadRibbonBar .SelectAll .rrbButtonImage
+{
+	clip: rect(6px 2451px 24px 2438px);
+	left: -2436px;
+}
+
+.RadEditor .RadRibbonBar .InsertHorizontalRule .rrbButtonImage
+{
+	clip: rect(6px 2062px 24px 2047px);
+	left: -2047px;
+}
+
+.RadEditor .RadRibbonBar .InsertTime .rrbButtonImage
+{
+	clip: rect(6px 2272px 24px 2256px);
+	left: -2256px;
+}
+
+.RadEditor .RadRibbonBar .Bold .rrbButtonImage
+{
+	clip: rect(6px 109px 24px 99px);
+	left: -96px;
+}
+
+.RadEditor .RadRibbonBar .StrikeThrough .rrbButtonImage
+{
+	clip: rect(6px 3324px 24px 3306px);
+	left: -3307px;
+}
+
+.RadEditor .RadRibbonBar .JustifyRight .rrbButtonImage
+{
+	clip: rect(6px 653px 24px 638px);
+	left: -636px;
+}
+
+.RadEditor .RadRibbonBar .Superscript .rrbButtonImage
+{
+	clip: rect(6px 2812px 24px 2799px);
+	left: -2796px;
+}
+
+.RadEditor .RadRibbonBar .ConvertToUpper .rrbButtonImage
+{
+	clip: rect(6px 1192px 24px 1176px);
+	left: -1176px;
+}
+
+.RadEditor .RadRibbonBar .InsertOrderedList .rrbButtonImage
+{
+	clip: rect(6px 2093px 24px 2077px);
+	left: -2077px;
+}
+
+.RadEditor .RadRibbonBar .LinkManager .rrbButtonImage,
+.RadEditor .RadRibbonBar .CreateLink .rrbButtonImage,
+.RadEditor .RadRibbonBar .CustomLinkTool .rrbButtonImage,
+.RadEditor .RadRibbonBar .SetLinkProperties .rrbButtonImage
+{
+	clip: rect(6px 683px 24px 666px);
+	left: -666px;
+}
+
+.RadEditor .RadRibbonBar .ToggleScreenMode .rrbButtonImage
+{
+	clip: rect(6px 2931px 24px 2919px);
+	left: -2917px;
+}
+
+.RadEditor .RadRibbonBar .Save .rrbButtonImage
+{
+	clip: rect(6px 1072px 24px 1057px);
+	left: -1057px;
+}
+
+.RadEditor .RadRibbonBar .InsertExternalVideo .rrbButtonImage
+{
+	clip: rect(6px 3869px 24px 3853px);
+	left: -3853px;
+}
+
+.RadEditor .RadRibbonBar .AddComment .rrbButtonImage
+{
+	clip: rect(1px 3907px 32px 3891px);
+	left: -3892px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .RemoveComment .rrbButtonImage
+{
+	clip: rect(1px 3942px 32px 3925px);
+	left: -3926px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .RemoveAllComments .rrbButtonImage
+{
+	clip: rect(1px 3981px 32px 3967px);
+	left: -3967px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .AcceptTrackChange .rrbButtonImage
+{
+	clip: rect(1px 4019px 32px 4001px);
+	left: -4002px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .RejectTrackChange .rrbButtonImage
+{
+	clip: rect(1px 4053px 32px 4036px);
+	left: -4036px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .AcceptAllTrackChanges .rrbButtonImage
+{
+	clip: rect(1px 4089px 32px 4071px);
+	left: -4072px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .RejectAllTrackChanges .rrbButtonImage
+{
+	clip: rect(1px 4124px 32px 4107px);
+	left: -4107px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .EnableTrackChangesOverride .rrbButtonImage
+{
+	clip: rect(1px 4158px 32px 4140px);
+	left: -4141px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .PasteMarkdown .rrbButtonImage
+{
+	clip: rect(1px 4191px 32px 4176px);
+	left: -4176px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .FormatPainter .rrbButtonImage,
+.RadEditor .RadRibbonBar .FormatPainterApply .rrbButtonImage
+{
+	clip: rect(1px 4225px 32px 4210px);
+	left: -4211px;
+	top: -3px;
+}
+
+.RadEditor .RadRibbonBar .FormatPainterCopy .rrbButtonImage
+{
+	clip: rect(1px 4261px 32px 4245px);
+	left: -4245px;
+	top: -5px;
+}
+
+/*
+.RadEditor .RadRibbonBar .CustomTool .rrbButtonImage
+{
+	clip: rect(6px 2931px 24px 2919px);
+	left: -2915px;
+}
+
+.RadEditor .RadRibbonBar .Zoom .rrbButtonImage
+{
+	clip: rect(6px 2931px 24px 2919px);
+	left: -2915px;
+}
+
+.RadEditor .RadRibbonBar .ApplyClass .rrbButtonImage
+{
+	clip: rect(6px 2931px 24px 2919px);
+	left: -2915px;
+}
+
+.RadEditor .RadRibbonBar .FontName .rrbButtonImage
+{
+	clip: rect(6px 2931px 24px 2919px);
+	left: -2915px;
+}
+
+.RadEditor .RadRibbonBar .FormatBlock .rrbButtonImage
+{
+	clip: rect(6px 1043px 24px 1027px);
+	left: -1025px;
+}
+
+.RadEditor .RadRibbonBar .RealFontSize .rrbButtonImage
+{
+	clip: rect(6px 1043px 24px 1027px);
+	left: -1025px;
+}
+
+.RadEditor .RadRibbonBar .FontSize .rrbButtonImage
+{
+	clip: rect(6px 290px 24px 278px);
+	left: -274px;
+}
+
+.RadEditor .RadRibbonBar .InsertCustomLink .rrbButtonImage
+{
+	clip: rect(6px 290px 24px 278px);
+	left: -274px;
+}*/
+
+/*Big Icons styles*/
+
+div.RadEditor .RadRibbonBar .rrbLargeButton .rrbButtonIn .rrbButtonImage
+{
+	top: 0;
+}
+
+div.RadEditor .RadRibbonBar .rrbMediumButton .rrbButtonImage
+{
+	top: -7px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AjaxSpellCheck .rrbButtonImage
+{
+	clip: rect(2px 96px 29px 66px);
+	left: -65px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.ImageManager .rrbButtonImage
+{
+	clip: rect(1px 398px 31px 367px);
+	left: -367px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.LinkManager .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.CreateLink .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.CustomLinkTool .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.SetLinkProperties .rrbButtonImage
+{
+	clip: rect(0 697px 32px 665px);
+	left: -665px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Paste .rrbButtonImage
+{
+	clip: rect(1px 813px 31px 787px);
+	left: -782px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertTable .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.TableWizard .rrbButtonImage
+{
+	clip: rect(1px 2257px 31px 2228px);
+	left: -2226px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.XhtmlValidator .rrbButtonImage
+{
+	clip: rect(2px 2552px 31px 2523px);
+	left: -2520px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.FindAndReplace .rrbButtonImage
+{
+	clip: rect(2px 244px 31px 217px);
+	left: -215px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AbsolutePosition .rrbButtonImage
+{
+	clip: rect(2px 65px 31px 35px);
+	left: -37px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Bold .rrbButtonImage
+{
+	clip: rect(2px 119px 31px 99px);
+	left: -92px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertTime .rrbButtonImage
+{
+	clip: rect(1px 2287px 31px 2257px);
+	left: -2254px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.BackColor .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.borderColor .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.bgColor .rrbButtonImage
+{
+	clip: rect(2px 1052px 31px 1027px);
+	left: -1022px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Copy .rrbButtonImage
+{
+	clip: rect(2px 149px 31px 127px);
+	left: -121px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Cut .rrbButtonImage
+{
+	clip: rect(2px 175px 31px 159px);
+	left: -150px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.FlashManager .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertFlash .rrbButtonImage
+{
+	clip: rect(1px 277px 32px 246px);
+	left: -246px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.ForeColor .rrbButtonImage
+{
+	clip: rect(2px 302px 31px 278px);
+	left: -273px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertUnorderedList .rrbButtonImage
+{
+	clip: rect(0 2317px 32px 2287px);
+	left: -2287px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertOrderedList .rrbButtonImage
+{
+	clip: rect(1px 2107px 31px 2077px);
+	left: -2077px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.JustifyCenter .rrbButtonImage
+{
+	clip: rect(1px 545px 31px 517px);
+	left: -514px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.JustifyFull .rrbButtonImage
+{
+	clip: rect(1px 575px 31px 548px);
+	left: -544px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.JustifyNone .rrbButtonImage
+{
+	clip: rect(1px 635px 31px 607px);
+	left: -604px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.JustifyLeft .rrbButtonImage
+{
+	clip: rect(1px 604px 31px 578px);
+	left: -574px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.JustifyRight .rrbButtonImage
+{
+	clip: rect(1px 664px 31px 638px);
+	left: -634px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Help .rrbButtonImage
+{
+	clip: rect(0 366px 32px 334px);
+	left: -333px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.ImageMapDialog .rrbButtonImage
+{
+	clip: rect(1px 428px 31px 398px);
+	left: -396px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AboutDialog .rrbButtonImage
+{
+	clip: rect(1px 34px 31px 6px);
+	left: -5px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertSymbol .rrbButtonImage
+{
+	clip: rect(1px 2221px 31px 2198px);
+	left: -2194px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.MediaManager .rrbButtonImage
+{
+	clip: rect(0 729px 32px 697px);
+	left: -697px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Print .rrbButtonImage
+{
+	clip: rect(1px 965px 31px 937px);
+	left: -934px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.SetImageProperties .rrbButtonImage
+{
+	clip: rect(1px 1146px 31px 1116px);
+	left: -1114px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Redo .rrbButtonImage
+{
+	clip: rect(1px 995px 31px 968px);
+	left: -964px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Save .rrbButtonImage
+{
+	clip: rect(1px 1085px 31px 1057px);
+	left: -1054px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertColumnLeft .rrbButtonImage
+{
+	clip: rect(1px 1658px 31px 1627px);
+	left: -1624px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertColumnRight .rrbButtonImage
+{
+	clip: rect(1px 1628px 31px 1596px);
+	left: -1596px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.DeleteColumn .rrbButtonImage
+{
+	clip: rect(1px 3426px 31px 3397px);
+	left: -3394px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.DeleteRow .rrbButtonImage
+{
+	clip: rect(1px 3456px 31px 3426px);
+	left: -3424px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.MergeColumns .rrbButtonImage
+{
+	clip: rect(1px 2347px 31px 2318px);
+	left: -2316px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.MergeRows .rrbButtonImage
+{
+	clip: rect(1px 2376px 31px 2347px);
+	left: -2344px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertTableLight .rrbButtonImage
+{
+	clip: rect(1px 3824px 31px 3792px);
+	left: -3792px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.SplitCellHorizontal .rrbButtonImage
+{
+	clip: rect(1px 3366px 31px 3337px);
+	left: -3336px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.SplitCell .rrbButtonImage
+{
+	clip: rect(1px 3637px 31px 3608px);
+	left: -3607px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Indent .rrbButtonImage
+{
+	clip: rect(1px 453px 31px 428px);
+	left: -425px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Outdent .rrbButtonImage
+{
+	clip: rect(1px 755px 31px 730px);
+	left: -725px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Undo .rrbButtonImage
+{
+	clip: rect(1px 1025px 31px 998px);
+	left: -997px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertLink .rrbButtonImage
+{
+	clip: rect(0px 3728px 32px 3696px);
+	left: -3698px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertImage .rrbButtonImage
+{
+	clip: rect(1px 3760px 31px 3728px);
+	left: -3730px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Collapse .rrbButtonImage
+{
+	clip: rect(1px 1442px 31px 1417px);
+	left: -1414px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Expand .rrbButtonImage
+{
+	clip: rect(1px 1563px 31px 1538px);
+	left: -1535px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertParagraph .rrbButtonImage
+{
+	clip: rect(1px 483px 31px 457px);
+	left: -456px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.ToggleScreenMode .rrbButtonImage
+{
+	clip: rect(1px 2947px 32px 2917px);
+	left: -2917px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.DeleteCell .rrbButtonImage
+{
+	clip: rect(1px 1350px 31px 1327px);
+	left: -1322px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertRowBelow .rrbButtonImage
+{
+	clip: rect(1px 1417px 32px 1388px);
+	left: -1387px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertRowAbove .rrbButtonImage
+{
+	clip: rect(1px 1388px 32px 1358px);
+	left: -1356px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.SelectAll .rrbButtonImage
+{
+	clip: rect(1px 2468px 32px 2438px);
+	left: -2436px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Unlink .rrbButtonImage
+{
+	clip: rect(1px 2884px 31px 2852px);
+	left: -2852px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertDate .rrbButtonImage
+{
+	clip: rect(1px 1687px 31px 1658px);
+	left: -1656px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PasteAsHtml .rrbButtonImage
+{
+	clip: rect(1px 843px 32px 817px);
+	left: -816px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PasteHtml .rrbButtonImage
+{
+	clip: rect(1px 3786px 32px 3760px);
+	left: -3756px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PastePlainText .rrbButtonImage
+{
+	clip: rect(1px 934px 32px 907px);
+	left: -907px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PasteFromWordNoFontsNoSizes .rrbButtonImage
+{
+	clip: rect(1px 902px 32px 876px);
+	left: -876px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PasteFromWord .rrbButtonImage
+{
+	clip: rect(1px 873px 32px 846px);
+	left: -846px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.FormatCodeBlock .rrbButtonImage
+{
+	clip: rect(1px 330px 32px 306px);
+	left: -306px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.StrikeThrough .rrbButtonImage
+{
+	clip: rect(1px 3331px 32px 3306px);
+	left: -3302px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.SetCellProperties .rrbButtonImage
+{
+	clip: rect(1px 2523px 32px 2493px);
+	left: -2492px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Subscript .rrbButtonImage
+{
+	clip: rect(1px 2850px 32px 2829px);
+	left: -2822px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.Superscript .rrbButtonImage
+{
+	clip: rect(1px 2820px 32px 2799px);
+	left: -2792px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.InsertExternalVideo .rrbButtonImage
+{
+	clip: rect(1px 3854px 32px 3825px);
+	left: -3824px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AddComment .rrbButtonImage
+{
+	clip: rect(1px 3887px 32px 3855px);
+	left: -3854px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.RemoveComment .rrbButtonImage
+{
+	clip: rect(1px 3919px 32px 3887px);
+	left: -3888px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.RemoveAllComments .rrbButtonImage
+{
+	clip: rect(1px 3951px 32px 3922px);
+	left: -3923px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AcceptTrackChange .rrbButtonImage
+{
+	clip: rect(1px 3985px 32px 3955px);
+	left: -3955px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.RejectTrackChange .rrbButtonImage
+{
+	clip: rect(1px 4020px 32px 3990px);
+	left: -3990px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.AcceptAllTrackChanges .rrbButtonImage
+{
+	clip: rect(1px 4055px 32px 4024px);
+	left: -4024px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.RejectAllTrackChanges .rrbButtonImage
+{
+	clip: rect(1px 4090px 32px 4060px);
+	left: -4060px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.EnableTrackChangesOverride .rrbButtonImage
+{
+	clip: rect(1px 4125px 32px 4095px);
+	left: -4095px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.PasteMarkdown .rrbButtonImage
+{
+	clip: rect(1px 4155px 32px 4129px);
+	left: -4126px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.FormatPainter .rrbButtonImage,
+.RadEditor .RadRibbonBar .rrbLargeButton.FormatPainterApply .rrbButtonImage
+{
+	clip: rect(0 4195px 32px 4163px);
+	left: -4165px;
+	top: 3px;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton.FormatPainterCopy .rrbButtonImage
+{
+	clip: rect(0 4221px 32px 4197px);
+	left: -4194px;
+	top: 3px;
+}

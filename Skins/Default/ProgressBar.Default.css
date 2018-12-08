@@ -1,0 +1,26 @@
+.RadProgressBar_Default {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #eeeeee;
+  background-image: none, linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 100%);
+  /* Vertical */ }
+  .RadProgressBar_Default > .rpbLabelWrapper {
+    border-color: #adadad; }
+  .RadProgressBar_Default .rpbStateSelected, .RadProgressBar_Default .rpbStateSelected:hover, .RadProgressBar_Default .rpbStateSelected:link, .RadProgressBar_Default .rpbStateSelected:visited {
+    background-color: #828282;
+    color: #fff;
+    background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.4) 100%); }
+  .RadProgressBar_Default .rpbChunk {
+    border-color: #adadad; }
+  .RadProgressBar_Default .rpbChunk.rpbStateDefault {
+    background-color: #eeeeee; }
+  .RadProgressBar_Default .rpbStateSelected, .RadProgressBar_Default .rpbStateSelected:hover, .RadProgressBar_Default .rpbStateSelected:link, .RadProgressBar_Default .rpbStateSelected:visited, .RadProgressBar_Default .rpbChunk.rpbStateSelected {
+    border-color: #828282; }
+  .RadProgressBar_Default.rpbVertical {
+    background-image: none, linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 100%); }
+  .RadProgressBar_Default.rpbVertical .rpbStateSelected, .RadProgressBar_Default.rpbVertical .rpbStateSelected:hover, .RadProgressBar_Default.rpbVertical .rpbStateSelected:link, .RadProgressBar_Default.rpbVertical .rpbStateSelected:visited {
+    background-image: none, linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.4) 100%); }
+  .RadProgressBar_Default.rpbIndeterminate {
+    background-image: url('Common/radIndeterminate.gif'); }
+

@@ -1,0 +1,16 @@
+.RadSiteMap_Default {
+  color: #333333;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadSiteMap_Default .rsmManyLevels > .rsmItem > .rsmLink {
+    border-color: #828282; }
+  .RadSiteMap_Default .rsmTwoLevels > .rsmItem > .rsmLink, .RadSiteMap_Default .rsmThreeLevels > .rsmItem > .rsmLink, .RadSiteMap_Default .rsmManyLevels .rsmLevel1 > .rsmItem > .rsmLink {
+    border-color: #828282; }
+  .RadSiteMap_Default .rsmOneLevel .rsmLink, .RadSiteMap_Default .rsmTwoLevels .rsmLevel1 .rsmLink, .RadSiteMap_Default .rsmThreeLevels .rsmLevel1 .rsmLink, .RadSiteMap_Default .rsmManyLevels .rsmLevel2 .rsmLink {
+    border-radius: 4px; }
+    .RadSiteMap_Default .rsmOneLevel .rsmLink:hover, .RadSiteMap_Default .rsmTwoLevels .rsmLevel1 .rsmLink:hover, .RadSiteMap_Default .rsmThreeLevels .rsmLevel1 .rsmLink:hover, .RadSiteMap_Default .rsmManyLevels .rsmLevel2 .rsmLink:hover {
+      color: #000000;
+      background-color: #c5c5c5;
+      background-image: linear-gradient(#e1e1e1, #c5c5c5); }
+  * + html .RadSiteMap_Default .rsmLink {
+    color: #333333; }

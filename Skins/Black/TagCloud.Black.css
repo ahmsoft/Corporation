@@ -1,0 +1,20 @@
+.RadTagCloud_Black {
+  background-color: #2e2e2e;
+  border: 1px dotted #080808;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Disabled state */
+  /* Loading image */ }
+  .RadTagCloud_Black .rtcTagList .rtcTagItem {
+    color: #eeeeee; }
+  .RadTagCloud_Black .rtcTagList .rtcTagItem:hover {
+    color: #9eda29; }
+  .RadTagCloud_Black .rtcTagList .rtcTagItem a {
+    color: #dddddd; }
+  .RadTagCloud_Black .rtcTagList .rtcTagItem a:hover {
+    color: #9eda29;
+    background: #3e3e3e; }
+  .RadTagCloud_Black.rtcDisabled .rtcTagList .rtcTagItem, .RadTagCloud_Black.rtcDisabled .rtcTagList .rtcTagItem a, .RadTagCloud_Black.rtcDisabled .rtcTagList .rtcTagItem:hover, .RadTagCloud_Black.rtcDisabled .rtcTagList .rtcTagItem a:hover {
+    color: #6f6f6f !important; }
+  .RadTagCloud_Black.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

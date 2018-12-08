@@ -1,0 +1,93 @@
+.RadWindow_Sunset {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Window Background */
+  /* Horiznotal */
+  /* Vertical */
+  /* Window Shadows */
+  /* Horiznotal */
+  /* Vertical */
+  /* Shadows End */
+  /* Loading Indicators */
+  /* When ShowContentDuringLoad="true" */
+  /* When ShowContentDuringLoad="false" */
+  /* Shadow Control Buttons */
+  /* ctrl buttons when winodw is minimized */
+  /* Icon when winodw is minimized */ }
+  .RadWindow_Sunset .rwTopLeft,
+  .RadWindow_Sunset .rwTopRight,
+  .RadWindow_Sunset .rwTitlebar,
+  .RadWindow_Sunset .rwFooterLeft,
+  .RadWindow_Sunset .rwFooterRight,
+  .RadWindow_Sunset .rwFooterCenter,
+  .RadWindow_Sunset .rwTopResize,
+  .RadWindow_Sunset .rwStatusbar div,
+  .RadWindow_Sunset .rwStatusbar,
+  .RadWindow_Sunset .rwPopupButton,
+  .RadWindow_Sunset .rwPopupButton span, .RadWindow_Sunset.rwMinimizedWindow .rwCorner {
+    background-image: url('Window/WindowHorizontalSprites.gif'); }
+  .RadWindow_Sunset .rwBodyLeft,
+  .RadWindow_Sunset .rwBodyRight,
+  .RadWindow_Sunset .rwStatusbarRow .rwCorner {
+    background-image: url('Window/WindowVerticalSprites.gif'); }
+  .RadWindow_Sunset .rwShadow .rwTopLeft,
+  .RadWindow_Sunset .rwShadow .rwTopRight,
+  .RadWindow_Sunset .rwShadow .rwTitlebar,
+  .RadWindow_Sunset .rwShadow .rwFooterLeft,
+  .RadWindow_Sunset .rwShadow .rwFooterRight,
+  .RadWindow_Sunset .rwShadow .rwFooterCenter,
+  .RadWindow_Sunset .rwShadow .rwTopResize,
+  .RadWindow_Sunset .rwShadow .rwStatusbar div,
+  .RadWindow_Sunset .rwShadow .rwStatusbar,
+  .RadWindow_Sunset .rwShadow .rwPopupButton,
+  .RadWindow_Sunset .rwShadow .rwPopupButton span,
+  .RadWindow_Sunset .rwShadow .rwBodyLeft,
+  .RadWindow_Sunset .rwShadow .rwBodyRight,
+  .RadWindow_Sunset .rwShadow .rwStatusbarRow .rwBodyLeft,
+  .RadWindow_Sunset .rwShadow .rwStatusbarRow .rwBodyRight {
+    background-image: url('Window/WindowHorizontalSprites.png'); }
+  .RadWindow_Sunset .rwShadow .rwBodyLeft,
+  .RadWindow_Sunset .rwShadow .rwBodyRight,
+  .RadWindow_Sunset .rwShadow .rwStatusbarRow .rwBodyLeft,
+  .RadWindow_Sunset .rwShadow .rwStatusbarRow .rwBodyRight {
+    background-image: url('Window/WindowVerticalSprites.png'); }
+  .RadWindow_Sunset .rwStatusbar input {
+    background-color: #f7f3e9; }
+  .RadWindow_Sunset .rwControlButtons a {
+    background-image: url('Window/CommandButtonSprites.gif'); }
+  .RadWindow_Sunset a.rwIcon {
+    background-image: url('Window/WindowHorizontalSprites.gif'); }
+  .RadWindow_Sunset table.rwTitlebarControls em {
+    color: #fff; }
+  .RadWindow_Sunset input.rwDialogInput {
+    border: 1px solid #938879; }
+  .RadWindow_Sunset input.rwDialogInput:hover {
+    border: 1px solid #ac7d21; }
+  .RadWindow_Sunset div.rwDialogPopup .rwPopupButton .rwInnerSpan {
+    color: #045100; }
+  .RadWindow_Sunset div.rwDialogPopup .rwPopupButton:hover .rwInnerSpan {
+    color: #279500; }
+  .RadWindow_Sunset div.RadWindow_Sunset td.rwWindowContent {
+    background-color: white; }
+  .RadWindow_Sunset tr td.rwLoading {
+    background-color: #a52900; }
+  .RadWindow_Sunset tr td.rwWindowContent.rwLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadWindow_Sunset td input.rwLoading {
+    background-image: url('Common/loading_small.gif'); }
+  .RadWindow_Sunset .rwShadow .rwControlButtons {
+    margin: 5px -2px 0 0; }
+  .RadWindow_Sunset .rwShadow .rwControlButtons {
+    margin: 5px -1px 0 0 \9; }
+  .RadWindow_Sunset.rwMinimizedWindowShadow .rwShadow .rwControlButtons {
+    margin: 9px -8px 0 0; }
+  .RadWindow_Sunset .rwShadow .rwControlButtons li {
+    float: left;
+    padding: 0; }
+  .RadWindow_Sunset .rwShadow .rwControlButtons a {
+    width: 30px; }
+  .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwTopLeft, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwTopRight, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwTitlebar, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwFooterLeft, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwFooterRight, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwFooterCenter, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwTopResize, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwStatusbar div, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwStatusbar, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwPopupButton, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwPopupButton span, .RadWindow_Sunset.rwInactiveWindow .rwShadow.rwMinimizedWindow .rwCorner, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopLeft, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTitlebar, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwTopRight, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterLeft, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterCenter, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwFooterRight {
+    background-image: url('Window/WindowHorizontalSprites.gif') !important; }
+  .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwBodyLeft, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwBodyRight, .RadWindow_Sunset.rwInactiveWindow .rwShadow .rwStatusbarRow .rwCorner, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyLeft, .RadWindow_Sunset.rwNoTitleBar.rwInactiveWindow .rwShadow .rwBodyRight {
+    background-image: url('Window/WindowVerticalSprites.gif') !important; }
+

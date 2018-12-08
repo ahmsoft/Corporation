@@ -1,0 +1,27 @@
+.RadProgressBar_Black {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #161616;
+  background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0) 100%);
+  /* Vertical */ }
+  .RadProgressBar_Black > .rpbLabelWrapper {
+    border-color: #414141; }
+  .RadProgressBar_Black .rpbStateSelected, .RadProgressBar_Black .rpbStateSelected:hover, .RadProgressBar_Black .rpbStateSelected:link, .RadProgressBar_Black .rpbStateSelected:visited {
+    background-color: #9eda29;
+    border-color: #9eda29;
+    color: #000000;
+    background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 100%); }
+  .RadProgressBar_Black .rpbChunk {
+    border-color: #414141; }
+  .RadProgressBar_Black .rpbChunk.rpbStateDefault {
+    background-color: #161616; }
+  .RadProgressBar_Black .rpbChunk.rpbStateSelected {
+    border-color: #9eda29; }
+  .RadProgressBar_Black.rpbVertical {
+    background-image: none, linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 100%); }
+  .RadProgressBar_Black.rpbVertical .rpbStateSelected, .RadProgressBar_Black.rpbVertical .rpbStateSelected:hover, .RadProgressBar_Black.rpbVertical .rpbStateSelected:link, .RadProgressBar_Black.rpbVertical .rpbStateSelected:visited {
+    background-image: none, linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.5) 100%); }
+  .RadProgressBar_Black.rpbIndeterminate {
+    background-image: url('Common/radIndeterminate.gif'); }
+

@@ -1,0 +1,247 @@
+.RadTabStrip {
+  line-height: 1.42857;
+  overflow: hidden; }
+  .RadTabStrip .rtsLevel {
+    box-sizing: border-box; }
+  .RadTabStrip .rtsScroll {
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden; }
+  .RadTabStrip .rtsScroll .rtsUL {
+    position: relative; }
+  .RadTabStrip .rtsPrevArrow,
+  .RadTabStrip .rtsNextArrow {
+    padding: 6px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+    cursor: default; }
+  .RadTabStrip .rtsPrevArrow:before,
+  .RadTabStrip .rtsNextArrow:before {
+    margin: 0 -4px;
+    font-family: TelerikWebUI;
+    line-height: 1;
+    display: inline-block; }
+  .RadTabStrip .rtsUL {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .RadTabStrip .rtsLI {
+    display: block;
+    position: relative; }
+  .RadTabStrip .rtsLink {
+    padding: 10px 15px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    position: relative; }
+  .RadTabStrip .rtsImg {
+    margin: 0 4px 0 -4px;
+    display: inline-block;
+    vertical-align: middle; }
+  .RadTabStrip_rtl .rtsImg {
+    margin-left: 4px;
+    margin-right: -4px; }
+  .RadTabStrip .rtsTxt {
+    text-decoration: inherit;
+    display: inline-block;
+    vertical-align: middle; }
+  .RadTabStrip .rtsDisabled {
+    cursor: default;
+    filter: alpha(opacity=50);
+    opacity: .5; }
+  .RadTabStrip .rtsLevel1 {
+    border-width: 0;
+    border-style: solid; }
+    .RadTabStrip .rtsLevel1 .rtsLink {
+      border-width: 1px;
+      border-style: solid; }
+  .RadTabStrip .rtsLevel1 ~ .rtsLevel {
+    border-width: 1px;
+    border-style: solid; }
+    .RadTabStrip .rtsLevel1 ~ .rtsLevel .rtsHovered .rtsLink {
+      text-decoration: underline; }
+
+.rtsHorizontal .rtsLevel {
+  width: 100%; }
+.rtsHorizontal .rtsLI {
+  display: inline-block;
+  vertical-align: top; }
+.rtsHorizontal .rtsScroll .rtsUL {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+.rtsHorizontal .rtsPrevArrow,
+.rtsHorizontal .rtsNextArrow {
+  top: 0;
+  bottom: 0; }
+.rtsHorizontal .rtsPrevArrow:before {
+  margin-top: .5em;
+  content: "\e003"; }
+.rtsHorizontal .rtsNextArrow:before {
+  margin-top: .5em;
+  content: "\e000"; }
+.rtsHorizontal .rtsButtonsStart {
+  padding-left: 64px; }
+  .rtsHorizontal .rtsButtonsStart .rtsPrevArrow {
+    left: 0; }
+  .rtsHorizontal .rtsButtonsStart .rtsNextArrow {
+    left: 32px; }
+.rtsHorizontal .rtsButtonsEnd {
+  padding-right: 64px; }
+  .rtsHorizontal .rtsButtonsEnd .rtsPrevArrow {
+    right: 32px; }
+  .rtsHorizontal .rtsButtonsEnd .rtsNextArrow {
+    right: 0; }
+.rtsHorizontal .rtsButtonsMiddle {
+  padding-left: 32px;
+  padding-right: 32px; }
+  .rtsHorizontal .rtsButtonsMiddle .rtsPrevArrow {
+    left: 0; }
+  .rtsHorizontal .rtsButtonsMiddle .rtsNextArrow {
+    right: 0; }
+.rtsHorizontal.RadTabStrip_rtl .rtsPrevArrow:before {
+  content: "\e000"; }
+.rtsHorizontal.RadTabStrip_rtl .rtsNextArrow:before {
+  content: "\e003"; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsStart .rtsPrevArrow {
+  left: 32px; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsStart .rtsNextArrow {
+  left: 0; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsEnd .rtsPrevArrow {
+  right: 0; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsEnd .rtsNextArrow {
+  right: 32px; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsMiddle .rtsPrevArrow {
+  left: auto;
+  right: 0; }
+.rtsHorizontal.RadTabStrip_rtl .rtsButtonsMiddle .rtsNextArrow {
+  right: auto;
+  left: 0; }
+
+.rtsTop .rtsLevel1 {
+  border-bottom-width: 1px; }
+  .rtsTop .rtsLevel1 .rtsUL {
+    margin-bottom: -1px; }
+.rtsTop .rtsLevel1 ~ .rtsLevel {
+  border-top-width: 0; }
+
+.rtsBottom .rtsLevel1 {
+  border-top-width: 1px; }
+  .rtsBottom .rtsLevel1 .rtsUL {
+    margin-top: -1px; }
+.rtsBottom .rtsLevel1 ~ .rtsLevel {
+  border-bottom-width: 0; }
+
+.rtsVertical {
+  display: inline-block;
+  vertical-align: top; }
+  .rtsVertical .rtsLevel {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top; }
+  .rtsVertical .rtsVertical .rtsUL {
+    display: inline-block;
+    vertical-align: top; }
+  .rtsVertical .rtsScroll .rtsUL {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .rtsVertical .rtsPrevArrow,
+  .rtsVertical .rtsNextArrow {
+    left: 0;
+    right: 0; }
+  .rtsVertical .rtsPrevArrow:before {
+    content: "\e001"; }
+  .rtsVertical .rtsNextArrow:before {
+    content: "\e002"; }
+  .rtsVertical .rtsButtonsStart {
+    padding-top: 56px; }
+    .rtsVertical .rtsButtonsStart .rtsPrevArrow {
+      top: 0; }
+    .rtsVertical .rtsButtonsStart .rtsNextArrow {
+      top: 28px; }
+  .rtsVertical .rtsButtonsEnd {
+    padding-bottom: 56px; }
+    .rtsVertical .rtsButtonsEnd .rtsPrevArrow {
+      bottom: 28px; }
+    .rtsVertical .rtsButtonsEnd .rtsNextArrow {
+      bottom: 0; }
+  .rtsVertical .rtsButtonsMiddle {
+    padding-top: 28px;
+    padding-bottom: 28px; }
+    .rtsVertical .rtsButtonsMiddle .rtsPrevArrow {
+      top: 0; }
+    .rtsVertical .rtsButtonsMiddle .rtsNextArrow {
+      bottom: 0; }
+
+.rtsLeft .rtsLevel1 {
+  border-right-width: 1px;
+  float: left; }
+  .rtsLeft .rtsLevel1 .rtsUL {
+    margin-right: -1px; }
+.rtsLeft .rtsLevel1 ~ .rtsLevel {
+  border-left-width: 0;
+  float: left; }
+
+.rtsRight .rtsLevel1 {
+  border-left-width: 1px;
+  float: right; }
+  .rtsRight .rtsLevel1 .rtsUL {
+    margin-left: -1px; }
+.rtsRight .rtsLevel1 ~ .rtsLevel {
+  border-right-width: 0;
+  float: right; }
+.rtsRight.RadTabStrip_rtl .rtsLevel {
+  direction: ltr; }
+.rtsRight.RadTabStrip_rtl .rtsUL {
+  direction: rtl; }
+
+.rtsAlignRight {
+  text-align: right; }
+
+.rtsAlignCenter {
+  text-align: center; }
+
+.rtsAlignJustify {
+  text-align: center; }
+
+.rtsDetachedTabContainer {
+  display: none;
+  position: absolute;
+  z-index: 9999; }
+  .rtsDetachedTabContainer .rtsGhostTab {
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    top: 16px;
+    left: 16px; }
+
+.rtsDropClue {
+  position: absolute;
+  z-index: 9998;
+  display: none; }
+  .rtsDropClue:before {
+    font-family: TelerikWebUI;
+    line-height: 1;
+    display: inline-block; }
+
+.rtsDropClueTop {
+  margin: -.75em 0 0 -.5em; }
+  .rtsDropClueTop:before {
+    content: "\e002"; }
+
+.rtsDropClueBottom {
+  margin: -.25em 0 0 -.5em; }
+  .rtsDropClueBottom:before {
+    content: "\e001"; }
+
+.rtsHidden {
+  display: none !important; }

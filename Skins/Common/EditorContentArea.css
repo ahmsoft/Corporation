@@ -1,0 +1,185 @@
+.RadEWrongWord
+{
+	background-color: yellow;
+}
+.RadEDomMouseOver
+{
+	background-color:#ffffcc;	
+}
+body
+{
+	padding:3px;
+	background-image: none;
+	margin: 0px;
+	text-align: left;
+	word-wrap: break-word;
+}
+form
+{
+	background-color:#efefef;
+	border:1px dashed #555555;
+}
+table
+{
+	BORDER-RIGHT: #999999 1px dashed;
+	BORDER-BOTTOM: #999999 1px dashed;
+}
+table td
+{
+	PADDING: 1px;
+	BORDER-TOP: #999999 1px dashed;
+	BORDER-LEFT: #999999 1px dashed;
+}
+table th
+{
+	PADDING: 1px;
+	BORDER-TOP: #000000 1px dashed;
+	BORDER-LEFT: #000000 1px dashed;
+}
+
+/* editor comments */
+font.reComment_u0, span.reComment_u0
+{
+    border: dashed 2px #FF9933 !important;
+}
+font.reComment_u1, span.reComment_u1
+{
+    border: dashed 2px #ff0101 !important;
+}
+font.reComment_u2, span.reComment_u2
+{
+    border: dashed 2px #0101ff !important;
+}
+
+/* ResizableWidgets Handles */
+.rrHandle
+{
+    background-color: #fff;
+    border: 1px solid #000;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.rrHandle:hover
+{
+    background-color: #000;
+}
+
+.reUnselectable {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+
+/* iOS */
+
+html.reIphone{
+	overflow: hidden;
+}
+	html.reIphone body {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+	}
+
+/* editor highlight */
+
+/* iOS */
+font.reIOS.__reTextHighlight, 
+span.reIOS.__reTextHighlight, 
+.reIOS.__reNodeHighlight {
+	background-color: rgba(10,85,165,0.2);
+}
+
+.reIOS.__reHighlightStart, 
+.reIOS.__reHighlightEnd, 
+.reIOS.__reHighlightCollapsed {
+	border-color: #146fe1;
+	border-width: 0;
+}
+.reIOS.__reHighlightStart {
+	border-left-width: 2px;
+}
+.reIOS.__reHighlightEnd {
+	border-right-width: 2px;
+}
+.reIOS.__reHighlightCollapsed {
+	border-width: 0 1px;
+}
+
+.reIOS.__reHighlightMarker {
+	border-color: #146fe1;
+	border-width: 0 1px;
+	border-style: solid;
+}
+
+/* Android */
+font.reAndroid.__reTextHighlight, 
+span.reAndroid.__reTextHighlight, 
+.reAndroid.__reNodeHighlight {
+	background-color: rgba(0, 190, 255, 0.3);
+}
+
+font.reAndroid.__reTextHighlight::selection, 
+span.reAndroid.__reTextHighlight::selection, 
+.reAndroid.__reNodeHighlight::selection {
+	background-color: transparent;
+}
+
+font.reAndroid.__reTextHighlight::-moz-selection, 
+span.reAndroid.__reTextHighlight::-moz-selection, 
+.reAndroid.__reNodeHighlight::-moz-selection {
+	background-color: transparent;
+}
+
+.reAndroid.__reHighlightStart, 
+.reAndroid.__reHighlightEnd, 
+.reAndroid.__reHighlightCollapsed {
+	border: none;
+}
+.reAndroid.__reHighlightStart {
+	border: none;
+}
+.reAndroid.__reHighlightEnd {
+	border: none;
+}
+.reAndroid.__reHighlightCollapsed {
+	border: none;
+}
+
+.reAndroid.__reHighlightMarker {
+	border: 1px solid #ade1f5;
+}
+
+/* Windows Phone */
+
+html.reWindowsPhone body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+font.reWindowsPhone.__reTextHighlight, 
+span.reWindowsPhone.__reTextHighlight, 
+.reWindowsPhone.__reNodeHighlight {
+	background-color: rgba(36, 36, 36, 0.2);
+}
+
+.reWindowsPhone.__reHighlightCollapsed {
+	border-color: #797979;
+	border-width: 0;
+	border-left-width: 2px;
+}
+
+.reWindowsPhone.__reHighlightMarker {
+	border-color: #797979;
+	border-width: 0;
+	border-left-width: 2px;
+	border-style: solid;
+}

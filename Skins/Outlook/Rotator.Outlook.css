@@ -1,0 +1,13 @@
+.RadRotator_Outlook {
+  /*================== The list ========================*/
+  /* For vertical carousel, not set, width defaults to auto */
+  /* Note if you explicitly set width to auto, this might cause */
+  /* problems with Safari */
+  /* When LoadOnDemand */ }
+  .RadRotator_Outlook .rrClipRegion {
+    border-color: #c3d9f9; }
+  .RadRotator_Outlook .rrButton {
+    background-image: url('Rotator/RotatorButtons.gif');
+    background-repeat: no-repeat; }
+  .RadRotator_Outlook .rrLoadingSign {
+    background: url('Common/loading_small.gif') no-repeat center; }

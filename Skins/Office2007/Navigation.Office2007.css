@@ -1,0 +1,49 @@
+.RadNavigation_Office2007 {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadNavigation_Office2007 .rnvRootGroupWrapper {
+    border-color: #688caf;
+    color: #000000;
+    background: #c3d8f1;
+    background-image: linear-gradient(#dee8f5, #c3d8f1); }
+  .RadNavigation_Office2007 .rnvRootLink {
+    border-color: transparent; }
+  .RadNavigation_Office2007 .rnvMore {
+    border-color: #688caf;
+    color: #000000;
+    background: #c3d8f1;
+    background-image: linear-gradient(#dee8f5, #c3d8f1); }
+  .RadNavigation_Office2007 .rnvHovered.rnvMore,
+  .RadNavigation_Office2007 .rnvHovered > .rnvRootLink {
+    border-color: #688caf;
+    color: #000000;
+    background-color: #ffca5f;
+    background-image: linear-gradient(#ffdc9c, #ffca5f); }
+  .RadNavigation_Office2007 .rnvSelected.rnvMore,
+  .RadNavigation_Office2007 .rnvSelected > .rnvRootLink,
+  .RadNavigation_Office2007 .rnvExpanded > .rnvRootLink {
+    border-color: #688caf;
+    color: #000000;
+    background-color: #ffb92c;
+    background-image: linear-gradient(#ffca69, #ffb92c); }
+  .RadNavigation_Office2007 .rnvFocused.rnvMore,
+  .RadNavigation_Office2007 .rnvFocused > .rnvRootLink {
+    box-shadow: inset 0 0 3px rgba(104, 140, 175, 0.5); }
+
+.radSkin_Office2007 {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+.radSkin_Office2007 .rnvPopup {
+  border-color: #9eb6ce;
+  color: #00156e;
+  background-color: #ffffff; }
+  .radSkin_Office2007 .rnvPopup .rnvHovered > .rnvLink {
+    color: #00156e;
+    background-color: #ffd563; }
+  .radSkin_Office2007 .rnvPopup .rnvSelected > .rnvLink,
+  .radSkin_Office2007 .rnvPopup .rnvExpanded > .rnvLink {
+    color: #000000;
+    background-color: #f99631; }
+  .radSkin_Office2007 .rnvPopup .rnvFocused > .rnvLink {
+    box-shadow: inset 0 0 3px rgba(249, 150, 49, 0.5); }

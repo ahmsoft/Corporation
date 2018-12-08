@@ -1,0 +1,129 @@
+/* RadColorPicker for ASP.Net AJAX Hay Skin */
+.RadColorPicker_Hay .rcpPalette
+{
+	background-color:#fff;
+	border:solid 1px #959485;	
+}
+
+.RadColorPicker_Hay .rcpColorBox
+{
+	border:solid 1px #fff;
+}
+
+.RadColorPicker_Hay .rcpSelectedColor,
+.RadColorPicker_Hay .rcpMillionColorsPalette
+{
+	border:solid 1px #000;
+}
+
+.RadColorPicker_Hay .rcpColorPreview,
+.RadColorPicker_Hay .rcpInput,
+.RadColorPicker_Hay .rcpHexInput
+{
+	border:solid 1px #747252;
+}
+
+.RadColorPicker_Hay .rcpPalette,
+.RadColorPicker_Hay input,
+.RadColorPicker_Hay a
+{
+    color:#000;
+}
+
+.RadColorPicker_Hay .rcpEmptyColor,
+.RadColorPicker_Hay .rcpIcon a,
+.RadColorPicker_Hay .rcpTabs,
+.RadColorPicker_Hay .rcpTabs a,
+.RadColorPicker_Hay .rcpTabs a span,
+.RadColorPicker_Hay .rcpApplyButton,
+.RadColorPicker_Hay .rcpApplyButton span,
+.RadColorPicker_Hay .rcpMillionColorsHandle,
+.RadColorPicker_Hay div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle
+{
+	background-image:url('ColorPicker/ColorPickerSprites.gif');
+	background-repeat:no-repeat;
+}
+
+/* no color button */
+.RadColorPicker_Hay .rcpEmptyColor
+{
+	background-position:right -52px;
+}
+
+.RadColorPickerRTL_Hay .rcpEmptyColor
+{
+    background-position:-1001px -52px;
+}
+
+/* color picker button */
+.RadColorPicker_Hay .rcpIcon a
+{
+	background-position:0 -52px;
+}
+
+.RadColorPicker_Hay .rcpIcon a:hover
+{
+	background-position:0 -73px;
+}
+
+.RadColorPicker_Hay .rcpIcon a:active,
+.RadColorPicker_Hay .rcpIcon a:focus
+{
+	background-position:0 -94px;
+}
+
+/* color picker tabs */
+.RadColorPicker_Hay .rcpTabs
+{
+    background:#fff;
+    background-position:0 -169px;
+}
+
+.RadColorPicker_Hay .rcpTabs .rcpSelectedTab a
+{
+    background-position:right -26px;
+}
+
+.RadColorPicker_Hay .rcpTabs .rcpSelectedTab a span
+{
+    background-position:left -26px;
+}
+
+/* apply color button */
+.RadColorPicker_Hay .rcpApplyButton
+{
+    background-position:right -115px;
+}
+
+.RadColorPicker_Hay .rcpApplyButton:hover
+{
+    background-position:right -136px;
+}
+
+.RadColorPicker_Hay .rcpApplyButton span
+{
+    background-position:0 -115px;
+    color:#045100;
+}
+
+.RadColorPicker_Hay .rcpApplyButton:hover span
+{
+    background-position:0 -136px;
+    color:#279500;
+}
+
+/* HSB, HSV palette handle */
+.RadColorPicker_Hay .rcpMillionColorsHandle
+{
+    background-position:-1009px -73px;
+    background-color:transparent;
+}
+
+/* HSB, HSV slider handle */
+.RadColorPicker_Hay div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle,
+.RadColorPicker_Hay div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:hover,
+.RadColorPicker_Hay div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:focus,
+.RadColorPicker_Hay div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:active
+{
+    background-position:-1002px -88px;
+}

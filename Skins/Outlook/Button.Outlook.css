@@ -1,0 +1,88 @@
+.RadButton_Outlook {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* RadButton Outlook Skin */ }
+  .RadButton_Outlook .rbDecorated {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadButton_Outlook.rbSkinnedButton,
+  .RadButton_Outlook .rbDecorated, .RadButton_Outlook.rbVerticalButton, .RadButton_Outlook.rbVerticalButton .rbDecorated,
+  .RadButton_Outlook .rbSplitRight,
+  .RadButton_Outlook .rbSplitLeft {
+    background-image: url('Common/radFormSprite.png');
+    _background-image: url('Common/radFormSpriteIE6.png');
+    color: #000000; }
+  .RadButton_Outlook .rbToggleCheckbox,
+  .RadButton_Outlook .rbToggleCheckboxChecked,
+  .RadButton_Outlook .rbToggleCheckboxFilled,
+  .RadButton_Outlook .rbToggleRadio,
+  .RadButton_Outlook .rbToggleRadioChecked {
+    background-image: url('Common/radFormToggleSprite.png');
+    _background-image: url('Common/radFormToggleSpriteIE6.png'); }
+  .RadButton_Outlook.rbToggleButton, .RadButton_Outlook.rbToggleButton.rbDisabled:hover {
+    color: #000000; }
+  .RadButton_Outlook.rbToggleButton:hover {
+    color: #000000; }
+  .RadButton_Outlook.RadButton.rbLinkButton {
+    background-color: #ebe8e3;
+    border: 1px solid #003c74;
+    _border: 1px solid #003c74 !important;
+    color: #000000; }
+    .RadButton_Outlook.RadButton.rbLinkButton:hover {
+      background-color: #f3d8a1;
+      _border: 1px solid #003c74 !important;
+      color: #000000; }
+  .RadButton_Outlook.RadButton.rbLinkButtonChecked, .RadButton_Outlook.RadButton.rbLinkButtonChecked:hover {
+    background-color: #e7c073;
+    color: #000000;
+    border: 1px solid #002d96; }
+  .RadButton_Outlook.rbLinkButton.rbDisabled, .RadButton_Outlook.rbLinkButton.rbDisabled:hover {
+    background-color: #ebe8e3;
+    border: 1px solid #809eba;
+    color: #8d8d8d; }
+  .RadButton_Outlook.rbLinkButton:hover .rbSplitLeft, .RadButton_Outlook.rbLinkButton:hover .rbSplitRight {
+    background-color: #ebe8e3; }
+  .RadButton_Outlook.rbLinkButton .rbSplitRight {
+    border-left: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton .rbSplitRight:hover {
+    background-color: #f3d8a1;
+    border-left: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton .rbSplitRight:active, .RadButton_Outlook.rbLinkButton .rbSplitRight:focus {
+    background-color: #e7c073;
+    border-left: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton .rbSplitLeft {
+    border-right: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton .rbSplitLeft:hover {
+    background-color: #f3d8a1;
+    border-right: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton .rbSplitLeft:active, .RadButton_Outlook.rbLinkButton .rbSplitLeft:focus {
+    background-color: #e7c073;
+    border-right: 1px solid #003c74; }
+  .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right: 1px solid #809eba; }
+  .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Outlook.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left: 1px solid #809eba; }
+  .RadButton_Outlook.rbLinkButton.rbRounded {
+    border-color: #003c74;
+    color: #000000;
+    background-color: #ebe8e3;
+    background-image: linear-gradient(#fdfdfd, #ebe8e3); }
+  .RadButton_Outlook.rbLinkButton.rbRounded:hover {
+    border-color: #003c74;
+    color: #000000;
+    background-color: #f3d8a1;
+    background-image: linear-gradient(#fcfcfc, #f3d8a1);
+    box-shadow: inset 0 0 2px #fbc860; }
+  .RadButton_Outlook.rbLinkButton.rbRounded:active, .RadButton_Outlook.rbLinkButton.rbRounded:focus {
+    border-color: #002d96;
+    color: #000000;
+    background-color: #e7c073;
+    background-image: linear-gradient(#fcfcfc, #e7c073);
+    box-shadow: inset 0 0 2px #e59700; }
+  .RadButton_Outlook.rbLinkButton.rbRounded.rbDisabled, .RadButton_Outlook.rbLinkButton.rbRounded.rbDisabled:hover, .RadButton_Outlook.rbLinkButton.rbRounded.rbDisabled:active, .RadButton_Outlook.rbLinkButton.rbRounded.rbDisabled:focus {
+    border-color: #809eba;
+    color: #8d8d8d;
+    background-color: #ebe8e3;
+    background-image: linear-gradient(#fdfdfd, #ebe8e3);
+    background-position: 0 0;
+    box-shadow: none; }

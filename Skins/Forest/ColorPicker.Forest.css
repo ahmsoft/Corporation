@@ -1,0 +1,129 @@
+/* RadColorPicker for ASP.NET AJAX Forest skin */
+.RadColorPicker_Forest .rcpPalette
+{
+	border:solid 1px #588a4d;
+	background-color:#bfd299;
+}
+
+.RadColorPicker_Forest .rcpColorBox
+{
+	border:solid 1px #3c4c30;
+}
+
+.RadColorPicker_Forest .rcpSelectedColor,
+.RadColorPicker_Forest .rcpMillionColorsPalette
+{
+    border:solid 1px #000;
+}
+
+.RadColorPicker_Forest .rcpColorPreview,
+.RadColorPicker_Forest .rcpInput,
+.RadColorPicker_Forest .rcpHexInput
+{
+	border:solid 1px #3c4c30;
+}
+
+.RadColorPicker_Forest .rcpPalette,
+.RadColorPicker_Forest input,
+.RadColorPicker_Forest a
+{
+    color:#000;
+}
+
+.RadColorPicker_Forest .rcpEmptyColor,
+.RadColorPicker_Forest .rcpIcon a,
+.RadColorPicker_Forest .rcpTabs,
+.RadColorPicker_Forest .rcpTabs a,
+.RadColorPicker_Forest .rcpTabs a span,
+.RadColorPicker_Forest .rcpApplyButton,
+.RadColorPicker_Forest .rcpApplyButton span,
+.RadColorPicker_Forest .rcpMillionColorsHandle,
+.RadColorPicker_Forest div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle
+{
+	background-image:url('ColorPicker/ColorPickerSprites.gif');
+	background-repeat:no-repeat;
+}
+
+/* no color button */
+.RadColorPicker_Forest .rcpEmptyColor
+{
+	background-position:right -52px;
+}
+
+.RadColorPickerRTL_Forest .rcpEmptyColor
+{
+    background-position:-1001px -52px;
+}
+
+/* color picker button */
+.RadColorPicker_Forest .rcpIcon a
+{
+	background-position:0 -52px;
+}
+
+.RadColorPicker_Forest .rcpIcon a:hover
+{
+	background-position:0 -73px;
+}
+
+.RadColorPicker_Forest .rcpIcon a:active,
+.RadColorPicker_Forest .rcpIcon a:focus
+{
+	background-position:0 -94px;
+}
+
+/* colorpicker tabs */
+.RadColorPicker_Forest .rcpTabs
+{
+    background-position:0 -169px;
+    background-color:#bfd299;
+}
+
+.RadColorPicker_Forest .rcpTabs .rcpSelectedTab a
+{
+    background-position:right -26px;
+}
+
+.RadColorPicker_Forest .rcpTabs .rcpSelectedTab a span
+{
+    background-position:left -26px;
+}
+
+/* apply color button */
+.RadColorPicker_Forest .rcpApplyButton
+{
+    background-position:right -115px;
+}
+
+.RadColorPicker_Forest .rcpApplyButton span
+{
+    background-position:0 -115px;
+    color:#e7f1d7;
+}
+
+.RadColorPicker_Forest .rcpApplyButton:hover
+{
+    background-position:right -136px;
+}
+
+.RadColorPicker_Forest .rcpApplyButton:hover span
+{
+    background-position:0 -136px;
+    color:#fff;
+}
+
+/* HSB, HSV palette handle */
+.RadColorPicker_Forest .rcpMillionColorsHandle
+{
+    background-position:-1009px -73px;
+    background-color:transparent;
+}
+
+/* HSB, HSV slider handle */
+.RadColorPicker_Forest div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle,
+.RadColorPicker_Forest div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:hover,
+.RadColorPicker_Forest div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:focus,
+.RadColorPicker_Forest div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:active
+{
+    background-position:-1002px -88px;
+}

@@ -1,0 +1,57 @@
+/*$main-sprite: skin-image-url( "Common", "radActionsSprite.png" );
+$main-spriteIE6: skin-image-url( "Common", "radActionsSpriteIE6.png" );*/
+.RadMap_Outlook {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* Additional styles */
+  /*Buttons*/
+  /* Markers */
+  /* Older IE Fix */ }
+  .RadMap_Outlook .k-header, .RadMap_Outlook .k-widget, .RadMap_Outlook .k-popup {
+    color: #000000; }
+  .RadMap_Outlook .k-widget, .RadMap_Outlook .k-header {
+    background-color: #ffffff;
+    border-color: #003c74; }
+  .RadMap_Outlook .k-header, .RadMap_Outlook .k-button {
+    background-color: #f5f4f2;
+    background-image: none, linear-gradient(to bottom, #fefdfd 0, #eae7e2 100%); }
+  .RadMap_Outlook .k-button {
+    border-color: #003c74;
+    color: #000; }
+  .RadMap_Outlook.k-widget.k-tooltip {
+    background-color: #ffd091;
+    border-color: #ffd091;
+    background-image: none, linear-gradient(to bottom, #fff4cc 0, #ffd091 100%);
+    color: #282828; }
+  .RadMap_Outlook .k-tooltip-button {
+    background-color: #000; }
+  .RadMap_Outlook .k-tooltip-button:hover {
+    background-color: #6982bb; }
+  .RadMap_Outlook .k-i-close:before, .RadMap_Outlook .k-i-close:hover:before {
+    color: #fff; }
+  .RadMap_Outlook .k-callout-n {
+    border-bottom-color: #ffd091; }
+  .RadMap_Outlook .k-callout-e {
+    border-left-color: #ffd091; }
+  .RadMap_Outlook .k-callout-s {
+    border-top-color: #ffd091; }
+  .RadMap_Outlook .k-callout-w {
+    border-right-color: #ffd091; }
+  .RadMap_Outlook .k-button:hover, .RadMap_Outlook div.k-navigator > .k-button:hover {
+    border-color: #002d96;
+    background-color: #ffe2ae;
+    background-image: none, linear-gradient(to bottom, #fff3cb 0, #ffd294 100%);
+    color: #000; }
+  .RadMap_Outlook .k-button:active, .RadMap_Outlook .k-button:focus, .RadMap_Outlook div.k-navigator > .k-button:active, .RadMap_Outlook div.k-navigator > .k-button:focus {
+    border-color: #002d96;
+    background-color: #bcd3f3;
+    background-image: none, linear-gradient(to bottom, #dceafd 0, #97b8e8 100%);
+    color: #000; }
+  .RadMap_Outlook div.k-navigator > .k-button:hover .k-icon:before, .RadMap_Outlook div.k-navigator > .k-button:active .k-icon:before, .RadMap_Outlook div.k-navigator > .k-button:focus .k-icon:before {
+    color: #000; }
+  .RadMap_Outlook .k-marker:before {
+    color: #6187b8; }
+  @media \0screen\,screen\9 {
+    .RadMap_Outlook .k-icon {
+      background-image: url('Common/radActionsSprite.png'); } }
+

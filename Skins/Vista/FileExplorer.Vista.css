@@ -1,0 +1,38 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_Vista {
+  /* Overwrites padding for better presentation and space saving */
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_Vista .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_Vista,
+  .RadFileExplorer_Vista .rfeAddressBox,
+  .RadFileExplorer_Vista .rfeFilterTxt {
+    border-color: #2c628b; }
+  .RadFileExplorer_Vista .RadGrid_Vista .rgRow td,
+  .RadFileExplorer_Vista .RadGrid_Vista .rgAltRow td,
+  .RadFileExplorer_Vista .RadGrid_Vista .rgEditRow td,
+  .RadFileExplorer_Vista .RadGrid_Vista .rgFooter td {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .RadFileExplorer_Vista .rfeThumbList a:hover,
+  .RadFileExplorer_Vista .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_Vista .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Vista .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/vista_smoothSprite_20.png');
+    background-color: #d9f0fc;
+    border-color: #dff3fd; }
+  .RadFileExplorer_Vista .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Vista .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #aeddf5;
+    border-color: #d2eefb; }
+  .RadFileExplorer_Vista .rfeFilterContainer {
+    background-image: url('../Common/Gradients/vista_smoothSprite_20.png');
+    background-color: #c5ddf3; }
+  .RadFileExplorer_Vista .rfeDropZone {
+    background-color: rgba(228, 244, 253, 0.8); }
+  .RadFileExplorer_Vista .rfeDropUploadInfoPanel {
+    background-color: #ffffff;
+    color: #333333; }

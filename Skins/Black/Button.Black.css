@@ -1,0 +1,82 @@
+.RadButton_Black {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* RadButton Black Skin */ }
+  .RadButton_Black .rbDecorated {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadButton_Black.rbSkinnedButton,
+  .RadButton_Black .rbDecorated, .RadButton_Black.rbVerticalButton, .RadButton_Black.rbVerticalButton .rbDecorated,
+  .RadButton_Black .rbSplitRight,
+  .RadButton_Black .rbSplitLeft {
+    background-image: url('Common/radFormSprite.png');
+    color: #ffffff; }
+  .RadButton_Black .rbToggleCheckbox,
+  .RadButton_Black .rbToggleCheckboxChecked,
+  .RadButton_Black .rbToggleCheckboxFilled,
+  .RadButton_Black .rbToggleRadio,
+  .RadButton_Black .rbToggleRadioChecked {
+    background-image: url('Common/radFormToggleSprite.png'); }
+  .RadButton_Black.rbToggleButton, .RadButton_Black.rbToggleButton.rbDisabled:hover {
+    color: #ffffff; }
+  .RadButton_Black.rbToggleButton:hover {
+    color: #9eda29; }
+  .RadButton_Black.RadButton.rbLinkButton {
+    background-color: #1b1b1b;
+    border: 1px solid #080808;
+    _border: 1px solid #080808 !important;
+    color: #ffffff; }
+    .RadButton_Black.RadButton.rbLinkButton:hover {
+      background-color: #020202;
+      color: #9eda29; }
+  .RadButton_Black.RadButton.rbLinkButtonChecked, .RadButton_Black.RadButton.rbLinkButtonChecked:hover {
+    background-color: #202020;
+    color: #ffffff;
+    border: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton.rbDisabled, .RadButton_Black.rbLinkButton.rbDisabled:hover {
+    background-color: #1b1b1b;
+    border: 1px solid #080808;
+    color: #6f6f6f; }
+  .RadButton_Black.rbLinkButton:hover .rbSplitLeft, .RadButton_Black.rbLinkButton:hover .rbSplitRight {
+    background-color: #1b1b1b; }
+  .RadButton_Black.rbLinkButton .rbSplitRight {
+    border-left: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton .rbSplitRight:hover {
+    background-color: #020202;
+    border-left: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton .rbSplitRight:active, .RadButton_Black.rbLinkButton .rbSplitRight:focus {
+    background-color: #202020;
+    border-left: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton .rbSplitLeft {
+    border-right: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton .rbSplitLeft:hover {
+    background-color: #020202;
+    border-right: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton .rbSplitLeft:active, .RadButton_Black.rbLinkButton .rbSplitLeft:focus {
+    background-color: #202020;
+    border-right: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Black.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left: 1px solid #080808; }
+  .RadButton_Black.rbLinkButton.rbRounded {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b, #4a4a4a 50%, #313131 50%, #1b1b1b); }
+  .RadButton_Black.rbLinkButton.rbRounded:hover {
+    border-color: #080808;
+    color: #9eda29;
+    background-color: #020202;
+    background-image: linear-gradient(#5c5c5c, #2a2a2c 50%, #060606 50%, #020202); }
+  .RadButton_Black.rbLinkButton.rbRounded:active, .RadButton_Black.rbLinkButton.rbRounded:focus {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #202020;
+    background-image: linear-gradient(#6e6e6e, #2b2b2d 50%, #050505 50%, #202020); }
+  .RadButton_Black.rbLinkButton.rbRounded.rbDisabled, .RadButton_Black.rbLinkButton.rbRounded.rbDisabled:hover, .RadButton_Black.rbLinkButton.rbRounded.rbDisabled:active, .RadButton_Black.rbLinkButton.rbRounded.rbDisabled:focus {
+    border-color: #080808;
+    color: #6f6f6f;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b, #4a4a4a 50%, #313131 50%, #1b1b1b);
+    background-position: 0 0; }

@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'TelerikWebUI';
+  src: url('Common/TelerikWebUI.eot');
+  src: url('Common/TelerikWebUI.eot') format('embedded-opentype'), url('Common/TelerikWebUI.woff') format('woff'), url('Common/TelerikWebUI.ttf') format('truetype'); }
+
+.RadTile {
+  overflow-x: auto;
+  /* Right to Left Support */
+  /* loading image styles */ }
+  .RadTile:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .RadTile, .RadTile * {
+    box-sizing: content-box; }
+  .RadTile div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default; }
+  .RadTile div:hover, .RadTile div:active, .RadTile div:focus {
+    cursor: default; }
+  .RadTile.rtileWide, .RadTile.rtileSquare {
+    position: relative;
+    float: left;
+    height: 12.5em;
+    margin: 0em 0.5em 0.5em 0em;
+    vertical-align: top;
+    overflow: hidden;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent; }
+  .RadTile.rtileWide {
+    width: 25.83333em; }
+  .RadTile.rtileSquare {
+    width: 12.5em; }
+  .RadTile.rtileSelected .rtileSelectedIcon {
+    width: 3.16667em;
+    height: 3.16667em;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -1.66667em;
+    right: -1.66667em;
+    z-index: 99; }
+  .RadTile.rtileSelected .rtileSelectedIcon:before {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    font-size: 1.1em;
+    margin: 1.8em 0 0 1em;
+    content: "\E037";
+    transform: rotate(-45deg); }
+  @media \0screen {
+    .RadTile.rtileSelected .rtileSelectedIcon:before {
+      margin: 1.6em 0 0 0.2em; } }
+  .RadTile.RadTextTile .rtileContent {
+    padding: 0.66667em 0.66667em 0em;
+    vertical-align: middle; }
+  .RadTile .rtileNavigation:hover {
+    cursor: pointer; }
+  .RadTile.rtileSelectIntention .rtileSelectedIcon {
+    opacity: 0.5; }
+  .RadTile .rtileTopContent {
+    height: 9.58333em;
+    overflow: hidden;
+    vertical-align: top; }
+  .RadTile.RadImageAndTextTile .rtileTopContent {
+    height: 100%; }
+  .RadTile.RadIconTile .rtileTopContent {
+    text-align: center; }
+  .RadTile .rtileTopContent .rtileIconImage {
+    margin-top: 2.5em; }
+  .RadTile .rtileTextWrap {
+    display: inline-block; }
+  .RadTile .rtileBottomContent {
+    height: 3.16667em;
+    padding: 0.58333em 0.83333em 0em;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+  .RadTile .rtileBottomContent.rtileTitleIndent, .RadTile .rtileBottomContent.rtileBadgeIndent {
+    width: 22.91667em; }
+  .RadTile .rtileBottomContent.rtileTitleIndent.rtileBadgeIndent {
+    width: 19.25em; }
+  .RadTile.rtileSquare .rtileBottomContent {
+    width: auto; }
+  .RadTile.rtileSquare .rtileBottomContent.rtileTitleIndent, .RadTile.rtileSquare .rtileBottomContent.rtileBadgeIndent {
+    width: 9.58333em; }
+  .RadTile.rtileSquare .rtileBottomContent.rtileTitleIndent.rtileBadgeIndent {
+    width: 6.66667em; }
+  .RadTile .rtileTitleIndent .rtileTitle, .RadTile .rtileTitleIndent .rtileBadgeIndent {
+    width: 1.66667em;
+    overflow: hidden; }
+  .RadTile .rtileTitleIndent {
+    padding-left: 3.66667em; }
+  .RadTile .rtileTitleIndent {
+    padding-right: 2.91667em; }
+  .RadTile .rtileTitleIndent img.rtileTitle {
+    height: auto;
+    width: auto; }
+  .RadTile h6.rtileTitle {
+    width: 70%;
+    font-size: 1.08333em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    bottom: 0.75em;
+    left: 0.75em;
+    z-index: 99; }
+  .RadTile div.rtileWrapper h6.rtileTitle {
+    border-bottom: 0; }
+  .RadTile img.rtileTitle {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0.75em;
+    left: 0.75em;
+    z-index: 99; }
+  .RadTile .rtileBadge {
+    text-align: right;
+    position: absolute;
+    bottom: 0.75em;
+    right: 0.75em;
+    font-size: 1.08333em;
+    font-weight: bold;
+    z-index: 99; }
+  .RadTile .rtileBadgeIcon {
+    min-width: 1.33333em;
+    min-height: 1.33333em; }
+  .RadTile .rtileBadgeIcon:before {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    font-size: 1.4em; }
+  .RadTile .rtileActivityBadge:before {
+    content: "\E01C"; }
+  .RadTile .rtileAlertBadge:before {
+    content: "\E11A"; }
+  .RadTile .rtileAvailableBadge:before {
+    border-radius: 45px;
+    background-color: #66cc00;
+    border: 2px solid black;
+    width: 0.66667em;
+    height: 0.66667em;
+    content: ""; }
+  .RadTile .rtileAwayBadge:before {
+    border-radius: 45px;
+    background-color: #ffcc33;
+    border: 2px solid black;
+    width: 0.75em;
+    height: 0.75em;
+    content: ""; }
+  .RadTile .rtileBusyBadge:before {
+    border-radius: 45px;
+    background-color: #cc0000;
+    border: 2px solid black;
+    width: 0.75em;
+    height: 0.75em;
+    content: ""; }
+  .RadTile .rtileUnavailableBadge:before {
+    border-radius: 45px;
+    background-color: #999999;
+    border: 2px solid black;
+    width: 0.75em;
+    height: 0.75em;
+    content: ""; }
+  .RadTile .rtileNewMessageBadge:before {
+    content: "\E099"; }
+  .RadTile .rtilePausedBadge:before {
+    content: "\E0E3"; }
+  .RadTile .rtilePlayingBadge:before {
+    content: "\E0E5"; }
+  .RadTile .rtileErrorBadge:before {
+    content: "\E031"; }
+  .RadTile .rtileAttentionBadge:before {
+    content: "\E0FA"; }
+  .RadTile.rtileWide.rtileRtl, .RadTile.rtileSquare.rtileRtl {
+    float: right; }
+  .RadTile.rtileRtl .rtileImageWrap {
+    margin: 0.5em 0em 0em 0.41667em; }
+  .RadTile.rtileRtl.rtileSelected .rtileSelectedIcon {
+    position: absolute;
+    top: -1.66667em;
+    right: auto;
+    left: -1.66667em; }
+  .RadTile.rtileRtl.rtileSelected .rtileSelectedIcon:before {
+    margin: 1em 0.1em 0 0; }
+  .RadTile.rtileRtl .rtileTitle {
+    bottom: 0.83333em;
+    right: 0.83333em;
+    left: auto; }
+  .RadTile.rtileRtl img.rtileTitle {
+    bottom: 0.83333em;
+    right: 0.83333em;
+    left: auto; }
+  .RadTile.rtileRtl .rtileBadge {
+    bottom: 0.83333em;
+    left: 0.83333em;
+    right: auto; }
+  .RadTile.rtileLoading, .RadTile .rtileLoading {
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+

@@ -1,0 +1,29 @@
+.RadToolTip_Web20.rtLoading {
+  background: url('Common/loading.gif') no-repeat center; }
+.RadToolTip_Web20 .rtWrapper .rtWrapperTopLeft,
+.RadToolTip_Web20 .rtWrapper .rtWrapperTopRight,
+.RadToolTip_Web20 .rtWrapper .rtWrapperBottomLeft,
+.RadToolTip_Web20 .rtWrapper .rtWrapperBottomRight,
+.RadToolTip_Web20 .rtWrapper .rtWrapperTopCenter,
+.RadToolTip_Web20 .rtWrapper .rtWrapperBottomCenter,
+.RadToolTip_Web20 table.rtShadow .rtWrapperTopLeft,
+.RadToolTip_Web20 table.rtShadow .rtWrapperTopRight,
+.RadToolTip_Web20 table.rtShadow .rtWrapperBottomLeft,
+.RadToolTip_Web20 table.rtShadow .rtWrapperBottomRight,
+.RadToolTip_Web20 table.rtShadow .rtWrapperTopCenter,
+.RadToolTip_Web20 table.rtShadow .rtWrapperBottomCenter,
+.RadToolTip_Web20 .rtCloseButton {
+  background-image: url('ToolTip/ToolTipSprites.png'); }
+.RadToolTip_Web20 .rtWrapper .rtWrapperLeftMiddle,
+.RadToolTip_Web20 .rtWrapper .rtWrapperRightMiddle,
+.RadToolTip_Web20 table.rtShadow .rtWrapperLeftMiddle,
+.RadToolTip_Web20 table.rtShadow .rtWrapperRightMiddle {
+  background-image: url('ToolTip/ToolTipVerticalSprites.png'); }
+.RadToolTip_Web20 .rtWrapper .rtWrapperContent {
+  background-color: #e9f2ff;
+  color: black; }
+.RadToolTip_Web20 .rtTitlebar {
+  color: black; }
+.RadToolTip_Web20 .rtCallout {
+  background-image: url('ToolTip/Callouts.gif'); }
+

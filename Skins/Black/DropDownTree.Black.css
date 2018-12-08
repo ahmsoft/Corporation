@@ -1,0 +1,74 @@
+.RadDropDownTree_Black {
+  color: #ffffff;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownTree_Black .rddtInner {
+    border-radius: 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b 0%, #4a4a4a 50%, #313131 50%, #1b1b1b 100%); }
+  .RadDropDownTree_Black .rddtEmptyMessage {
+    color: #6f6f6f;
+    font-style: italic; }
+  .RadDropDownTree_Black .rddtClearButton {
+    background-position: -2px -24px; }
+  .RadDropDownTree_Black .rddtIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -1px -20px; }
+  .RadDropDownTree_Black .rddtHovered {
+    border-color: #080808;
+    color: #9eda29;
+    background-color: #020202;
+    background-image: linear-gradient(#5c5c5c 0%, #2a2a2c 50%, #060606 50%, #020202 100%); }
+    .RadDropDownTree_Black .rddtHovered .rddtClearButton {
+      background-position: -22px -24px; }
+      .RadDropDownTree_Black .rddtHovered .rddtClearButton.rddtClearButtonHovered {
+        background-position: -62px -24px; }
+    .RadDropDownTree_Black .rddtHovered .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Black .rddtFocused {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #202020;
+    background-image: linear-gradient(#6e6e6e 0%, #2b2b2d 50%, #050505 50%, #202020 100%); }
+    .RadDropDownTree_Black .rddtFocused .rddtClearButton {
+      background-position: -42px -24px; }
+      .RadDropDownTree_Black .rddtFocused .rddtClearButton.rddtClearButtonHovered {
+        background-position: -82px -24px; }
+    .RadDropDownTree_Black .rddtFocused .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Black .rddtDisabled {
+    border-color: #080808;
+    color: #6f6f6f;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b 0%, #4a4a4a 50%, #313131 50%, #1b1b1b 100%); }
+    .RadDropDownTree_Black .rddtDisabled .rddtIcon {
+      background-position: -1px -20px; }
+
+.rddtPopup_Black {
+  border-color: #080808;
+  color: #ffffff;
+  background-color: #464646;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddtPopup_Black .rddtHeader,
+  .rddtPopup_Black .rddtFooter {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #161616; }
+  .rddtPopup_Black .rddtFilter {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #161616; }
+    .rddtPopup_Black .rddtFilter .rddtFilterInput {
+      font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+      border-color: #080808;
+      color: #ffffff;
+      background-color: #444444; }
+    .rddtPopup_Black .rddtFilter .rddtFilterEmptyMessage {
+      color: #6f6f6f;
+      font-style: italic; }
+  .rddtPopup_Black .RadTreeView em {
+    color: #9eda29;
+    background-color: #3e3e3e; }

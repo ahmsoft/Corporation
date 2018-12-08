@@ -1,0 +1,67 @@
+.RecurrenceEditor {
+  border-width: 1px;
+  border-style: solid;
+  position: relative; }
+  .RecurrenceEditor,
+  .RecurrenceEditor div,
+  .RecurrenceEditor ul, .RecurrenceEditor li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    *zoom: 1; }
+    .RecurrenceEditor:after,
+    .RecurrenceEditor div:after,
+    .RecurrenceEditor ul:after, .RecurrenceEditor li:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .RecurrenceEditor .rsTabbedOptionList {
+    margin: 1em 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse; }
+    .RecurrenceEditor .rsTabbedOptionList:after {
+      display: none !important; }
+    .RecurrenceEditor .rsTabbedOptionList li {
+      border-width: 1px;
+      border-style: solid;
+      text-align: center;
+      display: table-cell; }
+    .RecurrenceEditor .rsTabbedOptionList input {
+      display: none; }
+    .RecurrenceEditor .rsTabbedOptionList label {
+      padding: 1em;
+      display: block; }
+  .RecurrenceEditor .rsAdvRecurrenceTitle {
+    padding: 0.83333em;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    text-align: center; }
+  .RecurrenceEditor .rsAdvRecurrenceScroll {
+    overflow: auto; }
+  .RecurrenceEditor .rsAdvRecurrencePatterns,
+  .RecurrenceEditor .rsAdvRecurrenceRangePanel {
+    padding: 0.83333em; }
+  .RecurrenceEditor .rsAdvRecurrenceHeader {
+    font-weight: bold;
+    display: block; }
+  @media screen and (max-width: 480px) {
+    .RecurrenceEditor .rsAdvRecurrenceFreq {
+      width: 100%;
+      overflow: auto; }
+    .RecurrenceEditor .rsRecurrenceOptionList {
+      width: 250%; } }
+  .RecurrenceEditor .rsAdvRecurrenceButtons .rsButton {
+    padding: .25em .5em;
+    position: absolute;
+    z-index: 1;
+    top: .5em; }
+  .RecurrenceEditor .rsAdvRecurrenceButtons .rsAdvRecurrenceSave {
+    right: .5em; }
+  .RecurrenceEditor .rsAdvRecurrenceButtons .rsAdvRecurrenceCancel {
+    left: .5em; }

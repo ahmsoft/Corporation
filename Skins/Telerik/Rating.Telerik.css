@@ -1,0 +1,9 @@
+.RadRating_Telerik a,
+.RadRating_Telerik a span {
+  background-image: url('Rating/Sprite.png');
+  _background-image: url('Rating/Sprite.gif'); }
+@media print {
+  .RadRating_Telerik a:before,
+  .RadRating_Telerik a span:before {
+    content: url('Rating/Sprite.png'); } }
+

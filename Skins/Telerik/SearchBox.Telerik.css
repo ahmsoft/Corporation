@@ -1,0 +1,77 @@
+.RadSearchBox_Telerik {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadSearchBox_Telerik .rsbInner {
+    border-radius: 3px;
+    border-color: #8e8e8e;
+    color: #000000;
+    background-color: #ffffff; }
+  .RadSearchBox_Telerik .rsbEmptyMessage {
+    color: #8a8a8a; }
+  .RadSearchBox_Telerik .rsbButton {
+    border-radius: 2px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    background-image: linear-gradient(transparent, transparent); }
+    .RadSearchBox_Telerik .rsbButton:hover {
+      border-color: #2ebf00;
+      color: #000000;
+      background-color: #a2ea8b;
+      background-image: linear-gradient(#d2f8c5, #bcf1ab 50%, #b9f0a7 50%, #a2ea8b); }
+    .RadSearchBox_Telerik .rsbButton:active {
+      border-color: #239500;
+      color: #000000;
+      background-color: #63ac39;
+      background-image: linear-gradient(#a8d687, #8cc569 50%, #65b33f 50%, #63ac39); }
+  .RadSearchBox_Telerik .rsbButtonSearch {
+    border-radius: 0 3px 3px 0; }
+    .RadSearchBox_Telerik .rsbButtonSearch .rsbIcon {
+      background-image: url('Common/radActionsSprite.png');
+      background-position: -22px -1882px; }
+  .RadSearchBox_Telerik .rsbSCInner {
+    border-radius: 3px 0 0 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #cccccc;
+    color: #000000;
+    background-color: #eeeeee;
+    background-image: linear-gradient(#fdfdfd, #dddddd 50%, #cbcbcb 50%, #eeeeee); }
+  .RadSearchBox_Telerik .rsbSCIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -2px -422px; }
+  .RadSearchBox_Telerik .rsbSCHovered {
+    border-color: #2ebf00;
+    color: #000000;
+    background-color: #a2ea8b;
+    background-image: linear-gradient(#d2f8c5, #bcf1ab 50%, #b9f0a7 50%, #a2ea8b); }
+  .RadSearchBox_Telerik .rsbSCFocused {
+    border-color: #239500;
+    color: #000000;
+    background-color: #63ac39;
+    background-image: linear-gradient(#a8d687, #8cc569 50%, #65b33f 50%, #63ac39); }
+  .RadSearchBox_Telerik .rsbSCDisabled {
+    border-color: #d2d2d2;
+    color: #8a8a8a;
+    background-color: #eeeeee;
+    background-image: linear-gradient(#fdfdfd, #dddddd 50%, #cbcbcb 50%, #eeeeee); }
+  .RadSearchBox_Telerik .rsbLoadingIcon {
+    background-image: url('Common/loading_small.gif'); }
+
+.rsbPopup_Telerik {
+  border-color: #828282;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rsbPopup_Telerik .rsbShowAll {
+    border-color: #828282;
+    color: #000000;
+    background-color: #e6e6e6; }
+  .rsbPopup_Telerik .rsbListItemHovered {
+    color: #000000;
+    background-color: #9ddf6c; }
+  .rsbPopup_Telerik .rsbListItemSelected {
+    color: #000000;
+    background-color: #63ac39; }
+  .rsbPopup_Telerik .rsbListItemLoading {
+    color: #000000;
+    background-color: #9ddf6c; }

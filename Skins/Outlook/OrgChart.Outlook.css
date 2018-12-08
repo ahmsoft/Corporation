@@ -1,0 +1,84 @@
+/**
+ * Organizational Chart Outlook Skin
+ */
+/*----------------------------------------------------------------------------*/
+/** Global wrapper */
+.RadOrgChart_Outlook {
+  color: #333333;
+  font: normal 12px/22px "Segoe UI", Arial, sans-serif; }
+
+/** Viewport */
+/** NodeList */
+/** Node */
+/** Group */
+.RadOrgChart_Outlook .rocGroup {
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** ItemList */
+/** ItemWrap */
+/** Items */
+.RadOrgChart_Outlook .rocItemContent,
+.RadOrgChart_Outlook .rocItemTemplate {
+  border-color: #5d8cc9;
+  border-radius: 5px;
+  background-color: #7da5e0;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Toggle handle */
+/*.RadOrgChart_Outlook .rocToggleHandle,*/
+.RadOrgChart_Outlook .rocExpandArrow,
+.RadOrgChart_Outlook .rocCollapseArrow,
+.RadOrgChart_Outlook .rocExpandGroupArrow,
+.RadOrgChart_Outlook .rocCollapseGroupArrow {
+  border-color: #5d8cc9;
+  border-radius: 3px;
+  background-color: #7da5e0;
+  background-image: url('../Common/Actions/actionExpandCollapseLight.png'); }
+
+/* Loading states */
+.RadOrgChart_Outlook .rocLoadingNodes .rocExpandArrow,
+.RadOrgChart_Outlook .rocLoadingNodes .rocCollapseArrow,
+.RadOrgChart_Outlook .rocLoadingGroups .rocExpandGroupArrow,
+.RadOrgChart_Outlook .rocLoadingGroups .rocCollapseGroupArrow {
+  background-image: url('Common/loading_small.gif'); }
+
+/** Node lines */
+.RadOrgChart_Outlook .rocLineUp,
+.RadOrgChart_Outlook .rocLineDown,
+.RadOrgChart_Outlook .rocLineHorizontal {
+  background-image: url('../Common/OrgChart/rocLinesDark.png'); }
+
+/** Drag and Drop */
+/** Drag ghost */
+.rocDetachedItemContainer.RadOrgChart_Outlook .rocGhostItem,
+.rocDetachedNodeContainer.RadOrgChart_Outlook .rocGhostNode {
+  border-color: #5d8cc9;
+  border-radius: 5px;
+  background-color: #7da5e0;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Drag Drop Clue */
+.rocDetachedItemContainer.RadOrgChart_Outlook .rocDropClue,
+.rocDetachedNodeContainer.RadOrgChart_Outlook .rocDropClue {
+  background-image: url('../Common/Actions/actionDragDropDark.png'); }
+
+/** Toolbar */
+.rocToolbar_Outlook {
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.1);
+  *background-color: #e5e5e5; }
+
+/** Toolbar button */
+.rocToolbar_Outlook .rocToolbarButton {
+  border-color: #5d8cc9;
+  border-radius: 3px;
+  background-color: #7da5e0;
+  text-indent: -999em;
+  float: left;
+  overflow: hidden; }

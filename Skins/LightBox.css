@@ -1,0 +1,144 @@
+.RadLightBox {
+  padding: 10px;
+  *background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mPY7QMAAcUBCAwWfXgAAAAASUVORK5CYII=);
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+  .RadLightBox .rltbGlowEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #bbb;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    border-radius: 15px;
+    *display: none; }
+  .RadLightBox .rltbWrapper {
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden; }
+  .RadLightBox .rltbItemBox {
+    padding: 10px 0;
+    position: relative; }
+    * + html .RadLightBox .rltbItemBox {
+      overflow: hidden; }
+  .RadLightBox .rltbDescriptionBox {
+    font-size: 13px;
+    left: 10px;
+    right: 10px;
+    *zoom: 1; }
+    .RadLightBox .rltbDescriptionBox:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .RadLightBox .rltbDescTop {
+    margin-top: 10px; }
+  .RadLightBox .rltbDescBottom {
+    bottom: 10px;
+    position: absolute; }
+  .RadLightBox .rltbDescOverlayTop,
+  .RadLightBox .rltbDescOverlayBottom {
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    z-index: 10; }
+  .RadLightBox .rltbDescOverlayBottom {
+    bottom: 20px;
+    top: auto; }
+  .RadLightBox .rltbDescriptionBox h4 {
+    margin: 0 0 2px;
+    font-size: 13px; }
+  .RadLightBox .rltbDescription {
+    margin: 0 0 5px; }
+  .RadLightBox .rltbToolbar {
+    float: right;
+    padding-left: 10px; }
+  .RadLightBox .rltbToolbar div {
+    width: 100px;
+    height: 10px;
+    background: red; }
+  .RadLightBox .rltbActionButton {
+    background: none;
+    border: 0 none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle; }
+  .RadLightBox .rltbActionButton::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .RadLightBox .rltbIcon {
+    display: inline-block;
+    vertical-align: top; }
+  .RadLightBox .rltbToolbar .rltbActionButton {
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    border: 0 none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 5px;
+    vertical-align: middle; }
+  .RadLightBox .rltbToolbar .rltbIcon {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-repeat: no-repeat; }
+  .RadLightBox .rltbButtonText {
+    display: none; }
+  .RadLightBox .rltbClose {
+    position: absolute;
+    top: -16px;
+    right: -17px;
+    padding: 6px 7px 6px 5px;
+    z-index: 20;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+  .RadLightBox .rltbClose,
+  .RadLightBox .rltbCloseButton,
+  .RadLightBox .rltbCloseIcon {
+    height: 36px;
+    width: 36px; }
+  .RadLightBox .rltbPrevButton,
+  .RadLightBox .rltbNextButton {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -22px;
+    height: 44px;
+    width: 27px;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+    z-index: 11; }
+  .RadLightBox .rltbNextButton {
+    left: auto;
+    right: 10px; }
+  .RadLightBox.rltbMaximized {
+    padding: 0; }
+  .RadLightBox.rltbMaximized .rltbWrapper {
+    border-radius: 0; }
+  .RadLightBox.rltbMaximized .rltbClose {
+    display: none; }
+
+.rltbOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  filter: alpha(opacity=60);
+  background-color: rgba(0, 0, 0, 0.6); }
+
+._Telerik_IE9 .rltbOverlay {
+  filter: alpha(opacity=100); }

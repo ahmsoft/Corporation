@@ -1,0 +1,26 @@
+.RadProgressBar_Windows7 {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: #f1f5fb;
+  background-image: none, linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 100%);
+  /* Vertical */ }
+  .RadProgressBar_Windows7 > .rpbLabelWrapper {
+    border-color: #e8eaec; }
+  .RadProgressBar_Windows7 .rpbStateSelected, .RadProgressBar_Windows7 .rpbStateSelected:hover, .RadProgressBar_Windows7 .rpbStateSelected:link, .RadProgressBar_Windows7 .rpbStateSelected:visited {
+    background-color: #c3dcfc;
+    color: #000;
+    background-image: none, linear-gradient(to top, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.7) 100%); }
+  .RadProgressBar_Windows7 .rpbChunk {
+    border-color: #e8eaec; }
+  .RadProgressBar_Windows7 .rpbChunk.rpbStateDefault {
+    background-color: #f1f5fb; }
+  .RadProgressBar_Windows7 .rpbStateSelected, .RadProgressBar_Windows7 .rpbStateSelected:hover, .RadProgressBar_Windows7 .rpbStateSelected:link, .RadProgressBar_Windows7 .rpbStateSelected:visited, .RadProgressBar_Windows7 .rpbChunk.rpbStateSelected {
+    border-color: #c5ddfc; }
+  .RadProgressBar_Windows7.rpbVertical {
+    background-image: none, linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 100%); }
+  .RadProgressBar_Windows7.rpbVertical .rpbStateSelected, .RadProgressBar_Windows7.rpbVertical .rpbStateSelected:hover, .RadProgressBar_Windows7.rpbVertical .rpbStateSelected:link, .RadProgressBar_Windows7.rpbVertical .rpbStateSelected:visited {
+    background-image: none, linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.7) 100%); }
+  .RadProgressBar_Windows7.rpbIndeterminate {
+    background-image: url('Common/radIndeterminate.gif'); }
+

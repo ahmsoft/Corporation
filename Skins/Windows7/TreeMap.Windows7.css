@@ -1,0 +1,23 @@
+.RadTreeMap_Windows7 {
+  border-color: #aabfd6;
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTreeMap_Windows7 .k-treemap-tile {
+    border-color: #aabfd6;
+    background-color: white; }
+  .RadTreeMap_Windows7 .k-treemap-title,
+  .RadTreeMap_Windows7 .k-treemap-title-vertical {
+    border-color: #aabfd6;
+    color: black;
+    background-color: #f1f5fb; }
+  .RadTreeMap_Windows7 .k-leaf {
+    border-color: #ffffff;
+    color: white;
+    background-color: black; }
+  .RadTreeMap_Windows7 .k-leaf.k-inverse {
+    color: black;
+    background-color: white; }
+  .RadTreeMap_Windows7 .k-leaf.k-state-hover {
+    box-shadow: inset 0 0 0 5px white; }

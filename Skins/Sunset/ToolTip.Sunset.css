@@ -1,0 +1,29 @@
+.RadToolTip_Sunset.rtLoading {
+  background: url('Common/loading.gif') no-repeat center; }
+.RadToolTip_Sunset .rtWrapper .rtWrapperTopLeft,
+.RadToolTip_Sunset .rtWrapper .rtWrapperTopRight,
+.RadToolTip_Sunset .rtWrapper .rtWrapperBottomLeft,
+.RadToolTip_Sunset .rtWrapper .rtWrapperBottomRight,
+.RadToolTip_Sunset .rtWrapper .rtWrapperTopCenter,
+.RadToolTip_Sunset .rtWrapper .rtWrapperBottomCenter,
+.RadToolTip_Sunset table.rtShadow .rtWrapperTopLeft,
+.RadToolTip_Sunset table.rtShadow .rtWrapperTopRight,
+.RadToolTip_Sunset table.rtShadow .rtWrapperBottomLeft,
+.RadToolTip_Sunset table.rtShadow .rtWrapperBottomRight,
+.RadToolTip_Sunset table.rtShadow .rtWrapperTopCenter,
+.RadToolTip_Sunset table.rtShadow .rtWrapperBottomCenter,
+.RadToolTip_Sunset .rtCloseButton {
+  background-image: url('ToolTip/ToolTipSprites.png'); }
+.RadToolTip_Sunset .rtWrapper .rtWrapperLeftMiddle,
+.RadToolTip_Sunset .rtWrapper .rtWrapperRightMiddle,
+.RadToolTip_Sunset table.rtShadow .rtWrapperLeftMiddle,
+.RadToolTip_Sunset table.rtShadow .rtWrapperRightMiddle {
+  background-image: url('ToolTip/ToolTipVerticalSprites.png'); }
+.RadToolTip_Sunset .rtWrapper .rtWrapperContent {
+  background-color: #fff3a8;
+  color: #272722; }
+.RadToolTip_Sunset .rtTitlebar {
+  color: #272722; }
+.RadToolTip_Sunset .rtCallout {
+  background-image: url('ToolTip/Callouts.gif'); }
+

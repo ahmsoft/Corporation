@@ -1,0 +1,45 @@
+.RadUploadProgressArea_Sunset {
+  color: #272722;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadUploadProgressArea_Sunset .ruProgressHeader {
+    background-image: -webkit-linear-gradient(top, #e57461 0%, #b9500c 100%);
+    background-image: -moz-linear-gradient(top, #e57461 0%, #b9500c 100%);
+    background-image: -ms-linear-gradient(top, #e57461 0%, #b9500c 100%);
+    background-image: -o-linear-gradient(top, #e57461 0%, #b9500c 100%);
+    background-image: linear-gradient(top, #e57461 0%, #b9500c 100%); }
+  .RadUploadProgressArea_Sunset .ruActions {
+    border-color: #938879;
+    color: #272722;
+    background-color: #e1dac7; }
+  .RadUploadProgressArea_Sunset .ruButton {
+    border-color: #938879;
+    color: #3d1400;
+    background-color: #ded7c6;
+    background-image: -webkit-linear-gradient(top, #f1eadf 0%, #ded7c6 100%);
+    background-image: -moz-linear-gradient(top, #f1eadf 0%, #ded7c6 100%);
+    background-image: -ms-linear-gradient(top, #f1eadf 0%, #ded7c6 100%);
+    background-image: -o-linear-gradient(top, #f1eadf 0%, #ded7c6 100%);
+    background-image: linear-gradient(top, #f1eadf 0%, #ded7c6 100%);
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadUploadProgressArea_Sunset .ruButtonHover {
+    border-color: #bd8b2b;
+    color: #3d1400;
+    background-color: #f8e360;
+    background-image: -webkit-linear-gradient(top, #fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%);
+    background-image: -moz-linear-gradient(top, #fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%);
+    background-image: -ms-linear-gradient(top, #fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%);
+    background-image: -o-linear-gradient(top, #fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%);
+    background-image: linear-gradient(top, #fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%); }
+  .RadUploadProgressArea_Sunset .ruProgress {
+    border-color: #958a85;
+    color: #333333;
+    background-color: #ffffff; }
+  .RadUploadProgressArea_Sunset .ruCurrentFile {
+    color: #333333; }
+  .RadUploadProgressArea_Sunset .ruBar {
+    border-color: #696155; }
+    .RadUploadProgressArea_Sunset .ruBar div {
+      border-color: #824703;
+      background-image: url('Upload/ruProgress.gif'); }

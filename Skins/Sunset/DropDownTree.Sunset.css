@@ -1,0 +1,74 @@
+.RadDropDownTree_Sunset {
+  color: #272722;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownTree_Sunset .rddtInner {
+    border-radius: 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #938879;
+    color: #3d1400;
+    background-color: #ded7c6;
+    background-image: linear-gradient(#f1eadf 0%, #ded7c6 100%); }
+  .RadDropDownTree_Sunset .rddtEmptyMessage {
+    color: #787777;
+    font-style: italic; }
+  .RadDropDownTree_Sunset .rddtClearButton {
+    background-position: -2px -324px; }
+  .RadDropDownTree_Sunset .rddtIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -1px -20px; }
+  .RadDropDownTree_Sunset .rddtHovered {
+    border-color: #bd8b2b;
+    color: #3d1400;
+    background-color: #f8e360;
+    background-image: linear-gradient(#fbf4c5 0%, #f2dc5e 50%, #f4bf2e 50%, #f8e360 100%); }
+    .RadDropDownTree_Sunset .rddtHovered .rddtClearButton {
+      background-position: -22px -324px; }
+      .RadDropDownTree_Sunset .rddtHovered .rddtClearButton.rddtClearButtonHovered {
+        background-position: -62px -324px; }
+    .RadDropDownTree_Sunset .rddtHovered .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Sunset .rddtFocused {
+    border-color: #ae5403;
+    color: #3d1400;
+    background-color: #e88d49;
+    background-image: linear-gradient(#f3bc8b 0%, #d66b1e 50%, #bd5006 50%, #e88d49 100%); }
+    .RadDropDownTree_Sunset .rddtFocused .rddtClearButton {
+      background-position: -42px -324px; }
+      .RadDropDownTree_Sunset .rddtFocused .rddtClearButton.rddtClearButtonHovered {
+        background-position: -82px -324px; }
+    .RadDropDownTree_Sunset .rddtFocused .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Sunset .rddtDisabled {
+    border-color: #b0b0b0;
+    color: #777777;
+    background-color: #ded7c6;
+    background-image: linear-gradient(#f1eadf 0%, #ded7c6 100%); }
+    .RadDropDownTree_Sunset .rddtDisabled .rddtIcon {
+      background-position: -1px -20px; }
+
+.rddtPopup_Sunset {
+  border-color: #938879;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddtPopup_Sunset .rddtHeader,
+  .rddtPopup_Sunset .rddtFooter {
+    border-color: #cabaab;
+    color: #272722;
+    background-color: #e1dac7; }
+  .rddtPopup_Sunset .rddtFilter {
+    border-color: #cabaab;
+    color: #272722;
+    background-color: #e1dac7; }
+    .rddtPopup_Sunset .rddtFilter .rddtFilterInput {
+      font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+      border-color: #938879;
+      color: #272722;
+      background-color: #ffffff; }
+    .rddtPopup_Sunset .rddtFilter .rddtFilterEmptyMessage {
+      color: #787777;
+      font-style: italic; }
+  .rddtPopup_Sunset .RadTreeView em {
+    color: #333333;
+    background-color: #f9ed8a; }

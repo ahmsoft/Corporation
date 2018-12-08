@@ -1,0 +1,92 @@
+/**
+ * Organizational Chart Black Skin
+ */
+/*----------------------------------------------------------------------------*/
+/** Global wrapper */
+.RadOrgChart_Black {
+  color: #ffffff;
+  font: normal 12px/22px "Segoe UI", Arial, sans-serif; }
+
+/** Viewport */
+/** NodeList */
+/** Node */
+/** Group */
+.RadOrgChart_Black .rocGroup {
+  border-radius: 10px;
+  background-color: #545454; }
+
+/** ItemList */
+/** ItemWrap */
+/** Items */
+.RadOrgChart_Black .rocItemContent,
+.RadOrgChart_Black .rocItemTemplate {
+  border-color: #222222;
+  border-radius: 5px;
+  background-color: #333333;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Toggle handle */
+/*.RadOrgChart_Black .rocToggleHandle,*/
+.RadOrgChart_Black .rocExpandArrow,
+.RadOrgChart_Black .rocCollapseArrow,
+.RadOrgChart_Black .rocExpandGroupArrow,
+.RadOrgChart_Black .rocCollapseGroupArrow {
+  border-color: #222222;
+  border-radius: 3px;
+  background-color: #333333;
+  background-image: url('../Common/Actions/actionExpandCollapseLight.png'); }
+
+/* Loading states */
+.RadOrgChart_Black .rocLoadingNodes .rocExpandArrow,
+.RadOrgChart_Black .rocLoadingNodes .rocCollapseArrow,
+.RadOrgChart_Black .rocLoadingGroups .rocExpandGroupArrow,
+.RadOrgChart_Black .rocLoadingGroups .rocCollapseGroupArrow {
+  background-image: url('Common/loading_small.gif'); }
+
+/** Node lines */
+.RadOrgChart_Black .rocLineUp,
+.RadOrgChart_Black .rocLineDown,
+.RadOrgChart_Black .rocLineHorizontal {
+  background-image: url('../Common/OrgChart/rocLinesLight.png'); }
+
+/** Drag and Drop */
+/** Drag ghost */
+.rocDetachedItemContainer.RadOrgChart_Black .rocGhostItem,
+.rocDetachedNodeContainer.RadOrgChart_Black .rocGhostNode {
+  border-color: #222222;
+  border-radius: 5px;
+  background-color: #333333;
+  background-image: url('../Common/OrgChart/rocItemTileLight.png'); }
+
+/** Drag Drop Clue */
+.rocDetachedItemContainer.RadOrgChart_Black .rocDropClue,
+.rocDetachedNodeContainer.RadOrgChart_Black .rocDropClue {
+  background-image: url('../Common/Actions/actionDragDropLight.png'); }
+
+/** Toolbar */
+.rocToolbar_Black {
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #333333;
+  background-color: rgba(255, 255, 255, 0.2);
+  *background-color: #333333; }
+
+/** Toolbar button */
+.rocToolbar_Black .rocToolbarButton {
+  border-color: #222222;
+  border-radius: 3px;
+  background-color: #333333;
+  text-indent: -999em;
+  float: left;
+  overflow: hidden; }
+
+/** Icons */
+.rocToolbar_Black .rocToolbarButton.rocActionDrillHere {
+  background-position: -32px 0; }
+
+.rocToolbar_Black .rocToolbarButton.rocActionGoToParent {
+  background-position: -32px -16px; }
+
+.rocToolbar_Black .rocToolbarButton.rocActionGoToRoot {
+  background-position: -32px -32px; }

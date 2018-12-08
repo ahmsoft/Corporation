@@ -1,0 +1,17 @@
+.RadTagCloud_Sunset {
+  background-color: #e1dac7;
+  border: 1px dotted #938879;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_Sunset .rtcTagList .rtcTagItem {
+    color: #5d5d52; }
+  .RadTagCloud_Sunset .rtcTagList .rtcTagItem:hover {
+    color: #863d02; }
+  .RadTagCloud_Sunset .rtcTagList .rtcTagItem a {
+    color: #272722; }
+  .RadTagCloud_Sunset .rtcTagList .rtcTagItem a:hover {
+    color: #863d02;
+    background: #f9ed8a; }
+  .RadTagCloud_Sunset.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

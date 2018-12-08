@@ -1,0 +1,359 @@
+.Sunset {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */
+}
+
+.Sunset.RadEditor,
+.Sunset.RadEditor .reModule,
+.Sunset.RadEditor .reEditorModes,
+.Sunset.RadEditor .reWrapper {
+  background-color: #e1dac7;
+}
+
+.Sunset.reWrapper,
+.Sunset.RadEditor .reContentCell,
+.Sunset.reColorPicker,
+.Sunset.reInsertTable,
+.Sunset.reCustomLinks a:hover {
+  border: 1px solid #cabaab;
+  background-color: #e1dac7;
+}
+
+.Sunset .reEmptyMessage {
+  color: #787777;
+}
+
+.Sunset.RadEditor .reContentCell {
+  background-color: #ffffff;
+}
+
+.Sunset.RadEditor .reContentCell.reNoBorder {
+  border: none;
+}
+
+.Sunset.RadEditor .reNoBorder div.reContentArea {
+  border: 1px solid #cabaab;
+}
+
+.Sunset.reDropDownBody {
+  border: 1px solid #cabaab;
+  background-color: #e1dac7;
+}
+
+.Sunset.reDropDownBody table {
+  background: transparent;
+}
+
+.Sunset.RadEditor .reModule {
+  border-top: 1px solid #cabaab;
+}
+
+.Sunset.reCustomLinks a,
+.Sunset.reCustomLinks a:link,
+.Sunset.reCustomLinks a:visited {
+  border: 1px solid #ffffff;
+  /* should be the same as the background of the dropdown */
+  color: #272722 !important;
+}
+
+.Sunset.reCustomLinks a:hover {
+  background-color: #f1d121;
+  border: 1px solid #938879;
+}
+
+.Sunset .reToolbar li,
+.Sunset .reSpinBox a,
+.Sunset.reToolbar .reSeparator,
+.Sunset.reToolbar .reGrip,
+.Sunset .reDialog .reTool,
+.Sunset .reModule .reTool,
+.Sunset .reDialog .reTool:hover,
+.Sunset .reToolbar .reTool:hover,
+.Sunset .reModule .reTool:hover,
+.Sunset .reToolbar .reTool.reTool_selected,
+.Sunset .reToolbar .reTool.reTool_selected:hover,
+.Sunset .reToolbar .reTool_text:hover,
+.Sunset .reToolbar .reTool_text.reTool_selected,
+.Sunset .reToolbar .reTool_text.reTool_selected:hover,
+.Sunset .reTool .split_arrow,
+.Sunset .reSplitButton.reTool_text .split_arrow,
+.Sunset .reToolbar .reTool_text .split_arrow,
+.Sunset .reDialog .reTool.reSplitButton,
+.Sunset .reModule .reTool.reSplitButton,
+.Sunset .reDropdown,
+.Sunset .reTool_disabled.reDropdown:hover,
+.Sunset .reResizeCell div,
+.Sunset.reInsertTable .reToolbar li .reTool:hover,
+.Sunset.RadEditor.reRtl .reDropdown:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+.Sunset.RadEditor .reTlbVertical li,
+.Sunset .reDropdown:hover,
+.Sunset.RadEditor .reTlbVertical .reToolbar.Default .reGrip,
+.Sunset.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+.Sunset .reTlbVertical .reTool:hover,
+.Sunset .reTlbVertical .reTool_text.reSplitButton:hover,
+.Sunset .reTlbVertical .reSplitButton:hover,
+.Sunset .reTlbVertical .reTool_text:hover,
+.Sunset .reTlbVertical .reTool.reTool_selected,
+.Sunset .reTlbVertical .reTool_text.reTool_selected,
+.Sunset .reTlbVertical .reTool_text.reTool_selected:hover,
+.Sunset.reDropDownBody .reTlbVertical ul li a:hover,
+.Sunset.reDropDownBody .reTlbVertical .reToolbar,
+.Sunset .reMode_selected,
+.Sunset.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+  background-image: url('Editor/ToolbarVerticalSprites.gif');
+}
+
+.Sunset .reToolbar li {
+  color: #272722;
+}
+
+.Sunset .reToolbar .reTool_text:hover,
+.Sunset .reToolbar .reTool_text.reTool_selected,
+.Sunset .reToolbar .reTool_text.reTool_selected:hover {
+  border-left: 1px solid #bd8b2b;
+  border-right: 1px solid #bd8b2b;
+}
+
+.Sunset .reToolbar .reTool_text.reTool_disabled,
+.Sunset .reToolbar .reTool_text.reTool_disabled:hover {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.Sunset .reDropdown:link,
+.Sunset .reDropdown:visited {
+  color: #272722 !important;
+}
+
+.Sunset .reDropdown,
+.Sunset .reTool_disabled.reDropdown:hover {
+  border: 1px solid #938879;
+  background-color: #ffffff;
+}
+
+.Sunset .reDropdown:hover {
+  border-color: #ac7d21;
+  color: #863d02;
+}
+
+.Sunset.reDropDownBody .reTlbVertical .reToolbar {
+  background-color: #ffffff;
+}
+
+.Sunset table.reSpinBox,
+.Sunset.RadEditor input {
+  border-color: #938879;
+  background-color: #ffffff;
+}
+
+.Sunset table.reSpinBox:hover,
+.Sunset.RadEditor input:hover {
+  border: 1px solid #bd8b2b;
+}
+
+.Sunset .reModule_domlink_selected,
+.Sunset .reModule_domlink {
+  color: #272722;
+}
+
+.Sunset.reDropDownBody .reItemOver {
+  background: #f9ed8a;
+  color: #3d1400;
+}
+
+.Sunset.reColorPicker table div,
+.Sunset.reColorPicker span {
+  border: 1px solid #cabaab;
+}
+
+.Sunset.reColorPicker table td.reItemOver div {
+  border-color: #272722;
+}
+
+.Sunset .reAjaxspell_button {
+  border: 1px solid #938879;
+  background-color: #ded7c6;
+  color: #3d1400;
+}
+
+.Sunset .reAjaxSpellCheckSeparator {
+  background-color: #ffffff;
+}
+
+.Sunset.reCustomLinks,
+.Sunset.reCustomLinks ul {
+  color: #272722;
+}
+
+.Sunset.reCustomLinks a {
+  background: none transparent;
+  color: #272722;
+  cursor: default !important;
+}
+
+.Sunset.reCustomLinks a:hover {
+  color: #ffffff;
+}
+
+.Sunset.reInsertTable table {
+  background-color: #ffffff;
+}
+
+.Sunset.reInsertTable table td {
+  border: 1px solid #938879;
+  background-color: #ffffff;
+}
+
+.Sunset.reInsertTable table .reItemOver {
+  border: 1px solid #ac7d21;
+  background-color: #f9ed8a;
+}
+
+.Sunset.reInsertTable .reTlbVertical ul {
+  background-color: #ffffff;
+}
+
+.Sunset.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text,
+.Sunset.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link,
+.Sunset.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+  color: #272722 !important;
+  background: transparent none;
+}
+
+.Sunset .reCommentEdit,
+.Sunset .reCommentTextArea,
+.Sunset .reCommentView,
+.Sunset .reCommentInfoPanel {
+  border-color: transparent;
+  background-color: #e1dac7;
+}
+
+.Sunset .reCommentTitle,
+.Sunset .reCommentInfoPanel {
+  color: #272722;
+}
+
+.Sunset .reCommentTextArea {
+  border-color: #cabaab;
+  background-color: #e1dac7;
+}
+
+.Sunset.RadEditor .reCommentButton,
+.Sunset .rePopupButtonContainer .rePopupButton {
+  border-color: #938879;
+  color: #3d1400;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#f1eadf 0%, #ded7c6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1eadf', endColorstr='#ded7c6',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Sunset.RadEditor .reCommentButton:hover,
+.Sunset .rePopupButtonContainer .rePopupButton:hover {
+  border-color: #bd8b2b;
+  color: #3d1400;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#fbf4c5 25%, #f2dc5e 50%, #f4bf2e 75%, #f8e360 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf4c5', endColorstr='#f8e360',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Sunset.RadEditor .reCommentButton:active,
+.Sunset .rePopupButtonContainer .rePopupButton:active {
+  color: #000;
+  border-color: #c28b31;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#f3bc8b 25%, #d66b1e 50%, #bd5006 75%, #e88d49 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3bc8b', endColorstr='#e88d49',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Sunset.rePopupContainer {
+  border-color: #938879;
+  background-color: #e1dac7;
+}
+
+.Sunset.rePopupContainer .rePopupTitle {
+  color: #fff;
+  border-color: #8ba0bc;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#e57562 25%, #c85424 50%, #bb3a01 75%, #b9510d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e57562', endColorstr='#b9510d',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Sunset.reWrapper.reInlineEditor:hover {
+  border-color: #938879;
+}
+
+.Sunset.reWrapper.reInlineEditorSelected,
+.Sunset.reWrapper.reInlineEditorSelected:hover {
+  border-color: #904c23;
+}
+
+.Sunset.RadEditor.reRtl .reTool .split_arrow:hover {
+  border-right-color: #bd8b2b;
+}
+
+.Sunset.RadEditor.reRtl .reDropdown:hover {
+  background-color: #f9ed8a;
+}
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_Sunset.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_Sunset.reToolbarWindow div.rwContent {
+  background-color: #e1dac7;
+}
+
+.RadWindow_Sunset .reInsertTableLightWrapper .lightTable {
+  border-color: #cabaab;
+}
+
+.Sunset .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+/* reTool */
+.reTool span,
+.Sunset.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png');
+}
+
+.reTool .split_arrow:hover {
+  border-left-color: #bd8b2b;
+}

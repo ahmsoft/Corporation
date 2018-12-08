@@ -1,0 +1,161 @@
+/* RadColorPicker Sitefinity skin */
+.RadColorPicker_Sitefinity,
+.RadColorPicker_Sitefinity *
+{
+    font-family: Arial, Sans-Serif;
+}
+
+.RadColorPicker_Sitefinity .rcpTabs ul
+{
+    margin-top: -4px;
+}
+
+.RadColorPicker_Sitefinity a.rcpApplyButton
+{
+    margin-top: -7px;
+}
+
+.RadColorPicker_Sitefinity .rcpTabs span
+{
+    color: #105cb6;
+}
+
+.RadColorPicker_Sitefinity .rcpPalette
+{
+	background-color:#fff;
+	border:solid 1px #828282;
+}
+
+.RadColorPicker_Sitefinity .rcpColorBox
+{
+	border:solid 1px #e4e4e4;
+}
+
+.RadColorPicker_Sitefinity .rcpSelectedColor,
+.RadColorPicker_Sitefinity .rcpMillionColorsPalette
+{
+	border:solid 1px #000;
+}
+
+.RadColorPicker_Sitefinity .rcpColorPreview,
+.RadColorPicker_Sitefinity .rcpInput,
+.RadColorPicker_Sitefinity .rcpHexInput
+{
+	border-top: solid 1px #abadb3;
+	border-right: solid 1px #dbdfe6;
+	border-bottom: solid 1px #e3e9ef;
+	border-left: solid 1px #e2e3ea;
+}
+
+.RadColorPicker_Sitefinity .rcpPalette,
+.RadColorPicker_Sitefinity input,
+.RadColorPicker_Sitefinity a
+{
+	color:#000;
+}
+
+.RadColorPicker_Sitefinity .rcpEmptyColor,
+.RadColorPicker_Sitefinity .rcpIcon a,
+.RadColorPicker_Sitefinity .rcpTabs,
+.RadColorPicker_Sitefinity .rcpTabs a,
+.RadColorPicker_Sitefinity .rcpTabs a span,
+.RadColorPicker_Sitefinity .rcpApplyButton,
+.RadColorPicker_Sitefinity .rcpApplyButton span,
+.RadColorPicker_Sitefinity .rcpMillionColorsHandle,
+.RadColorPicker_Sitefinity div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle
+{
+	background-image:url('ColorPicker/ColorPickerSprites.gif');
+	background-repeat:no-repeat;
+}
+
+/* no color button */
+.RadColorPicker_Sitefinity .rcpEmptyColor
+{
+	background-position:right -52px;
+}
+
+.RadColorPickerRTL_Sitefinity .rcpEmptyColor
+{
+    background-position:-1001px -52px;
+}
+
+/* color picker button */
+.RadColorPicker_Sitefinity .rcpIcon a
+{
+	background-position:0 -52px;
+}
+
+.RadColorPicker_Sitefinity .rcpIcon a:hover
+{
+	background-position:0 -73px;
+}
+
+.RadColorPicker_Sitefinity .rcpIcon a:active,
+.RadColorPicker_Sitefinity .rcpIcon a:focus
+{
+	background-position:0 -94px;
+}
+
+/* color picker tabs */
+.RadColorPicker_Sitefinity .rcpTabs
+{
+    background-color:#fff;
+    background-position:0 -169px;
+}
+
+.RadColorPicker_Sitefinity .rcpTabs .rcpSelectedTab a
+{
+    background-position:center -26px;
+}
+
+.RadColorPicker_Sitefinity .rcpTabs .rcpSelectedTab a span
+{
+    color: white;
+}
+
+/* apply color button */
+.RadColorPicker_Sitefinity .rcpApplyButton
+{
+    background-position:right -115px;
+}
+
+.RadColorPicker_Sitefinity .rcpApplyButton:hover
+{
+    background-position:right -136px;
+}
+
+.RadColorPicker_Sitefinity .rcpApplyButton span
+{
+    background-position:0 -115px;
+}
+
+.RadColorPicker_Sitefinity .rcpApplyButton:hover span
+{
+    background-position:0 -136px;
+}
+
+/* HSB, HSV palette handle */
+.RadColorPicker_Sitefinity .rcpMillionColorsHandle
+{
+	background-position:-1009px -73px;
+	background-color:transparent;
+}
+
+/* HSB, HSV slider handle */
+.RadColorPicker_Sitefinity div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle,
+.RadColorPicker_Sitefinity div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:hover,
+.RadColorPicker_Sitefinity div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:focus,
+.RadColorPicker_Sitefinity div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle:active
+{
+	background-position:-1002px -88px;
+}
+
+.RadColorPicker_Sitefinity .rcpTabs a,
+.RadColorPicker_Sitefinity .rcpTabs a span,
+.RadColorPicker_Sitefinity .rcpEmptyColor,
+.RadColorPicker_Sitefinity .rcpApplyButton,
+.RadColorPicker_Sitefinity .rcpApplyButton span
+{
+    cursor: pointer;
+    cursor: hand;
+}

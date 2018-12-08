@@ -1,0 +1,16 @@
+.RadSocialShare_Vista {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #e2e3ea;
+  background-color: #c2dcf0; }
+  .RadSocialShare_Vista .sshLinkItem .sshText {
+    color: black; }
+  .RadSocialShare_Vista .sshLinkItem:hover .sshText {
+    color: black; }
+
+.RadComboBoxDropDown_Vista .rcbItem .sshLinkItem .sshText {
+  color: black; }
+
+.RadComboBoxDropDown_Vista .rcbHovered .sshLinkItem .sshText {
+  color: black; }
+

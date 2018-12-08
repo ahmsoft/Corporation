@@ -1,0 +1,66 @@
+.RadEditor .RadRibbonBar .reRibbonTool .rrbImagePlaceholder img {
+  display: none;
+}
+
+.RadEditor .RadRibbonBar .rrbButton:before {
+  content: "";
+  margin-left: 0;
+}
+
+.RadEditor .RadRibbonBar .rrbSmallButton.reRibbonTool .rrbImagePlaceholder.reRibbonToolIcon {
+  height: 1.41667em;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton {
+  width: inherit;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton .rrbImagePlaceholder.reRibbonToolIcon {
+  height: 2.75em;
+}
+
+.RadEditor .RadRibbonBar .rrbLargeButton .rrbImagePlaceholder.reRibbonToolIcon:before {
+  font-size: 2.66667em;
+  font-size: 1.91667em \9;
+}
+
+.RadEditor .RadRibbonBar .rrbMediumButton.reRibbonTool {
+  height: 1.33333em;
+  width: inherit;
+}
+
+.RadEditor .RadRibbonBar .rrbMediumButton.reRibbonTool .rrbImagePlaceholder.reRibbonToolIcon {
+  height: 1.41667em;
+}
+
+.RadEditor .RadRibbonBar _:-ms-fullscreen, :root .RadEditor .RadRibbonBar .rrbImagePlaceholder.reRibbonToolIcon:before {
+  font-size: .74em;
+}
+
+.RadEditor .RadRibbonBar _:-ms-fullscreen, :root .RadEditor .RadRibbonBar .rrbLargeButton .rrbImagePlaceholder.reRibbonToolIcon:before {
+  font-size: .74em;
+}
+
+.RadEditor .RadRibbonBar _:-ms-fullscreen, :root .RadEditor .RadRibbonBar .rrbMediumButton.reRibbonTool {
+  font-size: 1.03em;
+}
+
+.RadEditor .RadRibbonBar .rrbImagePlaceholder.reRibbonToolIcon:before {
+  margin-left: 0;
+  font-family: TelerikWebUIEditor, monospace;
+  font-size: 1.33333em;
+  font-size: 1em \9;
+  line-height: 1;
+  vertical-align: text-top;
+  width: 1.5em;
+  height: 1.33333em;
+}
+
+@media \0screen {
+  .RadEditor .RadRibbonBar .rrbLargeButton .rrbImagePlaceholder.reRibbonToolIcon:before {
+    font-size: 2.5em;
+  }
+  .RadEditor .RadRibbonBar .rrbImagePlaceholder.reRibbonToolIcon:before {
+    font-size: 1.16667em;
+  }
+}

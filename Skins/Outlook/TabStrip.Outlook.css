@@ -1,0 +1,153 @@
+.RadTabStrip_Outlook {
+  color: #000000;
+  font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 26px; }
+  .RadTabStrip_Outlook .rtsGhostTab {
+    border-color: #003c74;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #fbfaf9; }
+  .RadTabStrip_Outlook .rtsLI,
+  .RadTabStrip_Outlook .rtsLink {
+    color: #000000;
+    font: 12px/26px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTabStrip_Outlook .rtsLink {
+    background-image: none; }
+    .RadTabStrip_Outlook .rtsLink:hover {
+      text-decoration: underline; }
+  .RadTabStrip_Outlook .rtsOut {
+    background-image: none; }
+  .RadTabStrip_Outlook .rtsSelected,
+  .RadTabStrip_Outlook .rtsSelected:hover {
+    text-decoration: underline; }
+  .RadTabStrip_Outlook .rtsDisabled {
+    color: #8d8d8d; }
+  .RadTabStrip_Outlook .rtsLevel .rtsLink {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 0 0; }
+    .RadTabStrip_Outlook .rtsLevel .rtsLink:hover {
+      background-position: 0 -52px;
+      text-decoration: none; }
+  .RadTabStrip_Outlook .rtsLevel .rtsSelected,
+  .RadTabStrip_Outlook .rtsLevel .rtsSelected:hover {
+    text-decoration: none;
+    background-position: 0 -26px; }
+  .RadTabStrip_Outlook .rtsLevel .rtsOut {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 100% 0; }
+  .RadTabStrip_Outlook .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -52px; }
+  .RadTabStrip_Outlook .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStrip_Outlook .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -26px; }
+  .RadTabStrip_Outlook .rtsLevel .rtsDisabled:hover {
+    background-position: 0 0; }
+  .RadTabStrip_Outlook .rtsLevel .rtsDisabled:hover .rtsOut {
+    background-position: 100% 0; }
+  .RadTabStrip_Outlook .rtsNextArrow,
+  .RadTabStrip_Outlook .rtsPrevArrow,
+  .RadTabStrip_Outlook .rtsPrevArrowDisabled,
+  .RadTabStrip_Outlook .rtsNextArrowDisabled {
+    background-image: url('TabStrip/TabStripStates.png'); }
+
+.RadTabStrip_Outlook.RadTabStripVertical .rtsLevel .rtsLink,
+.RadTabStrip_Outlook.RadTabStripVertical .rtsLevel .rtsOut {
+  background-image: none; }
+.RadTabStrip_Outlook.RadTabStripVertical .rtsLevel1 {
+  background-image: none; }
+  .RadTabStrip_Outlook.RadTabStripVertical .rtsLevel1 .rtsLink {
+    background-image: url('TabStrip/TabStripVStates.png');
+    *zoom: 1; }
+  .RadTabStrip_Outlook.RadTabStripVertical .rtsLevel1 .rtsOut {
+    background-image: none; }
+.RadTabStrip_Outlook.RadTabStripVertical .rtsLevel.rtsLevel2, .RadTabStrip_Outlook.RadTabStripVertical .rtsLevel.rtsLevel3, .RadTabStrip_Outlook.RadTabStripVertical .rtsLevel.rtsLevel4, .RadTabStrip_Outlook.RadTabStripVertical .rtsLevel.rtsLevel5 {
+  background-image: none; }
+
+.RadTabStripBottom_Outlook .rtsLevel.rtsLevel2, .RadTabStripBottom_Outlook .rtsLevel.rtsLevel3 {
+  background-image: none; }
+.RadTabStripBottom_Outlook .rtsLevel {
+  background-position: 0 -599px;
+  background-repeat: repeat-x; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsLink {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_Outlook .rtsLevel .rtsLink:hover {
+      background-position: 0 -130px; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsOut {
+    background-position: 100% -182px; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -130px; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsSelected,
+  .RadTabStripBottom_Outlook .rtsLevel .rtsSelected:hover {
+    background-position: 0 -156px; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStripBottom_Outlook .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -156px; }
+  .RadTabStripBottom_Outlook .rtsLevel .rtsDisabled:hover {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_Outlook .rtsLevel .rtsDisabled:hover .rtsOut {
+      background-position: 100% -182px; }
+
+.RadTabStripLeft_Outlook .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripLeft_Outlook .rtsLevel1 .rtsLink:hover {
+    background-position: 0 -200px; }
+  .RadTabStripLeft_Outlook .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 0 -400px; }
+.RadTabStripLeft_Outlook .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripLeft_Outlook .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripRight_Outlook .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripRight_Outlook .rtsLevel1 .rtsLink:hover {
+    background-position: 100% -200px; }
+  .RadTabStripRight_Outlook .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 100% -400px; }
+.RadTabStripRight_Outlook .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripRight_Outlook .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripTop_Outlook_Baseline .rtsLevel1,
+.RadTabStripBottom_Outlook_Baseline .rtsLevel1 {
+  background-image: url('TabStrip/TabStripStates.png');
+  background-position: 0 100%; }
+
+.RadTabStripBottom_Outlook_Baseline .rtsLevel1 {
+  background-position: 0 -599px; }
+
+html .RadTabStrip_Outlook_disabled .rtsLevel1 .rtsLink {
+  color: #8d8d8d;
+  cursor: default; }
+  html .RadTabStrip_Outlook_disabled .rtsLevel1 .rtsLink:hover {
+    background: transparent;
+    text-decoration: none; }
+    html .RadTabStrip_Outlook_disabled .rtsLevel1 .rtsLink:hover .rtsOut {
+      background: transparent; }
+
+/* <focus cue> */
+div.RadTabStrip_Office2010Blue a.rtsLink:focus {
+  outline-color: #6f6f6f; }
+
+div.RadTabStrip_Office2010Blue a.rtsLink:focus:after {
+  border-color: #6f6f6f \9; }
+
+/* </focus cue> */
+/** DropClues */
+.rtsDropClue_Outlook {
+  background-image: url('../Common/TabStrip/rtsDropClueSprite.png'); }
+
+.rtsDropClueTop_Outlook {
+  background-position: 0 -20px; }
+
+.rtsDropClueRight_Outlook {
+  background-position: 0 -30px; }
+
+.rtsDropClueBottom_Outlook {
+  background-position: 0 0; }
+
+.rtsDropClueLeft_Outlook {
+  background-position: 0 -10px; }
+
+/*# sourceMappingURL=TabStrip.Outlook.css.map */

@@ -1,0 +1,49 @@
+.RadNavigation_WebBlue {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadNavigation_WebBlue .rnvRootGroupWrapper {
+    border-color: #3d556c;
+    color: #ffffff;
+    background: #748ea3;
+    background-image: linear-gradient(#748ea3, #6b849d 50%, #597791 50%, #748ea3); }
+  .RadNavigation_WebBlue .rnvRootLink {
+    border-color: transparent; }
+  .RadNavigation_WebBlue .rnvMore {
+    border-color: #3d556c;
+    color: #ffffff;
+    background: #748ea3;
+    background-image: linear-gradient(#748ea3, #6b849d 50%, #597791 50%, #748ea3); }
+  .RadNavigation_WebBlue .rnvHovered.rnvMore,
+  .RadNavigation_WebBlue .rnvHovered > .rnvRootLink {
+    border-color: #3d556c;
+    color: #0e3d4f;
+    background-color: #9dd5ef;
+    background-image: linear-gradient(#c2e3f5, #91cce9 50%, #5fb2dc 50%, #9dd5ef); }
+  .RadNavigation_WebBlue .rnvSelected.rnvMore,
+  .RadNavigation_WebBlue .rnvSelected > .rnvRootLink,
+  .RadNavigation_WebBlue .rnvExpanded > .rnvRootLink {
+    border-color: #3d556c;
+    color: #ffffff;
+    background-color: #7fbdd1;
+    background-image: linear-gradient(#9dc5db, #66a4c1 50%, #348db0 50%, #7dbcd0); }
+  .RadNavigation_WebBlue .rnvFocused.rnvMore,
+  .RadNavigation_WebBlue .rnvFocused > .rnvRootLink {
+    box-shadow: inset 0 0 3px rgba(61, 85, 108, 0.5); }
+
+.radSkin_WebBlue {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+.radSkin_WebBlue .rnvPopup {
+  border-color: #768ca5;
+  color: #000000;
+  background-color: #ffffff; }
+  .radSkin_WebBlue .rnvPopup .rnvHovered > .rnvLink {
+    color: #0e3d4f;
+    background-color: #c0e4f6; }
+  .radSkin_WebBlue .rnvPopup .rnvSelected > .rnvLink,
+  .radSkin_WebBlue .rnvPopup .rnvExpanded > .rnvLink {
+    color: #ffffff;
+    background-color: #7fbdd1; }
+  .radSkin_WebBlue .rnvPopup .rnvFocused > .rnvLink {
+    box-shadow: inset 0 0 3px rgba(19, 60, 68, 0.5); }

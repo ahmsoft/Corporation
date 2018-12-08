@@ -1,0 +1,156 @@
+.RadTabStrip_Web20 {
+  color: #000000;
+  font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 26px; }
+  .RadTabStrip_Web20 .rtsGhostTab {
+    border-color: #0f1d48;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #324d92; }
+  .RadTabStrip_Web20 .rtsLI,
+  .RadTabStrip_Web20 .rtsLink {
+    color: #fff;
+    font: 12px/26px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTabStrip_Web20 .rtsLink {
+    background-image: none; }
+    .RadTabStrip_Web20 .rtsLink:hover {
+      text-decoration: underline; }
+  .RadTabStrip_Web20 .rtsOut {
+    background-image: none; }
+  .RadTabStrip_Web20 .rtsSelected,
+  .RadTabStrip_Web20 .rtsSelected:hover {
+    text-decoration: underline; }
+  .RadTabStrip_Web20 .rtsDisabled {
+    color: #777777; }
+  .RadTabStrip_Web20 .rtsLevel .rtsLink {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 0 0; }
+    .RadTabStrip_Web20 .rtsLevel .rtsLink:hover {
+      color: #000000;
+      background-position: 0 -52px;
+      text-decoration: none; }
+  .RadTabStrip_Web20 .rtsLevel .rtsSelected,
+  .RadTabStrip_Web20 .rtsLevel .rtsSelected:hover {
+    color: #000000;
+    text-decoration: none;
+    background-position: 0 -26px; }
+  .RadTabStrip_Web20 .rtsLevel .rtsOut {
+    background-image: url('TabStrip/TabStripStates.png');
+    background-position: 100% 0; }
+  .RadTabStrip_Web20 .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -52px; }
+  .RadTabStrip_Web20 .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStrip_Web20 .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -26px; }
+  .RadTabStrip_Web20 .rtsLevel .rtsDisabled:hover {
+    color: #777777;
+    background-position: 0 0; }
+  .RadTabStrip_Web20 .rtsLevel .rtsDisabled:hover .rtsOut {
+    background-position: 100% 0; }
+  .RadTabStrip_Web20 .rtsNextArrow,
+  .RadTabStrip_Web20 .rtsPrevArrow,
+  .RadTabStrip_Web20 .rtsPrevArrowDisabled,
+  .RadTabStrip_Web20 .rtsNextArrowDisabled {
+    background-image: url('TabStrip/TabStripStates.png'); }
+
+.RadTabStrip_Web20.RadTabStripVertical .rtsLevel .rtsLink,
+.RadTabStrip_Web20.RadTabStripVertical .rtsLevel .rtsOut {
+  background-image: none; }
+.RadTabStrip_Web20.RadTabStripVertical .rtsLevel1 {
+  background-image: none; }
+  .RadTabStrip_Web20.RadTabStripVertical .rtsLevel1 .rtsLink {
+    background-image: url('TabStrip/TabStripVStates.png');
+    *zoom: 1; }
+  .RadTabStrip_Web20.RadTabStripVertical .rtsLevel1 .rtsOut {
+    background-image: none; }
+.RadTabStrip_Web20.RadTabStripVertical .rtsLevel.rtsLevel2, .RadTabStrip_Web20.RadTabStripVertical .rtsLevel.rtsLevel3, .RadTabStrip_Web20.RadTabStripVertical .rtsLevel.rtsLevel4, .RadTabStrip_Web20.RadTabStripVertical .rtsLevel.rtsLevel5 {
+  background-image: none; }
+
+.RadTabStripBottom_Web20 .rtsLevel.rtsLevel2, .RadTabStripBottom_Web20 .rtsLevel.rtsLevel3 {
+  background-image: none; }
+.RadTabStripBottom_Web20 .rtsLevel {
+  background-position: 0 -599px;
+  background-repeat: repeat-x; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsLink {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_Web20 .rtsLevel .rtsLink:hover {
+      background-position: 0 -130px; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsOut {
+    background-position: 100% -182px; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsLink:hover .rtsOut {
+    background-position: 100% -130px; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsSelected,
+  .RadTabStripBottom_Web20 .rtsLevel .rtsSelected:hover {
+    background-position: 0 -156px; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsSelected .rtsOut,
+  .RadTabStripBottom_Web20 .rtsLevel .rtsSelected:hover .rtsOut {
+    background-position: 100% -156px; }
+  .RadTabStripBottom_Web20 .rtsLevel .rtsDisabled:hover {
+    background-position: 0 -182px; }
+    .RadTabStripBottom_Web20 .rtsLevel .rtsDisabled:hover .rtsOut {
+      background-position: 100% -182px; }
+
+.RadTabStripLeft_Web20 .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripLeft_Web20 .rtsLevel1 .rtsLink:hover {
+    background-position: 0 -200px; }
+  .RadTabStripLeft_Web20 .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 0 -400px; }
+.RadTabStripLeft_Web20 .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripLeft_Web20 .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripRight_Web20 .rtsLevel1 .rtsLink {
+  background-position: 100% 0; }
+  .RadTabStripRight_Web20 .rtsLevel1 .rtsLink:hover {
+    background-position: 100% -200px; }
+  .RadTabStripRight_Web20 .rtsLevel1 .rtsLink.rtsSelected {
+    background-position: 100% -400px; }
+.RadTabStripRight_Web20 .rtsLevel1 .rtsDisabled:hover {
+  background-position: 100% 0; }
+.RadTabStripRight_Web20 .rtsSeparator {
+  background: #6f6f6f; }
+
+.RadTabStripTop_Web20_Baseline .rtsLevel1,
+.RadTabStripBottom_Web20_Baseline .rtsLevel1 {
+  background-image: url('TabStrip/TabStripStates.png');
+  background-position: 0 100%; }
+
+.RadTabStripBottom_Web20_Baseline .rtsLevel1 {
+  background-position: 0 -599px; }
+
+html .RadTabStrip_Web20_disabled .rtsLevel1 .rtsLink {
+  color: #8d8d8d;
+  cursor: default; }
+  html .RadTabStrip_Web20_disabled .rtsLevel1 .rtsLink:hover {
+    background: transparent;
+    text-decoration: none; }
+    html .RadTabStrip_Web20_disabled .rtsLevel1 .rtsLink:hover .rtsOut {
+      background: transparent; }
+
+/* <focus cue> */
+div.RadTabStrip_Office2010Blue a.rtsLink:focus {
+  outline-color: #6f6f6f; }
+
+div.RadTabStrip_Office2010Blue a.rtsLink:focus:after {
+  border-color: #6f6f6f \9; }
+
+/* </focus cue> */
+/** DropClues */
+.rtsDropClue_Web20 {
+  background-image: url('../Common/TabStrip/rtsDropClueSprite.png'); }
+
+.rtsDropClueTop_Web20 {
+  background-position: 0 -20px; }
+
+.rtsDropClueRight_Web20 {
+  background-position: 0 -30px; }
+
+.rtsDropClueBottom_Web20 {
+  background-position: 0 0; }
+
+.rtsDropClueLeft_Web20 {
+  background-position: 0 -10px; }
+
+/*# sourceMappingURL=TabStrip.Web20.css.map */

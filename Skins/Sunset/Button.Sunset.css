@@ -1,0 +1,83 @@
+.RadButton_Sunset {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* RadButton Sunset Skin */ }
+  .RadButton_Sunset .rbDecorated {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadButton_Sunset.rbSkinnedButton,
+  .RadButton_Sunset .rbDecorated, .RadButton_Sunset.rbVerticalButton, .RadButton_Sunset.rbVerticalButton .rbDecorated,
+  .RadButton_Sunset .rbSplitRight,
+  .RadButton_Sunset .rbSplitLeft {
+    background-image: url('Common/radFormSprite.png');
+    color: #3d1400; }
+  .RadButton_Sunset .rbToggleCheckbox,
+  .RadButton_Sunset .rbToggleCheckboxChecked,
+  .RadButton_Sunset .rbToggleCheckboxFilled,
+  .RadButton_Sunset .rbToggleRadio,
+  .RadButton_Sunset .rbToggleRadioChecked {
+    background-image: url('Common/radFormToggleSprite.png'); }
+  .RadButton_Sunset.rbToggleButton, .RadButton_Sunset.rbToggleButton.rbDisabled:hover {
+    color: #272722; }
+  .RadButton_Sunset.rbToggleButton:hover {
+    color: #3d1400; }
+  .RadButton_Sunset.RadButton.rbLinkButton {
+    background-color: #ded7c6;
+    border: 1px solid #938879;
+    _border: 1px solid #938879 !important;
+    color: #3d1400; }
+    .RadButton_Sunset.RadButton.rbLinkButton:hover {
+      background-color: #f8e360;
+      _border: 1px solid #938879 !important;
+      color: #3d1400; }
+  .RadButton_Sunset.RadButton.rbLinkButtonChecked, .RadButton_Sunset.RadButton.rbLinkButtonChecked:hover {
+    background-color: #e88d49;
+    color: #3d1400;
+    border: 1px solid #ae5403; }
+  .RadButton_Sunset.rbLinkButton.rbDisabled, .RadButton_Sunset.rbLinkButton.rbDisabled:hover {
+    background-color: #ded7c6;
+    border: 1px solid #b0b0b0;
+    color: #272722; }
+  .RadButton_Sunset.rbLinkButton:hover .rbSplitLeft, .RadButton_Sunset.rbLinkButton:hover .rbSplitRight {
+    background-color: #ded7c6; }
+  .RadButton_Sunset.rbLinkButton .rbSplitRight {
+    border-left: 1px solid #938879; }
+  .RadButton_Sunset.rbLinkButton .rbSplitRight:hover {
+    background-color: #f8e360;
+    border-left: 1px solid #bd8b2b; }
+  .RadButton_Sunset.rbLinkButton .rbSplitRight:active, .RadButton_Sunset.rbLinkButton .rbSplitRight:focus {
+    background-color: #e88d49;
+    border-left: 1px solid #bd8b2b; }
+  .RadButton_Sunset.rbLinkButton .rbSplitLeft {
+    border-right: 1px solid #938879; }
+  .RadButton_Sunset.rbLinkButton .rbSplitLeft:hover {
+    background-color: #f8e360;
+    border-right: 1px solid #bd8b2b; }
+  .RadButton_Sunset.rbLinkButton .rbSplitLeft:active, .RadButton_Sunset.rbLinkButton .rbSplitLeft:focus {
+    background-color: #e88d49;
+    border-right: 1px solid #bd8b2b; }
+  .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right: 1px solid #b0b0b0; }
+  .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Sunset.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left: 1px solid #b0b0b0; }
+  .RadButton_Sunset.rbLinkButton.rbRounded {
+    border-color: #938879;
+    color: #3d1400;
+    background-color: #ded7c6;
+    background-image: linear-gradient(#f1eadf, #ded7c6); }
+  .RadButton_Sunset.rbLinkButton.rbRounded:hover {
+    border-color: #bd8b2b;
+    color: #3d1400;
+    background-color: #f8e360;
+    background-image: linear-gradient(#fbf4c5, #f2dc5e 50%, #f4bf2e 50%, #f8e360); }
+  .RadButton_Sunset.rbLinkButton.rbRounded:active, .RadButton_Sunset.rbLinkButton.rbRounded:focus {
+    border-color: #ae5403;
+    color: #3d1400;
+    background-color: #e88d49;
+    background-image: linear-gradient(#f3bc8b, #d66b1e 50%, #bd5006 50%, #e88d49); }
+  .RadButton_Sunset.rbLinkButton.rbRounded.rbDisabled, .RadButton_Sunset.rbLinkButton.rbRounded.rbDisabled:hover, .RadButton_Sunset.rbLinkButton.rbRounded.rbDisabled:active, .RadButton_Sunset.rbLinkButton.rbRounded.rbDisabled:focus {
+    border-color: #b0b0b0;
+    color: #777777;
+    background-color: #ded7c6;
+    background-image: linear-gradient(#f1eadf, #ded7c6);
+    background-position: 0 0; }

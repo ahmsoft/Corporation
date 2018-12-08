@@ -1,0 +1,34 @@
+.RadTreeView_Outlook {
+  color: #333333;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTreeView_Outlook .rtIn {
+    background-image: url('Common/radGradientListSprite.png');
+    background-image: linear-gradient(transparent, transparent); }
+  .RadTreeView_Outlook a.rtIn {
+    *color: #333333; }
+  .RadTreeView_Outlook .rtHover .rtIn {
+    border-color: #002d96;
+    color: #000000;
+    background-color: #ffd294;
+    background-image: linear-gradient(#fff3ca, #ffd294); }
+  .RadTreeView_Outlook .rtSelected .rtIn {
+    border-color: #002d96;
+    color: #000000;
+    background-color: #97b8e8;
+    background-image: linear-gradient(#dceafc, #97b8e8); }
+  .RadTreeView_Outlook .rtEdit .rtIn input {
+    *color: #000000; }
+  .RadTreeView_Outlook .rtChecked,
+  .RadTreeView_Outlook .rtUnchecked,
+  .RadTreeView_Outlook .rtIndeterminate {
+    background-image: url('Common/radFormToggleSprite.png'); }
+  .RadTreeView_Outlook .rtLoadingIcon {
+    background-image: url('Common/loading_small.gif'); }
+  .RadTreeView_Outlook .rtPlus,
+  .RadTreeView_Outlook .rtMinus {
+    background-image: url('TreeView/PlusMinus.png'); }
+
+.RadTreeView_Outlook_disabled .rtIn,
+.RadTreeView_Outlook .rtDisabled .rtIn {
+  color: #ccc; }

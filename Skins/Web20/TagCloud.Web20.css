@@ -1,0 +1,17 @@
+.RadTagCloud_Web20 {
+  background-color: #93b4df;
+  border: 1px dotted #6788be;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_Web20 .rtcTagList .rtcTagItem {
+    color: #e6e6e6; }
+  .RadTagCloud_Web20 .rtcTagList .rtcTagItem:hover {
+    color: white; }
+  .RadTagCloud_Web20 .rtcTagList .rtcTagItem a {
+    color: white; }
+  .RadTagCloud_Web20 .rtcTagList .rtcTagItem a:hover {
+    color: black;
+    background: #e7f1ff; }
+  .RadTagCloud_Web20.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

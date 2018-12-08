@@ -1,0 +1,549 @@
+/* ImageEditorLite Base Stylesheet */
+.RadImageEditor {
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.41667em; }
+
+.RadImageEditor,
+.RadImageEditor * {
+  box-sizing: content-box; }
+
+.rieContentArea {
+  clear: both;
+  overflow: auto;
+  background: url('Common/ImageEditor/rieContentArea.gif');
+  border-width: 0 1px 1px;
+  border-style: solid; }
+
+.rieContentArea img {
+  -webkit-user-select: none;
+  -moz-user-select: none; }
+
+.rieStatusBar {
+  position: relative;
+  height: 1.83333em;
+  line-height: 1.83333em;
+  padding: 0.33333em 0em 0em; }
+
+.rieStatusBarInfo .rieLabel {
+  padding: 0em 0.16667em; }
+
+.rieStatusBarInfo span {
+  padding: 0em 1.16667em 0em 0.16667em; }
+
+.rieStatusBarInfo span span {
+  padding: 0em 0.16667em; }
+
+.rieNoStatusBar .rieStatusBar {
+  height: 1em;
+  line-height: 1em;
+  padding: 0; }
+
+.rieResizeHandle {
+  width: 1.16667em;
+  height: 1.33333em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0.33333em;
+  bottom: 0em;
+  cursor: se-resize; }
+
+.rieResizeHandle:before {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-family: "TelerikWebUI";
+  font-size: 2.2em;
+  content: "\E006"; }
+
+.RadImageEditor .RadToolBar {
+  box-sizing: border-box; }
+
+.RadImageEditor span.rtbArrow {
+  padding: 0.41667em 0.66667em 0.16667em; }
+
+.RadImageEditor .rtbButton:before,
+.rtbLink:before {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-family: "TelerikWebUI";
+  font-size: 1.33333em;
+  margin: 0.04167em 0em 0em; }
+
+.rtbLink:before {
+  margin: 0.08333em 0.66667em 0em -1.66667em; }
+
+.riePrint:before {
+  content: "\E07E"; }
+
+.rieSave:before {
+  content: "\E0BD"; }
+
+.rieExport:before {
+  content: "\E154"; }
+
+.rieUndo:before {
+  content: "\E0ED"; }
+
+.rieRedo:before {
+  content: "\E0EE"; }
+
+.rieRedo:before {
+  content: "\E0EE"; }
+
+.rieReset:before {
+  content: "\E0E7"; }
+
+.rieCrop:before {
+  content: "\E066"; }
+
+.rieResize:before {
+  content: "\E155"; }
+
+.rieZoom:before {
+  content: "\E07F"; }
+
+.rieZoomIn:before {
+  content: "\E080"; }
+
+.rieZoomOut:before {
+  content: "\E081"; }
+
+.rieOpacity:before {
+  content: "\E15A"; }
+
+.rieRotate:before {
+  content: "\E01E"; }
+
+.rieRotateRight:before {
+  content: "\E06A"; }
+
+.rieRotateLeft:before {
+  content: "\E06B"; }
+
+.rieFlip:before {
+  content: "\E067"; }
+
+.rieFlipVertical:before {
+  content: "\E069"; }
+
+.rieFlipHorizontal:before {
+  content: "\E068"; }
+
+.rieAddText:before {
+  content: "\E061"; }
+
+.rieInsertImage:before {
+  content: "\E07D"; }
+
+.rieBrightnessContrast:before {
+  content: "\E064"; }
+
+.rieHueSaturation:before {
+  content: "\E15B"; }
+
+.rieBlur:before {
+  content: "\E15C"; }
+
+.rieSharpen:before {
+  content: "\E15D"; }
+
+.rieGreyscale:before {
+  content: "\E15E"; }
+
+.rieSepia:before {
+  color: #b09557;
+  content: "\E15E"; }
+
+.rieInvertColor:before {
+  content: "\E15F"; }
+
+.riePencil:before {
+  content: "\E160"; }
+
+.rieLine:before {
+  content: "\E161"; }
+
+.rieDrawRectangle:before {
+  content: "\E14E"; }
+
+.rieDrawCircle:before {
+  content: "\E14C"; }
+
+.rieActualSize:before {
+  content: "\E158"; }
+
+.rieBestFit:before {
+  content: "\E159"; }
+
+.rie:before {
+  content: "\E0A4"; }
+
+.RadImageEditor .rtbSplitButton .rtbText {
+  display: none; }
+
+div.rieDialogs div.rdContent {
+  overflow: visible !important; }
+
+.rieDialogsTable {
+  width: 100%;
+  margin: 5px auto; }
+
+.rieDialogsTable td {
+  padding: 0.25em; }
+
+.rieRightAligned {
+  text-align: right; }
+
+.rieDialogsTable .rieClearRightSpace {
+  padding: 0.25em 0em 0.25em 0.25em; }
+
+.rieDialogs .rfdRoundedWrapper .rfdRoundedContent {
+  width: auto; }
+
+.rieDialogs .rfdRoundedWrapper .rfdRoundedContent textarea {
+  width: 20em; }
+
+.rieDialogs .rieDialogInput.rfdTextInput {
+  width: 100%; }
+
+.rieDialogs .rieDialogInputBtn.rfdTextInput {
+  width: 11.25em; }
+
+.rieDialogs .rieInputDigits.rfdTextInput {
+  width: 3.75em; }
+
+.rieDialogs .rieBrightnessContrastTable .rieInputDigits.rfdTextInput,
+.rieDialogs .rieZoomTable .rieInputDigits.rfdTextInput {
+  width: 3.4em; }
+
+.rieDialogs .rieInputHex.rfdTextInput {
+  width: 5em; }
+
+.rieDialogs .rieCombo {
+  width: 100%; }
+
+.rieDialogs .rieComboCombo {
+  width: 5.41667em; }
+
+.rieDialogs .rieInputCombo.rfdTextInput {
+  width: 12.91667em; }
+
+.rieResizeButtons {
+  width: 5.83333em;
+  height: 3.16667em;
+  margin: 0.41667em 0em 0em 0.66667em;
+  padding: 0.58333em 0em 0em; }
+
+.rieResizeButtons .RadButton.rbButton.rbRounded,
+.rieRotateTable .RadButton.rbButton.rbRounded {
+  box-sizing: border-box;
+  height: 1.83333em;
+  background-color: transparent;
+  border: none;
+  background-image: none;
+  box-shadow: none; }
+
+.rieConstrainBtn:before {
+  content: "\E073"; }
+
+.rieRemoveConstrainBtn:before {
+  content: "\E074"; }
+
+.rieSwapValues:before {
+  content: "\E157"; }
+
+.rieRotateTable .RadButton.rbButton.rbPrimary {
+  vertical-align: middle;
+  padding-left: 0; }
+
+.rieZoomTable .RadButton.rbButton.rbPrimary {
+  height: 1.83333em;
+  padding-left: 1em; }
+
+.rieZoomTable label {
+  padding: 0em 0em 0em 0.25em; }
+
+.rieDialogsTable .rieBottomCell {
+  border-width: 1px 0 0;
+  border-style: solid;
+  padding: 0.83333em 0em 0em; }
+
+.rieDialogsTable .rieBottomSpace {
+  padding: 0em 0em 0.83333em 0em; }
+
+.rieClearResizeButtons {
+  position: static;
+  background-image: none;
+  width: auto;
+  height: auto;
+  padding: 0; }
+
+.rieClearResizeButtons label {
+  padding: 0.41667em 0em 0em;
+  display: inline-block; }
+
+.rieInputDimension {
+  width: 5.66667em; }
+
+.riePxLabel {
+  display: inline-block;
+  padding: 0.16667em 0em 0em 0.16667em; }
+
+.rieColorPicker {
+  display: inline-block; }
+
+.rieDialogsTable textarea {
+  width: 98%;
+  resize: none;
+  line-height: 1.2; }
+
+.rieDialogsTable .rieFileName {
+  padding-left: 24px; }
+
+.rieDialogsTable .rieFileName label {
+  vertical-align: middle; }
+
+.rieDialogsTable .rieOverwriteFile {
+  padding: 1px 3px 3px 0; }
+
+.rieDialogsTable .rieColorValue .rfdDecorated {
+  vertical-align: top; }
+
+.rieDialogsTable .RadButton,
+.rieDialogsTable .rcpIcon {
+  margin: 0em 0em 0em 0.25em; }
+
+.rieDialogsTable .RadButton {
+  vertical-align: middle; }
+
+.rieResizeButtons .RadButton {
+  margin: 0 2px 0 0; }
+
+/*PERO: FIX IE9 buttons disappear*/
+._Telerik_IE9 .rieDialogsTable .rieZIndex_IE9,
+._Telerik_IE9 .rieToolbarDock.RadDock .rtbIcon,
+._Telerik_IE9 .rieDialogsTable .RadButton,
+._Telerik_IE9 .rieToolbarDock.RadDock .rtbSplBtn {
+  z-index: 1; }
+
+._Telerik_IE9 .RadDockZone .rieToolbarDock.RadDock .rtbIcon {
+  z-index: auto; }
+
+/* Dialog Thumbs */
+.rieDialogsThumbs td {
+  text-align: center;
+  vertical-align: middle;
+  width: 95px;
+  height: 95px;
+  padding: 10px 2px; }
+
+.rieDialogsThumbs td .rieThumbsLink {
+  display: block;
+  width: 90px;
+  height: 90px;
+  padding: 10px 7px 0;
+  margin: auto;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid; }
+
+.rieDialogsThumbs td .rieThumbsLink img {
+  border: 0;
+  width: 80px;
+  height: 80px; }
+
+/* Dialog table borders */
+.rieDialogsThumbsLeft {
+  border-right: 1px dashed; }
+
+.rieThumbsBottomRow td {
+  border-top: 1px dashed; }
+
+.rieActiveThumbsLink,
+.rieThumbsLink:hover,
+.riePrintContent,
+.riePrintContent img {
+  border-width: 1px;
+  border-style: solid; }
+
+/* Dialog table borders end */
+.riePrintContent {
+  text-align: center; }
+
+.riePrintContent img {
+  margin: 15px 0; }
+
+/* Vertical Toolbar */
+div.rieZoneLeft,
+div.rieZoneRight {
+  position: absolute;
+  width: 60px;
+  top: 5px; }
+
+div.rieZoneLeft .rtbWrap,
+div.rieZoneRight .rtbWrap {
+  margin: 0 auto; }
+
+div.rieZoneLeft .rtbSplBtn .rtbChoiceArrow,
+div.rieZoneRight .rtbSplBtn .rtbChoiceArrow {
+  display: inline-block; }
+
+div.rieZoneLeft .rtbIcon,
+div.rieZoneRight .rtbIcon {
+  margin-left: 14px; }
+
+div.rieZoneLeft .rtbSplBtn .rtbIcon,
+div.rieZoneRight .rtbSplBtn .rtbIcon {
+  margin-left: auto; }
+
+div.rieZoneLeft {
+  left: 5px; }
+
+div.rieZoneRight {
+  right: 5px; }
+
+div.RadDock div.RadImageEditor {
+  border: 0;
+  padding: 0; }
+
+.rieHighlightHorizontal {
+  height: 30px; }
+
+div.rieDockToolbar {
+  padding-top: 2px; }
+
+.rieDockToolbar .rieZoneTop,
+.rieDockToolbar .rieZoneBottom {
+  margin: auto 5px;
+  z-index: 1; }
+
+.RadImageEditor .rieHighlightVertical,
+.RadImageEditor .rieHighlightHorizontal {
+  border: 1px dashed !important; }
+
+/* sets top and left to zero and resizing */
+.rieTopLeftZero {
+  top: 0 !important;
+  left: 0 !important; }
+
+div.RadImageEditor div.RadDockZone {
+  padding: 0;
+  border: 0; }
+
+.rieToolbarDock .rdContent {
+  overflow: hidden !important; }
+
+.rieToolbarDock .rdMiddle .rdLeft,
+.rieToolbarDock .rdMiddle .rdRight,
+.rieToolbarDock .rdBottom {
+  display: none; }
+
+/* Hide expand arrow on Undo/Redo */
+.RadToolBar_Vertical .rieUndo .rtbChoiceArrow,
+.RadToolBar_Vertical .rieRedo .rtbChoiceArrow {
+  display: none; }
+
+/* Rtl Support */
+/* need to set it LTR in order to make callculation */
+.rieRtl .rieContentArea {
+  direction: ltr; }
+
+.rdRtl .rieRightAligned {
+  text-align: left; }
+
+.rdRtl .rieDialogsThumbsLeft {
+  border-left: 1px dashed;
+  border-right: 0; }
+
+.rdRtl .rieDialogsTable .RadButton {
+  margin-right: auto !important; }
+
+.rieRtl .rieStatusBar {
+  text-align: right; }
+
+.rieRtl .rieResizeHandle {
+  left: 0.25em;
+  right: auto;
+  top: 0.83333em;
+  cursor: sw-resize; }
+
+.rieRtl .rieResizeHandle:before {
+  content: "\E007"; }
+
+.rieRtl .rieDialogsTable textarea {
+  text-align: right; }
+
+.rieNoStatusBar.rieRtl .rieResizeHandle {
+  top: 0; }
+
+.rieDialogs.rdRtl .rieResizeButtons .RadButton {
+  margin: 0 0 0 2px; }
+
+.rieDialogs.rdRtl .rieDialogsTable .rieClearRightSpace {
+  padding: 0.25em 0.25em 0.25em 0; }
+
+.rieDialogs.rdRtl .RadButton .rbPrimaryIcon {
+  margin: -0.08333em 0 0 0.5em; }
+
+.rieDialogs.rdRtl .rieZoomTable .RadButton .rbPrimaryIcon {
+  margin: -0.08333em 0 0 -0.08333em; }
+
+.RadToolBarDropDown_rtl .rtbLink::before {
+  margin: 0.08333em -1.66667em 0 0.66667em; }
+
+/* Crop box */
+.rieDraggableResizeBox {
+  position: absolute;
+  border: 1px dashed #333; }
+
+.rieDraggableResizeBox .rieDraggableBoxMove {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.rieDraggableResizeBox .rieDraggableBoxImage {
+  background-color: transparent;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.rieDraggableResizeBox .rrHandle {
+  font-size: 6px;
+  background: #999; }
+
+/* AddText box */
+.rieDraggableTextBox {
+  position: absolute;
+  border: 1px dashed #333;
+  padding: 0 0px;
+  padding-left: 0;
+  margin: 0; }
+
+.rieDraggableTextBoxContent {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; }
+
+/*Undo/Redo buttons right to left*/
+div.rieRtl .rieUndo .rtbIcon {
+  left: -117px; }
+
+div.rieRtl .rieRedo .rtbIcon {
+  left: -136px; }
+
+/* Add default icon for custom commands */
+.rieCustomizedIconClass.rieBackgroundImg span.rtbIcon {
+  background: url('Common/ImageEditor/rieCustomIconDefault.png') no-repeat 0 0;
+  _background: url('Common/ImageEditor/rieCustomIconDefault.png') no-repeat 0 0 !important; }
+
+div.rieOpacityBackground {
+  opacity: 0.5;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0; }

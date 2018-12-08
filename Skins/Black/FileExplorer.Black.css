@@ -1,0 +1,59 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_Black {
+  /* Fix Upload Panel */
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_Black .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_Black,
+  .RadFileExplorer_Black .rfeAddressBox,
+  .RadFileExplorer_Black .rfeFilterTxt {
+    border-color: #484848;
+    background: #373737; }
+  .RadFileExplorer_Black .rfeAddressBox,
+  .RadFileExplorer_Black .rfeFilterTxt {
+    background: #2a2a2a;
+    color: #ffffff; }
+  .RadFileExplorer_Black .RadGrid_Black .rgCommandCell {
+    padding: 0; }
+  .RadFileExplorer_Black div.selectedFileName {
+    border-top: 1px solid #080808; }
+  .RadFileExplorer_Black .rfePageControlContainer span {
+    color: #ffffff; }
+  .RadFileExplorer_Black .rfePageControlContainer {
+    color: #b0b0b0;
+    /* used list color var to match #888888 color */ }
+  .RadFileExplorer_Black .rfeThumbList .rfeLink {
+    color: #ffffff;
+    /* used list-color to match #d7d7d7 color */ }
+  .RadFileExplorer_Black .rfeThumbList .rfeLink:hover,
+  .RadFileExplorer_Black .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_Black .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Black .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/black_smoothSprite_20.png');
+    background-color: #2e2e2e;
+    border-color: #000000; }
+  .RadFileExplorer_Black .rfeThumbList .rfeLink:hover {
+    color: #9eda29; }
+  .RadFileExplorer_Black .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Black .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #3e3e3e;
+    color: #9eda29; }
+  .RadFileExplorer_Black .rfeFilterContainer {
+    background-image: url('../Common/Gradients/black_smoothSprite_20.png');
+    background-color: #020202; }
+  .RadFileExplorer_Black .rfeDropZone {
+    background-color: rgba(124, 124, 124, 0.8); }
+  .RadFileExplorer_Black .rfeDropUploadInfoPanel {
+    background-color: #161616;
+    color: #ffffff; }
+
+/* Fix Upload Panel */
+.rfeUploadContainer .RadUpload_Black .ruRemove,
+.RadFormBlack.rfdZone .rfeUploadInfoPanel {
+  color: #000; }
+
+.RadForm .rfeUploadContainer .RadUpload_Black .ruRemove {
+  color: #fff; }

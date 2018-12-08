@@ -1,0 +1,151 @@
+.RadCloudUpload_WebBlue {
+  color: black;
+  font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadCloudUpload_WebBlue .rcuIcon {
+    background-image: url('CloudUpload/rcuActionSprite.png'); }
+  .RadCloudUpload_WebBlue .rcuButton {
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-radius: 3px;
+    color: white;
+    font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif;
+    border-color: #4e667e;
+    color: #0d202b;
+    background-color: #d7e2e7;
+    background-image: linear-gradient(#e0e7ed 0%, #c2d2dd 50%, #a3baca 50%, #d7e2e7 100%); }
+    .RadCloudUpload_WebBlue .rcuButton:hover {
+      border-color: #5d9fb7;
+      color: #0e3d4f;
+      background-color: #bee3f6;
+      background-image: linear-gradient(#d4eaf8 0%, #baddf4 50%, #9edaf2 50%, #bee3f6 100%); }
+    .RadCloudUpload_WebBlue .rcuButton:active {
+      border-color: #133c44;
+      color: #0d202b;
+      background-color: #7abace;
+      background-image: linear-gradient(#8ebcd4 0%, #64a3c0 50%, #368eb1 50%, #7abace 100%); }
+  .RadCloudUpload_WebBlue .rcuFileWrap:hover .rcuButton {
+    border-color: #5d9fb7;
+    color: #0e3d4f;
+    background-color: #bee3f6;
+    background-image: linear-gradient(#d4eaf8 0%, #baddf4 50%, #9edaf2 50%, #bee3f6 100%);
+    background-position: 0 -1000px\9; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .RadCloudUpload_WebBlue .rcuFileWrap:hover .rcuButton {
+        background-position: 0 0; } }
+  .RadCloudUpload_WebBlue .rcuFileWrap:active .rcuButton {
+    border-color: #133c44;
+    color: #0d202b;
+    background-color: #7abace;
+    background-image: linear-gradient(#8ebcd4 0%, #64a3c0 50%, #368eb1 50%, #7abace 100%);
+    background-position: 0 -2000px\9; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .RadCloudUpload_WebBlue .rcuFileWrap:active .rcuButton {
+        background-position: 0 0; } }
+  .RadCloudUpload_WebBlue .rcuInfoPanel {
+    border-color: #dae2e8; }
+  .RadCloudUpload_WebBlue .rcuHeader {
+    background-color: #dae2e8; }
+    .RadCloudUpload_WebBlue .rcuHeader .rcuToggleButton {
+      background-image: url('Common/radGradientButtonSprite.png');
+      border-color: #4e667e;
+      color: #0d202b;
+      background-color: #d7e2e7;
+      background-image: linear-gradient(#e0e7ed 0%, #c2d2dd 50%, #a3baca 50%, #d7e2e7 100%); }
+      .RadCloudUpload_WebBlue .rcuHeader .rcuToggleButton:hover {
+        border-color: #5d9fb7;
+        color: #0e3d4f;
+        background-color: #bee3f6;
+        background-image: linear-gradient(#d4eaf8 0%, #baddf4 50%, #9edaf2 50%, #bee3f6 100%);
+        background-position: 0 -1000px\0; }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          .RadCloudUpload_WebBlue .rcuHeader .rcuToggleButton:hover {
+            background-position: 0 0; } }
+  .RadCloudUpload_WebBlue .rcuBody {
+    background-color: #f0f2f4;
+    border-color: #dae2e8; }
+  .RadCloudUpload_WebBlue .rcuFileList {
+    background-color: white;
+    border-color: #768ca5; }
+  .RadCloudUpload_WebBlue .rcuLIFailed .rcuErrorNotification {
+    color: #b32d34; }
+  .RadCloudUpload_WebBlue .rcuLIUploading .rcuStatusIcon {
+    background-image: url('Common/loading_small.gif'); }
+  .RadCloudUpload_WebBlue .rcuProgressIcon {
+    background-image: url('Common/loading_small.gif'); }
+  .RadCloudUpload_WebBlue .rcuProgressBar {
+    padding: 3px;
+    background-color: #e0e7ed;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: 0 1px 0 1px #768da6 inset;
+    background-image: linear-gradient(#c6cfd7, #d5dde5); }
+  .RadCloudUpload_WebBlue .rcuProgress {
+    height: 5px;
+    background-image: url('Upload/ruProgress.gif');
+    background-position: 0 -7px;
+    border-top: 1px solid #209812; }
+  .RadCloudUpload_WebBlue .rcuButtons .rcuButton:hover {
+    background-image: none;
+    background-color: transparent; }
+    .RadCloudUpload_WebBlue .rcuButtons .rcuButton:hover .rcuButtonText {
+      color: #0e3d4f;
+      text-decoration: underline; }
+  .RadCloudUpload_WebBlue .rcuButtons .rcuButton:active {
+    background-image: none;
+    background-color: transparent; }
+  .RadCloudUpload_WebBlue .rcuButtons .rcuButtonText {
+    color: #0053a5; }
+  .RadCloudUpload_WebBlue .rcuDropZone {
+    background-color: rgba(218, 226, 232, 0.8);
+    border-width: 0; }
+    .RadCloudUpload_WebBlue .rcuDropZone .rcuDropZoneText:before {
+      background-image: url('CloudUpload/rcuActionSprite.png'); }
+
+.RadCloudUpload_WebBlue .rcuDisabled {
+  color: #777777; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuButton {
+    border-color: #c1c4c8;
+    color: #777777;
+    background-color: #f2f2f3;
+    background-image: linear-gradient(#f4f5f5 0%, #eaecee 50%, #dbdfe2 50%, #f2f2f3 100%);
+    border-color: #b0b0b0;
+    color: #777777; }
+    .RadCloudUpload_WebBlue .rcuDisabled .rcuButton:hover, .RadCloudUpload_WebBlue .rcuDisabled .rcuButton:active {
+      border-color: #c1c4c8;
+      color: #777777;
+      background-color: #f2f2f3;
+      background-image: linear-gradient(#f4f5f5 0%, #eaecee 50%, #dbdfe2 50%, #f2f2f3 100%);
+      background-position: 0 0;
+      border-color: #b0b0b0;
+      color: #777777; }
+    .RadCloudUpload_WebBlue .rcuDisabled .rcuButton .rcuIconCollapse {
+      background-position: -62px -2px; }
+    .RadCloudUpload_WebBlue .rcuDisabled .rcuButton .rcuIconExpand {
+      background-position: -62px -22px; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuRemoveButton .rcuIcon {
+    background-position: -62px -142px; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuCancelButton .rcuIcon {
+    background-position: -62px -162px; }
+  .RadCloudUpload_WebBlue .rcuDisabled.rcuInfoPanel {
+    border-color: #b0b0b0; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuHeader {
+    color: #777777; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuBody {
+    border-color: #b0b0b0; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuFileList {
+    border-color: #b0b0b0; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuLIFailed .rcuFakeButton .rcuIcon {
+    background-position: -62px -102px; }
+  .RadCloudUpload_WebBlue .rcuDisabled .rcuButtons .rcuButton {
+    background-image: none;
+    background-color: transparent; }
+
+.rcuToolTip_WebBlue {
+  background-color: #e4e5f0;
+  border: 1px solid #768ca5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.45);
+  font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rcuToolTip_WebBlue:before {
+    width: 9px;
+    height: 7px;
+    background-image: url('CloudUpload/toolTipBefore.png');
+    border-width: 0; }

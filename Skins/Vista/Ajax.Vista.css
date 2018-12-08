@@ -1,0 +1,8 @@
+.RadAjax_Vista .raDiv {
+  background-image: url('Common/loading.gif'); }
+.RadAjax_Vista .raColor {
+  background-color: #ffffff;
+  color: #333333; }
+.RadAjax_Vista .raTransp {
+  opacity: 0.6;
+  filter: alpha(opacity=60); }

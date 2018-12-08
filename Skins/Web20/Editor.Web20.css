@@ -1,0 +1,361 @@
+.Web20 {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */
+}
+
+.Web20.RadEditor,
+.Web20.RadEditor .reModule,
+.Web20.RadEditor .reEditorModes,
+.Web20.RadEditor .reWrapper {
+  background-color: #e7f1ff;
+  /* different variable to match the right bg color */
+}
+
+.Web20.reWrapper,
+.Web20.RadEditor .reContentCell,
+.Web20.reColorPicker,
+.Web20.reInsertTable,
+.Web20.reCustomLinks a:hover {
+  border: 1px solid #6788be;
+  background-color: #e7f1ff;
+  /* different variable to match the right bg color */
+}
+
+.Web20 .reEmptyMessage {
+  color: #a8bcd9;
+}
+
+.Web20.RadEditor .reContentCell {
+  background-color: #ffffff;
+}
+
+.Web20.RadEditor .reContentCell.reNoBorder {
+  border: none;
+}
+
+.Web20.RadEditor .reNoBorder div.reContentArea {
+  border: 1px solid #6788be;
+}
+
+.Web20.reDropDownBody {
+  border: 1px solid #6788be;
+  background-color: #93b4df;
+}
+
+.Web20.reDropDownBody table {
+  background: transparent;
+}
+
+.Web20.RadEditor .reModule {
+  border-top: 1px solid #6788be;
+}
+
+.Web20.reCustomLinks a,
+.Web20.reCustomLinks a:link,
+.Web20.reCustomLinks a:visited {
+  border: 1px solid #ffffff;
+  /* should be the same as the background of the dropdown */
+  color: #000000 !important;
+}
+
+.Web20.reCustomLinks a:hover {
+  background-color: #cddcf1;
+  border: 1px solid #0f1d48;
+}
+
+.Web20 .reToolbar li,
+.Web20 .reSpinBox a,
+.Web20.reToolbar .reSeparator,
+.Web20.reToolbar .reGrip,
+.Web20 .reDialog .reTool,
+.Web20 .reModule .reTool,
+.Web20 .reDialog .reTool:hover,
+.Web20 .reToolbar .reTool:hover,
+.Web20 .reModule .reTool:hover,
+.Web20 .reToolbar .reTool.reTool_selected,
+.Web20 .reToolbar .reTool.reTool_selected:hover,
+.Web20 .reToolbar .reTool_text:hover,
+.Web20 .reToolbar .reTool_text.reTool_selected,
+.Web20 .reToolbar .reTool_text.reTool_selected:hover,
+.Web20 .reTool .split_arrow,
+.Web20 .reSplitButton.reTool_text .split_arrow,
+.Web20 .reToolbar .reTool_text .split_arrow,
+.Web20 .reDialog .reTool.reSplitButton,
+.Web20 .reModule .reTool.reSplitButton,
+.Web20 .reDropdown,
+.Web20 .reTool_disabled.reDropdown:hover,
+.Web20 .reResizeCell div,
+.Web20.reInsertTable .reToolbar li .reTool:hover,
+.Web20.RadEditor.reRtl .reDropdown:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+.Web20.RadEditor .reTlbVertical li,
+.Web20 .reDropdown:hover,
+.Web20.RadEditor .reTlbVertical .reToolbar.Default .reGrip,
+.Web20.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+.Web20 .reTlbVertical .reTool:hover,
+.Web20 .reTlbVertical .reTool_text.reSplitButton:hover,
+.Web20 .reTlbVertical .reSplitButton:hover,
+.Web20 .reTlbVertical .reTool_text:hover,
+.Web20 .reTlbVertical .reTool.reTool_selected,
+.Web20 .reTlbVertical .reTool_text.reTool_selected,
+.Web20 .reTlbVertical .reTool_text.reTool_selected:hover,
+.Web20.reDropDownBody .reTlbVertical ul li a:hover,
+.Web20.reDropDownBody .reTlbVertical .reToolbar,
+.Web20 .reMode_selected,
+.Web20.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+  background-image: url('Editor/ToolbarVerticalSprites.gif');
+}
+
+.Web20 .reToolbar li {
+  color: #000000;
+}
+
+.Web20 .reToolbar .reTool_text:hover,
+.Web20 .reToolbar .reTool_text.reTool_selected,
+.Web20 .reToolbar .reTool_text.reTool_selected:hover {
+  border-left: 1px solid #3f5f94;
+  border-right: 1px solid #3f5f94;
+}
+
+.Web20 .reToolbar .reTool_text.reTool_disabled,
+.Web20 .reToolbar .reTool_text.reTool_disabled:hover {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.Web20 .reDropdown:link,
+.Web20 .reDropdown:visited {
+  color: #000000 !important;
+}
+
+.Web20 .reDropdown,
+.Web20 .reTool_disabled.reDropdown:hover {
+  border: 1px solid #6788be;
+  background-color: #ffffff;
+}
+
+.Web20 .reDropdown:hover {
+  border-color: #3f5f94;
+  color: #000000;
+}
+
+.Web20.reDropDownBody .reTlbVertical .reToolbar {
+  background-color: #ffffff;
+}
+
+.Web20 table.reSpinBox,
+.Web20.RadEditor input {
+  border-color: #6788be;
+  background-color: #ffffff;
+}
+
+.Web20 table.reSpinBox:hover,
+.Web20.RadEditor input:hover {
+  border: 1px solid #3f5f94;
+}
+
+.Web20 .reModule_domlink_selected,
+.Web20 .reModule_domlink {
+  color: #000000;
+}
+
+.Web20.reDropDownBody .reItemOver {
+  background: #e7f1ff;
+  color: #0f3789;
+}
+
+.Web20.reColorPicker table div,
+.Web20.reColorPicker span {
+  border: 1px solid #6788be;
+}
+
+.Web20.reColorPicker table td.reItemOver div {
+  border-color: #000000;
+}
+
+.Web20 .reAjaxspell_button {
+  border: 1px solid #0f1d48;
+  background-color: #687dc1;
+  color: #ffffff;
+}
+
+.Web20 .reAjaxSpellCheckSeparator {
+  background-color: #ffffff;
+}
+
+.Web20.reCustomLinks,
+.Web20.reCustomLinks ul {
+  color: #000000;
+}
+
+.Web20.reCustomLinks a {
+  background: none transparent;
+  color: #000000;
+  cursor: default !important;
+}
+
+.Web20.reCustomLinks a:hover {
+  color: #ffffff;
+}
+
+.Web20.reInsertTable table {
+  background-color: #ffffff;
+}
+
+.Web20.reInsertTable table td {
+  border: 1px solid #6788be;
+  background-color: #ffffff;
+}
+
+.Web20.reInsertTable table .reItemOver {
+  border: 1px solid #3f5f94;
+  background-color: #e7f1ff;
+}
+
+.Web20.reInsertTable .reTlbVertical ul {
+  background-color: #ffffff;
+}
+
+.Web20.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text,
+.Web20.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link,
+.Web20.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+  color: #000000 !important;
+  background: transparent none;
+}
+
+.Web20 .reCommentEdit,
+.Web20 .reCommentTextArea,
+.Web20 .reCommentView,
+.Web20 .reCommentInfoPanel {
+  border-color: transparent;
+  background-color: #93b4df;
+}
+
+.Web20 .reCommentTitle,
+.Web20 .reCommentInfoPanel {
+  color: #000000;
+}
+
+.Web20 .reCommentTextArea {
+  border-color: #6788be;
+  background-color: #93b4df;
+}
+
+.Web20.RadEditor .reCommentButton,
+.Web20 .rePopupButtonContainer .rePopupButton {
+  border-color: #1b2148;
+  color: #fff;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#8d9dd2 25%, #5762a3 50%, #3c4d8f 75%, #687dc1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d9dd2', endColorstr='#687dc1',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Web20.RadEditor .reCommentButton:hover,
+.Web20 .rePopupButtonContainer .rePopupButton:hover {
+  border-color: #485e91;
+  color: #455b9d;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#dee7f4 25%, #afbede 50%, #98acd5 75%, #cddcf1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Web20.RadEditor .reCommentButton:active,
+.Web20 .rePopupButtonContainer .rePopupButton:active {
+  color: #fff;
+  border-color: #239500 #1a6f00 #155800 #1a6f00;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#8d9dd2 25%, #5762a3 50%, #3c4d8f 75%, #687dc1 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee7f4', endColorstr='#cddcf1',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Web20.rePopupContainer {
+  border-color: #6788be;
+  background-color: #93b4df;
+}
+
+.Web20.rePopupContainer .rePopupTitle {
+  color: #fff;
+  border-color: #6788be;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#a3bfe4 25%, #7b95c7 50%, #6889bf 75%, #92b3dd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3bfe4', endColorstr='#92b3dd',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Web20.reWrapper.reInlineEditor:hover {
+  border-color: #6788be;
+}
+
+.Web20.reWrapper.reInlineEditorSelected,
+.Web20.reWrapper.reInlineEditorSelected:hover {
+  border-color: #3f5f94;
+}
+
+.Web20.RadEditor.reRtl .reTool .split_arrow:hover {
+  border-right-color: #3f5f94;
+}
+
+.Web20.RadEditor.reRtl .reDropdown:hover {
+  background-color: #e7f1ff;
+}
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_Web20.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_Web20.reToolbarWindow div.rwContent {
+  background-color: #93b4df;
+}
+
+.RadWindow_Web20 .reInsertTableLightWrapper .lightTable {
+  border-color: #6788be;
+}
+
+.Web20 .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+/* reTool */
+.reTool span,
+.Web20.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png');
+}
+
+.reTool .split_arrow:hover {
+  border-left-color: #3f5f94;
+}

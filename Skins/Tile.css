@@ -1,0 +1,181 @@
+.RadTile {
+  zoom: 1;
+  *position: relative;
+  overflow-x: auto;
+  /* Right to Left Support */
+  /* loading image styles */ }
+  .RadTile:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .RadTile, .RadTile * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box; }
+  .RadTile div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default; }
+  .RadTile div:hover,
+  .RadTile div:active,
+  .RadTile div:focus {
+    cursor: default; }
+  .RadTile.rtileWide, .RadTile.rtileSquare {
+    position: relative;
+    float: left;
+    height: 150px;
+    margin: 0 6px 6px 0;
+    vertical-align: top;
+    overflow: hidden;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent; }
+  .RadTile.rtileWide {
+    width: 310px; }
+  .RadTile.rtileSquare {
+    width: 150px; }
+  .RadTile.rtileSelected {
+    background-position: 0 0; }
+  .RadTile.rtileSelected .rtileSelectedIcon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    z-index: 99; }
+  .RadTile.RadTextTile .rtileContent {
+    padding: 8px 8px 0;
+    vertical-align: middle; }
+  .RadTile .rtileNavigation:hover {
+    cursor: pointer; }
+  .RadTile.rtileSelectIntention .rtileSelectedIcon {
+    opacity: .5;
+    filter: alpha(opacity=50); }
+  .RadTile .rtileTopContent {
+    height: 115px;
+    overflow: hidden;
+    vertical-align: top; }
+  .RadTile.RadImageAndTextTile .rtileTopContent {
+    height: 100%; }
+  .RadTile.RadIconTile .rtileTopContent {
+    text-align: center; }
+  .RadTile .rtileTopContent .rtileIconImage {
+    margin-top: 30px; }
+  .RadTile .rtileTextWrap {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline; }
+  .RadTile .rtileBottomContent {
+    height: 38px;
+    padding: 7px 10px 0;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden; }
+  .RadTile .rtileBottomContent.rtileTitleIndent,
+  .RadTile .rtileBottomContent.rtileBadgeIndent {
+    width: 275px; }
+  .RadTile .rtileBottomContent.rtileTitleIndent.rtileBadgeIndent {
+    width: 231px; }
+  .RadTile.rtileSquare .rtileBottomContent {
+    width: auto; }
+  .RadTile.rtileSquare .rtileBottomContent.rtileTitleIndent, .RadTile.rtileSquare .rtileBottomContent.rtileBadgeIndent {
+    width: 115px; }
+  .RadTile.rtileSquare .rtileBottomContent.rtileTitleIndent.rtileBadgeIndent {
+    width: 80px; }
+  .RadTile .rtileTitleIndent .rtileTitle,
+  .RadTile .rtileTitleIndent .rtileBadgeIndent {
+    width: 20px;
+    overflow: hidden; }
+  .RadTile .rtileTitleIndent {
+    padding-left: 44px; }
+  .RadTile .rtileTitleIndent {
+    padding-right: 35px; }
+  .RadTile .rtileTitleIndent img.rtileTitle {
+    height: auto;
+    width: auto; }
+  .RadTile h6.rtileTitle {
+    width: 70%;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99; }
+  .RadTile div.rtileWrapper h6.rtileTitle {
+    border-bottom: 0; }
+  .RadTile img.rtileTitle {
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99; }
+  .RadTile .rtileBadge {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 99; }
+  .RadTile .rtileBadgeIcon {
+    background-image: url('Common/Tile/rtileBadgeIconsLight.png');
+    _background-image: url('Common/Tile/rtlileBadgeIconsLightIE6.png');
+    background-repeat: no-repeat;
+    min-width: 16px;
+    min-height: 16px; }
+  .RadTile .rtileActivityBadge {
+    background-position: 3px 3px; }
+  .RadTile .rtileAlertBadge {
+    background-position: 2px -18px; }
+  .RadTile .rtileAvailableBadge {
+    background-position: 2px -38px; }
+  .RadTile .rtileAwayBadge {
+    background-position: 2px -58px; }
+  .RadTile .rtileBusyBadge {
+    background-position: 2px -78px; }
+  .RadTile .rtileUnavailableBadge {
+    background-position: 2px -98px; }
+  .RadTile .rtileNewMessageBadge {
+    background-position: 1px -114px; }
+  .RadTile .rtilePausedBadge {
+    background-position: 7px -134px; }
+  .RadTile .rtilePlayingBadge {
+    background-position: 8px -154px; }
+  .RadTile .rtileErrorBadge {
+    background-position: 2px -178px; }
+  .RadTile .rtileAttentionBadge {
+    background-position: 2px -195px; }
+  .RadTile.rtileWide.rtileRtl, .RadTile.rtileSquare.rtileRtl {
+    float: right; }
+  .RadTile.rtileRtl .rtileImageWrap {
+    margin: 6px 0 0 5px; }
+  .RadTile.rtileRtl .rtileSelectedTile .rtileSelectedIcon {
+    right: auto;
+    top: -2px;
+    left: -2px;
+    background-position: -30px 0; }
+  .RadTile.rtileRtl .rtileTitle {
+    bottom: 10px;
+    right: 10px;
+    left: auto; }
+  .RadTile.rtileRtl img.rtileTitle {
+    bottom: 10px;
+    right: 10px;
+    left: auto; }
+  .RadTile.rtileRtl .rtileBadge {
+    bottom: 10px;
+    left: 10px;
+    right: auto; }
+  .RadTile.rtileLoading,
+  .RadTile .rtileLoading {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    _background-image: none; }

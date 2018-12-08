@@ -1,0 +1,42 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_Outlook {
+  /* Overwrites padding for better presentation and space saving */
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_Outlook .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_Outlook,
+  .RadFileExplorer_Outlook .rfeAddressBox,
+  .RadFileExplorer_Outlook .rfeFilterTxt {
+    border-color: #002d96; }
+  .RadFileExplorer_Outlook div.selectedFileName {
+    border-top: 1px solid #c3d9f9; }
+  .RadFileExplorer_Outlook .RadGrid_Outlook .rgRow td,
+  .RadFileExplorer_Outlook .RadGrid_Outlook .rgAltRow td,
+  .RadFileExplorer_Outlook .RadGrid_Outlook .rgEditRow td,
+  .RadFileExplorer_Outlook .RadGrid_Outlook .rgFooter td {
+    padding-left: 8px;
+    padding-right: 8px; }
+  .RadFileExplorer_Outlook .rfeThumbList a {
+    color: #00156e; }
+  .RadFileExplorer_Outlook .rfeThumbList a:hover,
+  .RadFileExplorer_Outlook .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_Outlook .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Outlook .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/outlook_smoothSprite_20.png');
+    background-color: #ffef7c;
+    border-color: #ffe272; }
+  .RadFileExplorer_Outlook .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Outlook .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #97b8e8;
+    border-color: #dceafc; }
+  .RadFileExplorer_Outlook .rfeFilterContainer {
+    background-image: url('../Common/Gradients/outlook_smoothSprite_20.png');
+    background-color: #6797d1; }
+  .RadFileExplorer_Outlook .rfeDropZone {
+    background-color: rgba(226, 239, 253, 0.8); }
+  .RadFileExplorer_Outlook .rfeDropUploadInfoPanel {
+    background-color: #d6e4fb;
+    color: #000000; }

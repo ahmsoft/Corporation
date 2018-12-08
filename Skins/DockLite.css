@@ -1,0 +1,147 @@
+.RadDock {
+  /*position: absolute;*/
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  /* Collapsed dock */
+  /* Right to Left mode */ }
+  .RadDock, .RadDock .rdTitleWrapper * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box; }
+  .RadDock.rdRoundedCorner {
+    border-radius: 0.41667em; }
+  .RadDock.rdShadow {
+    box-shadow: 2px 3px 4px #828282; }
+  .RadDock.rdDragHelper {
+    opacity: 0.5 !important; }
+  .RadDock .rdTitleWrapper {
+    position: relative;
+    padding: 0.33333em 0.83333em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    min-height: 1.41667em; }
+  .RadDock.rdGripTop .rdTitleWrapper {
+    height: 0.83333em;
+    padding: 0em 0.83333em;
+    min-height: 0.83333em; }
+  .RadDock.rdNone .rdTitleWrapper {
+    display: none; }
+  .RadDock.rdRoundedCorner .rdTitleWrapper {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadDock .rdTitleWrapper .rdTitle {
+    max-width: 60%;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+    border-bottom: 0 none;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    line-height: 1.41667em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden; }
+  .RadDock .rdCommands {
+    width: auto;
+    list-style: none;
+    margin: -0.83333em 0em 0em;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 0.41667em; }
+  .RadDock .rdListItem {
+    float: left;
+    margin: 0em 0em 0em 0.41667em; }
+  .RadDock .rdCommandButton {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0.16667em;
+    text-decoration: none;
+    vertical-align: top;
+    color: transparent; }
+  .RadDock span.rdCommandButton:hover {
+    cursor: pointer;
+    color: transparent; }
+  .RadDock span.rdClose:before, .RadDock span.rdExpand:before, .RadDock span.rdCollapse:before, .RadDock span.rdPin:before, .RadDock span.rdUnpin:before, .RadDock span.rdCustom:before {
+    font-size: 1.66667em;
+    font-size: 1.33333em \9;
+    margin: 0em 0em 0em -0.075em;
+    margin: 0em 0em 0em -0.08333em \9; }
+  .RadDock _:-ms-fullscreen, :root .RadDock span.rdClose:before, .RadDock _:-ms-fullscreen, :root .RadDock span.rdExpand:before, .RadDock _:-ms-fullscreen, :root .RadDock span.rdCollapse:before, .RadDock _:-ms-fullscreen, :root .RadDock span.rdPin:before, .RadDock _:-ms-fullscreen, :root .RadDock span.rdUnpin:before, .RadDock _:-ms-fullscreen, :root .RadDock span.rdCustom:before {
+    font-size: 0.8em;
+    margin: 0em 0em 0em -0.08333em; }
+  @media \0screen {
+    .RadDock span.rdClose:before, .RadDock span.rdExpand:before, .RadDock span.rdCollapse:before, .RadDock span.rdPin:before, .RadDock span.rdUnpin:before {
+      font-size: 1.66667em;
+      margin: 0em 0em 0em -0.075em; } }
+  .RadDock span.rdClose:before {
+    content: "\E038"; }
+  .RadDock span.rdExpand:before {
+    content: "\E002"; }
+  .RadDock span.rdCollapse:before {
+    content: "\E001"; }
+  .RadDock span.rdPin:before {
+    content: "\E0B8"; }
+  .RadDock span.rdUnpin:before {
+    content: "\E0B7"; }
+  .RadDock span.rdCustom:before {
+    content: "\E0A4";
+    font-size: 1.25em;
+    margin: 0.125em 0em 0em 0.04167em;
+    font-size: 0.7em\9;
+    margin: 0.16667em 0em 0em 0.08333em \9; }
+  .RadDock _:-ms-fullscreen, :root .RadDock span.rdCustom:before {
+    font-size: 0.6em;
+    margin: 0.16667em 0em 0em 0em; }
+  @media \0screen {
+    .RadDock span.rdCustom:before {
+      font-size: 1.25em;
+      margin: 0.125em 0em 0em 0.04167em; } }
+  .RadDock .rdCommandButton:before {
+    text-indent: 0;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    content: "\E0A4";
+    font-size: 1.25em;
+    margin: 0.125em 0em 0em 0.04167em; }
+  .RadDock.rdRoundedCorner .rdContentWrapper {
+    border-radius: 0 0 5px 5px;
+    border-radius: 0em 0em 0.41667em 0.41667em; }
+  .RadDock.rdNone .rdContentWrapper {
+    border-radius: 0.41667em; }
+  .RadDock .rdContent {
+    margin: 0.41667em 0.83333em;
+    overflow-x: auto; }
+  .RadDock.rdCollapsed {
+    height: auto !important;
+    overflow: hidden; }
+  .RadDock.rdCollapsed .rdTitleWrapper {
+    border-bottom: 0; }
+  .RadDock.rdCollapsed.rdRoundedCorner, .RadDock.rdCollapsed.rdRoundedCorner .rdTitleWrapper {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadDock.rdRtl .rdCommands {
+    left: 0;
+    right: auto; }
+  .RadDock.rdRtl span.rdClose:before, .RadDock.rdRtl span.rdExpand:before, .RadDock.rdRtl span.rdCollapse:before, .RadDock.rdRtl span.rdPin:before, .RadDock.rdRtl span.rdUnpin:before, .RadDock.rdRtl span.rdCustom:before {
+    margin: 0em -0.08333em 0em 0em; }
+  .RadDock.rdRtl span.rdCustom:before {
+    margin: 0.125em 0.125em 0em 0em; }
+  .RadDock.rdRtl .rdCommandButton:before {
+    margin: 0.125em 0.125em 0em 0em; }
+
+.RadDockZone {
+  min-width: 100px;
+  min-height: 50px;
+  padding: 0.41667em;
+  border-width: 1px;
+  border-style: solid; }
+

@@ -1,0 +1,16 @@
+.RadSocialShare_Telerik {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #8e8e8e;
+  background-color: #ececec; }
+  .RadSocialShare_Telerik .sshLinkItem .sshText {
+    color: black; }
+  .RadSocialShare_Telerik .sshLinkItem:hover .sshText {
+    color: black; }
+
+.RadComboBoxDropDown_Telerik .rcbItem .sshLinkItem .sshText {
+  color: black; }
+
+.RadComboBoxDropDown_Telerik .rcbHovered .sshLinkItem .sshText {
+  color: black; }
+

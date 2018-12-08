@@ -1,0 +1,72 @@
+.RadDropDownTree_Web20 {
+  color: #000000;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownTree_Web20 .rddtInner {
+    border-radius: 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #0f1d48;
+    color: #ffffff;
+    background-color: #687dc1;
+    background-image: linear-gradient(#8d9dd2 0%, #5762a3 50%, #3c4d8f 50%, #687dc1 100%); }
+  .RadDropDownTree_Web20 .rddtEmptyMessage {
+    color: #a8bcd9; }
+  .RadDropDownTree_Web20 .rddtClearButton {
+    background-position: -2px -384px; }
+  .RadDropDownTree_Web20 .rddtIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -1px -20px; }
+  .RadDropDownTree_Web20 .rddtHovered {
+    border-color: #3f5f94;
+    color: #0f3789;
+    background-color: #cddcf1;
+    background-image: linear-gradient(#dee7f4 0%, #afbede 50%, #98acd5 50%, #cddcf1 100%); }
+    .RadDropDownTree_Web20 .rddtHovered .rddtClearButton {
+      background-position: -22px -384px; }
+      .RadDropDownTree_Web20 .rddtHovered .rddtClearButton.rddtClearButtonHovered {
+        background-position: -62px -384px; }
+    .RadDropDownTree_Web20 .rddtHovered .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Web20 .rddtFocused {
+    border-color: #0f1d48;
+    color: #ffffff;
+    background-color: #687dc1;
+    background-image: linear-gradient(#8d9dd2 0%, #5762a3 50%, #3c4d8f 50%, #687dc1 100%); }
+    .RadDropDownTree_Web20 .rddtFocused .rddtClearButton {
+      background-position: -42px -384px; }
+      .RadDropDownTree_Web20 .rddtFocused .rddtClearButton.rddtClearButtonHovered {
+        background-position: -82px -384px; }
+    .RadDropDownTree_Web20 .rddtFocused .rddtIcon {
+      background-position: -1px -20px; }
+  .RadDropDownTree_Web20 .rddtDisabled {
+    border-color: #747474;
+    color: #777777;
+    background-color: #bebebe;
+    background-image: linear-gradient(#cfcfcf 0%, #b0b0b0 50%, #a1a1a1 50%, #bebebe 100%); }
+    .RadDropDownTree_Web20 .rddtDisabled .rddtIcon {
+      background-position: -1px -20px; }
+
+.rddtPopup_Web20 {
+  border-color: #6788be;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddtPopup_Web20 .rddtHeader,
+  .rddtPopup_Web20 .rddtFooter {
+    border-color: #6788be;
+    color: #000000;
+    background-color: #93b4df; }
+  .rddtPopup_Web20 .rddtFilter {
+    border-color: #6788be;
+    color: #000000;
+    background-color: #93b4df; }
+    .rddtPopup_Web20 .rddtFilter .rddtFilterInput {
+      font: 12px "Segoe UI", Arial, Helvetica, sans-serif;
+      border-color: #6788be;
+      color: #000000;
+      background-color: #ffffff; }
+    .rddtPopup_Web20 .rddtFilter .rddtFilterEmptyMessage {
+      color: #a8bcd9; }
+  .rddtPopup_Web20 .RadTreeView em {
+    color: #000000;
+    background-color: #e7f1ff; }

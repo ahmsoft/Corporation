@@ -1,0 +1,30 @@
+.ReminderDialog {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webki-tuser-select: none;
+  user-select: none; }
+  .ReminderDialog .rsPopup,
+  .ReminderDialog .rsRemSnoozePanel {
+    position: relative; }
+  .ReminderDialog .rsRemListWrap {
+    margin-top: .5em; }
+  .ReminderDialog .rsRemList {
+    height: 10em;
+    overflow: auto; }
+  .ReminderDialog .rsRemSnoozePanel .rsLi:before {
+    content: "";
+    margin: .2em .75em 0 0;
+    width: 1em;
+    height: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left; }
+  .ReminderDialog .rsPopup .rsCommandFooter {
+    padding: 0; }
+    .ReminderDialog .rsPopup .rsCommandFooter .rsButton {
+      border-width: 0; }
+    .ReminderDialog .rsPopup .rsCommandFooter .rsButton + .rsButton {
+      border-left-width: 1px; }

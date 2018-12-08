@@ -1,0 +1,53 @@
+.RadComboBox_Web20 {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBox_Web20 .rcbInputCell, .RadComboBox_Web20 .rcbArrowCell {
+    background-image: url('Common/radFormSprite.png'); }
+  .RadComboBox_Web20 .rcbInput {
+    color: #000000;
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 16px; }
+  .RadComboBox_Web20 .rcbEmptyMessage {
+    color: #a8bcd9; }
+  .RadComboBox_Web20 .rcbHovered .rcbInput {
+    color: #000000; }
+  .RadComboBox_Web20 .rcbFocused .rcbInput {
+    color: #000000; }
+  .RadComboBox_Web20 .rcbReadOnly .rcbInput {
+    color: #ffffff; }
+  .RadComboBox_Web20 .rcbHovered .rcbReadOnly .rcbInput {
+    color: #0f3789; }
+  .RadComboBox_Web20 .rcbFocused .rcbReadOnly .rcbInput {
+    color: #ffffff; }
+
+.RadComboBoxDropDown_Web20 {
+  border-color: #6788be;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadComboBoxDropDown_Web20 .rcbHovered {
+    color: #000000;
+    background-color: #e7f1ff; }
+  .RadComboBoxDropDown_Web20 .rcbSelected {
+    color: #000000;
+    background-color: #d4ffbc; }
+  .RadComboBoxDropDown_Web20 .rcbLoading {
+    color: #000000;
+    background-color: #e7f1ff; }
+  .RadComboBoxDropDown_Web20 .rcbItem em {
+    color: #000000;
+    background-color: #e7f1ff; }
+  .RadComboBoxDropDown_Web20 .rcbCheckAllItems {
+    border-color: #6788be;
+    color: #ffffff;
+    background-color: #92b3de; }
+  .RadComboBoxDropDown_Web20 .rcbMoreResults {
+    border-color: #6788be;
+    color: #ffffff;
+    background-color: #92b3de; }
+  .RadComboBoxDropDown_Web20 .rcbSeparator {
+    color: #ffffff;
+    background: #92b3de; }

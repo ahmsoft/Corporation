@@ -1,0 +1,317 @@
+.RadWindow {
+  /*position: absolute;*/
+  padding: 0em 0.5em 0.5em;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  /* Collapsed dock */
+  /* External content iframe styles */
+  /* Alert, Confrim, Prompt Dialogs */
+  /* Right to Left mode */ }
+  .RadWindow, .RadWindow .rwTitleBar * {
+    box-sizing: content-box; }
+  .RadWindow.rwRoundedCorner {
+    border-radius: 0.41667em; }
+  .RadWindow.rwShadow {
+    box-shadow: 0 1px 4px #b3b3b3; }
+  .RadWindow .rwTitleBar {
+    position: relative;
+    margin: 0em -0.5em;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    min-height: 2.08333em; }
+  .RadWindow .rwTitleBar:hover {
+    cursor: move; }
+  .RadWindow.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadWindow .rwTitleBar .rwTitleWrapper {
+    padding: 0.33333em 0.83333em; }
+  .RadWindow .rwIcon {
+    position: absolute;
+    width: 1.33333em;
+    height: 1.33333em;
+    margin: -0.58333em 0em 0em 0em;
+    display: inline-block;
+    background-position: 0 -78px;
+    top: 50%;
+    left: 0.75em; }
+  .RadWindow .rwIcon:before {
+    display: block;
+    width: 1.33333em;
+    height: 1.33333em;
+    vertical-align: middle;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    font-size: 2.66667em;
+    font-size: 2em \9;
+    content: "\E0C7";
+    margin: -0.25em 0em 0em -0.25em;
+    margin: -0.08333em 0em 0em -0.25em \9; }
+  .RadWindow _:-ms-fullscreen, :root .RadWindow span.rwIcon:before {
+    font-size: 0.83333em;
+    margin: -0.125em 0em 0em -0.25em; }
+  @media \0screen {
+    .RadWindow .rwIcon:before {
+      margin: -0.16667em 0em 0em -0.25em; } }
+  .RadWindow .rwTitleWrapper .rwTitle {
+    display: inline-block;
+    margin: 0;
+    padding: 0em 0em 0em 1.83333em;
+    font-size: 1em;
+    width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    border-bottom: 0;
+    vertical-align: middle; }
+  .RadWindow .rwCommands {
+    width: auto;
+    list-style: none;
+    margin: -1em 0em 0em;
+    margin: -1.08333em 0em 0em \9;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 0.41667em; }
+  .RadWindow _:-ms-fullscreen, :root .RadWindow .rwCommands {
+    margin: -1.08333em 0em 0em; }
+  .RadWindow .rwListItem {
+    float: left;
+    margin: 0em 0em 0em 0.41667em; }
+  .RadWindow .rwCommandButton {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0.16667em;
+    text-decoration: none;
+    vertical-align: top; }
+  .RadWindow .rwCommandButton:before {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    font-family: "TelerikWebUI";
+    content: "";
+    font-size: 1.5em;
+    font-size: 1.58333em \9;
+    margin: 0.08333em 0em 0em 0em;
+    border-radius: 0.16667em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent; }
+  .RadWindow _:-ms-fullscreen, :root .RadWindow .rwCommandButton:before {
+    font-size: 1.05em;
+    margin: 0.08333em 0em 0em -0.08333em; }
+  .RadWindow span.rwCommandButton:hover {
+    cursor: pointer;
+    color: transparent; }
+  .RadWindow .rwCloseButton:before {
+    content: "\E038"; }
+  .RadWindow .rwMaximizeButton:before {
+    content: "\E0C7"; }
+  .RadWindow .rwMinimizeButton:before {
+    content: "\E114"; }
+  .RadWindow.rwMaximizedWindow {
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: none; }
+  .RadWindow.rwMinimizedWindow .rwMinimizeButton:before, .RadWindow.rwMaximizedWindow .rwMaximizeButton:before {
+    content: "\E08F"; }
+  .RadWindow .rwPinButton:before {
+    content: "\E0B7"; }
+  .RadWindow .rwPinButton.on:before {
+    content: "\E0B8"; }
+  .RadWindow .rwReloadButton:before {
+    content: "\E01E"; }
+  .RadWindow.rwMinimizedWindow .rwCommands li:nth-child(1), .RadWindow.rwMinimizedWindow .rwCommands li:nth-child(3) {
+    display: none; }
+  .RadWindow .rwContent {
+    padding: 0.41667em 0.83333em;
+    border-width: 1px;
+    border-style: solid;
+    overflow: auto; }
+  .RadWindow .rwIframeWrapperIOS {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+  .RadWindow .rwStatusBar {
+    position: relative;
+    height: 1.83333em;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    padding: 0em 0em 0em 0.41667em; }
+  .RadWindow .rwStatusBar input {
+    width: 85%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    font-size: 1em;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadWindow .rwStatusBar .rwResize {
+    position: absolute;
+    right: 0.25em;
+    bottom: 0.08333em;
+    display: block;
+    width: 1.33333em;
+    height: 1.33333em; }
+  .RadWindow .rwStatusBar .rwResize:hover {
+    cursor: se-resize; }
+  .RadWindow .rwStatusBar .rwResize:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 1;
+    content: "";
+    font-family: "TelerikWebUI";
+    font-size: 2em;
+    content: "\E006"; }
+  .RadWindow.rwCollapsed {
+    overflow: hidden; }
+  .RadWindow.rwCollapsed.rwRoundedCorner .rwTitleBar {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.41667em; }
+  .RadWindow.rwMinimizedWindow {
+    padding: 0em 0.5em;
+    height: auto !important; }
+  .RadWindow.rwMinimizedWindow.rwRoundedCorner .rwTitleBar {
+    border-radius: 0.41667em; }
+  .RadWindow.rwMinimizedWindow .rwContent, .RadWindow.rwMinimizedWindow .rwStatusBar, .RadWindow.rwMinimizedWindow .rwPinButton, .RadWindow.rwMinimizedWindow .rwReloadButton, .RadWindow.rwMinimizedWindow .rwMaximizeButton, .RadWindow.rwMinimizedWindow .rwTopResize {
+    display: none; }
+  .RadWindow.rwMinimizedWindow .rwCommands {
+    right: -10px; }
+  .RadWindow.rwMinimizedWindow .rwCommands .rwListItem {
+    vertical-align: top;
+    margin-right: 0.16667em; }
+  .RadWindow.rwInactiveWindow {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
+  .RadWindow .rwNoTitleBar {
+    padding: 0.5em; }
+  .RadWindow.rwNoTitleBar .rwTitleBar, .RadWindow.rwNoStatusBar .rwStatusBar {
+    display: none; }
+  .RadWindow div.rwExternalContent {
+    position: relative;
+    padding: 0;
+    overflow: inherit; }
+  .RadWindow div.rwExternalContent iframe {
+    height: 100% !important; }
+  .RadWindow.rwLoading .rwExternalContent {
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .RadWindow .rwLoading.rwStatusBar {
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding: 0em 0em 0em 2.08333em; }
+  .RadWindow .rwDialog {
+    margin: 0.83333em 0em 0em;
+    padding: 0em 1.25em;
+    background-repeat: no-repeat;
+    background-position: 10px 0; }
+  .RadWindow .rwDialog:before {
+    position: absolute;
+    top: 30%;
+    left: 0.7em;
+    display: inlin-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1;
+    content: "";
+    font-family: "TelerikWebUI";
+    font-size: 1.33333em; }
+  .RadWindow .rwDialogContent {
+    min-height: 50px;
+    padding: 0em 0em 0.83333em 5em; }
+  .RadWindow .rwPromptInputContainer {
+    margin: 0.41667em 0em 0em;
+    padding: 0em 1em 0em 0em; }
+  .RadWindow .rwPromptInput {
+    width: 100%;
+    height: 1.41667em;
+    padding: 0.08333em 0.41667em 0.16667em 0.41667em;
+    border-width: 1px;
+    border-style: solid; }
+  .RadWindow.rwRoundedCorner .rwPromptInput {
+    border-radius: 0.33333em; }
+  .RadWindow .rwDialogButtons {
+    position: absolute;
+    right: 0.83333em;
+    bottom: 0.41667em;
+    text-align: right; }
+  .RadWindow .rwDialogButtons input {
+    font-size: 12px;
+    border-radius: 0.33333em;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0em 0em 0.83333em 0.41667em; }
+  .RadWindow .rwAlertDialog {
+    background-image: url('Common/ModalDialogAlert.gif'); }
+  .RadWindow .rwConfirmDialog {
+    background-image: url('Common/ModalDialogConfirm.gif'); }
+  .RadWindow .rwPromptDialog .rwDialogContent {
+    padding: 0em 0em 0.83333em 0em; }
+  .RadWindow.rwRtl {
+    direction: rtl; }
+  .RadWindow.rwRtl .rwIcon {
+    left: auto;
+    right: 0.75em; }
+  .RadWindow.rwRtl .rwIcon:before {
+    margin: -0.25em -0.25em 0em 0em;
+    margin: -0.08333em -0.25em 0em 0em \9; }
+  .RadWindow _:-ms-fullscreen, :root .RadWindow.rwRtl span.rwIcon:before {
+    font-size: 0.83333em;
+    margin: -0.125em -0.25em 0em 0em; }
+  @media \0screen {
+    .RadWindow.rwRtl .rwIcon:before {
+      margin: -0.16667em -0.25em 0em 0em; } }
+  .RadWindow.rwRtl .rwTitleWrapper .rwTitle {
+    float: right;
+    text-align: right;
+    padding: 0em 1.83333em 0em 0em; }
+  .RadWindow.rwRtl .rwCommands {
+    margin: -1em 0em 0em;
+    left: 0.08333em;
+    right: auto;
+    direction: rtl; }
+  .RadWindow.rwRtl .rwStatusBar .rwResize {
+    left: 0.16667em;
+    right: auto;
+    bottom: 0.125em;
+    bottom: 0.08333em \9; }
+  .RadWindow _:-ms-fullscreen, :root .RadWindow.rwRtl .rwStatusBar .rwResize {
+    bottom: 0.08333em; }
+  .RadWindow.rwRtl .rwStatusBar .rwResize:before {
+    content: "\E007"; }
+  .RadWindow.rwRtl .rwStatusBar .rwResize:hover {
+    cursor: sw-resize !important; }
+  .RadWindow.rwRtl .rwLoading.rwStatusBar {
+    background-position: right 5px center;
+    padding: 0em 2.5em 0em 0em; }
+  .RadWindow.rwRtl .rwPromptInputContainer {
+    padding: 0em 0em 0em 1em; }
+  .RadWindow.rwRtl .rwDialogButtons {
+    text-align: right; }
+  .RadWindow .rwPromptInput:disabled {
+    opacity: 0.7; }
+
+html.rwPreventPageScrolling, body.rwPreventPageScrolling {
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+

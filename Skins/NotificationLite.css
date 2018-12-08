@@ -1,0 +1,147 @@
+.RadNotification {
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  word-wrap: break-word;
+  z-index: 9001;
+  overflow: hidden; }
+  .RadNotification, .RadNotification * {
+    box-sizing: border-box; }
+  .RadNotification.rnRoundedCorners {
+    border-radius: 0.41667em; }
+  .RadNotification.rnRoundedCorners .rnTitleBar {
+    border-radius: 0.41667em 0.41667em 0em 0em; }
+  .RadNotification .rnTitleBar {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.33333em 0.83333em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background-repeat: repeat-x;
+    background-position: 0 0; }
+  .RadNotification .rnTitleBar .rnIcon {
+    display: inline-block;
+    width: 1.33333em;
+    height: 1.33333em;
+    vertical-align: top;
+    margin: 0.04167em 0.33333em 0em -0.33333em;
+    overflow: hidden;
+    background-repeat: no-repeat; }
+  .RadNotification .rnIcon:before, .RadNotification .rnCommands li a:before {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "TelerikWebUI";
+    font-size: 1.33333em;
+    line-height: 1; }
+  .RadNotification .rnCommands li a:before {
+    margin: -0.04167em 0em 0em -0.05833em; }
+  .RadNotification .rnIconInfo:before {
+    content: "\E0F9"; }
+  .RadNotification .rnContentWrapper .rnIconInfo:before {
+    color: #328ae2; }
+  .RadNotification .rnIconDelete:before {
+    content: "\E031"; }
+  .RadNotification .rnContentWrapper .rnIconDelete:before {
+    color: #e80000; }
+  .RadNotification .rnIconDeny:before {
+    content: "\E036"; }
+  .RadNotification .rnContentWrapper .rnIconDeny:before {
+    color: #e80000; }
+  .RadNotification .rnIconEdit:before {
+    content: "\E0D5"; }
+  .RadNotification .rnIconOk:before {
+    content: "\E030"; }
+  .RadNotification .rnContentWrapper .rnIconOk:before {
+    color: #00b300; }
+  .RadNotification .rnIconWarning:before {
+    content: "\E0FA"; }
+  .RadNotification .rnContentWrapper .rnIconWarning:before {
+    color: #ffde00; }
+  .RadNotification .rnTitleBar .rnIconNone {
+    display: none; }
+  .RadNotification .rnTitleBarTitle {
+    display: inline-block;
+    padding: 0em 1.66667em 0em 0em; }
+  .RadNotification .rnCommands {
+    width: auto;
+    list-style: none;
+    margin: -0.66667em 0em 0em;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 0.41667em; }
+  .RadNotification .rnCommands li {
+    float: left; }
+  .RadNotification .rnCommands a {
+    display: inline-block;
+    width: 1.33333em;
+    height: 1.33333em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0.16667em;
+    text-decoration: none;
+    color: inherit;
+    vertical-align: top; }
+  .RadNotification .rnCommands .rnMenuIcon a:before {
+    content: "\E002"; }
+  .RadNotification .rnCommands .rnCloseIcon a:before {
+    content: "\E038"; }
+  .RadNotification .rnCommands a .rnAccessibility {
+    display: none; }
+  .RadNotification div.rnNoTitleBar .rnContentWrapper {
+    border-top: 0; }
+  .RadNotification .rnContentWrapper {
+    position: relative;
+    padding: 0.41667em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: transparent; }
+  .RadNotification .rnContentWrapper .rnIcon {
+    position: absolute;
+    top: 0.83333em;
+    left: 0.83333em;
+    display: inline-block;
+    margin: 0em 0.41667em 0em 0em;
+    min-width: 2.66667em;
+    min-height: 2.66667em;
+    background-repeat: no-repeat; }
+  .RadNotification .rnContentWrapper .rnIcon:before {
+    font-size: 3em;
+    font-size: 2.2em\9; }
+  .RadNotification _:-ms-fullscreen, :root .RadNotification .rnContentWrapper .rnIcon:before {
+    font-size: 0.75em; }
+  @media \0screen {
+    .RadNotification .rnContentWrapper .rnIcon:before {
+      font-size: 2.8em; } }
+  .RadNotification .rnContent {
+    display: inline-block;
+    padding: 0.33333em 0.41667em 0em 4.16667em;
+    min-height: 3.33333em; }
+  .RadNotification.rnNoContentIcon .rnContent {
+    padding: 0.41667em; }
+  .RadNotification .rnContentTemplate {
+    padding: 0; }
+  .RadNotification.rnRtl .rnTitleBarTitle {
+    padding: 0em 0em 0em 1.66667em; }
+  .RadNotification.rnRtl .rnTitleBar .rnIcon {
+    margin: 0.04167em -0.33333em 0em 0.33333em; }
+  .RadNotification.rnRtl .rnCommands {
+    right: auto;
+    left: 0.41667em; }
+  .RadNotification.rnRtl .rnContent {
+    padding: 0.33333em 4.16667em 0em 0.41667em; }
+  .RadNotification.rnRtl .rnContentWrapper .rnIcon {
+    left: auto;
+    right: 0.83333em;
+    margin: 0em 0em 0em 0.41667em; }
+
+.rnEmbed {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -99999px;
+  top: -99999px; }
+

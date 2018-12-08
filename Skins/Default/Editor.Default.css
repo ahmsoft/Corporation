@@ -1,0 +1,225 @@
+/*$main-sprite-url: skin-image-url( "Common", "radActionsSprite.png" );
+$main-sprite-url-IE6: skin-image-url( "Common", "radActionsSpriteIE6.png" );*/
+.Default {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */ }
+  .Default.RadEditor, .Default.RadEditor .reModule, .Default.RadEditor .reEditorModes, .Default.RadEditor .reWrapper {
+    background-color: #eeeeee; }
+  .Default .reEmptyMessage {
+    color: #333333; }
+  .Default.reWrapper, .Default.RadEditor .reContentCell, .Default.reColorPicker, .Default.reInsertTable, .Default.reDropDownBody, .Default.reCustomLinks a:hover {
+    border: 1px solid #828282; }
+  .Default.RadEditor .reContentCell {
+    background-color: white; }
+  .Default.RadEditor .reContentCell.reNoBorder {
+    border: none; }
+  .Default.RadEditor .reNoBorder div.reContentArea {
+    border: 1px solid #828282; }
+  .Default.reDropDownBody table {
+    background: transparent; }
+  .Default.RadEditor .reModule {
+    border-top: 1px solid #828282; }
+  .Default.reCustomLinks a, .Default.reCustomLinks a:link, .Default.reCustomLinks a:visited {
+    border: 1px solid white;
+    /* should be the same as the background of the dropdown */
+    color: #333333 !important; }
+  .Default.reCustomLinks a:hover {
+    background-color: #c3c3c3;
+    border: 1px solid #cdcdcd; }
+  .Default .reToolbar li,
+  .Default .reSpinBox a, .Default.reToolbar .reSeparator, .Default.reToolbar .reGrip,
+  .Default .reDialog .reTool,
+  .Default .reModule .reTool,
+  .Default .reDialog .reTool:hover,
+  .Default .reToolbar .reTool:hover,
+  .Default .reModule .reTool:hover,
+  .Default .reToolbar .reTool.reTool_selected,
+  .Default .reToolbar .reTool.reTool_selected:hover,
+  .Default .reToolbar .reTool_text:hover,
+  .Default .reToolbar .reTool_text.reTool_selected,
+  .Default .reToolbar .reTool_text.reTool_selected:hover,
+  .Default .reTool .split_arrow,
+  .Default .reSplitButton.reTool_text .split_arrow,
+  .Default .reToolbar .reTool_text .split_arrow,
+  .Default .reDialog .reTool.reSplitButton,
+  .Default .reModule .reTool.reSplitButton,
+  .Default .reDropdown,
+  .Default .reTool_disabled.reDropdown:hover,
+  .Default .reResizeCell div, .Default.reInsertTable .reToolbar li .reTool:hover, .Default.RadEditor.reRtl .reDropdown:hover {
+    background-image: url('Editor/ToolBarSprites.gif'); }
+  .Default.RadEditor .reTlbVertical li,
+  .Default .reDropdown:hover, .Default.RadEditor .reTlbVertical .reToolbar.Default .reGrip, .Default.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+  .Default .reTlbVertical .reTool:hover,
+  .Default .reTlbVertical .reTool_text.reSplitButton:hover,
+  .Default .reTlbVertical .reSplitButton:hover,
+  .Default .reTlbVertical .reTool_text:hover,
+  .Default .reTlbVertical .reTool.reTool_selected,
+  .Default .reTlbVertical .reTool_text.reTool_selected,
+  .Default .reTlbVertical .reTool_text.reTool_selected:hover, .Default.reDropDownBody .reTlbVertical ul li a:hover, .Default.reDropDownBody .reTlbVertical .reToolbar,
+  .Default .reMode_selected, .Default.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+    background-image: url('Editor/ToolbarVerticalSprites.gif'); }
+  .Default .reToolbar li {
+    color: #333333; }
+  .Default .reToolbar .reTool_text:hover,
+  .Default .reToolbar .reTool_text.reTool_selected,
+  .Default .reToolbar .reTool_text.reTool_selected:hover {
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa; }
+  .Default .reToolbar .reTool_text.reTool_disabled,
+  .Default .reToolbar .reTool_text.reTool_disabled:hover {
+    margin-left: 0;
+    margin-right: 0;
+    border: 0; }
+  .Default .reDropdown:link,
+  .Default .reDropdown:visited {
+    color: #333333 !important; }
+  .Default .reDropdown,
+  .Default .reTool_disabled.reDropdown:hover {
+    border: 1px solid #a0a0a0;
+    background-color: white; }
+  .Default .reDropdown:hover {
+    border-color: #aaaaaa; }
+  .Default.reDropDownBody .reTlbVertical .reToolbar {
+    background-color: white; }
+  .Default table.reSpinBox, .Default.RadEditor input {
+    border-color: #a0a0a0;
+    background-color: white; }
+  .Default table.reSpinBox:hover, .Default.RadEditor input:hover {
+    border: 1px solid #aaaaaa; }
+  .Default .reModule_domlink_selected,
+  .Default .reModule_domlink {
+    color: #333333; }
+  .Default.reDropDownBody .reItemOver {
+    background: #c3c3c3;
+    color: black; }
+  .Default.reColorPicker table div, .Default.reColorPicker span {
+    border: 1px solid #828282; }
+  .Default.reColorPicker table td.reItemOver div {
+    border-color: #333333; }
+  .Default .reAjaxspell_button {
+    border: 1px solid #cdcdcd;
+    background-color: #e6e6e6;
+    color: #333333; }
+  .Default .reAjaxSpellCheckSeparator {
+    background-color: white; }
+  .Default.reCustomLinks, .Default.reCustomLinks ul {
+    color: #333333; }
+  .Default.reCustomLinks a {
+    background: none transparent;
+    color: #333333;
+    cursor: default !important; }
+  .Default.reCustomLinks a:hover {
+    color: white; }
+  .Default.reInsertTable table {
+    background-color: white; }
+  .Default.reInsertTable table td {
+    border: 1px solid #a0a0a0;
+    background-color: white; }
+  .Default.reInsertTable .reTlbVertical ul {
+    background-color: white; }
+  .Default.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text, .Default.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link, .Default.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+    color: #333333 !important;
+    background: transparent none; }
+  .Default .reCommentEdit,
+  .Default .reCommentTextArea,
+  .Default .reCommentView,
+  .Default .reCommentInfoPanel {
+    border-color: transparent;
+    background-color: #eeeeee; }
+  .Default .reCommentTitle,
+  .Default .reCommentInfoPanel {
+    color: #333333; }
+  .Default .reCommentTextArea {
+    border-color: #828282;
+    background-color: #eeeeee; }
+  .Default.RadEditor .reCommentButton,
+  .Default .rePopupButtonContainer .rePopupButton {
+    color: #333333;
+    border-color: #d0d0d0 #a2a2a2 #8b8b8b #a2a2a2;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: linear-gradient(#faf9f9 0%, #e8e8e8 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf9f9', endColorstr='#e8e8e8',GradientType=0 );
+    /* IE6-8 */ }
+  .Default.RadEditor .reCommentButton:hover,
+  .Default .rePopupButtonContainer .rePopupButton:hover {
+    color: #333333;
+    border-color: #d1d1d1 #b8b8b8 #a3a3a3 #bbb;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: linear-gradient(#e0e0e0 0%, #e5e5e5 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#e5e5e5',GradientType=0 );
+    /* IE6-8 */ }
+  .Default.RadEditor .reCommentButton:active,
+  .Default .rePopupButtonContainer .rePopupButton:active {
+    border-color: #b6b6b6 #9e9e9e #898989 #9b9b9b;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: linear-gradient(#c7c7c7 0%, #dedede 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7', endColorstr='#dedede',GradientType=0 );
+    /* IE6-8 */ }
+  .Default.rePopupContainer {
+    border-color: #a0a0a0;
+    background-color: #eeeeee; }
+  .Default.rePopupContainer .rePopupTitle {
+    color: #333333;
+    border-color: #a0a0a0;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: linear-gradient(#fdfdfd 0%, #eaeaea 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#eaeaea',GradientType=0 );
+    /* IE6-8 */ }
+  .Default.reWrapper.reInlineEditor:hover {
+    border-color: #676767; }
+  .Default.reWrapper.reInlineEditorSelected, .Default.reWrapper.reInlineEditorSelected:hover {
+    border-color: #828282; }
+  .Default.RadEditor.reRtl .reTool .split_arrow:hover {
+    border-right-color: #aaaaaa; }
+  .Default.RadEditor.reRtl .reDropdown:hover {
+    background-color: #c3c3c3; }
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_Default.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_Default.reToolbarWindow div.rwContent {
+  background-color: #eeeeee; }
+
+.RadWindow_Default .reInsertTableLightWrapper .lightTable {
+  border-color: #828282; }
+
+.Default .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif'); }
+
+/* reTool */
+.reTool span,
+.Default.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png'); }
+
+.reTool .split_arrow:hover {
+  border-left-color: #aaaaaa; }

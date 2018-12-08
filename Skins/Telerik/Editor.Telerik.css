@@ -1,0 +1,360 @@
+.Telerik {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */
+}
+
+.Telerik.RadEditor,
+.Telerik.RadEditor .reModule,
+.Telerik.RadEditor .reEditorModes,
+.Telerik.RadEditor .reWrapper {
+  background-color: #ececec;
+}
+
+.Telerik.reWrapper,
+.Telerik.RadEditor .reContentCell,
+.Telerik.reColorPicker,
+.Telerik.reInsertTable,
+.Telerik.reCustomLinks a:hover {
+  border: 1px solid #828282;
+  background-color: #ececec;
+}
+
+.Telerik .reEmptyMessage {
+  color: #8a8a8a;
+}
+
+.Telerik.RadEditor .reContentCell {
+  background-color: #ffffff;
+}
+
+.Telerik.RadEditor .reContentCell.reNoBorder {
+  border: none;
+}
+
+.Telerik.RadEditor .reNoBorder div.reContentArea {
+  border: 1px solid #828282;
+}
+
+.Telerik.reDropDownBody {
+  border: 1px solid #828282;
+  background-color: #ececec;
+}
+
+.Telerik.reDropDownBody table {
+  background: transparent;
+}
+
+.Telerik.RadEditor .reModule {
+  border-top: 1px solid #828282;
+}
+
+.Telerik.reCustomLinks a,
+.Telerik.reCustomLinks a:link,
+.Telerik.reCustomLinks a:visited {
+  border: 1px solid #ffffff;
+  /* should be the same as the background of the dropdown */
+  color: #000000 !important;
+}
+
+.Telerik.reCustomLinks a:hover {
+  background-color: #a2ea8b;
+  border: 1px solid #cccccc;
+}
+
+.Telerik .reToolbar li,
+.Telerik .reSpinBox a,
+.Telerik.reToolbar .reSeparator,
+.Telerik.reToolbar .reGrip,
+.Telerik .reDialog .reTool,
+.Telerik .reModule .reTool,
+.Telerik .reDialog .reTool:hover,
+.Telerik .reToolbar .reTool:hover,
+.Telerik .reModule .reTool:hover,
+.Telerik .reToolbar .reTool.reTool_selected,
+.Telerik .reToolbar .reTool.reTool_selected:hover,
+.Telerik .reToolbar .reTool_text:hover,
+.Telerik .reToolbar .reTool_text.reTool_selected,
+.Telerik .reToolbar .reTool_text.reTool_selected:hover,
+.Telerik .reTool .split_arrow,
+.Telerik .reSplitButton.reTool_text .split_arrow,
+.Telerik .reToolbar .reTool_text .split_arrow,
+.Telerik .reDialog .reTool.reSplitButton,
+.Telerik .reModule .reTool.reSplitButton,
+.Telerik .reDropdown,
+.Telerik .reTool_disabled.reDropdown:hover,
+.Telerik .reResizeCell div,
+.Telerik.reInsertTable .reToolbar li .reTool:hover,
+.Telerik.RadEditor.reRtl .reDropdown:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+.Telerik.RadEditor .reTlbVertical li,
+.Telerik .reDropdown:hover,
+.Telerik.RadEditor .reTlbVertical .reToolbar.Default .reGrip,
+.Telerik.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+.Telerik .reTlbVertical .reTool:hover,
+.Telerik .reTlbVertical .reTool_text.reSplitButton:hover,
+.Telerik .reTlbVertical .reSplitButton:hover,
+.Telerik .reTlbVertical .reTool_text:hover,
+.Telerik .reTlbVertical .reTool.reTool_selected,
+.Telerik .reTlbVertical .reTool_text.reTool_selected,
+.Telerik .reTlbVertical .reTool_text.reTool_selected:hover,
+.Telerik.reDropDownBody .reTlbVertical ul li a:hover,
+.Telerik.reDropDownBody .reTlbVertical .reToolbar,
+.Telerik .reMode_selected,
+.Telerik.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+  background-image: url('Editor/ToolbarVerticalSprites.gif');
+}
+
+.Telerik .reToolbar li {
+  color: #000000;
+}
+
+.Telerik .reToolbar .reTool_text:hover,
+.Telerik .reToolbar .reTool_text.reTool_selected,
+.Telerik .reToolbar .reTool_text.reTool_selected:hover {
+  border-left: 1px solid #2ebf00;
+  border-right: 1px solid #2ebf00;
+}
+
+.Telerik .reToolbar .reTool_text.reTool_disabled,
+.Telerik .reToolbar .reTool_text.reTool_disabled:hover {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.Telerik .reDropdown:link,
+.Telerik .reDropdown:visited {
+  color: #000000 !important;
+}
+
+.Telerik .reDropdown,
+.Telerik .reTool_disabled.reDropdown:hover {
+  border: 1px solid #8e8e8e;
+  background-color: #ffffff;
+}
+
+.Telerik .reDropdown:hover {
+  border-color: #515151;
+  color: #000000;
+}
+
+.Telerik.reDropDownBody .reTlbVertical .reToolbar {
+  background-color: #ffffff;
+}
+
+.Telerik table.reSpinBox,
+.Telerik.RadEditor input {
+  border-color: #8e8e8e;
+  background-color: #ffffff;
+}
+
+.Telerik table.reSpinBox:hover,
+.Telerik.RadEditor input:hover {
+  border: 1px solid #2ebf00;
+}
+
+.Telerik .reModule_domlink_selected,
+.Telerik .reModule_domlink {
+  color: #000000;
+}
+
+.Telerik.reDropDownBody .reItemOver {
+  background: #2ebf00;
+  color: #000000;
+}
+
+.Telerik.reColorPicker table div,
+.Telerik.reColorPicker span {
+  border: 1px solid #828282;
+}
+
+.Telerik.reColorPicker table td.reItemOver div {
+  border-color: #000000;
+}
+
+.Telerik .reAjaxspell_button {
+  border: 1px solid #cccccc;
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.Telerik .reAjaxSpellCheckSeparator {
+  background-color: #ffffff;
+}
+
+.Telerik.reCustomLinks,
+.Telerik.reCustomLinks ul {
+  color: #000000;
+}
+
+.Telerik.reCustomLinks a {
+  background: none transparent;
+  color: #000000;
+  cursor: default !important;
+}
+
+.Telerik.reCustomLinks a:hover {
+  color: #ffffff;
+}
+
+.Telerik.reInsertTable table {
+  background-color: #ffffff;
+}
+
+.Telerik.reInsertTable table td {
+  border: 1px solid #8e8e8e;
+  background-color: #ffffff;
+}
+
+.Telerik.reInsertTable table .reItemOver {
+  border: 1px solid #515151;
+  background-color: #2ebf00;
+}
+
+.Telerik.reInsertTable .reTlbVertical ul {
+  background-color: #ffffff;
+}
+
+.Telerik.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text,
+.Telerik.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link,
+.Telerik.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+  color: #000000 !important;
+  background: transparent none;
+  _background: none !important;
+}
+
+.Telerik .reCommentEdit,
+.Telerik .reCommentTextArea,
+.Telerik .reCommentView,
+.Telerik .reCommentInfoPanel {
+  border-color: transparent;
+  background-color: #ececec;
+}
+
+.Telerik .reCommentTitle,
+.Telerik .reCommentInfoPanel {
+  color: #000000;
+}
+
+.Telerik .reCommentTextArea {
+  border-color: #828282;
+  background-color: #ececec;
+}
+
+.Telerik.RadEditor .reCommentButton,
+.Telerik .rePopupButtonContainer .rePopupButton {
+  border-color: #ccc #8b8b8b #a8a8a8 #8b8b8b;
+  color: #000;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#fdfdfd 25%, #dddddd 50%, #cbcbcb 75%, #eeeeee 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Telerik.RadEditor .reCommentButton:hover,
+.Telerik .rePopupButtonContainer .rePopupButton:hover {
+  color: #000;
+  border-color: #239500 #1a6f00 #155800 #1a6f00;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#a8d687 25%, #8cc569 50%, #65b33f 75%, #63ac39 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d687', endColorstr='#63ac39',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Telerik.RadEditor .reCommentButton:active,
+.Telerik .rePopupButtonContainer .rePopupButton:active {
+  color: #000;
+  border-color: #239500 #1a6f00 #155800 #1a6f00;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#a8d687 25%, #8cc569 50%, #65b33f 75%, #63ac39 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8d687', endColorstr='#63ac39',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Telerik.rePopupContainer {
+  border-color: #8e8e8e;
+  background-color: #ececec;
+}
+
+.Telerik.rePopupContainer .rePopupTitle {
+  color: #000;
+  border-color: #828282;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#fefefe 25%, #dddddd 50%, #d5d5d5 75%, #cacaca 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#cacaca',GradientType=0 );
+  /* IE6-8 */
+}
+
+.Telerik.reWrapper.reInlineEditor:hover {
+  border-color: #8e8e8e;
+}
+
+.Telerik.reWrapper.reInlineEditorSelected,
+.Telerik.reWrapper.reInlineEditorSelected:hover {
+  border-color: #2ebf00;
+}
+
+.Telerik.RadEditor.reRtl .reTool .split_arrow:hover {
+  border-right-color: #2ebf00;
+}
+
+.Telerik.RadEditor.reRtl .reDropdown:hover {
+  background-color: #9ddf6c;
+}
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_Telerik.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_Telerik.reToolbarWindow div.rwContent {
+  background-color: #ececec;
+}
+
+.RadWindow_Telerik .reInsertTableLightWrapper .lightTable {
+  border-color: #828282;
+}
+
+.Telerik .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+/* reTool */
+.reTool span,
+.Telerik.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png');
+}
+
+.reTool .split_arrow:hover {
+  border-left-color: #2ebf00;
+}

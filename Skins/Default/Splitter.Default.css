@@ -1,0 +1,57 @@
+.RadSplitter_Default {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Borders */
+  /* When ShowContentDuringLoad="false" */
+  /* RadSplitBar/RadSlidingPane resize elements */
+  /* RadSlidingPane tab */
+  /* RadSlidingPane header */
+  /* RadSlidingPane title text */
+  /* RadSlidingPane header elements */ }
+  .RadSplitter_Default,
+  .RadSplitter_Default .rspPaneTabContainer,
+  .RadSplitter_Default .rspPane,
+  .RadSplitter_Default .rspResizeBar,
+  .RadSplitter_Default .rspSlideContainerResize,
+  .RadSplitter_Default .rspPaneHorizontal,
+  .RadSplitter_Default .rspResizeBarHorizontal,
+  .RadSplitter_Default .rspSlideContainerResizeHorizontal {
+    border-color: #8a8a8a; }
+  .RadSplitter_Default .rspLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadSplitter_Default .rspResizeBar,
+  .RadSplitter_Default .rspSlideContainerResize,
+  .RadSplitter_Default .rspResizeBarOver,
+  .RadSplitter_Default .rspSlideContainerResizeOver {
+    background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+    background-color: white;
+    border-right-color: #8a8a8a; }
+  .RadSplitter_Default .rspResizeBarHorizontal,
+  .RadSplitter_Default .rspSlideContainerResizeHorizontal,
+  .RadSplitter_Default .rspResizeBarOverHorizontal,
+  .RadSplitter_Default .rspSlideContainerResizeOverHorizontal {
+    background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+    background-color: white;
+    border-bottom-color: #8a8a8a; }
+  .RadSplitter_Default .rspPaneTabContainer,
+  .RadSplitter_Default .rspSlideHeaderDockIcon,
+  .RadSplitter_Default .rspSlideHeaderUndockIcon,
+  .RadSplitter_Default .rspSlideHeaderCollapseIcon,
+  .RadSplitter_Default .rspCollapseBarExpand,
+  .RadSplitter_Default .rspCollapseBarCollapse,
+  .RadSplitter_Default .rspCollapseBarHorizontalExpand,
+  .RadSplitter_Default .rspCollapseBarHorizontalCollapse {
+    background-image: url('Splitter/ExpandCollapseBarsCommands.gif'); }
+  .RadSplitter_Default .rspSlideHeader,
+  .RadSplitter_Default .rspSlideTitleContainer,
+  .RadSplitter_Default .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Default .rspTop .rspPaneTabContainer {
+    background-image: url('Splitter/slideTitleContainerBgr.gif');
+    background-repeat: repeat-x; }
+  .RadSplitter_Default .rspSlideTitle,
+  .RadSplitter_Default .rspPaneTabText {
+    color: #333333; }
+  .RadSplitter_Default .rspSlideTitleContainer,
+  .RadSplitter_Default .rspSlideHeaderIconWrapper {
+    border-bottom: 1px solid #8a8a8a; }
+

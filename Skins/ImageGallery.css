@@ -1,0 +1,279 @@
+.RadImageGallery {
+  background-color: black;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  text-align: left; }
+  .RadImageGallery,
+  .RadImageGallery .rigItemBox,
+  .RadImageGallery .rigThumbnailsBox {
+    position: relative; }
+  .RadImageGallery .rigItemBox {
+    left: 0;
+    right: 0; }
+  .RadImageGallery .rigThumbnailsBox {
+    height: 100%;
+    background-color: #000; }
+    .RadImageGallery .rigThumbnailsBox div {
+      overflow: hidden;
+      height: 100%; }
+  .RadImageGallery .rigActiveImage {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; }
+    .RadImageGallery .rigActiveImage img {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box; }
+  .RadImageGallery .rigThumbnailsList {
+    zoom: 1;
+    padding-left: 0;
+    margin: 0; }
+  .RadImageGallery .rigThumbnailsList:after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block; }
+  .RadImageGallery .rigThumbnailsList > li {
+    float: left;
+    list-style: none; }
+  .RadImageGallery .rigThumbnailsList img {
+    display: block;
+    opacity: 0.5;
+    border: 0 none; }
+  .RadImageGallery .rigThumbnailsList a:hover img {
+    opacity: 0.75; }
+  .RadImageGallery .rigThumbnailsList .rigThumbnailActive a {
+    border: 1px solid #fff;
+    overflow: hidden;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .RadImageGallery .rigThumbnailsList .rigThumbnailActive a img {
+      opacity: 1;
+      margin: -1px 0 0 -1px; }
+  .RadImageGallery .rigToolbar .rigActionButton {
+    margin-left: 20px; }
+  .RadImageGallery .rigDescriptionBox {
+    padding: 20px;
+    margin: 0 20px 10px;
+    font-size: 1.1em; }
+  .RadImageGallery .rigDescriptionBox h4 {
+    margin: 0;
+    font-size: 1.2em; }
+  .RadImageGallery .rigDescriptionBox p {
+    margin: 0; }
+  .RadImageGallery .rigToolbar {
+    position: relative;
+    z-index: 10;
+    padding: 0 1.66667em;
+    height: 3.33em;
+    line-height: 3.33em; }
+  .RadImageGallery .rigToolbarTopInside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; }
+  .RadImageGallery .rigControlsSet {
+    text-align: right; }
+  .RadImageGallery .rigItemsCount {
+    float: left; }
+  .RadImageGallery .rigItemsCount {
+    font-size: 1.1em; }
+  .RadImageGallery .rigActionButton {
+    background: none;
+    border: 0 none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle; }
+  .RadImageGallery .rigActionButton::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .RadImageGallery .rigIcon,
+  .RadImageGallery .rigActionButton {
+    height: 22px;
+    width: 22px; }
+  .RadImageGallery .rigIcon {
+    display: inline-block;
+    vertical-align: top; }
+  .RadImageGallery .rigButtonText {
+    display: none; }
+  .RadImageGallery .rigPrevButton,
+  .RadImageGallery .rigNextButton,
+  .RadImageGallery .rigScrollPrevButton,
+  .RadImageGallery .rigScrollNextButton,
+  .RadImageGallery .rigScrollPrevIcon,
+  .RadImageGallery .rigScrollNextIcon,
+  .RadImageGallery .rigCloseButton {
+    background-repeat: no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; }
+  .RadImageGallery .rigPrevButton,
+  .RadImageGallery .rigNextButton,
+  .RadImageGallery .rigScrollPrevButton,
+  .RadImageGallery .rigScrollNextButton {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -29px;
+    height: 57px;
+    width: 57px;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+    opacity: 0.4;
+    z-index: 10; }
+  .RadImageGallery .rigScrollPrevButton,
+  .RadImageGallery .rigScrollNextButton {
+    background: none;
+    height: 26px;
+    width: 16px;
+    margin-top: -12px;
+    opacity: 1; }
+  .RadImageGallery .rigScrollPrevIcon,
+  .RadImageGallery .rigScrollNextIcon {
+    height: 26px;
+    width: 16px; }
+  .RadImageGallery .rigNextButton,
+  .RadImageGallery .rigScrollNextButton {
+    left: auto;
+    right: 10px; }
+  .RadImageGallery .rigThumbnailsBoxVertical .rigScrollPrevButton,
+  .RadImageGallery .rigThumbnailsBoxVertical .rigScrollNextButton {
+    width: 24px;
+    height: 14px;
+    left: 50%;
+    margin: 0 0 0 -12px;
+    top: 10px; }
+  .RadImageGallery .rigThumbnailsBoxVertical .rigScrollNextButton {
+    top: auto;
+    bottom: 10px; }
+  .RadImageGallery .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    width: 24px;
+    height: 14px; }
+  .RadImageGallery .rigPrevButton:hover,
+  .RadImageGallery .rigNextButton:hover,
+  .RadImageGallery .rigPrevButton.rigHover,
+  .RadImageGallery .rigNextButton.rigHover {
+    opacity: 1; }
+  .RadImageGallery .rigProgressBar {
+    height: 5px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -5px; }
+  .RadImageGallery .rigProgressBar div {
+    opacity: 0.6;
+    height: 100%; }
+  .RadImageGallery .rigPager {
+    height: 22px;
+    padding: 12px 20px;
+    line-height: 18px;
+    position: relative; }
+  .RadImageGallery .rigPager a {
+    text-decoration: none;
+    padding: 0 6px 2px;
+    border: 1px solid transparent;
+    display: inline-block;
+    float: left; }
+  .RadImageGallery a.rigCurrentPage {
+    border-radius: 2px; }
+  .RadImageGallery .rigNumPart {
+    float: left; }
+  .RadImageGallery .rigInfoPart {
+    float: right; }
+  .RadImageGallery .rigDrawerButton {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -40px; }
+  .RadImageGallery .rigDrawerIcon {
+    width: 24px;
+    margin-top: 7px; }
+  .RadImageGallery .rigCloseButton {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    padding-top: 3px; }
+  .RadImageGallery .rigCloseIcon {
+    width: 16px;
+    height: 16px; }
+  .RadImageGallery .rigToolsWrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  .RadImageGallery .rigDotList {
+    text-align: center;
+    margin: 0 0 10px;
+    position: relative; }
+  .RadImageGallery .rigDotList > a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0 0.38462em; }
+  .RadImageGallery .rigDotList a span {
+    background-color: #fff;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 9px; }
+  .RadImageGallery .rigDotList a.rigCurrentItem span {
+    border-width: 2px;
+    border-style: solid;
+    height: 6px;
+    width: 6px; }
+  .RadImageGallery .rigTooltip {
+    position: absolute;
+    bottom: 25px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #828282;
+    padding: 2px;
+    margin-left: 3px; }
+  .RadImageGallery .rigTooltip:after {
+    border: 5px solid transparent;
+    height: 0;
+    width: 0;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -5px; }
+  .RadImageGallery .rigTooltip div {
+    overflow: hidden; }
+  .RadImageGallery .rigTooltip .rigThumbnailsList {
+    height: 100%;
+    overflow: hidden; }
+  .RadImageGallery .rigTooltip .rigThumbnailsList img {
+    opacity: 1; }
+  .RadImageGallery .rigThumbnailsBoxHorizontal,
+  .RadImageGallery .rigThumbnailsBoxVertical {
+    position: relative;
+    overflow: hidden; }
+  .RadImageGallery .rigPositionLeft,
+  .RadImageGallery .rigPositionRight {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .RadImageGallery .rigPositionRight {
+    right: 0;
+    left: auto; }
+  .RadImageGallery.rigFullscreen {
+    z-index: 2147483647; }
+    .RadImageGallery.rigFullscreen .rigCloseButton {
+      display: none; }

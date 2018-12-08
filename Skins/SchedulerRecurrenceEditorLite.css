@@ -1,0 +1,85 @@
+.RecurrenceEditor {
+  font-size: 14px;
+  line-height: 1.42857;
+  padding-bottom: 5px; }
+  .RecurrenceEditor .rsHidden {
+    display: none !important; }
+  .RecurrenceEditor input[type="radio"] + label, .RecurrenceEditor input[type="checkbox"] + label {
+    margin-left: 5px; }
+  .RecurrenceEditor .rsList input[type="radio"], .RecurrenceEditor .rsList input[type="checkbox"] {
+    vertical-align: -0.2ex; }
+  .RecurrenceEditor .riContSpinButtons {
+    width: 60px; }
+  .RecurrenceEditor .rsPanel {
+    margin: 10px 0 0 0; }
+    .RecurrenceEditor .rsPanel:after {
+      content: "";
+      clear: both;
+      display: block; }
+  .RecurrenceEditor .rfbGroup {
+    margin: 0;
+    list-style: none; }
+    .RecurrenceEditor .rfbGroup .rfbRow {
+      margin: 10px 0 0 0;
+      padding: 0 0 0 120px; }
+    .RecurrenceEditor .rfbGroup .rfbLabel {
+      margin-left: -120px;
+      padding: 7px 15px 0 0;
+      width: 120px;
+      color: inherit;
+      text-align: right;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box; }
+  .RecurrenceEditor .RadDropDownList {
+    width: 120px;
+    font: inherit; }
+    .RecurrenceEditor .RadDropDownList .rddlInner {
+      padding: 4px 10px;
+      padding-right: 36px; }
+    .RecurrenceEditor .RadDropDownList .rddlIcon {
+      width: 26px;
+      font-size: 1em;
+      line-height: 1; }
+      .RecurrenceEditor .RadDropDownList .rddlIcon:before {
+        margin: -0.5em 0 0 -0.5em;
+        position: absolute;
+        top: 50%;
+        left: 50%; }
+  .RecurrenceEditor .rsAdvWeekly_WeekDays {
+    display: inline-block;
+    padding: 7px 0 0;
+    list-style-type: none; }
+    .RecurrenceEditor .rsAdvWeekly_WeekDays li {
+      display: inline-block;
+      margin-right: 10px; }
+    .RecurrenceEditor .rsAdvWeekly_WeekDays input, .RecurrenceEditor .rsAdvWeekly_WeekDays label {
+      vertical-align: middle; }
+  .RecurrenceEditor .rsList {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .RecurrenceEditor .rsList > li {
+    margin: 0;
+    display: block; }
+  .RecurrenceEditor .rsList > li + li {
+    margin-top: 10px; }
+  .RecurrenceEditor .rsHList > li {
+    margin: 0 20px 0 0;
+    display: inline-block; }
+  .RecurrenceEditor .rsHList > li + li {
+    margin-top: 0; }
+  .RecurrenceEditor .rsAdvRecurrenceFreq, .RecurrenceEditor .rsAdvPatternPanel {
+    display: inline-block;
+    vertical-align: top; }
+  .RecurrenceEditor .rsAdvRecurrenceFreq {
+    margin-right: 10px;
+    padding-right: 10px;
+    width: 100px;
+    border-style: solid;
+    border-width: 0 1px 0 0; }
+  .RecurrenceEditor .rsAdvPatternPanel div + .rsList {
+    margin-top: 10px; }
+  .RecurrenceEditor .rsAdvRecurrenceRangePanel .RadDropDownList {
+    width: 250px;
+    vertical-align: bottom; }

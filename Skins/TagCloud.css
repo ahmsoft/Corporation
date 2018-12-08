@@ -1,0 +1,56 @@
+.RadTagCloud {
+  margin: 0;
+  padding: 0.41667em 0.41667em 0.83333em;
+  overflow: hidden; }
+  .RadTagCloud, .RadTagCloud * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box; }
+  .RadTagCloud .rtcTagList {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .RadTagCloud .rtcTagList .rtcTagItem {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 0.25em; }
+  .RadTagCloud .rtcTagList .rtcTagItem:hover {
+    cursor: default; }
+  .RadTagCloud .rtcTagList .rtcTagItem a {
+    padding: 0.16667em 0.33333em; }
+  .RadTagCloud .rtcTagList .rtcTagItem a,
+  .RadTagCloud .rtcTagList .rtcTagItem a:hover {
+    text-decoration: none; }
+
+/* Right to Left Support */
+.rtcRtl {
+  text-align: right;
+  direction: ltr; }
+
+div.rtcRtl .rtcTagList .rtcTagItem {
+  line-height: 100%; }
+
+div.rtcRtl .rtcTagList .rtcTagItem span {
+  float: left;
+  *float: none; }
+
+/* Disabled state - only Black skin has skin specific styles */
+div.rtcDisabled .rtcTagList .rtcTagItem,
+div.rtcDisabled .rtcTagList .rtcTagItem a {
+  border: none !important;
+  color: #ccc !important;
+  cursor: text !important; }
+
+div.rtcDisabled .rtcTagList .rtcTagItem:hover,
+div.rtcDisabled .rtcTagList .rtcTagItem a:hover {
+  background: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  color: #ccc !important; }
+
+/* loading image styles */
+div.rtcLoading {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  _background-image: none; }

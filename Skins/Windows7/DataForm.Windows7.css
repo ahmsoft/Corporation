@@ -1,0 +1,50 @@
+.RadDataForm_Windows7 {
+  font: normal 12px / 1.33 "Segoe UI", Arial, Helvetica, sans-serif;
+  color: black;
+  overflow: hidden; }
+  .RadDataForm_Windows7 .rdfLegend,
+  .RadDataForm_Windows7 .rdfBorders {
+    border-color: #aabfd6; }
+  .RadDataForm_Windows7 .rdfHr {
+    color: #b8cbde; }
+  .RadDataForm_Windows7 .rdfFieldHint {
+    color: gray; }
+  .RadDataForm_Windows7 .rdfLegend {
+    font-size: 1.17em; }
+  .RadDataForm_Windows7 .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0; }
+  .RadDataForm_Windows7 .rdfLabel.rdfBlock {
+    padding: 0 0 .17em 0; }
+  .RadDataForm_Windows7 .rdfPager {
+    margin-top: 1.25em; }
+    .RadDataForm_Windows7 .rdfPager .rdfFirst,
+    .RadDataForm_Windows7 .rdfPager .rdfPrev,
+    .RadDataForm_Windows7 .rdfPager .rdfNext,
+    .RadDataForm_Windows7 .rdfPager .rdfLast {
+      width: 25px;
+      height: 25px;
+      background: transparent no-repeat url('DataForm/sprite.png');
+      border: none; }
+    .RadDataForm_Windows7 .rdfPager .rdfFirst {
+      background-position: 0 0; }
+      .RadDataForm_Windows7 .rdfPager .rdfFirst:hover {
+        background-position: 0 -50px; }
+    .RadDataForm_Windows7 .rdfPager .rdfPrev {
+      background-position: 0 -100px; }
+      .RadDataForm_Windows7 .rdfPager .rdfPrev:hover {
+        background-position: 0 -150px; }
+    .RadDataForm_Windows7 .rdfPager .rdfNext {
+      background-position: 0 -200px; }
+      .RadDataForm_Windows7 .rdfPager .rdfNext:hover {
+        background-position: 0 -250px; }
+    .RadDataForm_Windows7 .rdfPager .rdfLast {
+      background-position: 0 -300px; }
+      .RadDataForm_Windows7 .rdfPager .rdfLast:hover {
+        background-position: 0 -350px; }
+  .RadDataForm_Windows7 .rdfPagerRight {
+    float: right; }
+    .RadDataForm_Windows7 .rdfPagerRight .rdfFirst,
+    .RadDataForm_Windows7 .rdfPagerRight .rdfPrev,
+    .RadDataForm_Windows7 .rdfPagerRight .rdfNext,
+    .RadDataForm_Windows7 .rdfPagerRight .rdfLast {
+      float: none; }

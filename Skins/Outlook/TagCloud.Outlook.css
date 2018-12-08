@@ -1,0 +1,17 @@
+.RadTagCloud_Outlook {
+  background-color: #d6e6f4;
+  border: 1px dotted #c3d9f9;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Loading image */ }
+  .RadTagCloud_Outlook .rtcTagList .rtcTagItem {
+    color: #666666; }
+  .RadTagCloud_Outlook .rtcTagList .rtcTagItem:hover {
+    color: black; }
+  .RadTagCloud_Outlook .rtcTagList .rtcTagItem a {
+    color: black; }
+  .RadTagCloud_Outlook .rtcTagList .rtcTagItem a:hover {
+    color: black;
+    background: #ffeec2; }
+  .RadTagCloud_Outlook.rtcLoading {
+    background-image: url('Common/loading_small.gif'); }
+

@@ -1,0 +1,77 @@
+.RadSearchBox_Black {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadSearchBox_Black .rsbInner {
+    border-radius: 3px;
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #444444; }
+  .RadSearchBox_Black .rsbEmptyMessage {
+    color: #6f6f6f; }
+  .RadSearchBox_Black .rsbButton {
+    border-radius: 2px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    background-image: linear-gradient(transparent, transparent); }
+    .RadSearchBox_Black .rsbButton:hover {
+      border-color: #080808;
+      color: #9eda29;
+      background-color: #020202;
+      background-image: linear-gradient(#5c5c5c, #2a2a2c 50%, #060606 50%, #020202); }
+    .RadSearchBox_Black .rsbButton:focus {
+      border-color: #080808;
+      color: #ffffff;
+      background-color: #202020;
+      background-image: linear-gradient(#6e6e6e, #2b2b2d 50%, #050505 50%, #202020); }
+  .RadSearchBox_Black .rsbButtonSearch {
+    border-radius: 0 3px 3px 0; }
+    .RadSearchBox_Black .rsbButtonSearch .rsbIcon {
+      background-image: url('Common/radActionsSprite.png');
+      background-position: -2px -1882px; }
+  .RadSearchBox_Black .rsbSCInner {
+    border-radius: 3px 0 0 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b, #4a4a4a 50%, #313131 50%, #1b1b1b); }
+  .RadSearchBox_Black .rsbSCIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -42px -422px; }
+  .RadSearchBox_Black .rsbSCHovered {
+    border-color: #080808;
+    color: #9eda29;
+    background-color: #020202;
+    background-image: linear-gradient(#5c5c5c, #2a2a2c 50%, #060606 50%, #020202); }
+  .RadSearchBox_Black .rsbSCFocused {
+    border-color: #080808;
+    color: #ffffff;
+    background-color: #202020;
+    background-image: linear-gradient(#6e6e6e, #2b2b2d 50%, #050505 50%, #202020); }
+  .RadSearchBox_Black .rsbSCDisabled {
+    border-color: #080808;
+    color: #6f6f6f;
+    background-color: #1b1b1b;
+    background-image: linear-gradient(#7b7b7b, #4a4a4a 50%, #313131 50%, #1b1b1b); }
+  .RadSearchBox_Black .rsbLoadingIcon {
+    background-image: url('Common/loading_small.gif'); }
+
+.rsbPopup_Black {
+  border-color: #080808;
+  color: #d7d7d7;
+  background-color: #464646;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rsbPopup_Black .rsbShowAll {
+    border-color: #080808;
+    color: #d7d7d7;
+    background-color: #161616; }
+  .rsbPopup_Black .rsbListItemHovered {
+    color: #9eda29;
+    background-color: #3e3e3e; }
+  .rsbPopup_Black .rsbListItemSelected {
+    color: #9eda29;
+    background-color: #2e2e2e; }
+  .rsbPopup_Black .rsbListItemLoading {
+    color: #9eda29;
+    background-color: #3e3e3e; }

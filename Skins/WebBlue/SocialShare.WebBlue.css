@@ -1,0 +1,20 @@
+.RadSocialShare_WebBlue {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #768ca5;
+  background-color: #e0e7ed; }
+  .RadSocialShare_WebBlue .sshLinkItem .sshText {
+    color: black; }
+  .RadSocialShare_WebBlue .sshLinkItem:hover .sshText {
+    color: #0e3d4f; }
+
+.RadComboBoxDropDown_WebBlue .rcbItem .sshLinkItem .sshText {
+  color: black; }
+
+.RadComboBoxDropDown_WebBlue .rcbHovered .sshLinkItem .sshText {
+  color: #0e3d4f; }
+
+.RadComboBox_WebBlue.sshComboWrapper td.rcbArrowCellRight,
+.RadComboBox_WebBlue.sshComboWrapper .rcbFocused td.rcbArrowCellRight {
+  background-position: right -154px; }
+

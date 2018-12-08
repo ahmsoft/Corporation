@@ -1,0 +1,83 @@
+.RadButton_Web20 {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* RadButton Web20 Skin */ }
+  .RadButton_Web20 .rbDecorated {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadButton_Web20.rbSkinnedButton,
+  .RadButton_Web20 .rbDecorated, .RadButton_Web20.rbVerticalButton, .RadButton_Web20.rbVerticalButton .rbDecorated,
+  .RadButton_Web20 .rbSplitRight,
+  .RadButton_Web20 .rbSplitLeft {
+    background-image: url('Common/radFormSprite.png');
+    color: #ffffff; }
+  .RadButton_Web20 .rbToggleCheckbox,
+  .RadButton_Web20 .rbToggleCheckboxChecked,
+  .RadButton_Web20 .rbToggleCheckboxFilled,
+  .RadButton_Web20 .rbToggleRadio,
+  .RadButton_Web20 .rbToggleRadioChecked {
+    background-image: url('Common/radFormToggleSprite.png'); }
+  .RadButton_Web20.rbToggleButton, .RadButton_Web20.rbToggleButton.rbDisabled:hover {
+    color: #000000; }
+  .RadButton_Web20.rbToggleButton:hover {
+    color: #0f3789; }
+  .RadButton_Web20.RadButton.rbLinkButton {
+    background-color: #324d92;
+    border: 1px solid #0f1d48;
+    _border: 1px solid #0f1d48 !important;
+    color: #ffffff; }
+    .RadButton_Web20.RadButton.rbLinkButton:hover {
+      background-color: #cddcf1;
+      _border: 1px solid #0f1d48 !important;
+      color: #0f3789; }
+  .RadButton_Web20.RadButton.rbLinkButtonChecked, .RadButton_Web20.RadButton.rbLinkButtonChecked:hover {
+    background-color: #687dc1;
+    color: #ffffff;
+    border: 1px solid #0f1d48; }
+  .RadButton_Web20.rbLinkButton.rbDisabled, .RadButton_Web20.rbLinkButton.rbDisabled:hover {
+    background-color: #bebebe;
+    border: 1px solid #747474;
+    color: #777777; }
+  .RadButton_Web20.rbLinkButton:hover .rbSplitLeft, .RadButton_Web20.rbLinkButton:hover .rbSplitRight {
+    background-color: #324d92; }
+  .RadButton_Web20.rbLinkButton .rbSplitRight {
+    border-left: 1px solid #0f1d48; }
+  .RadButton_Web20.rbLinkButton span.rbSplitRight:hover {
+    background-color: #cddcf1;
+    border-left: 1px solid #3f5f94; }
+  .RadButton_Web20.rbLinkButton .rbSplitRight:active, .RadButton_Web20.rbLinkButton .rbSplitRight:focus {
+    background-color: #687dc1;
+    border-left: 1px solid #3f5f94; }
+  .RadButton_Web20.rbLinkButton .rbSplitLeft {
+    border-right: 1px solid #0f1d48; }
+  .RadButton_Web20.rbLinkButton span.rbSplitLeft:hover {
+    background-color: #cddcf1;
+    border-right: 1px solid #3f5f94; }
+  .RadButton_Web20.rbLinkButton .rbSplitLeft:active, .RadButton_Web20.rbLinkButton .rbSplitLeft:focus {
+    background-color: #687dc1;
+    border-right: 1px solid #3f5f94; }
+  .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right: 1px solid #747474; }
+  .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Web20.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left: 1px solid #747474; }
+  .RadButton_Web20.rbLinkButton.rbRounded {
+    border-color: #0f1d48;
+    color: #ffffff;
+    background-color: #324d92;
+    background-image: linear-gradient(#8d9dd2, #5762a3 50%, #3c4d8f 50%, #687dc1); }
+  .RadButton_Web20.rbLinkButton.rbRounded:hover {
+    border-color: #3f5f94;
+    color: #0f3789;
+    background-color: #cddcf1;
+    background-image: linear-gradient(#dee7f4, #afbede 50%, #98acd5 50%, #cddcf1); }
+  .RadButton_Web20.rbLinkButton.rbRounded:active, .RadButton_Web20.rbLinkButton.rbRounded:focus {
+    border-color: #0f1d48;
+    color: #ffffff;
+    background-color: #687dc1;
+    background-image: linear-gradient(#8d9dd2, #5762a3 50%, #3c4d8f 50%, #687dc1); }
+  .RadButton_Web20.rbLinkButton.rbRounded.rbDisabled, .RadButton_Web20.rbLinkButton.rbRounded.rbDisabled:hover, .RadButton_Web20.rbLinkButton.rbRounded.rbDisabled:active, .RadButton_Web20.rbLinkButton.rbRounded.rbDisabled:focus {
+    border-color: #747474;
+    color: #777777;
+    background-color: #bebebe;
+    background-image: linear-gradient(#cfcfcf, #b0b0b0 50%, #a1a1a1 50%, #bebebe);
+    background-position: 0 0; }

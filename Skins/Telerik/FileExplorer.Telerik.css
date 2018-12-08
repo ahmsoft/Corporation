@@ -1,0 +1,33 @@
+/*========================================= Toolbar related CSS ========================*/
+.RadFileExplorer_Telerik {
+  /* Thumbnail view */
+  /* Thumbnail filter */ }
+  .RadFileExplorer_Telerik .RadToolBar .rtbText {
+    background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+    _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+    background-repeat: no-repeat; }
+  .RadFileExplorer_Telerik,
+  .RadFileExplorer_Telerik .rfeAddressBox,
+  .RadFileExplorer_Telerik .rfeFilterTxt {
+    border-color: #828282; }
+  .RadFileExplorer_Telerik div.selectedFileName {
+    border-top: 1px solid #8e8e8e; }
+  .RadFileExplorer_Telerik .rfeThumbList a:hover,
+  .RadFileExplorer_Telerik .rfeThumbList .rfeHoveredLink,
+  .RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink:hover {
+    background-image: url('../Common/Gradients/telerik_smoothSprite_20.png');
+    background-color: #a2ea8b;
+    border-color: #d0f7c3; }
+  .RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink,
+  .RadFileExplorer_Telerik .rfeThumbList .rfeSelectedLink:hover {
+    background-color: #63ac39;
+    border-color: #9dce78; }
+  .RadFileExplorer_Telerik .rfeFilterContainer {
+    background-image: url('../Common/Gradients/telerik_smoothSprite_20.png');
+    background-color: #cacaca; }
+  .RadFileExplorer_Telerik .rfeDropZone {
+    background-color: rgba(221, 221, 221, 0.8); }
+  .RadFileExplorer_Telerik .rfeDropUploadInfoPanel {
+    background-color: #ffffff;
+    color: #000000; }

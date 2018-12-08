@@ -1,0 +1,9 @@
+.RadRating_Web20 a,
+.RadRating_Web20 a span {
+  background-image: url('Rating/Sprite.png');
+  _background-image: url('Rating/Sprite.gif'); }
+@media print {
+  .RadRating_Web20 a:before,
+  .RadRating_Web20 a span:before {
+    content: url('Rating/Sprite.png'); } }
+

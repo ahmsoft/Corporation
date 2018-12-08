@@ -1,0 +1,52 @@
+.RadDropDownList_Telerik {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadDropDownList_Telerik .rddlInner {
+    border-radius: 3px;
+    border-color: #cccccc;
+    color: #000000;
+    background-color: #cbcbcb;
+    background-image: url('Common/radGradientButtonSprite.png');
+    background-image: linear-gradient(#fdfdfd 0%, #dddddd 50%, #cbcbcb 50%, #eeeeee 100%); }
+  .RadDropDownList_Telerik .rddlEmptyMessage,
+  .RadDropDownList_Telerik .rddlDefaultMessage {
+    color: #8a8a8a; }
+  .RadDropDownList_Telerik .rddlIcon {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -2px -20px; }
+  .RadDropDownList_Telerik .rddlHovered {
+    border-color: #2ebf00;
+    color: #000000;
+    background-color: #a2ea8b;
+    background-image: linear-gradient(#d2f8c5 0%, #bcf1ab 50%, #b9f0a7 50%, #a2ea8b 100%); }
+    .RadDropDownList_Telerik .rddlHovered .rddlIcon {
+      background-position: -22px -20px; }
+  .RadDropDownList_Telerik .rddlFocused {
+    border-color: #239500;
+    color: #000000;
+    background-color: #65b33f;
+    background-image: linear-gradient(#a8d687 0%, #8cc569 50%, #65b33f 50%, #63ac39 100%); }
+    .RadDropDownList_Telerik .rddlFocused .rddlIcon {
+      background-position: -22px -20px; }
+
+.rddlPopup_Telerik {
+  border-color: #828282;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .rddlPopup_Telerik .rddlHeader,
+  .rddlPopup_Telerik .rddlFooter {
+    border-color: #828282;
+    color: #000000;
+    background-color: #e6e6e6; }
+  .rddlPopup_Telerik .rddlItemHovered {
+    color: #000000;
+    background-color: #9ddf6c; }
+  .rddlPopup_Telerik .rddlItemSelected {
+    color: #000000;
+    background-color: #63ac39; }
+  .rddlPopup_Telerik .rddlItemLoading {
+    color: #000000;
+    background-color: #9ddf6c; }

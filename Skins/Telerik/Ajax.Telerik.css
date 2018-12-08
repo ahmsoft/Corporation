@@ -1,0 +1,9 @@
+.RadAjax_Telerik .raDiv {
+  background-image: url('Common/loading.gif'); }
+.RadAjax_Telerik .raColor {
+  background-color: white;
+  color: black; }
+.RadAjax_Telerik .raTransp {
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=60); }

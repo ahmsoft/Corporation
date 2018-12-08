@@ -1,0 +1,130 @@
+.RadDropDownList {
+  width: 13.33333em;
+  line-height: 1.3333;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: default; }
+  .RadDropDownList .rddlInner {
+    padding: 0.16667em 1.83333em 0.16667em 0.41667em;
+    border-width: 1px;
+    border-style: solid;
+    display: block;
+    position: relative;
+    overflow: hidden; }
+  .RadDropDownList .rddlFakeInput {
+    width: 100%;
+    min-height: 1.3333em;
+    display: block;
+    overflow: hidden; }
+  .RadDropDownList .rddlEmptyMessage, .RadDropDownList .rddlDefaultMessage {
+    font-style: italic;
+    filter: alpha(opacity=80);
+    opacity: 0.8; }
+  .RadDropDownList .rddlIcon {
+    width: 1.5em;
+    height: 100%;
+    font-family: "TelerikWebUI";
+    line-height: 1.5;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center; }
+  .RadDropDownList .rddlIcon:before {
+    content: "\e002";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.25ex; }
+  .RadDropDownList .rrdlLabel {
+    vertical-align: top;
+    padding-right: 10px;
+    line-height: 22px; }
+  .RadDropDownList .rddlDisabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+
+.RadDropDownList_rtl, .RadDropDownList[dir="rtl"] {
+  text-align: right; }
+  .RadDropDownList_rtl .rddlInner, .RadDropDownList[dir="rtl"] .rddlInner {
+    padding-left: 1.83333em;
+    padding-right: 0.41667em; }
+  .RadDropDownList_rtl .rddlIcon, .RadDropDownList[dir="rtl"] .rddlIcon {
+    left: 0;
+    right: auto; }
+  .RadDropDownList_rtl .rrdlLabel, .RadDropDownList[dir="rtl"] .rrdlLabel {
+    padding-left: 10px;
+    padding-right: 0; }
+
+.rddlSlide, .rddlDropDownSlide {
+  float: left;
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  z-index: 7000; }
+
+.rddlPopup {
+  *zoom: 1;
+  border-width: 1px;
+  border-style: solid;
+  text-align: left;
+  position: relative;
+  cursor: default;
+  width: 13.33333em;
+  box-sizing: border-box; }
+  .rddlPopup:after {
+    content: "";
+    height: 0;
+    clear: both;
+    display: block; }
+  .rddlPopup .rddlScroll {
+    *zoom: 1;
+    position: relative;
+    overflow: auto; }
+    .rddlPopup .rddlScroll:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .rddlPopup .rddlHeader, .rddlPopup .rddlFooter {
+    *zoom: 1;
+    margin: -0.16667em;
+    padding: 0.25em 0.41667em;
+    background-repeat: repeat-x; }
+    .rddlPopup .rddlHeader:after, .rddlPopup .rddlFooter:after {
+      content: "";
+      height: 0;
+      clear: both;
+      display: block; }
+  .rddlPopup .rddlHeader {
+    margin-bottom: 0.16667em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid; }
+  .rddlPopup .rddlFooter {
+    margin-top: 0.16667em;
+    border-top-width: 1px;
+    border-top-style: solid; }
+  .rddlPopup .rddlList {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: auto; }
+  .rddlPopup .rddlItem {
+    margin: 0;
+    padding: 0.16667em 0.5em;
+    min-height: 13px; }
+    .rddlPopup .rddlItem > label {
+      margin: -2px -6px;
+      padding: 2px 6px;
+      display: block; }
+  .rddlPopup .rddlItemDisabled {
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+
+.rddlPopup_rtl {
+  text-align: right;
+  direction: rtl; }

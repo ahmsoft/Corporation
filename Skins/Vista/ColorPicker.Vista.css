@@ -1,0 +1,47 @@
+.RadColorPicker_Vista {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Rounded corners and shadows */ }
+  .RadColorPicker_Vista .rcpViews,
+  .RadColorPicker_Vista .rcpHeader,
+  .RadColorPicker_Vista .rcpPageView {
+    background-color: white; }
+  .RadColorPicker_Vista .rcpColorPreview,
+  .RadColorPicker_Vista .rcpInput,
+  .RadColorPicker_Vista .rcpHexInput,
+  .RadColorPicker_Vista .rcpMillionColorsPalette,
+  .RadColorPicker_Vista .rcpMillionColorsSlider div.rslTrack {
+    background-color: white;
+    border-color: #e2e3ea; }
+  .RadColorPicker_Vista .rcpPalette,
+  .RadColorPicker_Vista input,
+  .RadColorPicker_Vista a {
+    color: black; }
+  .RadColorPicker_Vista .rcpHeader,
+  .RadColorPicker_Vista .rcpHeader .rcpImageButton,
+  .RadColorPicker_Vista .rcpRecentColors,
+  .RadColorPicker_Vista .rcpIcon a,
+  .RadColorPicker_Vista .rcpTabs a,
+  .RadColorPicker_Vista .rcpTabs a span,
+  .RadColorPicker_Vista .rcpButton,
+  .RadColorPicker_Vista .rcpButton span,
+  .RadColorPicker_Vista .rcpMillionColorsHandle,
+  .RadColorPicker_Vista .rcpSlider div.rslTrack,
+  .RadColorPicker_Vista .rcpSlider .rslTrack a.rslDraghandle,
+  .RadColorPicker_Vista div.rcpMillionColorsSlider div.rslVertical a.rslDraghandle {
+    background-image: url('ColorPicker/ColorPickerSprites.png');
+    background-repeat: no-repeat; }
+  .RadColorPicker_Vista .rcpPalette,
+  .RadColorPicker_Vista .rcpRoundedRight,
+  .RadColorPicker_Vista .rcpRoundedBottomRight,
+  .RadColorPicker_Vista .rcpRightShadow,
+  .RadColorPicker_Vista .rcpCornerShadow {
+    background-image: url('ColorPicker/rcpVerticalSprites.png'); }
+  .RadColorPicker_Vista .rcpRoundedBottomLeft,
+  .RadColorPicker_Vista .rcpBottomShadow {
+    background-image: url('ColorPicker/ColorPickerSprites.png'); }
+  .RadColorPicker_Vista .rcpPalette,
+  .RadColorPicker_Vista .rcpRoundedRight,
+  .RadColorPicker_Vista .rcpRoundedBottomRight,
+  .RadColorPicker_Vista .rcpRoundedBottomLeft {
+    _background-image: url('ColorPicker/rcpVerticalSpritesIE6.png'); }
+

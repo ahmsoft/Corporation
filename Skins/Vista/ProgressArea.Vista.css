@@ -1,0 +1,45 @@
+.RadUploadProgressArea_Vista {
+  color: black;
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadUploadProgressArea_Vista .ruProgressHeader {
+    background-image: -webkit-linear-gradient(top, #e5f4fd 0%, #a6d9f4 100%);
+    background-image: -moz-linear-gradient(top, #e5f4fd 0%, #a6d9f4 100%);
+    background-image: -ms-linear-gradient(top, #e5f4fd 0%, #a6d9f4 100%);
+    background-image: -o-linear-gradient(top, #e5f4fd 0%, #a6d9f4 100%);
+    background-image: linear-gradient(top, #e5f4fd 0%, #a6d9f4 100%); }
+  .RadUploadProgressArea_Vista .ruActions {
+    border-color: #e2e3ea;
+    color: black;
+    background-color: #e0e5f5; }
+  .RadUploadProgressArea_Vista .ruButton {
+    border-color: #707070;
+    color: black;
+    background-color: #d2d2d2;
+    background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%);
+    background-image: -moz-linear-gradient(top, #f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%);
+    background-image: -ms-linear-gradient(top, #f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%);
+    background-image: -o-linear-gradient(top, #f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%);
+    background-image: linear-gradient(top, #f3f3f3 0%, #ececec 50%, #dddddd 50%, #d2d2d2 100%);
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadUploadProgressArea_Vista .ruButtonHover {
+    border-color: #3c7fb1;
+    color: black;
+    background-color: #abdcf7;
+    background-image: -webkit-linear-gradient(top, #e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%);
+    background-image: -moz-linear-gradient(top, #e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%);
+    background-image: -ms-linear-gradient(top, #e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%);
+    background-image: -o-linear-gradient(top, #e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%);
+    background-image: linear-gradient(top, #e8f5fd 0%, #dbf1fc 50%, #bee6fd 50%, #abdcf7 100%); }
+  .RadUploadProgressArea_Vista .ruProgress {
+    border-color: #646f7a;
+    color: #666666;
+    background-color: #ffffff; }
+  .RadUploadProgressArea_Vista .ruCurrentFile {
+    color: #222222; }
+  .RadUploadProgressArea_Vista .ruBar {
+    border-color: #b2b2b2 #b2b2b2 #8c8c8c; }
+    .RadUploadProgressArea_Vista .ruBar div {
+      border-color: #28cc3a;
+      background-image: url('Upload/ruProgress.gif'); }

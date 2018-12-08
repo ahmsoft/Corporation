@@ -1,0 +1,69 @@
+.RadInput_WebBlue,
+.RadInputMgr_WebBlue {
+  font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif; }
+
+/*textbox states*/
+html body .RadInput_WebBlue .riTextBox, html body .RadInputMgr_WebBlue {
+  border-color: #768ca5;
+  background: #fff;
+  color: black;
+  font: normal 12px "Segoe UI", Arial, Helvetica, sans-serif; }
+html body .RadInput_WebBlue .riEmpty,
+html body .RadInput_Empty_WebBlue {
+  color: #777777; }
+html body .RadInput_WebBlue .riHover, html body .RadInput_Hover_WebBlue, html body .RadInput_WebBlue .riFocused, html body .RadInput_Focused_WebBlue {
+  color: black;
+  border-color: #133c44; }
+html body .RadInput_WebBlue .riRead, html body .RadInput_Read_WebBlue {
+  border-color: #b0b0b0; }
+html body .RadInput_WebBlue .riDisabled, html body .RadInput_Disabled_WebBlue {
+  border-color: #b0b0b0;
+  color: #777;
+  cursor: default; }
+html body .RadInput_WebBlue .riError, html body .RadInput_Error_WebBlue {
+  border-color: #d24000;
+  background: white 100% -298px no-repeat url('Input/sprite.gif');
+  color: #b32d34; }
+
+.RadForm.rfdTextbox .RadInput_WebBlue .riError[type="text"], .RadForm.rfdTextbox .RadInput_Error_WebBlue[type="text"] {
+  border-color: #d24000;
+  background: white 100% -298px no-repeat url('Input/sprite.gif');
+  color: #b32d34; }
+
+html body .RadInput_WebBlue .riNegative, html body .RadInput_Negative_WebBlue {
+  color: #444; }
+
+/*buttons*/
+.RadInput_WebBlue a {
+  background: transparent no-repeat url('Input/sprite.gif'); }
+.RadInput_WebBlue .riBtn a {
+  width: 20px;
+  height: 18px;
+  line-height: 18px;
+  background-position: 3px 5px; }
+  .RadInput_WebBlue .riBtn a:hover {
+    background-position: 3px -45px; }
+.RadInput_WebBlue .riSpin a {
+  width: 15px;
+  height: 7px;
+  line-height: 7px; }
+.RadInput_WebBlue a.riUp {
+  background-position: 4px -98px; }
+  .RadInput_WebBlue a.riUp:hover {
+    background-position: 4px -148px; }
+.RadInput_WebBlue a.riDown {
+  background-position: 4px -199px; }
+  .RadInput_WebBlue a.riDown:hover {
+    background-position: 4px -249px; }
+.RadInput_WebBlue .riLabel {
+  color: #000; }
+.RadInput_WebBlue .riResizeIcon {
+  background: transparent 0 0 no-repeat url('Input/ResizeEdge.gif'); }
+
+html body .RadInputRTL_WebBlue .riError, html body .RadInputRTL_Error_WebBlue {
+  background-position: 3px -298px; }
+html body .RadInputRTL_WebBlue .riResizeIcon {
+  background-position: 0 -19px; }
+
+.RadForm.rfdTextbox .RadInputRTL_WebBlue .riError[type="text"], .RadForm.rfdTextbox .RadInputRTL_Error_WebBlue[type="text"] {
+  background-position: 3px -298px; }

@@ -1,0 +1,20 @@
+.RadSocialShare_Sunset {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border: 1px solid #938879;
+  background-color: #e1dac7; }
+  .RadSocialShare_Sunset .sshLinkItem .sshText {
+    color: #272722; }
+  .RadSocialShare_Sunset .sshLinkItem:hover .sshText {
+    color: #863d02; }
+
+.RadComboBoxDropDown_Sunset .rcbItem .sshLinkItem .sshText {
+  color: #272722; }
+
+.RadComboBoxDropDown_Sunset .rcbHovered .sshLinkItem .sshText {
+  color: #863d02; }
+
+.RadComboBox_Sunset.sshComboWrapper td.rcbArrowCellRight,
+.RadComboBox_Sunset.sshComboWrapper .rcbFocused td.rcbArrowCellRight {
+  background-position: right -154px; }
+

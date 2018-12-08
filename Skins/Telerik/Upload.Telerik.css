@@ -1,0 +1,79 @@
+/* RadUpload / Telerik skin */
+/* <general styles> */
+.RadUpload_Telerik, .RadUpload_Telerik a, .RadUpload_Telerik input {
+  font: normal 11px/10px "Segoe UI", Arial, sans-serif; }
+
+/* </general styles> */
+/* <file inputs> */
+.RadUpload_Telerik .ruStyled .ruFileInput {
+  border-color: #abadb3; }
+
+.RadUpload_Telerik .ruFakeInput {
+  border-color: #8e8e8e #b8b8b8 #b8b8b8 #8e8e8e;
+  color: #4b4b4b; }
+
+* + html .RadUpload_Telerik .ruFileWrap .ruInputHover {
+  border-color: #b8b8b8; }
+
+.RadUpload_Telerik .ruReadOnly .ruFakeInput {
+  background: #f3f3f3; }
+
+/* </file inputs> */
+/* <buttons> */
+.RadUpload_Telerik .ruButton {
+  background-image: url('Upload/ruSprite.png');
+  color: #000; }
+
+.RadUpload_Telerik .ruRemove {
+  color: #6e6e6e; }
+
+div.RadUpload_Telerik .ruInputs .ruButtonHover, div.RadUpload_Telerik .ruActions .ruButtonHover {
+  background-position: 100% -23px; }
+
+div.RadUpload_Telerik .ruFileWrap .ruButtonHover {
+  background-position: 100% 0; }
+
+.RadUpload_Telerik .ruFileWrap .ruButton.ruButtonFocus {
+  background-position: -1px -1px; }
+
+.RadUpload_Telerik .ruFileWrap .ruButton.ruButtonFocus.ruButtonHover {
+  background-position: 64px -1px;
+  background-repeat: repeat-x; }
+
+/* </buttons> */
+/* <submit button> */
+/* (use this class to style a single button for uploads) */
+.RadUploadSubmit {
+  background-image: url('Upload/ruSprite.png');
+  color: #000; }
+
+/* </submit button> */
+/* <RadAsyncUpload> */
+.RadUpload_Telerik .ruUploadInvalid {
+  background-repeat: no-repeat;
+  background-position: 100% -297px;
+  background-image: url('Input/sprite.gif'); }
+
+.RadUpload_Telerik_rtl .ruUploadInvalid {
+  background-position: 3px -297px; }
+
+.RadUpload_Telerik .ruFileProgress, .RadUpload_Telerik .ruFileProgressWrap {
+  background-image: url('Upload/AsyncProgress.png'); }
+
+.RadUpload_Telerik .ruFileProgress, .RadUpload_Telerik_rtl .ruFileProgressWrap {
+  background-position: 0 0; }
+
+.RadUpload_Telerik .ruFileProgressWrap, .RadUpload_Telerik_rtl .ruFileProgress {
+  background-position: 100% 0; }
+
+.RadUpload_Telerik .ruProgressStarted, .RadUpload_Telerik_rtl .ruProgressComplete {
+  background-position: 0 -5px; }
+
+.RadUpload_Telerik .ruProgressComplete, .RadUpload_Telerik_rtl .ruProgressStarted {
+  background-position: 100% -5px; }
+
+/* </RadAsyncUpload> */
+.RadUpload_Telerik .ruDropZone, .RadUpload_Telerik_rtl .ruDropZone {
+  border-color: #cecece;
+  color: #585858;
+  background-color: #eeeeee; }

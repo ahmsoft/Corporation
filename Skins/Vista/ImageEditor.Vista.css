@@ -1,0 +1,42 @@
+.RadImageEditor_Vista {
+  border-color: #9cb6c5;
+  background-color: #c2dcf0; }
+  .RadImageEditor_Vista .rieStatusBarInfo .rieLabel {
+    color: #8a8a8a; }
+  .RadImageEditor_Vista .rieStatusBarInfo span {
+    color: #4c4e54; }
+  .RadImageEditor_Vista .rieContentArea {
+    border-color: #9cb6c5; }
+
+/* ImageEditor Dialogs using RadDock as Wrapper */
+.RadDock_Vista.rieDialogs .rbPrimaryIcon, .RadImageEditor_Vista .rieResizeHandle, .RadImageEditor_Vista .rieBackgroundImg .rtbIcon {
+  background-image: url('../Common/ImageEditor/rieToolsLight.png');
+  _background-image: url('../Common/ImageEditor/rieToolsLightIE6.png'); }
+
+.RadDock_Vista.rieDialogs .rieThumbsBottomRow td, .RadDock_Vista.rieDialogs .rieDialogsThumbsLeft, .RadDock_Vista.rieDialogs .riePrintContent img {
+  border-color: #5794bf; }
+
+.RadDock_Vista.rieDialogs .rieThumbsLink {
+  border-color: #abadb3; }
+
+.RadDock_Vista.rieDialogs .rieActiveThumbsLink, .RadDock_Vista.rieDialogs .rieThumbsLink:hover, .RadImageEditor_Vista .rieHighlightVertical, .RadImageEditor_Vista .rieHighlightHorizontal {
+  border-color: #5794bf;
+  background-color: #e5f4fd; }
+
+.RadDock_Vista.rieDialogs .riePrintContent {
+  border-color: #9cb6c5;
+  background-color: #c2dcf0; }
+
+.RadDock_Vista.rieDialogs .rdContent {
+  color: #000000; }
+
+/* Button nomral positions overrides */
+.RadDock_Vista.rieDialogs .rieRotateRight, .RadDock_Vista.rieDialogs .RadButton:hover .rieRotateRight {
+  background-position: -16px -17px; }
+
+.RadDock_Vista.rieDialogs .rieRotateLeft, .RadDock_Vista.rieDialogs .RadButton:hover .rieRotateLeft {
+  background-position: -32px -17px; }
+
+.rieBottomCell {
+  border-color: #828282; }
+

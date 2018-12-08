@@ -1,0 +1,47 @@
+.RadDataForm_Black {
+  font: normal 12px / 1.33 "Segoe UI", Arial, Helvetica, sans-serif;
+  color: white;
+  overflow: hidden; }
+  .RadDataForm_Black .rdfLegend,
+  .RadDataForm_Black .rdfBorders {
+    border-color: #696969; }
+  .RadDataForm_Black .rdfHr {
+    color: #080808; }
+  .RadDataForm_Black .rdfFieldHint {
+    color: white; }
+  .RadDataForm_Black .rdfLegend {
+    font-size: 1.17em; }
+  .RadDataForm_Black .rdfFieldHint {
+    font-size: 0.83em;
+    line-height: .8;
+    padding: 0 0 0 .42em; }
+  .RadDataForm_Black .rdfFieldHint.rdfBlock {
+    padding: .42em 0 0 0; }
+  .RadDataForm_Black .rdfLabel.rdfBlock {
+    padding: 0 0 .17em 0; }
+  .RadDataForm_Black .rdfPager {
+    margin-top: 1.25em; }
+    .RadDataForm_Black .rdfPager .rdfFirst,
+    .RadDataForm_Black .rdfPager .rdfPrev,
+    .RadDataForm_Black .rdfPager .rdfNext,
+    .RadDataForm_Black .rdfPager .rdfLast {
+      width: 25px;
+      height: 25px;
+      background: transparent no-repeat url('DataForm/sprite.png');
+      border: none; }
+    .RadDataForm_Black .rdfPager .rdfFirst {
+      background-position: 0 0; }
+      .RadDataForm_Black .rdfPager .rdfFirst:hover {
+        background-position: 0 -50px; }
+    .RadDataForm_Black .rdfPager .rdfPrev {
+      background-position: 0 -100px; }
+      .RadDataForm_Black .rdfPager .rdfPrev:hover {
+        background-position: 0 -150px; }
+    .RadDataForm_Black .rdfPager .rdfNext {
+      background-position: 0 -200px; }
+      .RadDataForm_Black .rdfPager .rdfNext:hover {
+        background-position: 0 -250px; }
+    .RadDataForm_Black .rdfPager .rdfLast {
+      background-position: 0 -300px; }
+      .RadDataForm_Black .rdfPager .rdfLast:hover {
+        background-position: 0 -350px; }

@@ -1,0 +1,92 @@
+.RadImageGallery_Sunset {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #272722; }
+  .RadImageGallery_Sunset .rigDescriptionBox {
+    background-color: #a39787;
+    background-color: rgba(163, 151, 135, 0.8);
+    color: white; }
+  .RadImageGallery_Sunset .rigToolbar,
+  .RadImageGallery_Sunset .rigCloseButton,
+  .RadImageGallery_Sunset .rigDrawerButton {
+    background-color: #e1dac7;
+    background-color: rgba(225, 218, 199, 0.8);
+    color: black; }
+  .RadImageGallery_Sunset .rigProgressBar div {
+    background-color: #982e00; }
+  .RadImageGallery_Sunset .rigPager {
+    background-color: #e1dac7;
+    color: #272722; }
+    .RadImageGallery_Sunset .rigPager a {
+      color: #272722; }
+    .RadImageGallery_Sunset .rigPager a.rigCurrentPage {
+      color: #000;
+      border-color: #898989;
+      background: #fff; }
+  .RadImageGallery_Sunset .rigIcon {
+    background-image: url('Common/radActionsSprite.png'); }
+  .RadImageGallery_Sunset .rigDotList > a {
+    border-color: #938879; }
+  .RadImageGallery_Sunset .rigDotList a span {
+    background-color: white; }
+  .RadImageGallery_Sunset .rigDotList a.rigCurrentItem span {
+    background-color: #982e00;
+    border-color: white; }
+  .RadImageGallery_Sunset .rigTooltip {
+    background-color: #fff3a8;
+    border-color: #bb903e; }
+    .RadImageGallery_Sunset .rigTooltip:after {
+      border-top-color: #fff3a8; }
+  .RadImageGallery_Sunset .rigPrevButton,
+  .RadImageGallery_Sunset .rigNextButton,
+  .RadImageGallery_Sunset .rigScrollPrevIcon,
+  .RadImageGallery_Sunset .rigScrollNextIcon,
+  .RadImageGallery_Sunset .rigCloseIcon {
+    background-image: url('LightBox/sprite.png'); }
+  .RadImageGallery_Sunset .rigPrevButton {
+    background-position: 0 -140px; }
+  .RadImageGallery_Sunset .rigNextButton {
+    background-position: -60px -140px; }
+  .RadImageGallery_Sunset .rigScrollPrevIcon {
+    background-position: -79px  -49px; }
+  .RadImageGallery_Sunset .rigScrollNextIcon {
+    background-position: -104px -49px; }
+  .RadImageGallery_Sunset.RadImageGallery_RightOutside .rigScrollPrevIcon,
+  .RadImageGallery_Sunset.RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Sunset .rigThumbnailsBoxVertical .rigScrollPrevIcon,
+  .RadImageGallery_Sunset .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -62px -89px; }
+  .RadImageGallery_Sunset .RadImageGallery_RightOutside .rigScrollNextIcon,
+  .RadImageGallery_Sunset .rigThumbnailsBoxVertical .rigScrollNextIcon {
+    background-position: -96px -89px; }
+  .RadImageGallery_Sunset .rigCloseIcon {
+    background-position: -79px -12px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigCloseIcon {
+    background-position: -101px -12px; }
+  .RadImageGallery_Sunset .rigDrawerIcon {
+    background-position: -52px -60px; }
+  .RadImageGallery_Sunset .rigPlayIcon {
+    background-position: 1px -1999px; }
+  .RadImageGallery_Sunset .rigPauseIcon {
+    background-position: 1px -2019px; }
+  .RadImageGallery_Sunset .rigFullScrIcon {
+    background-position: 1px -2099px; }
+  .RadImageGallery_Sunset .rigExtFullScrIcon {
+    background-position: 1px -2119px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigPlayIcon {
+    background-position: -19px -1999px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigPauseIcon {
+    background-position: -19px -2019px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigFullScrIcon {
+    background-position: -19px -2099px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigExtFullScrIcon {
+    background-position: -19px -2119px; }
+  .RadImageGallery_Sunset .rigShowThumbnIcon {
+    background-position: 0px -2159px; }
+  .RadImageGallery_Sunset .rigHideThumbnIcon {
+    background-position: 0px -2179px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigShowThumbnIcon {
+    background-position: -20px -2159px; }
+  .RadImageGallery_Sunset .rigActionButton:hover .rigHideThumbnIcon {
+    background-position: -20px -2179px; }

@@ -1,0 +1,73 @@
+.RadWizard_Simple {
+  color: #000000;
+  background: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+.RadWizard_Simple .rwzButton {
+  border-color: #7e7e7e;
+  color: #000000;
+  background-color: #e2e2e2; }
+  .RadWizard_Simple .rwzButton.rwzHovered {
+    border-color: #c98400;
+    color: #882501;
+    background-color: #ffe79c; }
+  .RadWizard_Simple .rwzButton.rwzClicked {
+    border-color: #ca4b0c;
+    color: #882501;
+    background-color: #ffa517; }
+  .RadWizard_Simple .rwzButton.rwzDisabled {
+    border-color: #9b9b9b;
+    color: #999999;
+    background-color: #dfdfdf; }
+.RadWizard_Simple .rwzBreadCrumb {
+  color: #000000; }
+  .RadWizard_Simple .rwzBreadCrumb .rwzLI {
+    border-color: #7e7e7e; }
+  .RadWizard_Simple .rwzBreadCrumb .rwzLink {
+    background-color: #c6c6c6; }
+    @media screen\9 {
+      .RadWizard_Simple .rwzBreadCrumb .rwzLink {
+        color: #000000; } }
+  .RadWizard_Simple .rwzBreadCrumb .rwzCallout {
+    background: url('Wizard/rwzCallout.png') no-repeat 100% 50%; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzCallout:before {
+      display: none; }
+  .RadWizard_Simple .rwzBreadCrumb .rwzHovered {
+    color: #882501;
+    border-color: #c98400; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzHovered .rwzLink {
+      background-color: #ffe79c; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzHovered .rwzCallout {
+      background-image: url('Wizard/rwzCalloutHover.png'); }
+  .RadWizard_Simple .rwzBreadCrumb .rwzSelected {
+    color: #882501;
+    border-color: #ca4b0c; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzSelected .rwzLink {
+      background-color: #ffa517; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzSelected .rwzCallout {
+      background-image: url('Wizard/rwzCalloutSelect.png'); }
+  .RadWizard_Simple .rwzBreadCrumb .rwzDisabled {
+    color: #999999;
+    border-color: #9b9b9b; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzDisabled .rwzLink {
+      background-color: #dfdfdf; }
+    .RadWizard_Simple .rwzBreadCrumb .rwzDisabled .rwzCallout {
+      background-image: url('Wizard/rwzCalloutDisable.png'); }
+.RadWizard_Simple .rwzProgressBar {
+  border: 0;
+  background-color: #e4e4e4; }
+.RadWizard_Simple .rwzProgress {
+  background-color: #ffa517; }
+
+.RadWizard_Simple.rwzRightBreadCrumb .rwzBreadCrumb .rwzCallout,
+.RadWizard_Simple.RadWizard_rtl .rwzBreadCrumb .rwzCallout {
+  background: url('Wizard/rwzCalloutRtl.png') no-repeat 0 50%; }
+.RadWizard_Simple.rwzRightBreadCrumb .rwzBreadCrumb .rwzHovered .rwzCallout,
+.RadWizard_Simple.RadWizard_rtl .rwzBreadCrumb .rwzHovered .rwzCallout {
+  background-image: url('Wizard/rwzCalloutHoverRtl.png'); }
+.RadWizard_Simple.rwzRightBreadCrumb .rwzBreadCrumb .rwzSelected .rwzCallout,
+.RadWizard_Simple.RadWizard_rtl .rwzBreadCrumb .rwzSelected .rwzCallout {
+  background-image: url('Wizard/rwzCalloutSelectRtl.png'); }
+.RadWizard_Simple.rwzRightBreadCrumb .rwzBreadCrumb .rwzDisabled .rwzCallout,
+.RadWizard_Simple.RadWizard_rtl .rwzBreadCrumb .rwzDisabled .rwzCallout {
+  background-image: url('Wizard/rwzCalloutDisableRtl.png'); }

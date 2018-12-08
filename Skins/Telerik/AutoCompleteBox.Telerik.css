@@ -1,0 +1,64 @@
+.RadAutoCompleteBox_Telerik {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 16px; }
+  .RadAutoCompleteBox_Telerik .racTokenList {
+    border-color: #8e8e8e;
+    color: #000000;
+    background-color: #ffffff; }
+  .RadAutoCompleteBox_Telerik .racDisabled {
+    border-color: #d0d0d0;
+    color: #8a8a8a;
+    background-color: #ffffff; }
+  .RadAutoCompleteBox_Telerik .racToken {
+    border-radius: 3px;
+    background-image: url('Common/radGradientButtonSprite.png');
+    border-color: #cccccc;
+    color: #000000;
+    background-color: #eeeeee;
+    background-image: linear-gradient(#fdfdfd 0%, #dddddd 50%, #cbcbcb 50%, #eeeeee 100%); }
+  .RadAutoCompleteBox_Telerik .racTokenHovered {
+    border-color: #2ebf00;
+    color: #000000;
+    background-color: #63ac39;
+    background-image: linear-gradient(#d2f8c5 0%, #bcf1ab 50%, #b9f0a7 50%, #a2ea8b 100%); }
+  .RadAutoCompleteBox_Telerik .racTokenSelected {
+    border-color: #239500;
+    color: #000000;
+    background-color: #93da59;
+    background-image: linear-gradient(#a8d687 0%, #8cc569 50%, #65b33f 50%, #63ac39 100%); }
+  .RadAutoCompleteBox_Telerik .racDisabled .racToken {
+    border-color: #d2d2d2;
+    color: #8a8a8a;
+    background-color: #eeeeee;
+    background-image: linear-gradient(#fdfdfd 0%, #dddddd 50%, #cbcbcb 50%, #eeeeee 100%); }
+  .RadAutoCompleteBox_Telerik .racRemoveTokenLink {
+    background-image: url('Common/radActionsSprite.png');
+    background-position: -2px -1342px; }
+  * + html .RadAutoCompleteBox_Telerik .racInput {
+    color: #000000;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadAutoCompleteBox_Telerik .racEmptyMessage {
+    color: #8a8a8a; }
+  .RadAutoCompleteBox_Telerik .racLoadingIcon {
+    background-image: url('Common/loading_small.gif'); }
+
+.RadAutoCompleteBoxPopup_Telerik {
+  border-color: #828282;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadAutoCompleteBoxPopup_Telerik .racHeader,
+  .RadAutoCompleteBoxPopup_Telerik .racFooter {
+    border-color: #828282;
+    color: #000000;
+    background-color: #e6e6e6; }
+  .RadAutoCompleteBoxPopup_Telerik .racShowAll {
+    border-color: #828282;
+    color: #000000;
+    background-color: #e6e6e6; }
+  .RadAutoCompleteBoxPopup_Telerik .racItemHovered {
+    color: #000000;
+    background-color: #9ddf6c; }

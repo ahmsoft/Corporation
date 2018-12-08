@@ -1,0 +1,359 @@
+.WebBlue {
+  /* reWrapper */
+  /* common settings for .reModule, .reEditorModes and .reWrapper */
+  /* end of module */
+  /*Toolbar sprites*/
+  /* .reTool_text */
+  /* these settings will not be included in the common CSS file of RadEditor */
+  /* end of reTool_text */
+  /* reDropdown */
+  /* end of reDropdown */
+  /* InsertTable itself is a kind of tool strip, so it must be styled as a toolstrip */
+  /* end of context menu and toolstrip */
+  /* spinbox */
+  /* end of spinbox */
+  /* DOM inspector */
+  /* end of DOM inspector */
+  /* end of expanded dropdowns */
+  /* color picker */
+  /* end of color picker */
+  /* ajax spellchecker */
+  /* ajax spellchecker */
+  /* custom links */
+  /* end of custom links */
+  /* insert table dropdown */
+  /* end of insert table dropdown */
+  /* Popup Comments */
+  /* Commnet popups */
+  /* Inline Editor */
+  /* Right to Left */
+}
+
+.WebBlue.RadEditor,
+.WebBlue.RadEditor .reModule,
+.WebBlue.RadEditor .reEditorModes,
+.WebBlue.RadEditor .reWrapper {
+  background-color: #e0e7ed;
+}
+
+.WebBlue.reWrapper,
+.WebBlue.RadEditor .reContentCell,
+.WebBlue.reColorPicker,
+.WebBlue.reInsertTable,
+.WebBlue.reCustomLinks a:hover {
+  border: 1px solid #768ca5;
+  background-color: #e0e7ed;
+}
+
+.WebBlue .reEmptyMessage {
+  color: #777777;
+}
+
+.WebBlue.RadEditor .reContentCell {
+  background-color: #ffffff;
+}
+
+.WebBlue.RadEditor .reContentCell.reNoBorder {
+  border: none;
+}
+
+.WebBlue.RadEditor .reNoBorder div.reContentArea {
+  border: 1px solid #768ca5;
+}
+
+.WebBlue.reDropDownBody {
+  border: 1px solid #3d556c;
+  background-color: #e0e7ed;
+}
+
+.WebBlue.reDropDownBody table {
+  background: transparent;
+}
+
+.WebBlue.RadEditor .reModule {
+  border-top: 1px solid #768ca5;
+}
+
+.WebBlue.reCustomLinks a,
+.WebBlue.reCustomLinks a:link,
+.WebBlue.reCustomLinks a:visited {
+  border: 1px solid #ffffff;
+  /* should be the same as the background of the dropdown */
+  color: #000000 !important;
+}
+
+.WebBlue.reCustomLinks a:hover {
+  background-color: #bee3f6;
+  border: 1px solid #4e667e;
+}
+
+.WebBlue .reToolbar li,
+.WebBlue .reSpinBox a,
+.WebBlue.reToolbar .reSeparator,
+.WebBlue.reToolbar .reGrip,
+.WebBlue .reDialog .reTool,
+.WebBlue .reModule .reTool,
+.WebBlue .reDialog .reTool:hover,
+.WebBlue .reToolbar .reTool:hover,
+.WebBlue .reModule .reTool:hover,
+.WebBlue .reToolbar .reTool.reTool_selected,
+.WebBlue .reToolbar .reTool.reTool_selected:hover,
+.WebBlue .reToolbar .reTool_text:hover,
+.WebBlue .reToolbar .reTool_text.reTool_selected,
+.WebBlue .reToolbar .reTool_text.reTool_selected:hover,
+.WebBlue .reTool .split_arrow,
+.WebBlue .reSplitButton.reTool_text .split_arrow,
+.WebBlue .reToolbar .reTool_text .split_arrow,
+.WebBlue .reDialog .reTool.reSplitButton,
+.WebBlue .reModule .reTool.reSplitButton,
+.WebBlue .reDropdown,
+.WebBlue .reTool_disabled.reDropdown:hover,
+.WebBlue .reResizeCell div,
+.WebBlue.reInsertTable .reToolbar li .reTool:hover,
+.WebBlue.RadEditor.reRtl .reDropdown:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+.WebBlue.RadEditor .reTlbVertical li,
+.WebBlue .reDropdown:hover,
+.WebBlue.RadEditor .reTlbVertical .reToolbar.Default .reGrip,
+.WebBlue.RadEditor.reTlbVertical .reToolbar.Default .reSeparator,
+.WebBlue .reTlbVertical .reTool:hover,
+.WebBlue .reTlbVertical .reTool_text.reSplitButton:hover,
+.WebBlue .reTlbVertical .reSplitButton:hover,
+.WebBlue .reTlbVertical .reTool_text:hover,
+.WebBlue .reTlbVertical .reTool.reTool_selected,
+.WebBlue .reTlbVertical .reTool_text.reTool_selected,
+.WebBlue .reTlbVertical .reTool_text.reTool_selected:hover,
+.WebBlue.reDropDownBody .reTlbVertical ul li a:hover,
+.WebBlue.reDropDownBody .reTlbVertical .reToolbar,
+.WebBlue .reMode_selected,
+.WebBlue.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:hover {
+  background-image: url('Editor/ToolbarVerticalSprites.gif');
+}
+
+.WebBlue .reToolbar li {
+  color: #000000;
+}
+
+.WebBlue .reToolbar .reTool_text:hover,
+.WebBlue .reToolbar .reTool_text.reTool_selected,
+.WebBlue .reToolbar .reTool_text.reTool_selected:hover {
+  border-left: 1px solid #5d9fb7;
+  border-right: 1px solid #5d9fb7;
+}
+
+.WebBlue .reToolbar .reTool_text.reTool_disabled,
+.WebBlue .reToolbar .reTool_text.reTool_disabled:hover {
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.WebBlue .reDropdown:link,
+.WebBlue .reDropdown:visited {
+  color: #000000 !important;
+}
+
+.WebBlue .reDropdown,
+.WebBlue .reTool_disabled.reDropdown:hover {
+  border: 1px solid #768ca5;
+  background-color: #ffffff;
+}
+
+.WebBlue .reDropdown:hover {
+  border-color: #5d9fb7;
+  color: #0e3d4f;
+}
+
+.WebBlue.reDropDownBody .reTlbVertical .reToolbar {
+  background-color: #ffffff;
+}
+
+.WebBlue table.reSpinBox,
+.WebBlue.RadEditor input {
+  border-color: #768ca5;
+  background-color: #ffffff;
+}
+
+.WebBlue table.reSpinBox:hover,
+.WebBlue.RadEditor input:hover {
+  border: 1px solid #5d9fb7;
+}
+
+.WebBlue .reModule_domlink_selected,
+.WebBlue .reModule_domlink {
+  color: #000000;
+}
+
+.WebBlue.reDropDownBody .reItemOver {
+  background: #e9f8ff;
+  color: #0e3d4f;
+}
+
+.WebBlue.reColorPicker table div,
+.WebBlue.reColorPicker span {
+  border: 1px solid #3d556c;
+}
+
+.WebBlue.reColorPicker table td.reItemOver div {
+  border-color: #000000;
+}
+
+.WebBlue .reAjaxspell_button {
+  border: 1px solid #4e667e;
+  background-color: #d7e2e7;
+  color: #0d202b;
+}
+
+.WebBlue .reAjaxSpellCheckSeparator {
+  background-color: #ffffff;
+}
+
+.WebBlue.reCustomLinks,
+.WebBlue.reCustomLinks ul {
+  color: #000000;
+}
+
+.WebBlue.reCustomLinks a {
+  background: none transparent;
+  color: #000000;
+  cursor: default !important;
+}
+
+.WebBlue.reCustomLinks a:hover {
+  color: #ffffff;
+}
+
+.WebBlue.reInsertTable table {
+  background-color: #ffffff;
+}
+
+.WebBlue.reInsertTable table td {
+  border: 1px solid #768ca5;
+  background-color: #ffffff;
+}
+
+.WebBlue.reInsertTable table .reItemOver {
+  border: 1px solid #5d9fb7;
+  background-color: #e9f8ff;
+}
+
+.WebBlue.reInsertTable .reTlbVertical ul {
+  background-color: #ffffff;
+}
+
+.WebBlue.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text,
+.WebBlue.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:link,
+.WebBlue.reDropDownBody.reInsertTable div.reTlbVertical a.reTool_text:visited {
+  color: #000000 !important;
+  background: transparent none;
+}
+
+.WebBlue .reCommentEdit,
+.WebBlue .reCommentTextArea,
+.WebBlue .reCommentView,
+.WebBlue .reCommentInfoPanel {
+  border-color: transparent;
+  background-color: #e0e7ed;
+}
+
+.WebBlue .reCommentTitle,
+.WebBlue .reCommentInfoPanel {
+  color: #000000;
+}
+
+.WebBlue .reCommentTextArea {
+  border-color: #3d556c;
+  background-color: #e0e7ed;
+}
+
+.WebBlue.RadEditor .reCommentButton,
+.WebBlue .rePopupButtonContainer .rePopupButton {
+  border-color: #4e667e;
+  color: #000;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#e0e7ed 25%, #c2d2dd 50%, #a3baca 75%, #d7e2e7 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e7ed', endColorstr='#d7e2e7',GradientType=0 );
+  /* IE6-8 */
+}
+
+.WebBlue.RadEditor .reCommentButton:hover,
+.WebBlue .rePopupButtonContainer .rePopupButton:hover {
+  border-color: #5d9fb7;
+  color: #3d687b;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#d4eaf8 25%, #baddf4 50%, #9edaf2 75%, #bee3f6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4eaf8', endColorstr='#bee3f6',GradientType=0 );
+  /* IE6-8 */
+}
+
+.WebBlue.RadEditor .reCommentButton:active,
+.WebBlue .rePopupButtonContainer .rePopupButton:active {
+  color: #000;
+  border-color: #133c44;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#8ebcd4 25%, #64a3c0 50%, #368eb1 75%, #7abace 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ebcd4', endColorstr='#7abace',GradientType=0 );
+  /* IE6-8 */
+}
+
+.WebBlue.rePopupContainer {
+  border-color: #768ca5;
+  background-color: #e0e7ed;
+}
+
+.WebBlue.rePopupContainer .rePopupTitle {
+  color: #fff;
+  border-color: #3a5168;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: linear-gradient(#879eb4 25%, #6b839d 50%, #597791 75%, #748da3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#879eb4', endColorstr='#748da3',GradientType=0 );
+  /* IE6-8 */
+}
+
+.WebBlue.reWrapper.reInlineEditor:hover {
+  border-color: #768ca5;
+}
+
+.WebBlue.reWrapper.reInlineEditorSelected,
+.WebBlue.reWrapper.reInlineEditorSelected:hover {
+  border-color: #133c44;
+}
+
+.WebBlue.RadEditor.reRtl .reTool .split_arrow:hover {
+  border-right-color: #5d9fb7;
+}
+
+.WebBlue.RadEditor.reRtl .reDropdown:hover {
+  background-color: #e9f8ff;
+}
+
+/* the rule below styles RadWindow's content cell, which is used in the floating and show on focus toolbar modes */
+.RadWindow.RadWindow_WebBlue.reToolbarWindow td.rwWindowContent,
+.RadWindow.RadWindow_WebBlue.reToolbarWindow div.rwContent {
+  background-color: #e0e7ed;
+}
+
+.RadWindow_WebBlue .reInsertTableLightWrapper .lightTable {
+  border-color: #3d556c;
+}
+
+.WebBlue .reTool.reSplitButton:hover {
+  background-image: url('Editor/ToolBarSprites.gif');
+}
+
+/* reTool */
+.reTool span,
+.WebBlue.reInsertTable .reTlbVertical ul .reTool_text span,
+.reToolbar .reTool_text span {
+  background-image: url('../Common/CommandSpritesLight.png');
+}
+
+.reTool .split_arrow:hover {
+  border-left-color: #5d9fb7;
+}
