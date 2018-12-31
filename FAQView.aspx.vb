@@ -7,7 +7,7 @@ Partial Class FAQView
 
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
-            lblActive.Attributes("Class") = "current space"
+            lblActive.Attributes("Class") = "current"
             Dim lblState As Label = Master.FindControl("StatusPage")
             lblState.Text = "سوالات متداول - شرکت طراحی سایت آریا سافت AriyaSoft.com - FAQ"
             Dim db = New LinqDBClassesDataContext

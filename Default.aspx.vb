@@ -4,7 +4,7 @@ Partial Class _Default
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Page.Title = "مطالب سایت - شرکت طراحی سایت آریا سافت AriyaSoft.com - Posts"
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
-        lblActive.Attributes("Class") = "current space"
+        lblActive.Attributes("Class") = "current"
         Dim lblState As Label = Master.FindControl("StatusPage")
         lblState.Text = "مطالب سایت - شرکت طراحی سایت آریا سافت AriyaSoft.com - Posts"
         Try

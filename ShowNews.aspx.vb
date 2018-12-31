@@ -6,7 +6,7 @@ Partial Class ShowNews
         Page.Title = "اخبار سایت AriyaSoft.com - News"
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLINews"))
-            lblActive.Attributes("Class") = "current"
+            lblActive.Attributes("Class") = "current space"
             Dim lblState As Label = Master.FindControl("StatusPage")
             lblState.Text = "اخبار سایت"
             Dim db = New LinqDBClassesDataContext

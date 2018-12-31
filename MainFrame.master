@@ -83,7 +83,7 @@
                         <!-- LOGO -->
                         <div id="logo">
                             <a href="<% Server.MapPath("Home") %>/Home">
-                                <img src="/Lamonte/images/logo.png" alt="" /></a>
+                                <img src="/Lamonte/images/logoT.png" alt="شرکت نارم NAREM.IR" /></a>
                         </div>
                         <!-- END LOGO -->
 
@@ -95,16 +95,21 @@
                                         <nav id="nav-wrap">
                                             <ul id="topnav" class="sf-menu">
                                                 <li runat="server" id="menuLIHome"><a href="<% Server.MapPath("Home") %>/Home">صفحه اصلی</a></li>
-
+                                                <li runat="server" id="menuLIMarket"><a href="#">خدمات</a>
+                                                    <ul>
+                                                    <li><a href="<% Server.MapPath("/Order") %>/Order">سفارش وب سایت</a></li>
+                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات حسابداری</a></li>--%>
+                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات کامپیوتری</a></li>--%>
+                                                </ul>
+                                                </li>
+                                                <li runat="server" id="menuLIPost"><a href="<% Server.MapPath("Posts") %>/Posts">مطالب سایت</a></li>
+                                                <li runat="server" id="menuLINews" class="space"><a href="<% Server.MapPath("News") %>/News">اخبار سایت</a></li>
                                                 <li runat="server" id="menuLIAbout"><a>درباره ما</a>
                                                     <ul>
                                                         <li><a href="<% Server.MapPath("Biography") %>/Biography">مدیریت - بیوگرافی</a></li>
                                                         <li><a href="<% Server.MapPath("About") %>/About">درباره سایت</a></li>
                                                     </ul>
                                                 </li>
-                                                <li runat="server" id="menuLIMarket"><a href="<% Server.MapPath("Order") %>/Order">سفارش آنلاین</a></li>
-                                                <li runat="server" id="menuLIPost" class="space"><a href="<% Server.MapPath("Posts") %>/Posts">مطالب سایت</a></li>
-                                                <li runat="server" id="menuLINews"><a href="<% Server.MapPath("News") %>/News">اخبار سایت</a></li>
                                                 <li runat="server" id="menuLIContact"><a href="<% Server.MapPath("Contact") %>/Contact">تماس با ما</a></li>
                                             </ul>
                                             <!-- topnav -->
@@ -202,11 +207,11 @@
                                         <li><a href="http://telegram.me/ahmoravveji" title="Telegram"><span class="icon-img pinterest"></span></a></li>
                                     </ul>
 
-                                    <div id="copyleft">
-                                        مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، تضمین کیفیت طبق متن قرارداد نامه بین ما و شما.<br />
-                                        کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به برند شـرکت آریـا سـافت می‌باشد
-                                    <a href="http://www.AriyaSoft.com">شرکت طراحی و توسعه نرم افزار مبتنی بر وب AriyaSoft.com</a>
-                                    </div>
+                                   <div id="copyleft">
+                                    مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، ارائه خدمات حسابداری و کامپیوتر.<br />
+                                    کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به شـرکت نــارم می‌باشد
+                                    <a href="http://www.narem.ir">شرکت سهامی خاص نگار اعتبار رایان مبنا NAREM.ir</a>
+                                </div>
                                     <div id="toTop">top</div>
                                 </div>
                             </div>

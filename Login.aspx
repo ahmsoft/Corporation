@@ -35,7 +35,7 @@
 <body class="hold-transition login-page" style="background-color: #111;">
 <div class="login-box">
   <div class="login-logo">
-      <a href="/Home" style="color: rgb(255, 216, 0);"><b>AriyaSoft.</b>COM</a><br />
+      <a href="/Home" style="color: rgb(255, 216, 0);"><b>NAREM.</b>IR</a><br />
     <a style="color: #fff;" href="/Admin/AdminPanel.aspx"><b>ورود به سایت</b></a>
   </div>
   <!-- /.login-logo -->

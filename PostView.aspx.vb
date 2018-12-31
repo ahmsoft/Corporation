@@ -4,7 +4,7 @@ Partial Class PostView
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
-        lblActive.Attributes("Class") = "current space"
+        lblActive.Attributes("Class") = "current"
         Dim lblState As Label = Master.FindControl("StatusPage")
         lblState.Text = "نمایش مطلب"
         Dim db = New LinqDBClassesDataContext

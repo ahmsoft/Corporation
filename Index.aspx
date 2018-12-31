@@ -40,12 +40,12 @@
     <!-- Basic Page Needs
   ================================================== -->
     <meta charset="utf-8" />
-    <title>شرکت طراحی سایت آریا سافت AriyaSoft.com</title>
+    <title>شرکت نارم NAREM.IR</title>
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="آریا سافت" />
-    <meta name="DC.subject" content="طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
-    <meta name="description" content="شرکت طراحی سایت آریا سافت با هدف مشاوره، طراحی و پیاده‌سازی سیستم‌های نرم افزاری مبتنی بر وب، مناسب با نیاز مشتریان و بکارگیری تکنیک‌های بهینه‌سازی برای موتورهای جستجو SEO به منظور افزایش بازدید کنندگان سایت فعالیت می‌کند، این شرکت نرم افزاری فعالیت خود را از زمستان 1396 آغاز کرده و توسط مهندس امیرحسن مروجی AHMSoft بنیانگذاری شده است. فعالیت های این شرکت عبارت اند از مشاوره نرم افزاری و بازاریابی الکترونیکی E-Marketing ، مراحل فرایند توسعه نرم افزار SDP ، مهندسی نیازمندی‌های نرم‌افزاری ، تجزیه تحلیل ، طراحی ، پیاده‌سازی ، تست و در نهایت تولید کد اجرایی می‌باشد." />
-    <meta name="keywords" content="شرکت طراحی سایت آریا سافت , امیرحسن مروجی , تجزیه تحلیل , طراحی , پیاده سازی , تست , توسعه نرم افزارهای مبتنی یر وب" />
+    <meta name="author" content="نارم" />
+    <meta name="DC.subject" content="خدمات حسابداری و کامپیوتر , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
+    <meta name="description" content="شرکت نارم با هدف مشاوره، طراحی و پیاده‌سازی سیستم‌های نرم افزاری مبتنی بر وب، مناسب با نیاز مشتریان و بکارگیری تکنیک‌های بهینه‌سازی برای موتورهای جستجو SEO به منظور افزایش بازدید کنندگان سایت فعالیت می‌کند، این شرکت نرم افزاری فعالیت خود را از زمستان 1396 آغاز کرده و توسط مهندس امیرحسن مروجی AHMSoft بنیانگذاری شده است. فعالیت های این شرکت عبارت اند از مشاوره نرم افزاری و بازاریابی الکترونیکی E-Marketing ، مراحل فرایند توسعه نرم افزار SDP ، مهندسی نیازمندی‌های نرم‌افزاری ، تجزیه تحلیل ، طراحی ، پیاده‌سازی ، تست و در نهایت تولید کد اجرایی می‌باشد." />
+    <meta name="keywords" content="شرکت نارم , امیرحسن مروجی , امیرحسین مروجی , فرزانه مروجی , تجزیه تحلیل , طراحی , پیاده سازی , تست , توسعه نرم افزارهای مبتنی یر وب , خدمات حسابداری و کامپیوتر" />
     <!-- Mobile Specific Metas
   ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -92,7 +92,7 @@
                     <!-- LOGO -->
                     <div id="logo">
                         <a href="Home">
-                            <img src="/Lamonte/images/logo.png" alt="شرکت طراحی سایت آریا سافت AriyaSoft.com" /></a>
+                            <img src="/Lamonte/images/logoT.png" alt="شرکت نارم NAREM.IR" /></a>
                     </div>
                     <!-- END LOGO -->
 
@@ -104,16 +104,20 @@
                                     <nav id="nav-wrap">
                                         <ul id="topnav" class="sf-menu">
                                             <li class="current"><a href="<% Server.MapPath("/Home") %>/Home">صفحه اصلی</a></li>
-
-                                            <li><a href="<% Server.MapPath("/About") %>/About">درباره ما</a>
+                                            <li><a href="#">خدمات</a>
                                                 <ul>
-                                                    <li><a href="<% Server.MapPath("/Biography") %>/Biography">مدیریت - بیوگرافی</a></li>
-                                                    <li><a href="<% Server.MapPath("/About") %>/About">درباره سایت</a></li>
+                                                    <li><a href="<% Server.MapPath("/Order") %>/Order">سفارش وب سایت</a></li>
+                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات حسابداری</a></li>--%>
+                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات کامپیوتری</a></li>--%>
                                                 </ul>
                                             </li>
-                                            <li><a href="<% Server.MapPath("/Order") %>/Order">سفارش آنلاین</a></li>
-                                            <li class="space"><a href="<% Server.MapPath("/Posts") %>/Posts">مطالب سایت</a></li>
-                                            <li><a href="<% Server.MapPath("/News") %>/News">اخبار سایت</a></li>
+                                            <li><a href="<% Server.MapPath("/Posts") %>/Posts">مطالب سایت</a></li>
+                                            <li class="space"><a href="<% Server.MapPath("/News") %>/News">اخبار سایت</a></li>
+                                            <li><a href="<% Server.MapPath("/About") %>/About">درباره ما</a>
+                                                <ul>
+                                                    <li><a href="<% Server.MapPath("/Biography") %>/Biography">درباره شرکت نارم</a></li>
+                                                    <li><a href="<% Server.MapPath("/About") %>/About">درباره سایت</a></li>
+                                                </ul></li>
                                             <li><a href="<% Server.MapPath("/Contact") %>/Contact">تماس با ما</a></li>
                                         </ul>
                                         <!-- topnav -->
@@ -137,8 +141,8 @@
                                         <img src="/images/1.jpg" style="width:100%;height:420px;" alt="" />
                                         <div class="flex-caption">
                                             <div class="slider-text">
-                                                <h1>سیستم‌های مبتنی بر وب</h1>
-                                                <p class="slider-desc">طراحی وب سایت‌های تجاری و فروشگاهی تخصص اصلی تیم ما محسوب می‌شود.</p>
+                                                <h1>خدمات حسابداری و کامپیوتر</h1>
+                                                <p class="slider-desc">ارائه کلیه ی خدمات حسابداری و کامپیوتر تخصص اصلی تیم ما محسوب می‌شود.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -146,7 +150,7 @@
                                         <img src="/images/2.jpg" style="width:100%;height:420px;" alt="" />
                                         <div class="flex-caption">
                                             <div class="slider-text">
-                                                <h1>کسب و کار اینترنتی</h1>
+                                                <h1>طراحی و توسعه سیستم‌های نرم افزاری مبتنی بر وب</h1>
                                                 <p class="slider-desc">ما کلیه وب سایت‌های خود را با استفاده از سیستم اختصاصی به صورت واکـنش‌گرا و با قالب اختصاصی بر اساس نـیازهای مشـتریان طراحی می‌کنیم.</p>
                                             </div>
                                         </div>
@@ -173,14 +177,14 @@
             <!-- END HEADER -->
 
             <!-- BEFORE CONTENT -->
-            <div id="outerbeforecontent">
+            <div id="outerbeforecontent" style="padding:50px 50px 0px 0px;">
                 <div class="light">
                     <div class="container">
                         <div class="row">
-                            <div class="twelve columns">
-                                <h1>وب سایت شرکت <span class="colortext">آریـــا ســـافت </span>
+                            <div class="twelve columns" style="margin-right:-35px;">
+                                <h1>وب سایت شرکت <span class="colortext">نــــــــــارم </span>
                                     <br>
-                                    طراحی وب سایت، طراحی فروشگاه اینترنتی، طراحی سیستم نرم‌افزاری و بازاریابی اینترنتی</h1>
+                                    خدمات حسابداری و کامپیوتر، طراحی فروشگاه اینترنتی، طراحی سیستم نرم‌افزاری</h1>
                                 <br />
                                 <a href="/Login" class="button" style="font-size:large;">ورود به پنل اختصاصی</a>
 
@@ -272,9 +276,9 @@
 										<center><script src="https://cdn.zarinpal.com/trustlogo/v1/trustlogo.js" type="text/javascript"></script></center>
 
                                 <div id="copyleft">
-                                    مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، تضمین کیفیت طبق متن قرارداد نامه بین ما و شما.<br />
-                                    کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به برند شـرکت آریـا سـافت می‌باشد
-                                    <a href="http://www.AriyaSoft.com">شرکت طراحی و توسعه نرم افزار مبتنی بر وب AriyaSoft.com</a>
+                                    مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، ارائه خدمات حسابداری و کامپیوتر.<br />
+                                    کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به شـرکت نــارم می‌باشد
+                                    <a href="http://www.narem.ir">شرکت سهامی خاص نگار اعتبار رایان مبنا NAREM.ir</a>
                                 </div>
                                 <div id="toTop">top</div>
                             </div>
