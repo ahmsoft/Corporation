@@ -3,7 +3,7 @@ Partial Class ShowNews
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        Page.Title = "اخبار سایت AriyaSoft.com - News"
+        Page.Title = "اخبار سایت NAREM.IR - News"
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLINews"))
             lblActive.Attributes("Class") = "current space"
@@ -28,7 +28,7 @@ Partial Class ShowNews
             db.SubmitChanges()
             Response.Redirect("ErrorPage.aspx")
         End Try
-        Page.MetaDescription = "کلیه خبرها در رابطه با شرکت طراحی سایت آریا سافت در این قسمت قابل مشاهده است."
+        Page.MetaDescription = "کلیه خبرها در رابطه با شرکت نارم در این قسمت قابل مشاهده است."
     End Sub
     Public Function Substr(InputText As String, StartIndex As Integer, Length As Integer) As String
 

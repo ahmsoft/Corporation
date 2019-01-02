@@ -97,10 +97,10 @@
                                                 <li runat="server" id="menuLIHome"><a href="<% Server.MapPath("Home") %>/Home">صفحه اصلی</a></li>
                                                 <li runat="server" id="menuLIMarket"><a href="#">خدمات</a>
                                                     <ul>
-                                                    <li><a href="<% Server.MapPath("/Order") %>/Order">سفارش وب سایت</a></li>
-                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات حسابداری</a></li>--%>
-                                                    <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات کامپیوتری</a></li>--%>
-                                                </ul>
+                                                        <li><a href="<% Server.MapPath("/Order") %>/Order">سفارش وب سایت</a></li>
+                                                        <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات حسابداری</a></li>--%>
+                                                        <%--<li><a href="<% Server.MapPath("/About") %>/About">خدمات کامپیوتری</a></li>--%>
+                                                    </ul>
                                                 </li>
                                                 <li runat="server" id="menuLIPost"><a href="<% Server.MapPath("Posts") %>/Posts">مطالب سایت</a></li>
                                                 <li runat="server" id="menuLINews" class="space"><a href="<% Server.MapPath("News") %>/News">اخبار سایت</a></li>
@@ -207,11 +207,11 @@
                                         <li><a href="http://telegram.me/ahmoravveji" title="Telegram"><span class="icon-img pinterest"></span></a></li>
                                     </ul>
 
-                                   <div id="copyleft">
-                                    مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، ارائه خدمات حسابداری و کامپیوتر.<br />
-                                    کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به شـرکت نــارم می‌باشد
+                                    <div id="copyleft">
+                                        مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، ارائه خدمات حسابداری و کامپیوتر.<br />
+                                        کپی رایت@2018 تمام حقوق مادی و معنوی این سایت متعلق به شـرکت نــارم می‌باشد
                                     <a href="http://www.narem.ir">شرکت سهامی خاص نگار اعتبار رایان مبنا NAREM.ir</a>
-                                </div>
+                                    </div>
                                     <div id="toTop">top</div>
                                 </div>
                             </div>
@@ -250,6 +250,11 @@
     <script src="/Admin/AdminComponents/dist/js/persian-date-0.1.8.min.js"></script>
     <script src="/Admin/AdminComponents/dist/js/persian-datepicker-0.4.5.min.js"></script>
     <!-- Page script -->
-
+    <!---begin GOFTINO code--->
+    <script type="text/javascript">
+!function(){function g(){var g=document.createElement("script"),s="https://www.goftino.com/widget/3BJf0X";g.type="text/javascript", g.async=!0,g.src=localStorage.getItem("goftino")?s+"?o="+localStorage.getItem("goftino"):s;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(g, e);}
+var a = window;"complete" === document.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);}();
+    </script>
+    <!---end GOFTINO code--->
 </body>
 </html>

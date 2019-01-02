@@ -2,11 +2,11 @@
 Partial Class _Default
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "مطالب سایت - شرکت طراحی سایت آریا سافت AriyaSoft.com - Posts"
+        Page.Title = "مطالب سایت - شرکت نارم NAREM.IR - Posts"
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
         lblActive.Attributes("Class") = "current"
         Dim lblState As Label = Master.FindControl("StatusPage")
-        lblState.Text = "مطالب سایت - شرکت طراحی سایت آریا سافت AriyaSoft.com - Posts"
+        lblState.Text = "مطالب سایت - شرکت نارم NAREM.IR - Posts"
         Try
             Dim db = New LinqDBClassesDataContext
             Dim qry = From m In db.Messages

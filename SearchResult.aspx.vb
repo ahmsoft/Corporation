@@ -3,7 +3,7 @@ Partial Class SearchResult
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "نتایج جستجو - AriyaSoft.com - Search Result"
+        Page.Title = "نتایج جستجو - NAREM.IR - Search Result"
         Page.MetaDescription = "از طریق این قسمت شما قادر به جستجوی مطالب سایت و روئیت نتایج حاصل از جستجو هستید، جستجو بر اساس کلمات کلیدی موجود در پیام‌ها صورت میگیرد."
         Page.MetaKeywords = ""
         Dim lblState As Label = Master.FindControl("StatusPage")

@@ -29,7 +29,7 @@ Partial Class PostView
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
                 Page.Title = q.Title
-                Page.MetaDescription = q.MSG + "<br/> این مطلب در " + q.Moment + " توسط شرکت طراحی سایت آریا سافت ثبت شده است. "
+                Page.MetaDescription = q.MSG + "<br/> این مطلب در " + q.Moment + " توسط شرکت نارم ثبت شده است. "
             Next
 
         ElseIf Page.RouteData.Values("Action").ToString() = "News" Then
@@ -50,7 +50,7 @@ Partial Class PostView
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
                 Page.Title = q.Title
-                Page.MetaDescription = q.MSG + "<br/> این خبر در " + q.Moment + " توسط شرکت طراحی سایت آریا سافت ثبت شده است "
+                Page.MetaDescription = q.MSG + "<br/> این خبر در " + q.Moment + " توسط شرکت نارم ثبت شده است "
 
             Next
         ElseIf Page.RouteData.Values("Action").ToString() = "Page" Then
@@ -69,7 +69,7 @@ Partial Class PostView
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
                 Page.Title = q.PageTitle
-                Page.MetaDescription = q.Body + "<br/> آدرس صفحه در سایت  " + q.Address + " توسط شرکت طراحی سایت آریا سافت ثبت شده است "
+                Page.MetaDescription = q.Body + "<br/> آدرس صفحه در سایت  " + q.Address + " توسط شرکت نارم ثبت شده است "
             Next
         ElseIf Page.RouteData.Values("Action").ToString() = "FAQ" Then
             Dim qry1 = From m In db.FAQs
@@ -88,7 +88,7 @@ Partial Class PostView
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
                 Page.Title = q.Question
-                Page.MetaDescription = q.Answer + "<br/> این پرسش در " + q.Moment + "توسط کارشناس شرکت طراحی سایت آریا سافت پاسخ داده شده است"
+                Page.MetaDescription = q.Answer + "<br/> این پرسش در " + q.Moment + "توسط کارشناس شرکت نارم پاسخ داده شده است"
 
             Next
         End If

@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="VB" MasterPageFile="~/MainFrame.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <meta name="author" content="آریا سافت" />
-    <meta name="DC.subject" content="طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
-    <meta name="description" content="وبلاگ و مطالب وب سایت شرکت طراحی سایت آریا سافت که توسط مدیریت محترم شرکت مهندس امیرحسن مروجی AHMSoft تایید و ثبت شده است." />
+<meta name="author" content="شرکت نارم" />
+<meta name="DC.subject" content="خدمات حسابداری و کامپیوتر و هوش مصنوعی , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
+<meta name="description" content="وبلاگ و مطالب وب سایت شرکت نارم که توسط مدیریت محترم شرکت مهندس امیرحسن مروجی AHMSoft تایید و ثبت شده است." />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 

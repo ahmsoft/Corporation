@@ -5,7 +5,7 @@ Partial Class About
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIAbout"))
         lblActive.Attributes("Class") = "current"
-        Page.Title = "درباره سایت - شرکت طراحی سایت آریا سافت - AriyaSoft.com - About Site"
+        Page.Title = "درباره سایت - شرکت نارم - NAREM.IR - About Site"
         Try
             Dim lblState As Label = Master.FindControl("StatusPage")
             lblState.Text = "درباره سایت"

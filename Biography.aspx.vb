@@ -8,7 +8,7 @@ Partial Class Biography
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIAbout"))
             lblActive.Attributes("Class") = "current"
             Dim lblState As Label = Master.FindControl("StatusPage")
-            lblState.Text = "شرکت طراحی سایت آریا سافت - AriyaSoft.com - درباره‌ی مهندس امیرحسن مروجی - AHMSoft"
+            lblState.Text = "شرکت نارم - NAREM.IR - درباره‌ی مهندس امیرحسن مروجی - AHMSoft"
             Dim db = New LinqDBClassesDataContext
             Page.MetaKeywords = ""
             Dim qry = From m In db.Abouts

@@ -85,7 +85,7 @@ Partial Class OrderSite
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.MetaKeywords = "آریا سافت; سفارش طراحی وب سایت AriyaSoft.com , امیرحسن مروجی , آنچه شما میخواهید را سفارش دهید , درخواست پروژه , Amir Hasan Moravveji Order , ثبت سفارش محصول ,"
+        Page.MetaKeywords = "نارم; سفارش طراحی وب سایت NAREM.IR , امیرحسن مروجی , آنچه شما میخواهید را سفارش دهید , درخواست پروژه , Amir Hasan Moravveji Order , ثبت سفارش محصول ,"
         Page.MetaDescription = "از طریق این فرم شما قادر به ارسال سفارش وب سایت، مشاوره و طراحی سیستم‌های نرم افزاری در جهت بهبود کیفیت، بهینه سازی وب سایت خود برای موتورهای جستجوگر."
         Try
             Dim browser As HttpBrowserCapabilities = Request.Browser

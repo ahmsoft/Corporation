@@ -5,9 +5,9 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="آریا سافت" />
-    <meta name="DC.subject" content="طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
-    <title>فرم ثبت سفارش مشتری | شرکت طراحی سایت آریا سافت</title>
+    <meta name="author" content="شرکت نارم" />
+    <meta name="DC.subject" content="خدمات حسابداری و کامپیوتر و هوش مصنوعی , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
+    <title>فرم ثبت سفارش مشتری | شرکت نارم</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -69,7 +69,7 @@
                 <a href="Home" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>آریا سافت</b><img src="/Lamonte/images/logomini.png" style="width: 100px;" /></span>
+                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logomini.png" style="width: 100px;" /></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top">
@@ -243,7 +243,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-flag-checkered"></i>
                                         </div>
-                                        <asp:TextBox ID="txtNameFa" placeholder="به عنوان مثال: آریا سافت." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
+                                        <asp:TextBox ID="txtNameFa" placeholder="به عنوان مثال: نارم." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <br />
                                     <label for="txtNameEn">نام سایت به انگلیسی:</label>
@@ -251,7 +251,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-flag-checkered"></i>
                                         </div>
-                                        <asp:TextBox ID="txtNameEn" placeholder="به عنوان مثال: AriyaSoft." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
+                                        <asp:TextBox ID="txtNameEn" placeholder="به عنوان مثال: NAREM." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <br />
                                     <label for="txtSubject">موضوع سایت:</label>
@@ -477,21 +477,21 @@
             $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
             //Date range as a button
             $('#daterange-btn').daterangepicker(
-              {
-                  ranges: {
-                      'Today': [moment(), moment()],
-                      'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                      'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                      'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                      'This Month': [moment().startOf('month'), moment().endOf('month')],
-                      'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                  },
-                  startDate: moment().subtract(29, 'days'),
-                  endDate: moment()
-              },
-              function (start, end) {
-                  $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-              }
+                {
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function (start, end) {
+                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
             )
 
             //Date picker
@@ -526,5 +526,13 @@
             })
         })
     </script>
+    <!---begin GOFTINO code--->
+    <script type="text/javascript">
+        !function () {
+            function g() { var g = document.createElement("script"), s = "https://www.goftino.com/widget/3BJf0X"; g.type = "text/javascript", g.async = !0, g.src = localStorage.getItem("goftino") ? s + "?o=" + localStorage.getItem("goftino") : s; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(g, e); }
+            var a = window; "complete" === document.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
+        }();
+    </script>
+    <!---end GOFTINO code--->
 </body>
 </html>

@@ -8,7 +8,7 @@
 <html lang="en">
 <!--<![endif]-->
 <head runat="server">
-	<meta name="google-site-verification" content="rgsLMXfPMEQsWHxdPujB5o2ftXvgKXGFpRW0jzOuNNs" />
+    <meta name="google-site-verification" content="rgsLMXfPMEQsWHxdPujB5o2ftXvgKXGFpRW0jzOuNNs" />
     <style>
         html::-webkit-scrollbar {
             background-color: rgb(50,50,50);
@@ -44,7 +44,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="نارم" />
     <meta name="DC.subject" content="خدمات حسابداری و کامپیوتر , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
-    <meta name="description" content="شرکت نارم با هدف مشاوره، طراحی و پیاده‌سازی سیستم‌های نرم افزاری مبتنی بر وب، مناسب با نیاز مشتریان و بکارگیری تکنیک‌های بهینه‌سازی برای موتورهای جستجو SEO به منظور افزایش بازدید کنندگان سایت فعالیت می‌کند، این شرکت نرم افزاری فعالیت خود را از زمستان 1396 آغاز کرده و توسط مهندس امیرحسن مروجی AHMSoft بنیانگذاری شده است. فعالیت های این شرکت عبارت اند از مشاوره نرم افزاری و بازاریابی الکترونیکی E-Marketing ، مراحل فرایند توسعه نرم افزار SDP ، مهندسی نیازمندی‌های نرم‌افزاری ، تجزیه تحلیل ، طراحی ، پیاده‌سازی ، تست و در نهایت تولید کد اجرایی می‌باشد." />
+    <meta name="description" content="شرکت نارم با هدف مشاوره، طراحی و پیاده‌سازی سیستم‌های نرم افزاری مبتنی بر وب، مناسب با نیاز مشتریان و بکارگیری تکنیک‌های بهینه‌سازی برای موتورهای جستجو SEO به منظور افزایش بازدید کنندگان سایت فعالیت می‌کند، این شرکت نرم افزاری فعالیت خود را از زمستان 1396 آغاز کرده و توسط مهندس امیرحسن مروجی AHMSoft بنیانگذاری شده است. فعالیت های این شرکت عبارت اند از خدمات حسابداری، نرم افزاری , هوش مصنوعی که بطور کلی شامل مشاوره نرم افزاری و بازاریابی الکترونیکی E-Marketing ، مراحل فرایند توسعه نرم افزار SDP ، مهندسی نیازمندی‌های نرم‌افزاری ، تجزیه تحلیل ، طراحی ، پیاده‌سازی ، تست و در نهایت تولید کد اجرایی می‌باشد." />
     <meta name="keywords" content="شرکت نارم , امیرحسن مروجی , امیرحسین مروجی , فرزانه مروجی , تجزیه تحلیل , طراحی , پیاده سازی , تست , توسعه نرم افزارهای مبتنی یر وب , خدمات حسابداری و کامپیوتر" />
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -71,11 +71,11 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="Admin/AdminComponents/bower_components/Ionicons/css/ionicons.min.css" />
-	    <script type="text/javascript">
-        function CloseSession() {  
-        location.href = 'LogOut.aspx';  
-        }  
-        window.onbeforeunload = CloseSession;  
+    <script type="text/javascript">
+        function CloseSession() {
+            location.href = 'LogOut.aspx';
+        }
+        window.onbeforeunload = CloseSession;
     </script>
 </head>
 
@@ -117,7 +117,8 @@
                                                 <ul>
                                                     <li><a href="<% Server.MapPath("/Biography") %>/Biography">درباره شرکت نارم</a></li>
                                                     <li><a href="<% Server.MapPath("/About") %>/About">درباره سایت</a></li>
-                                                </ul></li>
+                                                </ul>
+                                            </li>
                                             <li><a href="<% Server.MapPath("/Contact") %>/Contact">تماس با ما</a></li>
                                         </ul>
                                         <!-- topnav -->
@@ -138,7 +139,7 @@
                                 <div class="slider-pattern"></div>
                                 <ul class="slides">
                                     <li>
-                                        <img src="/images/1.jpg" style="width:100%;height:420px;" alt="" />
+                                        <img src="/images/1.jpg" style="width: 100%; height: 420px;" alt="" />
                                         <div class="flex-caption">
                                             <div class="slider-text">
                                                 <h1>خدمات حسابداری و کامپیوتر</h1>
@@ -147,7 +148,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <img src="/images/2.jpg" style="width:100%;height:420px;" alt="" />
+                                        <img src="/images/2.jpg" style="width: 100%; height: 420px;" alt="" />
                                         <div class="flex-caption">
                                             <div class="slider-text">
                                                 <h1>طراحی و توسعه سیستم‌های نرم افزاری مبتنی بر وب</h1>
@@ -156,7 +157,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <img src="/images/3.jpg" style="width:100%;height:420px;" alt="" />
+                                        <img src="/images/3.jpg" style="width: 100%; height: 420px;" alt="" />
                                         <div class="flex-caption">
                                             <div class="slider-text">
                                                 <h1>تبلیغات</h1>
@@ -177,16 +178,16 @@
             <!-- END HEADER -->
 
             <!-- BEFORE CONTENT -->
-            <div id="outerbeforecontent" style="padding:50px 50px 0px 0px;">
+            <div id="outerbeforecontent" style="padding: 50px 50px 0px 0px;">
                 <div class="light">
                     <div class="container">
                         <div class="row">
-                            <div class="twelve columns" style="margin-right:-35px;">
+                            <div class="twelve columns" style="margin-right: -35px;">
                                 <h1>وب سایت شرکت <span class="colortext">نــــــــــارم </span>
                                     <br>
                                     خدمات حسابداری و کامپیوتر، طراحی فروشگاه اینترنتی، طراحی سیستم نرم‌افزاری</h1>
                                 <br />
-                                <a href="/Login" class="button" style="font-size:large;">ورود به پنل اختصاصی</a>
+                                <a href="/Login" class="button" style="font-size: large;">ورود به پنل اختصاصی</a>
 
                             </div>
                         </div>
@@ -273,7 +274,7 @@
                                     <li><a href="https://plus.google.com/+AmirHasanMoravveji" title="Google+"><span class="icon-img google"></span></a></li>
                                     <li><a href="http://telegram.me/ahmoravveji" title="Telegram"><span class="icon-img pinterest"></span></a></li>
                                 </ul>
-										<center><script src="https://cdn.zarinpal.com/trustlogo/v1/trustlogo.js" type="text/javascript"></script></center>
+                                <center><script src="https://cdn.zarinpal.com/trustlogo/v1/trustlogo.js" type="text/javascript"></script></center>
 
                                 <div id="copyleft">
                                     مشاوره طراحی سیستم‌های نرم افزاری، مدیریت پروژه سیستم‌های نرم افزاری، ارائه خدمات حسابداری و کامپیوتر.<br />
@@ -343,7 +344,14 @@
 
         });
     </script>
-
+    <!---begin GOFTINO code--->
+    <script type="text/javascript">
+        !function () {
+            function g() { var g = document.createElement("script"), s = "https://www.goftino.com/widget/3BJf0X"; g.type = "text/javascript", g.async = !0, g.src = localStorage.getItem("goftino") ? s + "?o=" + localStorage.getItem("goftino") : s; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(g, e); }
+            var a = window; "complete" === document.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
+        }();
+    </script>
+    <!---end GOFTINO code--->
 
 </body>
 </html>
