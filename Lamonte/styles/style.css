@@ -331,7 +331,7 @@ sub {
 
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
-	right:			3em;
+	right:			-2.5em;
 	top:			2.2em; /* match top ul list item height */
 	z-index:		99;	
 	padding-top:9px;

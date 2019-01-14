@@ -57,28 +57,28 @@ Partial Class MainFrame
         mystring = System.Web.HttpContext.Current.Request.Browser.Type
         If mystring.Contains("IE") Then
         End If
-        Try
-            Dim browser As HttpBrowserCapabilities = Request.Browser
-            Dim db = New LinqDBClassesDataContext
-            Dim q = New UsersOnlineDetail
-            q.Browser = browser.Browser
-            q.Platform = browser.Platform
-            q.DateAndTime = Now.ToLocalTime
-            'q.IPAddress = GetUser_IP()
-            'q.MachinName = GetMachinName()
-            q.Page = Request.CurrentExecutionFilePath
-            db.UsersOnlineDetails.InsertOnSubmit(q)
-            db.SubmitChanges()
+        'Try
+        '    Dim browser As HttpBrowserCapabilities = Request.Browser
+        '    Dim db = New LinqDBClassesDataContext
+        '    Dim q = New UsersOnlineDetail
+        '    q.Browser = browser.Browser
+        '    q.Platform = browser.Platform
+        '    q.DateAndTime = Now.ToLocalTime
+        '    'q.IPAddress = GetUser_IP()
+        '    'q.MachinName = GetMachinName()
+        '    q.Page = Request.CurrentExecutionFilePath
+        '    db.UsersOnlineDetails.InsertOnSubmit(q)
+        '    db.SubmitChanges()
 
-        Catch ex As Exception
-            Response.Write(ex.Message)
-            Dim db = New LinqDBClassesDataContext
-            Dim UserTable As New FaultLog
-            UserTable.PageName = System.IO.Path.GetFileName(Request.CurrentExecutionFilePath)
-            UserTable.ErrorMessage = ex.Message
-            db.FaultLogs.InsertOnSubmit(UserTable)
-            db.SubmitChanges()
-        End Try
+        'Catch ex As Exception
+        '    Response.Write(ex.Message)
+        '    Dim db = New LinqDBClassesDataContext
+        '    Dim UserTable As New FaultLog
+        '    UserTable.PageName = System.IO.Path.GetFileName(Request.CurrentExecutionFilePath)
+        '    UserTable.ErrorMessage = ex.Message
+        '    db.FaultLogs.InsertOnSubmit(UserTable)
+        '    db.SubmitChanges()
+        'End Try
 
     End Sub
     Protected Sub txtSearch_Search(sender As Object, e As Telerik.Web.UI.SearchBoxEventArgs) Handles txtSearch.Search

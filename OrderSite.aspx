@@ -11,32 +11,32 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="AdminComponents/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/AdminComponents/dist/css/bootstrap-theme.css">
     <!-- Bootstrap rtl -->
-    <link rel="stylesheet" href="AdminComponents/dist/css/rtl.css">
+    <link rel="stylesheet" href="/AdminComponents/dist/css/rtl.css">
     <!-- babakhani datepicker -->
-    <link rel="stylesheet" href="AdminComponents/dist/css/persian-datepicker-0.4.5.min.css" />
+    <link rel="stylesheet" href="/AdminComponents/dist/css/persian-datepicker-0.4.5.min.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/Ionicons/css/ionicons.min.css">
     <!-- daterange picker -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="AdminComponents/plugins/iCheck/all.css">
+    <link rel="stylesheet" href="/AdminComponents/plugins/iCheck/all.css">
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
     <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="AdminComponents/plugins/timepicker/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="/AdminComponents/plugins/timepicker/bootstrap-timepicker.min.css">
     <!-- Select2 -->
-    <link rel="stylesheet" href="AdminComponents/bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/AdminComponents/bower_components/select2/dist/css/select2.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="AdminComponents/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/AdminComponents/dist/css/AdminLTE.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="AdminComponents/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/AdminComponents/dist/css/skins/_all-skins.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,7 +69,7 @@
                 <a href="Home" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logomini.png" style="width: 100px;" /></span>
+                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logominiT.png" style="width: 100px;" /></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top">
@@ -149,6 +149,8 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-address-book"></i>
                                         </div>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorNameAndFamily" ControlToValidate="txtNameAndFamily" runat="server" ErrorMessage="وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionNameAndFamily" ControlToValidate="txtNameAndFamily" runat="server" ErrorMessage="فارسی وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^\s*[ابپتثجچحخدذرزژئسشصضطظعغفق  کگلمنوهیآیيك\s]+\s*$"></asp:RegularExpressionValidator>
                                         <asp:TextBox ID="txtNameAndFamily" placeholder="به عنوان مثال: امیرحسن مروجی." runat="server" type="Text" required="required" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <!-- /.form-group -->
@@ -183,6 +185,8 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-at"></i>
                                         </div>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionEmail" ControlToValidate="txtEmail" runat="server" ErrorMessage="نادرست" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$"></asp:RegularExpressionValidator>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="وارد شود" ValidationGroup="contact" Style="color: white; margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
                                         <asp:TextBox ID="txtEmail" placeholder="به عنوان مثال: ah.moravveji.edu@gmail.com" runat="server" type="Email" required="required" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <!-- /.form-group -->
@@ -192,6 +196,8 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-cc-jcb"></i>
                                         </div>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtJob" runat="server" ErrorMessage="وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="txtJob" runat="server" ErrorMessage="فارسی وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^\s*[ابپتثجچحخدذرزژئسشصضطظعغفق  کگلمنوهیآیيك\s]+\s*$"></asp:RegularExpressionValidator>
                                         <asp:TextBox ID="txtJob" placeholder="به عنوان مثال: تولیدی کفش." runat="server" type="text" required="required" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <!-- /.form-group -->
@@ -243,6 +249,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-flag-checkered"></i>
                                         </div>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ControlToValidate="txtNameFa" runat="server" ErrorMessage="فارسی وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^\s*[ابپتثجچحخدذرزژئسشصضطظعغفق  کگلمنوهیآیيك1234567890\s]+\s*$"></asp:RegularExpressionValidator>
                                         <asp:TextBox ID="txtNameFa" placeholder="به عنوان مثال: نارم." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <br />
@@ -251,6 +258,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-flag-checkered"></i>
                                         </div>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" ControlToValidate="txtNameEn" runat="server" ErrorMessage="لاتین وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^\s*[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890\s]+\s*$"></asp:RegularExpressionValidator>
                                         <asp:TextBox ID="txtNameEn" placeholder="به عنوان مثال: NAREM." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <br />
@@ -259,6 +267,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa fa-comments-o"></i>
                                         </div>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" ControlToValidate="txtSubject" runat="server" ErrorMessage="فارسی وارد شود" ValidationGroup="contact" Style="margin-bottom: auto; font-size: 14px; border-radius: 4px 4px 0px 0px; padding: 2px 2px 5px 5px;" CssClass="label-danger" Display="Dynamic" SetFocusOnError="true" ValidationExpression="^\s*[ابپتثجچحخدذرزژئسشصضطظعغفق  کگلمنوهیآیيك1234567890\s]+\s*$"></asp:RegularExpressionValidator>
                                         <asp:TextBox ID="txtSubject" placeholder="به عنوان مثال: طراحی سایت." runat="server" type="text" class="form-control" data-inputmask='"mask": ""' data-mask />
                                     </div>
                                     <br />
@@ -526,13 +535,11 @@
             })
         })
     </script>
-    <!---begin GOFTINO code--->
+    <!---begin Crisp code--->
     <script type="text/javascript">
-        !function () {
-            function g() { var g = document.createElement("script"), s = "https://www.goftino.com/widget/3BJf0X"; g.type = "text/javascript", g.async = !0, g.src = localStorage.getItem("goftino") ? s + "?o=" + localStorage.getItem("goftino") : s; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(g, e); }
-            var a = window; "complete" === document.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
-        }();
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "55e2eb86-5fb2-47b6-84bb-ddce6f1188a6"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();
     </script>
-    <!---end GOFTINO code--->
+    <!---end Crisp code--->
 </body>
 </html>

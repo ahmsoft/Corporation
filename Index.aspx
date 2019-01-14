@@ -183,7 +183,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="twelve columns" style="margin-right: -35px;">
-                                <h1>وب سایت شرکت <span class="colortext">نــــــــــارم </span>
+                                <h1>وب سایت شرکت <span class="colortext">نــــــــــارِم </span>
                                     <br>
                                     خدمات حسابداری و کامپیوتر، طراحی فروشگاه اینترنتی، طراحی سیستم نرم‌افزاری</h1>
                                 <br />
@@ -344,15 +344,12 @@
 
         });
     </script>
-    <!---begin GOFTINO code--->
+    <!---begin Crisp code--->
     <script type="text/javascript">
-        !function () {
-            function g() { var g = document.createElement("script"), s = "https://www.goftino.com/widget/3BJf0X"; g.type = "text/javascript", g.async = !0, g.src = localStorage.getItem("goftino") ? s + "?o=" + localStorage.getItem("goftino") : s; var e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(g, e); }
-            var a = window; "complete" === document.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
-        }();
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "55e2eb86-5fb2-47b6-84bb-ddce6f1188a6"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();
     </script>
-    <!---end GOFTINO code--->
-
+    <!---end Crisp code--->
 </body>
 </html>
 

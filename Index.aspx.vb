@@ -40,26 +40,26 @@ Partial Class Index
     'End Function
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Try
-            Dim browser As HttpBrowserCapabilities = Request.Browser
-            Dim db = New LinqDBClassesDataContext
-            Dim q = New UsersOnlineDetail
-            q.Browser = browser.Browser
-            q.Platform = browser.Platform
-            q.DateAndTime = Now.ToLocalTime
-            'q.IPAddress = GetUser_IP()
-            'q.MachinName = GetMACAddress()
-            q.Page = Request.CurrentExecutionFilePath
-            db.UsersOnlineDetails.InsertOnSubmit(q)
-            db.SubmitChanges()
-        Catch ex As Exception
-            Response.Write(ex.Message)
-            Dim db = New LinqDBClassesDataContext
-            Dim UserTable As New FaultLog
-            UserTable.PageName = System.IO.Path.GetFileName(Request.CurrentExecutionFilePath)
-            UserTable.ErrorMessage = ex.Message
-            db.FaultLogs.InsertOnSubmit(UserTable)
-            db.SubmitChanges()
-        End Try
+        'Try
+        '    Dim browser As HttpBrowserCapabilities = Request.Browser
+        '    Dim db = New LinqDBClassesDataContext
+        '    Dim q = New UsersOnlineDetail
+        '    q.Browser = browser.Browser
+        '    q.Platform = browser.Platform
+        '    q.DateAndTime = Now.ToLocalTime
+        '    'q.IPAddress = GetUser_IP()
+        '    'q.MachinName = GetMACAddress()
+        '    q.Page = Request.CurrentExecutionFilePath
+        '    db.UsersOnlineDetails.InsertOnSubmit(q)
+        '    db.SubmitChanges()
+        'Catch ex As Exception
+        '    Response.Write(ex.Message)
+        '    Dim db = New LinqDBClassesDataContext
+        '    Dim UserTable As New FaultLog
+        '    UserTable.PageName = System.IO.Path.GetFileName(Request.CurrentExecutionFilePath)
+        '    UserTable.ErrorMessage = ex.Message
+        '    db.FaultLogs.InsertOnSubmit(UserTable)
+        '    db.SubmitChanges()
+        'End Try
     End Sub
 End Class

@@ -74,9 +74,9 @@ Partial Class ContactView
             Try
                 Dim db = New LinqDBClassesDataContext
                 Dim qry = From m In db.ContactUs
-                          Select m Where m.MSG = Trim(txtMessage.Text)
+                          Select m Where m.NameAndFamily = txtNameFamili.Text
                 For Each m In qry
-                    If m.MSG = txtMessage.Text Then
+                    If m.MSG = "<p style='text-align: justify'>" + txtMessage.Text + "</p>" Then
                         lblSubmitStatus.Text = "این پیام قبلا ارسال شده."
                         Exit Try
                     End If
