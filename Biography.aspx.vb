@@ -3,7 +3,7 @@ Partial Class Biography
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "درباره‌ی مهندس امیرحسن مروجی"
+        Page.Title = "NAREM.IR | درباره‌ی مهندس امیرحسن مروجی"
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIAbout"))
             lblActive.Attributes("Class") = "current"

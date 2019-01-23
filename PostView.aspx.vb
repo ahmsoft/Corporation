@@ -6,7 +6,7 @@ Partial Class PostView
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
         lblActive.Attributes("Class") = "current"
         Dim lblState As Label = Master.FindControl("StatusPage")
-        lblState.Text = "نمایش مطلب"
+        lblState.Text = "شرکت نارِم"
         Dim db = New LinqDBClassesDataContext
         Page.MetaKeywords = ""
         If Page.RouteData.Values("Action").ToString() = "Default" Then

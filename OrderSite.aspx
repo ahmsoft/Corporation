@@ -5,7 +5,7 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="شرکت نارم" />
+    <meta name="author" content="امیرحسن مروجی" />
     <meta name="DC.subject" content="خدمات حسابداری و کامپیوتر و هوش مصنوعی , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
     <title>فرم ثبت سفارش مشتری | شرکت نارم</title>
     <!-- Tell the browser to be responsive to screen width -->
@@ -69,7 +69,7 @@
                 <a href="Home" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logominiT.png" style="width: 100px;" /></span>
+                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logominiT.png" alt="نارم" style="width: 100px;" /></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top">

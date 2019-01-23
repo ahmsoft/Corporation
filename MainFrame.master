@@ -83,7 +83,7 @@
                         <!-- LOGO -->
                         <div id="logo">
                             <a href="<% Server.MapPath("Home") %>/Home">
-                                <img src="/Lamonte/images/logoT.png" alt="شرکت نارم NAREM.IR" /></a>
+                                <img src="/Lamonte/images/logoT.png" alt="نارم NAREM.IR" /></a>
                         </div>
                         <!-- END LOGO -->
 
@@ -106,8 +106,8 @@
                                                 <li runat="server" id="menuLINews" class="space"><a href="<% Server.MapPath("News") %>/News">اخبار سایت</a></li>
                                                 <li runat="server" id="menuLIAbout"><a>درباره ما</a>
                                                     <ul>
-                                                        <li><a href="<% Server.MapPath("Biography") %>/Biography">مدیریت - بیوگرافی</a></li>
-                                                        <li><a href="<% Server.MapPath("About") %>/About">درباره سایت</a></li>
+                                                        <li><a href="<% Server.MapPath("Biography") %>/Biography">درباره مدیر</a></li>
+                                                        <li><a href="<% Server.MapPath("About") %>/About">درباره شرکت و سایت</a></li>
                                                     </ul>
                                                 </li>
                                                 <li runat="server" id="menuLIContact"><a href="<% Server.MapPath("Contact") %>/Contact">تماس با ما</a></li>
@@ -146,7 +146,7 @@
                             <!-- END TITLE -->
                             <section id="slider" class="flexslider">
                                 <div class="slider-pattern"></div>
-                                <img src="/Images/sd2017.jpg" alt="" />
+                                <img src="/Images/sd2017.jpg" alt="وب سایت اختصاصی شرکت نارم با مدیریت امیرحسن مروجی" />
                             </section>
                         </div>
 

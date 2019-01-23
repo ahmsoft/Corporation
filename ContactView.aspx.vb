@@ -3,7 +3,7 @@ Partial Class ContactView
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "پل ارتباطی - شرکت نارم - NAREM.IR - Contact"
+        Page.Title = "پل ارتباطی - شرکت نارم | NAREM.IR"
 
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIContact"))
@@ -25,7 +25,7 @@ Partial Class ContactView
                 Dim lblFacebook = New Label
                 Dim lblGooglepluse = New Label
                 Dim lblWorkingHours = New Label
-                Page.MetaDescription = "روش های ارتباط با شرکت نارم NAREM.IR همچنین برقراری ارتباط مستقیم با مهندس امیرحسن مروجی AHMSoft"
+                Page.MetaDescription = "روش های ارتباط با شرکت نارم NAREM.IR همچنین برقراری ارتباط مستقیم با مدیریت"
                 Page.MetaKeywords = q.Address + " , " + q.Telephone + " , " + q.Contact + " , " + q.Mobile + " , " + q.Instagram + " , " + q.Linkedin + " , " + q.Telegram + " , ارسال پیام , شرکت نارم , ارتباط با ما"
                 lblAddress.Text = q.Address & "تلفن: " & q.Telephone.ToString()
                 lblBodyContact.Text = q.BodyContact

@@ -85,8 +85,8 @@ Partial Class OrderSite
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.MetaKeywords = "نارم; سفارش طراحی وب سایت NAREM.IR , امیرحسن مروجی , آنچه شما میخواهید را سفارش دهید , درخواست پروژه , Amir Hasan Moravveji Order , ثبت سفارش محصول ,"
-        Page.MetaDescription = "از طریق این فرم شما قادر به ارسال سفارش وب سایت، مشاوره و طراحی سیستم‌های نرم افزاری در جهت بهبود کیفیت، بهینه سازی وب سایت خود برای موتورهای جستجوگر."
+        Page.MetaKeywords = "سفارش , وب سایت , NAREM.IR , ثبت سفارش , درخواست پروژه , نارم , ثبت سفارش محصول , خدمات"
+        Page.MetaDescription = "فرم ارسال درخواست سفارش طراحی وب سایت یا بهینه سازی وب سایت."
         'Try
         '    Dim browser As HttpBrowserCapabilities = Request.Browser
         '    Dim db = New LinqDBClassesDataContext

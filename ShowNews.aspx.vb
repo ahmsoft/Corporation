@@ -3,7 +3,7 @@ Partial Class ShowNews
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        Page.Title = "اخبار سایت NAREM.IR - News"
+        Page.Title = "اخبار سایت | NAREM.IR"
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLINews"))
             lblActive.Attributes("Class") = "current space"

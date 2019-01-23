@@ -3,13 +3,13 @@ Partial Class FAQView
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "سوالات متداول - شرکت نارم NAREM.IR - FAQ"
+        Page.Title = "سوالات متداول - شرکت نارم | NAREM.IR"
 
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
             lblActive.Attributes("Class") = "current"
             Dim lblState As Label = Master.FindControl("StatusPage")
-            lblState.Text = "سوالات متداول - شرکت نارم NAREM.IR - FAQ"
+            lblState.Text = "سوالات متداول - شرکت نارم NAREM.IR"
             Dim db = New LinqDBClassesDataContext
             Dim qry = From m In db.FAQs
                       Select m Order By m.IDF
