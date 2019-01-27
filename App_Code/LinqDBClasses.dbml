@@ -187,17 +187,6 @@
       <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Link" Member="Links">
-    <Type Name="Link">
-      <Column Name="IDL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(1100) NOT NULL" CanBeNull="false" />
-      <Column Name="Alt" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
-      <Column Name="IDB" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Target" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
-      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Category" Member="Categories">
     <Type Name="Category">
       <Column Name="IDCat" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -274,6 +263,19 @@
       <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="IDO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Photo" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link" Member="Links">
+    <Type Name="Link">
+      <Column Name="IDL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(1100) NOT NULL" CanBeNull="false" />
+      <Column Name="Alt" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="IDB" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsHTML" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BodyHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -33,7 +33,11 @@ Partial Class MainFrame
                 lbl.Text = "<ul><li class='widget-container'><h2 class='widget-title'>" + b.Name + "</h2><ul>"
                 For Each l In link
                     If l.IDB = b.IDB Then
-                        lbl.Text = lbl.Text + "<li><a href='" + l.Address + "' title='" + l.Alt + "' target='" + l.Target + "'>" + l.Name + "</a></li>"
+                        If l.IsHTML Then
+                            lbl.Text += l.BodyHTML
+                        Else
+                            lbl.Text += "<li><a href='" + l.Address + "' title='" + l.Alt + "' target='" + l.Target + "'>" + l.Name + "</a></li>"
+                        End If
                     End If
                 Next
                 lbl.Text = lbl.Text + "</ul></li></ul>"

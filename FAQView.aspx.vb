@@ -3,7 +3,7 @@ Partial Class FAQView
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "سوالات متداول - شرکت نارم | NAREM.IR"
+        Page.Title = "سوالات متداول شرکت نارم | NAREM.IR"
 
         Try
             Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))

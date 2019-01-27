@@ -87,7 +87,8 @@ Partial Class Admin_LinkManagement
                 txtLinkAddress.Text = q.Address
                 drpLinkTarget.SelectedValue = q.Target
                 txtPeriority.Text = q.Priority
-
+                txtBodyHTML.Content = q.BodyHTML
+                chkHTML.Checked = q.IsHTML
             Next
         Catch ex As Exception
 
@@ -99,12 +100,19 @@ Partial Class Admin_LinkManagement
         Try
             Dim db = New LinqDBClassesDataContext
             Dim q = New Link
-            q.Name = txtLinkName.Text
-            q.Target = drpLinkTarget.SelectedValue.ToString()
-            q.Address = txtLinkAddress.Text
-            q.Alt = txtLinkAlt.Text
+            If chkHTML.Checked Then
+                q.Name = "کد یا پیام"
+                q.BodyHTML = txtBodyHTML.Content
+                q.IsHTML = chkHTML.Checked
+            Else
+                q.Name = txtLinkName.Text
+                q.Target = drpLinkTarget.SelectedValue.ToString()
+                q.Address = txtLinkAddress.Text
+                q.Alt = txtLinkAlt.Text
+            End If
             q.IDB = drpBlock.SelectedValue
             q.Priority = txtPeriority.Text
+
             db.Links.InsertOnSubmit(q)
             db.SubmitChanges()
             LinkView.DataBind()
@@ -118,13 +126,18 @@ Partial Class Admin_LinkManagement
             Dim qry = From m In db.Links
                       Select m Where m.IDL = Convert.ToInt32(LinkView.SelectedValue)
             For Each q In qry
-                q.Name = txtLinkName.Text
-                q.Address = txtLinkAddress.Text
-                q.Target = drpLinkTarget.SelectedValue.ToString()
+                If chkHTML.Checked Then
+                    q.Name = "کد یا پیام"
+                    q.BodyHTML = txtBodyHTML.Content
+                    q.IsHTML = chkHTML.Checked
+                Else
+                    q.Name = txtLinkName.Text
+                    q.Address = txtLinkAddress.Text
+                    q.Target = drpLinkTarget.SelectedValue.ToString()
+                    q.Alt = txtLinkAlt.Text
+                End If
                 q.IDB = drpBlock.SelectedValue
-                q.Alt = txtLinkAlt.Text
                 q.Priority = txtPeriority.Text
-
             Next
             db.SubmitChanges()
             LinkView.DataBind()
@@ -143,4 +156,14 @@ Partial Class Admin_LinkManagement
 
         Return InputText.Substring(StartIndex, Length) + " ... "
     End Function
+    Protected Sub chkHTML_CheckedChanged(sender As Object, e As EventArgs) Handles chkHTML.CheckedChanged
+        If chkHTML.Checked Then
+            InfoHTML.Visible = True
+            InfoLink.Visible = False
+        Else
+            InfoHTML.Visible = False
+            InfoLink.Visible = True
+        End If
+
+    End Sub
 End Class

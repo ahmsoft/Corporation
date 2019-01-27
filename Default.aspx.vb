@@ -2,7 +2,7 @@
 Partial Class _Default
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-        Page.Title = "مطالب سایت - شرکت نارم | NAREM.IR"
+        Page.Title = "مطالب سایت نارم | NAREM.IR"
         Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPost"))
         lblActive.Attributes("Class") = "current"
         Dim lblState As Label = Master.FindControl("StatusPage")

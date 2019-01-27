@@ -23,12 +23,12 @@ Partial Class PostView
                 lbl.Text += " کلمات کلیدی: "
                 lblState.Text = q.Title
                 For Each i In q.Keyword.ToString.Split(";")
-                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                     Page.MetaKeywords += i.ToString + ","
                 Next
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
-                Page.Title = q.Title
+                Page.Title = q.Title + " | NAREM.IR"
                 Page.MetaDescription = q.MSG + "<br/> این مطلب در " + q.Moment + " توسط شرکت نارم ثبت شده است. "
             Next
 
@@ -44,12 +44,12 @@ Partial Class PostView
                 lbl.Text = "<article class='post'><div class='posttitle'><div class='owner'>" + q.Date + " نوشته شده توسط <a href='/Biography'>Admin</a></div><h2><a href='" + Server.MapPath("PostView") + "/PostView/News/" + q.Title.ToString().Replace(" ", "-") + "'>" + q.Title + "</a></h2><div class='clear'></div></div><div class=' row'><div class='postimg four columns'><img alt='' src='" + q.Pic + "'></div><div class='eight columns'><div class='entry-content'><p>" + q.MSG + "</p></div></div></div></article>"
                 lbl.Text += " کلمات کلیدی: "
                 For Each i In q.Keyword.ToString.Split(";")
-                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                     Page.MetaKeywords += i.ToString + ","
                 Next
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
-                Page.Title = q.Title
+                Page.Title = q.Title + " | NAREM.IR"
                 Page.MetaDescription = q.MSG + "<br/> این خبر در " + q.Moment + " توسط شرکت نارم ثبت شده است "
 
             Next
@@ -63,12 +63,12 @@ Partial Class PostView
                 lbl.Text = q.Body
                 lbl.Text += " کلمات کلیدی: "
                 For Each i In q.Keyword.ToString.Split(";")
-                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                     Page.MetaKeywords += i.ToString + ","
                 Next
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
-                Page.Title = q.PageTitle
+                Page.Title = q.PageTitle + " | NAREM.IR"
                 Page.MetaDescription = q.Body + "<br/> آدرس صفحه در سایت  " + q.Address + " توسط شرکت نارم ثبت شده است "
             Next
         ElseIf Page.RouteData.Values("Action").ToString() = "FAQ" Then
@@ -81,13 +81,13 @@ Partial Class PostView
                 lbl.Text = "<article class='post'><div class='posttitle'><div class='owner'>" + q.Moment + " نوشته شده توسط <a href='/Biography'>Admin</a></div><h2><a href='" + Server.MapPath("PostView") + "/PostView/FAQ/" + q.Question.ToString().Replace(" ", "-") + "'>" + q.Question + "</a></h2><div class='clear'></div></div><div class=' row'><div class='twelve columns'><div class='entry-content'>" + q.Answer + "</div></div></div></article>"
                 lbl.Text += " کلمات کلیدی: "
                 For Each i In q.Keyword.ToString.Split(";")
-                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                    lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                     Page.MetaKeywords += i.ToString + ","
 
                 Next
                 lbl.Text += "<br/><br/><hr/>"
                 PostViewPlaceHolder.Controls.Add(lbl)
-                Page.Title = q.Question
+                Page.Title = q.Question + " | NAREM.IR"
                 Page.MetaDescription = q.Answer + "<br/> این پرسش در " + q.Moment + "توسط کارشناس شرکت نارم پاسخ داده شده است"
 
             Next

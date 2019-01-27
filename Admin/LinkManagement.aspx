@@ -3,6 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+        </Scripts>
+    </telerik:RadScriptManager>
+    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+    </telerik:RadAjaxManager>
     <div id="page-wrapper">
 
         <div class="container-fluid">
@@ -70,6 +79,21 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="form-group">
+                        <asp:CheckBox runat="server" ID="chkHTML" Text="محتوای HTML" Checked="false" AutoPostBack="true" />
+                    </div>
+                </div>
+            </div>
+            <div class="row" runat="server" id="InfoHTML" visible="false">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>پیام یا کد:</label>
+                        <telerik:RadEditor ID="txtBodyHTML" runat="server" Width="100%" Skin="Bootstrap"></telerik:RadEditor>
+                    </div>
+                </div>
+            </div>
+            <div class="row" runat="server" id="InfoLink">
+                <div class="col-lg-6">
+                    <div class="form-group">
                         <label>نام:</label>
                         <asp:TextBox runat="server" ID="txtLinkName" placeholder="نام پیوند" class="form-control" />
                     </div>
@@ -87,9 +111,6 @@
                         <label>توضیح:</label>
                         <asp:TextBox runat="server" ID="txtLinkAlt" placeholder="توضیح کوتاه" class="form-control" />
                     </div>
-                    <div class="col-md-12 center-block">
-                        <asp:TextBox runat="server" ID="txtPeriority" placeholder="اولویت" type="number" />
-                    </div>
                 </div>
                 <div class="form-group col-lg-6">
                     <label>مقصد:</label>
@@ -99,19 +120,22 @@
                         <asp:ListItem Value="_parent">صفحه اصلی</asp:ListItem>
                         <asp:ListItem Value="_top">صفحه جاری</asp:ListItem>
                     </asp:DropDownList>
-                    
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <asp:Button ID="btnUpdateLink" runat="server" class="col-xs-6 btn btn-default" Text="ذخیره تغییرات" />
-                        <asp:Button ID="btnSaveNewLink" runat="server" class="col-xs-6 btn btn-primary" Text="ایجاد لینک جدید" />
-                    </div>
 
                 </div>
-
             </div>
             <!-- /.row -->
+            <div class="row">
+                    <div class="col-md-12 center-block">
+                        <asp:TextBox runat="server" ID="txtPeriority" placeholder="اولویت" type="number" />
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <asp:Button ID="btnUpdateLink" runat="server" class="col-xs-6 btn btn-default" Text="ذخیره تغییرات" />
+                            <asp:Button ID="btnSaveNewLink" runat="server" class="col-xs-6 btn btn-primary" Text="ایجاد لینک جدید" />
+                        </div>
 
+                    </div>
+                </div>
         </div>
         <!-- /.container-fluid -->
     </div>
