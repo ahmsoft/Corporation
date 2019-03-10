@@ -1,9 +1,8 @@
 ﻿
-Partial Class ClientPanel
+Partial Class Client_Contract
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-
         Try
             Dim lblCommentNoReadCount As Label = Master.FindControl("lblCommentNoReadCount")
             Dim lblCommentNoReadCount1 As Label = Master.FindControl("lblCommentNoReadCount1")
@@ -38,7 +37,13 @@ Partial Class ClientPanel
                 lblClientNameFamily.Text = "<p>" + m.NameAndFamily + "</p>"
                 lblClientNameFamily1.Text = "<span class='hidden-xs'>" + m.NameAndFamily + "</span>"
                 lblClientNameFamily2.Text = "<p style='z-index: 5;color: #fff;color: rgba(255, 255, 255, 0.8);font-size: 17px;margin-top: 10px;margin: 0 0 10px;display: block;-webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;'>" + m.NameAndFamily + "<br /><small>نماینده " + m.SiteNameFA + "</small></p>"
-                lblSPL.Text = m.SPL
+                'lblContract.Text = m.Contract
+            Next
+            Dim Contra = From m In db.Contracts
+                         Select m Where m.IDO = CurrentIDO
+            For Each m In Contra
+                lblContract.Text = m.Contract
+                lblTitle.Text = m.Title
             Next
             Dim p As Integer = 0
             Dim i As Integer = 0
@@ -60,7 +65,7 @@ Partial Class ClientPanel
                 End If
                 p += 1
             Next
-            lblCommentCount.Text = p
+            'lblCommentCount.Text = p
             lblCommentNoReadCount.Text = i
             lblCommentNoReadCount1.Text = i
             ''p = 0
@@ -114,12 +119,11 @@ Partial Class ClientPanel
         End Try
         Dim lblActiveParent As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPanel"))
         lblActiveParent.Attributes("Class") = "active"
-        Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIClientPanel"))
+        Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIContract"))
         lblActive.Attributes("Class") = "active"
         'divProgressVisC.Attributes("Style") = "width:" + Application("visToday").ToString + "%;"
     End Sub
     Public Function Substr(InputText As String, StartIndex As Integer, Length As Integer) As String
-
         Return InputText.Substring(StartIndex, Length) + " ... "
     End Function
 End Class

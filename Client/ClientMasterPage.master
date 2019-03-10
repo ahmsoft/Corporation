@@ -293,8 +293,8 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li runat="server" id="menuLIClientPanel"><a href="<% Server.MapPath("/Client/ClientPanel.aspx") %> /Client/ClientPanel.aspx"><i class="fa fa-circle-o"></i>گزارشات</a></li>
-                                <li runat="server" id="menuLICalender"><a href="<% Server.MapPath("/Client/ClientPanel.aspx") %> /Client/OnlineUsersManagement.aspx"><i class="fa fa-circle-o"></i>مراحل انجام پروژه</a></li>
-                                <li runat="server" id="Li1"><a href="<% Server.MapPath("/Client/ClientPanel.aspx") %> /Client/OnlineUsersManagement.aspx"><i class="fa fa-circle-o"></i>قراردادنامه</a></li>
+                                <li runat="server" id="menuLICalender"><a href="<% Server.MapPath("/Client/ClientPanel.aspx") %> /Client/ClientPanel.aspx"><i class="fa fa-circle-o"></i>مراحل انجام پروژه</a></li>
+                                <li runat="server" id="menuLIContract"><a href="<% Server.MapPath("/Client/Contract.aspx") %> /Client/Contract.aspx"><i class="fa fa-circle-o"></i>قراردادنامه</a></li>
                             </ul>
                         </li>
                         <li runat="server" id="menuLIContentPages" class="treeview">

@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <asp:CheckBox runat="server" ID="chkHTML" Text="محتوای HTML" Checked="false" AutoPostBack="true" />
+                        <asp:CheckBox runat="server" ID="chkHTML" Text="محتوای HTML" AutoPostBack="true" />
                     </div>
                 </div>
             </div>

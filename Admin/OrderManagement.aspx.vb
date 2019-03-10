@@ -66,6 +66,7 @@ Partial Class Admin_OrderManagement
             lblWarningCount.Text = FAQCU + WarningCount
             lblWarningCount1.Text = lblWarningCount.Text
             lblWarningCommentCount.Text = lblCommentNoReadCount.Text
+            'OrderView_SelectedIndexChanged(sender, e)
         Catch ex As Exception
             Response.Write(ex.Message)
 
@@ -83,6 +84,12 @@ Partial Class Admin_OrderManagement
                 Else
                     rdoNewDesign.SelectedIndex = 0
                 End If
+                If q.SPL <> "" Then
+                    txtSPL.Content = q.SPL
+                Else
+                    txtSPL.Content = "شرکت درحال انجام مراحل ابتدایی پروژه شماست. لطفا جهت پیگیری روند پیشرفت پروژه از همینجا اقدام نمایید."
+                End If
+                'txtSPL.Content = q.SPL
                 txtAddress.Text = q.Address
                 txtCompetition.Text = q.Competition
                 txtCustomers.Text = q.Customers
@@ -107,13 +114,19 @@ Partial Class Admin_OrderManagement
                 If q.ActiveForClient = True Then
                     drpActiveClient.SelectedIndex = 1
                     frmClientInfo.Visible = True
+                    frmContra.Visible = True
+                    frmProgress.Visible = True
                 Else
                     drpActiveClient.SelectedIndex = 0
                     frmClientInfo.Visible = False
+                    frmContra.Visible = False
+                    frmProgress.Visible = False
                 End If
             Next
             txtUsername.Text = ""
             txtPassword.Text = ""
+            txtContraName.Text = ""
+            txtContra.Content = ""
             Dim qry1 = From m In db.Clients
                        Select m
                        Where m.IDO = Convert.ToInt32(OrderView.SelectedValue)
@@ -158,6 +171,7 @@ Partial Class Admin_OrderManagement
                 q.Tel = txtTel.Text
                 q.Thesis = txtAdvice.Text
                 q.SuggestedCosts = txtSuggestedCost.Text
+                q.SPL = txtSPL.Content
                 If drpActiveClient.SelectedIndex = 1 Then
                     q.ActiveForClient = True
                     frmClientInfo.Visible = True
@@ -167,7 +181,7 @@ Partial Class Admin_OrderManagement
                 End If
             Next
             db.SubmitChanges()
-
+            OrderView.DataBind()
         Catch ex As Exception
             Response.Write(ex.Message)
         End Try
@@ -186,7 +200,7 @@ Partial Class Admin_OrderManagement
                 q.Photo = txtPhotoClient.Text
             Next
             db.SubmitChanges()
-
+            ClientView.DataBind()
         Catch ex As Exception
             Response.Write(ex.Message)
         End Try
@@ -210,10 +224,61 @@ Partial Class Admin_OrderManagement
             q.IDO = Convert.ToInt32(OrderView.SelectedValue)
             db.Clients.InsertOnSubmit(q)
             db.SubmitChanges()
+            ClientView.DataBind()
             lblSubmitStatus.Text = "ثبت شد."
         Catch ex As Exception
             Response.Write(ex.Message)
         End Try
 
+    End Sub
+    Protected Sub btnUpdateOrder1_Click(sender As Object, e As EventArgs) Handles btnUpdateOrder1.Click
+        btnUpdateOrder_Click(sender, e)
+
+    End Sub
+    Protected Sub btnUpdateOrder2_Click(sender As Object, e As EventArgs) Handles btnUpdateOrder2.Click
+        btnUpdateOrder_Click(sender, e)
+    End Sub
+    Protected Sub btnUpdateContra_Click(sender As Object, e As EventArgs) Handles btnUpdateContra.Click
+        Try
+            Dim db = New LinqDBClassesDataContext
+            Dim qry = From m In db.Contracts
+                      Select m Where m.IDO = Convert.ToInt32(OrderView.SelectedValue)
+            For Each q In qry
+                q.Contract = txtContra.Content
+                q.Title = txtContraName.Text
+            Next
+            db.SubmitChanges()
+            ContractView.DataBind()
+        Catch ex As Exception
+            Response.Write(ex.Message)
+        End Try
+    End Sub
+    Protected Sub btnCreateContra_Click(sender As Object, e As EventArgs) Handles btnCreateContra.Click
+        Try
+            Dim db = New LinqDBClassesDataContext
+            Dim NewContra As New Contract
+            NewContra.Title = txtContraName.Text
+            NewContra.IDO = Convert.ToInt32(OrderView.SelectedValue)
+            NewContra.Contract = txtContra.Content
+            db.Contracts.InsertOnSubmit(NewContra)
+            db.SubmitChanges()
+            ContractView.DataBind()
+        Catch ex As Exception
+            Response.Write(ex.Message)
+        End Try
+    End Sub
+    Protected Sub ContractView_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ContractView.SelectedIndexChanged
+        Dim db = New LinqDBClassesDataContext
+        Try
+            Dim qry = From m In db.Contracts
+                      Select m
+                      Where m.IDCon = Convert.ToInt32(ContractView.SelectedValue)
+            For Each q In qry
+                txtContraName.Text = q.Title
+                txtContra.Content = q.Contract
+            Next
+        Catch ex As Exception
+            Response.Write(ex.Message)
+        End Try
     End Sub
 End Class

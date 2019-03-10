@@ -28,7 +28,7 @@ Partial Class SearchResult
             CounterResult += 1
             lbl.Text += " کلمات کلیدی: "
             For Each i In q.Keyword.ToString.Split(";")
-                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                 Page.MetaKeywords += i.ToString + ","
             Next
             lbl.Text += "<br/><br/><hr/>"
@@ -51,7 +51,7 @@ Partial Class SearchResult
             CounterResult += 1
             lbl.Text += " کلمات کلیدی: "
             For Each i In q.Keyword.ToString.Split(";")
-                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                 Page.MetaKeywords += "," + i.ToString
             Next
             lbl.Text += "<br/><br/><hr/>"
@@ -68,7 +68,7 @@ Partial Class SearchResult
             CounterResult += 1
             lbl.Text += " کلمات کلیدی: "
             For Each i In q.Keyword.ToString.Split(";")
-                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                 Page.MetaKeywords += "," + i.ToString
             Next
             lbl.Text += "<br/><br/><hr/>"
@@ -85,7 +85,7 @@ Partial Class SearchResult
             CounterResult += 1
             lbl.Text += " کلمات کلیدی: "
             For Each i In q.Keyword.ToString.Split(";")
-                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff; border-radius: 2px; margin:3px;'>" + i.ToString + "</span>"
+                lbl.Text = lbl.Text + "<span style='background-color: #598800;border-color: #00f;color:#fff;border-radius: 3px; display:inline-block; padding:2px 6px 2px 6px;margin:2px 3px 2px 3px;'>" + i.ToString + "</span>"
                 Page.MetaKeywords += "," + i.ToString
             Next
             lbl.Text += "<br/><br/><hr/>"

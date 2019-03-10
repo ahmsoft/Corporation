@@ -1,8 +1,8 @@
 ﻿
-Partial Class Admin_LinkManagement
+Partial Class Admin_UserManagement
     Inherits System.Web.UI.Page
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Try
             Dim lblCommentNoReadCount As Label = Master.FindControl("lblCommentNoReadCount")
             Dim lblCommentNoReadCount1 As Label = Master.FindControl("lblCommentNoReadCount1")
@@ -47,15 +47,32 @@ Partial Class Admin_LinkManagement
                     lblComments.Text += "<li><a href='Inbox.aspx?ID=" + m.IDCU.ToString + "' style='display:block;white-space:nowrap;border-bottom:1px solid #f4f4f4;'><div class='pull-right' style='display: block;'><span class='label label-success' style='margin-right:5px;margin-left:5px;'>" + m.Seen + "</span></div><h4 style='padding: 0;margin: 0 0 0 45px;color:#444444;font-size:12px;position:relative;margin-top:10px;' >" + m.NameAndFamily + "<small style='color:#999999;font-size:9px;position:absolute;top:0;left:0;'><i class='fa fa-clock-o'></i>" + m.Date + "<br /> " + m.Time + "</small></h4><p style='font-size: 10px;color: #888888;'><br />" + msg + "</p></a></li>"
                     i = i + 1
                     WarningCount += 1
-
                 Else
                     lblComments.Text += "<li><a href='Inbox.aspx?ID=" + m.IDCU.ToString + "' style='display:block;white-space:nowrap;border-bottom:1px solid #f4f4f4;'><div class='pull-right' style='display: block;'><span class='label label-warning' style='margin-right:5px;margin-left:5px;'>" + m.Seen + "</span></div><h4 style='padding: 0;margin: 0 0 0 45px;color:#444444;font-size:12px;position:relative;margin-top:10px;' >" + m.NameAndFamily + "<small style='color:#999999;font-size:9px;position:absolute;top:0;left:0;'><i class='fa fa-clock-o'></i>" + m.Date + "<br /> " + m.Time + "</small></h4><p style='font-size: 10px;color: #888888;' title='" + m.MSG + "'><br />" + msg + "</p></a></li>"
 
                 End If
                 p += 1
             Next
+            '           lblCommentCount.Text = p
             lblCommentNoReadCount.Text = i
             lblCommentNoReadCount1.Text = i
+            p = 0
+            i = 0
+            Dim Orders = From m In db.Orders
+                         Select m Order By m.IDO
+
+            For Each m In Orders
+                i = i + 1
+            Next
+            '          lblOrderCount.Text = i
+            i = 0
+            Dim Tasks = From m In db.Tasks
+                        Select m Order By m.IDT
+
+            For Each m In Tasks
+                i = i + 1
+            Next
+            '         lblTaskCount.Text = i
             Dim FAQCU As Integer = 0
             Dim FAQ = From m In db.FAQs
                       Select m Where m.Seen = "New" Order By m.IDF
@@ -67,118 +84,34 @@ Partial Class Admin_LinkManagement
             lblWarningCount.Text = FAQCU + WarningCount
             lblWarningCount1.Text = lblWarningCount.Text
             lblWarningCommentCount.Text = lblCommentNoReadCount.Text
+            Dim visitorS = From m In db.Visitors
+                           Select m
+            For Each m In visitorS
+                '            lblAllVisit.Text = m.AllVisitor
+                '           lblVis.Text = m.Today
+                '          lblToday.Text = m.Today
+            Next
+            Dim OnlineDetails = From m In db.UsersOnlineDetails
+                                Select m Order By m.IDOnline Descending
+            i = 0
+            For Each m In OnlineDetails
+                '         lstUserOnlineDetails.Text += "<tr><td style='direction:ltr;text-align:center;'><a href='#'>" + m.DateAndTime + " </a></td><td style='direction:ltr;text-align:center;'>" + m.Platform + "</td><td style='direction:ltr;text-align:center;'><span class='label label-success'>" + m.Browser + "</span></td><td style='direction:ltr;text-align:center;'><span class='label label-info'>" + m.MachinName + "</span></td><td style='direction:ltr;text-align:center;'><div class='sparkbar' data-color='#00a65a' data-height='20'>" + m.IPAddress + "</div></td><td style='direction:ltr;text-align:center;'><a href='" + m.Page + "'><span class='label label-success'>" + m.Page + "</span></a></td></tr>"
+                i += 1
+                If i > 8 Then Exit For
+            Next
+
         Catch ex As Exception
             Response.Write(ex.Message)
+
         End Try
-        Dim lblActiveParent As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIBL"))
+        Dim lblActiveParent As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIPanel"))
         lblActiveParent.Attributes("Class") = "active"
-        Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLILinks"))
+        Dim lblActive As System.Web.UI.HtmlControls.HtmlGenericControl = (Master.FindControl("menuLIAdminPanel"))
         lblActive.Attributes("Class") = "active"
-    End Sub
-    Protected Sub LinkView_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LinkView.SelectedIndexChanged
-        Try
-            Dim db = New LinqDBClassesDataContext
-            Dim qry = From m In db.Links
-                      Select m
-                      Where m.IDL = Convert.ToInt32(LinkView.SelectedValue)
-            For Each q In qry
-                If q.IsHTML Then
-                    chkHTML.Checked = True
-                    InfoHTML.Visible = True
-                    InfoLink.Visible = False
-                Else
-                    chkHTML.Checked = False
-                    InfoHTML.Visible = False
-                    InfoLink.Visible = True
-                End If
-                txtLinkName.Text = q.Name
-                txtLinkAlt.Text = q.Alt
-                txtLinkAddress.Text = q.Address
-                drpLinkTarget.SelectedValue = q.Target
-                txtPeriority.Text = q.Priority
-                txtBodyHTML.Content = q.BodyHTML
-                chkHTML.Checked = q.IsHTML
-            Next
-        Catch ex As Exception
-
-            Response.Write(ex.Message)
-
-        End Try
-    End Sub
-    Protected Sub btnSaveNewLink_Click(sender As Object, e As EventArgs) Handles btnSaveNewLink.Click
-        Try
-            Dim db = New LinqDBClassesDataContext
-            Dim q = New Link
-            If chkHTML.Checked Then
-                q.Name = "کد یا پیام"
-                q.Address = "کد یا پیام"
-                q.Alt = "کد یا پیام"
-                q.Target = drpLinkTarget.SelectedValue
-                q.BodyHTML = txtBodyHTML.Content
-            Else
-                q.Name = txtLinkName.Text
-                q.Target = drpLinkTarget.SelectedValue.ToString()
-                q.Address = txtLinkAddress.Text
-                q.Alt = txtLinkAlt.Text
-            End If
-            q.IDB = drpBlock.SelectedValue
-            q.Priority = txtPeriority.Text
-            q.IsHTML = chkHTML.Checked
-            db.Links.InsertOnSubmit(q)
-            db.SubmitChanges()
-            LinkView.DataBind()
-        Catch ex As Exception
-            Response.Write(ex.Message)
-        End Try
-    End Sub
-    Protected Sub btnUpdateLink_Click(sender As Object, e As EventArgs) Handles btnUpdateLink.Click
-        Try
-            Dim db = New LinqDBClassesDataContext
-            Dim qry = From m In db.Links
-                      Select m Where m.IDL = Convert.ToInt32(LinkView.SelectedValue)
-            For Each q In qry
-                If chkHTML.Checked Then
-                    q.Name = "کد یا پیام"
-                    q.Address = "کد یا پیام"
-                    q.Alt = "کد یا پیام"
-                    q.Target = drpLinkTarget.SelectedValue
-                    q.BodyHTML = txtBodyHTML.Content
-                Else
-                    q.Name = txtLinkName.Text
-                    q.Address = txtLinkAddress.Text
-                    q.Target = drpLinkTarget.SelectedValue.ToString()
-                    q.Alt = txtLinkAlt.Text
-                End If
-                q.IsHTML = chkHTML.Checked
-                q.IDB = drpBlock.SelectedValue
-                q.Priority = txtPeriority.Text
-            Next
-            db.SubmitChanges()
-            LinkView.DataBind()
-
-        Catch ex As Exception
-            Dim db = New LinqDBClassesDataContext
-            Dim UserTable As New FaultLog
-            MsgBox(ex.Message)
-            UserTable.ErrorMessage = ex.Message
-            UserTable.PageName = System.IO.Path.GetFileName(Request.CurrentExecutionFilePath)
-            db.FaultLogs.InsertOnSubmit(UserTable)
-            db.SubmitChanges()
-            Response.Redirect("../ErrorPage.aspx")
-        End Try
+        'divProgressVisC.Attributes("Style") = "width:" + Application("visToday").ToString + "%;"
     End Sub
     Public Function Substr(InputText As String, StartIndex As Integer, Length As Integer) As String
 
         Return InputText.Substring(StartIndex, Length) + " ... "
     End Function
-    Protected Sub chkHTML_CheckedChanged(sender As Object, e As EventArgs) Handles chkHTML.CheckedChanged
-        If chkHTML.Checked Then
-            InfoHTML.Visible = True
-            InfoLink.Visible = False
-        Else
-            InfoHTML.Visible = False
-            InfoLink.Visible = True
-        End If
-
-    End Sub
 End Class

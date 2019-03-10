@@ -210,6 +210,36 @@
       <Column Name="Pic" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Comment" Member="Comments">
+    <Type Name="Comment">
+      <Column Name="IDC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameAndFamily" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="WebSite" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="MSG" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="IsShow" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Seen" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Access" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Keyword" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IDClient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Link" Member="Links">
+    <Type Name="Link">
+      <Column Name="IDL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(1100) NOT NULL" CanBeNull="false" />
+      <Column Name="Alt" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
+      <Column Name="IDB" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsHTML" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BodyHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.[Order]" Member="Orders">
     <Type Name="Order">
       <Column Name="IDO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -237,23 +267,7 @@
       <Column Name="Advice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="ActiveForClient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Comment" Member="Comments">
-    <Type Name="Comment">
-      <Column Name="IDC" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="NameAndFamily" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="WebSite" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
-      <Column Name="MSG" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
-      <Column Name="Date" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="Time" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="IsShow" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="Seen" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Access" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
-      <Column Name="Keyword" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="IDClient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Client" Member="Clients">
@@ -265,17 +279,22 @@
       <Column Name="Photo" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Link" Member="Links">
-    <Type Name="Link">
-      <Column Name="IDL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="Address" Type="System.String" DbType="NVarChar(1100) NOT NULL" CanBeNull="false" />
-      <Column Name="Alt" Type="System.String" DbType="NVarChar(1100)" CanBeNull="true" />
-      <Column Name="IDB" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Target" Type="System.String" DbType="NVarChar(7) NOT NULL" CanBeNull="false" />
-      <Column Name="Priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="IsHTML" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="BodyHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+  <Table Name="dbo.Process" Member="Processes">
+    <Type Name="Process">
+      <Column Name="IDProc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDCon" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TitleProccess" Type="System.String" DbType="NVarChar(1500) NOT NULL" CanBeNull="false" />
+      <Column Name="EndProc" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Delay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contract" Member="Contracts">
+    <Type Name="Contract">
+      <Column Name="IDCon" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Contract" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

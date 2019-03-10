@@ -4,6 +4,33 @@
 <html>
 <head runat="server">
     <meta charset="utf-8">
+	<style>
+        html::-webkit-scrollbar {
+            background-color: rgb(50,50,50);
+            width: 10px;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background-color: #7baa00;
+        }
+
+            html::-webkit-scrollbar-thumb:hover {
+                background-color: #7b9900;
+            }
+
+        html::-o-scrollbar {
+            background-color: rgb(50,50,50);
+            width: 10px;
+        }
+
+        html::-o-scrollbar-thumb {
+            background-color: #7baa00;
+        }
+
+            html::-o-scrollbar-thumb:hover {
+                background-color: #7b9900;
+            }
+    </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="امیرحسن مروجی" />
     <meta name="DC.subject" content="خدمات حسابداری و کامپیوتر و هوش مصنوعی , طراحی سایت , بهینه سازی سایت , طراحی وب , طراحی وب سایت , طراحی فروشگاه اینترنتی" />
@@ -66,13 +93,13 @@
 
             <header class="main-header">
                 <!-- Logo -->
-                <a href="Home" class="logo">
+                <a href="Home" class="logo"  style="background-color:rgba(0,0,0,0.9);">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>شرکت نارم</b><img src="/Lamonte/images/logominiT.png" alt="نارم" style="width: 100px;" /></span>
+                    <span class="logo-lg" style="color:#7baa00"><b> شرکت نارم </b><img src="/Lamonte/images/AvatarNarem.png" alt="نارم" style="width: 48px;" /></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
-                <nav class="navbar navbar-static-top">
+                <nav class="navbar navbar-static-top" style="background-color:rgba(20,20,20,0.7);">
                     <!-- Sidebar toggle button-->
 
                     <!-- Delete This after download -->
